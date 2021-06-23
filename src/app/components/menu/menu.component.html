@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-row
+    class="ion-margin-top ion-margin-horizontal ion-align-items-center menu-margin-top"
+  >
+    <ion-col size="3" class="ion-text-center ion-align-items-center">
+      <ion-avatar class="ion-text-center">
+        <img [src]="photo" alt="" />
+      </ion-avatar>
+    </ion-col>
+    <ion-col size="8">
+      <p class="profile-text">
+        {{ userName | titlecase }}
+      </p>
+      <p class="email-text">
+        {{ email }}
+      </p>
+    </ion-col>
+    <ion-col size="1" class="ion-text-right">
+      <ion-img
+        src="/assets/menu/clear-button.svg"
+        (click)="menuToggle()"
+      ></ion-img>
+    </ion-col>
+  </ion-row>
+
+  <div class="ion-margin-horizontal">
+    <img class="split-line" src="/assets/menu/line.svg" alt="" />
+  </div>
+
+  <ion-list id="menu-body">
+    <ion-item lines="none" class="ion-margin" *ngFor="let page of appPages">
+      <ion-menu-button 
+        mode="ios"
+        class="ion-align-items-center link-text"
+        (click)="fromMenuToPage(page)"
+      >
+        <img [src]="page.image" alt="" />
+        {{ page.title }}
+      </ion-menu-button>
+    </ion-item>
+
+    <ion-item
+      lines="none"
+      class="ion-margin"
+      (click)="showConfirmLogOutMessage()"
+      [hidden]="isProduction"
+    >
+      <ion-menu-button mode="ios" class="ion-align-items-center link-text">
+        <img [src]="infoLogOut.image" alt="" />
+        {{ infoLogOut.title }}
+      </ion-menu-button>
+    </ion-item>
+  </ion-list>
+
+  <div
+    id="menu-footer"
+    class="ion-align-items-center ion-text-center"
+    [hidden]="true"
+  >
+    <img src="/assets/menu/logo.svg" alt="" />
+  </div>
+</ion-header>

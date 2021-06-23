@@ -1,0 +1,217 @@
+{
+	"errors": null,
+	"body": {
+		"data": [
+			{
+				"id": "5f998f36c021dc21dc256a68",
+				"inputs": [],
+				"valid": true,
+				"title": "5.000 pasos al día",
+				"subcategory": "goal",
+				"creator": {
+					"links": [
+						{
+							"href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967",
+							"rel": "self"
+						}
+					],
+					"id": "5f96d87332a85836bc7a9967",
+					"kind": "user"
+				},
+				"time": "2020-10-28T15:33:10Z",
+				"sharing": {
+					"public": false,
+					"user": false,
+					"group": false,
+					"subjects": []
+				},
+				"subject": {
+					"links": [
+						{
+							"href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967",
+							"rel": "self"
+						}
+					],
+					"id": "5f96d87332a85836bc7a9967",
+					"kind": "user"
+				},
+				"links": [
+					{
+						"href": "https://api.int.appsb.segurosbolivar.com/2/messages/5f998f36c021dc21dc256a68",
+						"rel": "self"
+					}
+				],
+				"body": "Márquese el objetivo de caminar 5000 o más pasos al día. ¡Levantarse y moverse más es una manera fácil de ayudar a controlar su peso y le hará sentirse sano y lleno de energía durante todo el día!",
+				"kind": "message",
+				"rewards": [],
+				"category": "movement",
+				"objectives": [
+					{
+						"text": "Caminar 5.000 pasos al día",
+						"value": 0,
+						"unit": "count",
+						"key": "steps_goal_5000",
+						"targetValue": 14
+					}
+				],
+				"order": 1603899190000,
+				"lead": "![Dé algunos pasos][steps_goal_5000]¡Muévase un poco más!",
+				"modificationTime": "2020-10-28T17:10:44Z",
+				"completed": false,
+				"message": "steps_goal_5000",
+				"seen": false,
+				"client": {
+					"links": [
+						{
+							"href": "https://api.int.appsb.segurosbolivar.com/2/system/services/5f969611363eee7da07ba819",
+							"rel": "self"
+						}
+					],
+					"id": "5f969611363eee7da07ba819",
+					"kind": "sysservice"
+				}
+			},
+			{
+				"id": "5f9895d0ed7aa028735048cf",
+				"inputs": [],
+				"valid": true,
+				"title": "Recordatorio para la medicación",
+				"subcategory": "goal",
+				"creator": {
+					"links": [
+						{
+							"href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967",
+							"rel": "self"
+						}
+					],
+					"id": "5f96d87332a85836bc7a9967",
+					"kind": "user"
+				},
+				"time": "2020-10-27T21:49:03Z",
+				"sharing": {
+					"group": false,
+					"user": false,
+					"subjects": [],
+					"public": false
+				},
+				"subject": {
+					"links": [
+						{
+							"href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967",
+							"rel": "self"
+						}
+					],
+					"id": "5f96d87332a85836bc7a9967",
+					"kind": "user"
+				},
+				"links": [
+					{
+						"href": "https://api.int.appsb.segurosbolivar.com/2/messages/5f9895d0ed7aa028735048cf",
+						"rel": "self"
+					}
+				],
+				"body": "Un simple recordatorio para que nunca se olvide de tomar su medicación diaria.\n\nEste objetivo dura 30 días. Si desea que sus recordatorios duren más tiempo, simplemente vuelva a añadir el objetivo después de haberlo completado.",
+				"kind": "message",
+				"rewards": [],
+				"category": "body",
+				"objectives": [
+					{
+						"text": "Reciba recordatorios durante un mes para tomar su medicación",
+						"value": 0,
+						"unit": "count",
+						"key": "medication_reminder_goal",
+						"targetValue": 30
+					}
+				],
+				"order": 1603835343000,
+				"lead": "![medicación][medication_reminder_goal]Recuerde tomar su medicación cuando la necesite",
+				"modificationTime": "2020-10-27T21:49:03Z",
+				"completed": false,
+				"message": "medication_reminder_goal",
+				"seen": false,
+				"client": {
+					"links": [
+						{
+							"href": "https://api.int.appsb.segurosbolivar.com/2/system/services/5f969611363eee7da07ba819",
+							"rel": "self"
+						}
+					],
+					"id": "5f969611363eee7da07ba819",
+					"kind": "sysservice"
+				}
+			},
+			{
+				"id": "5f9894320b43593ccf5029f3",
+				"inputs": [],
+				"valid": true,
+				"title": "Coma menos alimentos fritos",
+				"subcategory": "goal",
+				"creator": {
+					"links": [
+						{
+							"href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967",
+							"rel": "self"
+						}
+					],
+					"id": "5f96d87332a85836bc7a9967",
+					"kind": "user"
+				},
+				"time": "2020-10-27T21:42:10Z",
+				"sharing": {
+					"group": false,
+					"user": false,
+					"public": false,
+					"subjects": []
+				},
+				"subject": {
+					"links": [
+						{
+							"href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967",
+							"rel": "self"
+						}
+					],
+					"id": "5f96d87332a85836bc7a9967",
+					"kind": "user"
+				},
+				"links": [
+					{
+						"href": "https://api.int.appsb.segurosbolivar.com/2/messages/5f9894320b43593ccf5029f3",
+						"rel": "self"
+					}
+				],
+				"body": "Le ayudaré a renovar su dieta y reducir su consumo de alimentos fritos.",
+				"kind": "message",
+				"rewards": [],
+				"category": "nutrition",
+				"objectives": [
+					{
+						"text": "Evite alimentos fritos durante 11 días",
+						"value": 0,
+						"unit": "count",
+						"key": "fried_food_goal",
+						"targetValue": 11
+					}
+				],
+				"order": 1603834930000,
+				"lead": "![Alimentos fritos][fried_food_goal]Reduzca la cantidad de alimentos fritos en su dieta",
+				"modificationTime": "2020-10-27T21:42:10Z",
+				"completed": false,
+				"message": "fried_food_goal",
+				"seen": false,
+				"client": {
+					"links": [
+						{
+							"href": "https://api.int.appsb.segurosbolivar.com/2/system/services/5f969611363eee7da07ba819",
+							"rel": "self"
+						}
+					],
+					"id": "5f969611363eee7da07ba819",
+					"kind": "sysservice"
+				}
+			}
+		],
+		"error": null,
+		"error_description": null
+	},
+	"hasErrors": false
+}

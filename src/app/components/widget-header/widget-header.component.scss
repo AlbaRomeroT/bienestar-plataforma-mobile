@@ -1,0 +1,56 @@
+.title-widget-header {
+  margin: 2vw 0;
+  font-size: 14px;
+  .content-title,
+  .content-wearables,
+  .content-detail-wearables,
+  .content-connect-wearables,
+  .content-my-points {
+    height: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
+    strong {
+      margin: 0 0 0 2vw;
+      font-weight: 600;
+    }
+  }
+  .content-title {
+    width: 36.5vw;
+  }
+  .content-wearables,
+  .content-detail-wearables,
+  .content-connect-wearables,
+  .content-my-points {
+    width: 80vw;
+  }
+}
+
+.title-purpose,
+.text {
+  margin-left: 5pt;
+  font-size: 14px;
+  font-family: "Roboto Bold Condensed", sans-serif;
+  line-height: 16px;
+  margin-top: 2px;
+}
+
+.title-purpose {
+  color: #333;
+}
+
+.text {
+  color: #333333;
+}
+
+.indicator-vertical-line {
+  border-left: 2px solid #ffdd00;
+}
+
+.widget-row-content {
+  margin-right: inherit;
+  margin-left: inherit;
+  height: 20px;
+  display: flex;
+  align-content: center;
+}

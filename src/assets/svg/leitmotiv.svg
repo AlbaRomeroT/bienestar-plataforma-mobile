@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="381px" viewBox="0 0 360 381" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>leitmotiv</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="360" height="281"></rect>
+        <linearGradient x1="99.456043%" y1="88.9903846%" x2="11.9148695%" y2="5.92427885%" id="linearGradient-3">
+            <stop stop-color="#014A26" offset="0.0448690878%"></stop>
+            <stop stop-color="#0D6122" offset="20.27816%"></stop>
+            <stop stop-color="#128C31" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="25.4047028%" y1="39.1506912%" x2="96.5638674%" y2="69.0444812%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.167477054" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="25.4047028%" y1="37.7841471%" x2="96.5638674%" y2="71.4432629%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.167477054" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="login" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sign-in-main1" transform="translate(0.000000, -97.000000)">
+            <g id="leitmotiv" transform="translate(0.000000, 97.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g mask="url(#mask-2)">
+                    <g transform="translate(184.000000, 185.500000) scale(1, -1) translate(-184.000000, -185.500000) translate(-5.000000, -10.000000)">
+                        <path d="M0,48.7822946 C45.153603,25.4528757 104.241739,10.7327337 177.264408,4.62186849 C250.287077,-1.48899669 314.47624,-1.54019033 369.831897,4.46828756 L370,391 C325.759905,332.948405 264.093239,293.695954 185,273.242644 C105.906761,252.789335 44.419768,252.789335 0.539020249,273.242644 L0,48.7822946 Z" id="Rectangle" fill="url(#linearGradient-3)" transform="translate(185.000000, 195.500000) scale(1, -1) translate(-185.000000, -195.500000) "></path>
+                        <g id="Group-7" stroke-width="1" fill="none" transform="translate(319.500000, 142.500000) rotate(-180.000000) translate(-319.500000, -142.500000) translate(261.000000, 47.000000)" opacity="0.04">
+                            <path d="M-37,37.3317389 C76.3602885,32.9572168 140.026955,71.8466372 154,154" id="Path-17" stroke="#FFFFFF" transform="translate(58.500000, 95.500000) scale(-1, 1) rotate(-90.000000) translate(-58.500000, -95.500000) "></path>
+                            <path d="M37.0806689,157.502793 C37.0806689,157.502793 72.8861815,157.502793 144.497207,157.502793 C129.772521,80.2896723 71.4410498,44.4783989 -30.4972067,50.0689731 C-30.4972067,50.0689731 -30.4972067,98.1582411 -30.4972067,98.1582411 C-30.4972067,98.1582411 17.6060431,107.045095 37.0806689,157.502793 Z" id="Path-16" fill="url(#linearGradient-4)" transform="translate(57.000000, 103.502793) scale(1, -1) rotate(-270.000000) translate(-57.000000, -103.502793) "></path>
+                        </g>
+                        <g id="Group-7" stroke-width="1" fill="none" transform="translate(60.500000, 297.000000) scale(-1, -1) rotate(-180.000000) translate(-60.500000, -297.000000) translate(2.000000, 207.000000)" opacity="0.04">
+                            <path d="M-31.5,31.8317389 C75.3316855,27.4572168 135.331685,66.3466372 148.5,148.5" id="Path-17" stroke="#FFFFFF" transform="translate(58.500000, 90.000000) scale(-1, 1) rotate(-90.000000) translate(-58.500000, -90.000000) "></path>
+                            <path d="M38.2278555,151.541899 C38.2278555,151.541899 71.9712705,151.541899 139.458101,151.541899 C125.581433,74.3287785 70.6093663,38.5175051 -25.4581006,44.1080792 C-25.4581006,44.1080792 -25.4581006,92.1973473 -25.4581006,92.1973473 C-25.4581006,92.1973473 19.874805,101.084201 38.2278555,151.541899 Z" id="Path-16" fill="url(#linearGradient-5)" transform="translate(57.000000, 97.541899) scale(1, -1) rotate(-270.000000) translate(-57.000000, -97.541899) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

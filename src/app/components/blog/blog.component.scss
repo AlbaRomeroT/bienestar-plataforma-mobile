@@ -1,0 +1,85 @@
+.card-transparent {
+  background: rgba(255, 255, 255, 0) !important;
+  box-shadow: none !important;
+}
+
+ion-slides {
+  height: 17vh;
+  ion-slide {
+    // width: 72vw !important;
+    height: 18vh;
+    ion-card {
+      margin: 0;
+    }
+    ion-card,
+    .cover-image,
+    .bg-cover-slide {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+  }
+}
+
+.swiper-container {
+  overflow: inherit !important;
+}
+
+.image-slide {
+  border-radius: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-cover-slide {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.grid-content {
+  margin: 0px;
+  position: absolute;
+  left: 1vw;
+  bottom: 1vw;
+  text-align: start;
+  .row-content-title {
+    .title-content {
+      padding: 0px;
+      margin: 15px 0px 0px 0px;
+      width: 100%;
+      color: #ffffff;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 19px;
+      @media (max-width: 361px) {
+        font-size: 13px;
+      }
+    }
+  }
+  .row-content-description {
+    .description-content {
+      width: 100%;
+      padding: 0px;
+      margin: 4px 0px 0px 0px;
+      font-family: "Roboto Condensed", sans-serif !important;
+      color: #fbfbfb !important;
+      font-size: 11px !important;
+      letter-spacing: 0;
+      line-height: 16px;
+      height: 8vw;
+      overflow: hidden;
+      @media (min-width: 374px) {
+        height: 8vw;
+      }
+      @media (max-width: 320px) {
+        height: 5vh;
+      }
+    }
+  }
+}
+
+.ion-spinner {
+  color: #016d38;
+}

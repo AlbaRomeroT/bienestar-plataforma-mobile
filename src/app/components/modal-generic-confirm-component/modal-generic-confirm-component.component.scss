@@ -1,0 +1,61 @@
+.title {
+  color: #333333;
+  font-family: "Roboto Bold Condensed", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+
+.desc {
+  color: #666666;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: center;
+  width: 210px !important;
+}
+
+.btn-action {
+  height: 36px;
+  width: 181px;
+  --border-radius: 20px;
+  --background: #ffdc5d;
+  --color: #006d38;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.btn-back {
+  box-sizing: border-box;
+  height: 36px;
+  width: 181px;
+  --border-radius: 20px;
+  --background: #ffffff;
+  --color: #006d38;
+  border: 1px solid #ffdc5d;
+  border-radius: 20px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.desc-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.icon-container {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  width: 17vw;
+}

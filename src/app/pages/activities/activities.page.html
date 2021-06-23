@@ -1,0 +1,38 @@
+<app-header></app-header>
+<ion-row class="header-activities">
+  <app-back-button-updated class="back"></app-back-button-updated>
+  <app-widget-header class="title" [title]="title"></app-widget-header>
+</ion-row>
+<ion-content class="ion-content">
+  <ion-segment
+    [(ngModel)]="selectedTab"
+    class="segment-bar"
+    size="12"
+    expand="full"
+    scrollable="true"
+    mode="md"
+  >
+    <ion-segment-button
+      value="register"
+      class="ion-segment-tab"
+      (click)="onTabClick('register')"
+    >
+      <ion-label>Registrar actividad</ion-label>
+    </ion-segment-button>
+    <ion-segment-button
+      value="historical"
+      class="ion-segment-tab"
+      (click)="onTabClick('historical')"
+    >
+      <ion-label>Historial de actividades</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <div class="body-data-content">
+    <div *ngIf="selectedTab === 'register'">
+      <app-register-activity></app-register-activity>
+    </div>
+    <div *ngIf="selectedTab === 'historical'">
+      <app-history-activity></app-history-activity>
+    </div>
+  </div>
+</ion-content>

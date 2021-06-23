@@ -1,0 +1,164 @@
+<app-header></app-header>
+<ion-content class="content">
+  <ion-row class="header-challenge-description">
+    <app-back-button-updated class="back"></app-back-button-updated>
+    <app-widget-header class="title" [title]="title"></app-widget-header>
+  </ion-row>
+
+  <div class="spin">
+    <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+  </div>
+
+  <div class="data-content" *ngIf="challenge && showScreen">
+    <ion-grid class="grid-shadow rating">
+      <ion-row>
+        <span class="rating-title">Clasificación del desafío</span>
+      </ion-row>
+      <ion-row *ngIf="!challenge.joinUserId; else ranking">
+        <span class="rating-text"
+          >Únase a este desafío para ver su clasificación</span
+        >
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="grid-shadow">
+      <ion-row class="row-image">
+        <ion-col size="12" class="ion-no-padding">
+          <div class="image-content">
+            <img
+              [src]="challenge.safeMediaUrl"
+              onError="src = '/assets/challenge/challenge-default-large.png'"
+              alt=""
+              class="image"
+            />
+            <ion-button
+              class="image-button"
+              fill="clear"
+              (click)="onAdd()"
+              *ngIf="!challenge?.joinUserId"
+            >
+              Unirme
+              <ion-icon name="add-outline" slot="end"></ion-icon>
+            </ion-button>
+            <span class="image-title">{{ challenge.name }}</span>
+            <span
+              class="image-quantity"
+              *ngIf="challenge.participantCount == 1"
+            >
+              <ion-icon
+                class="icon-yellow-fire"
+                src="/assets/challenge/icon-person.svg"
+              >
+              </ion-icon>
+              {{ challenge.participantCount }} persona unida
+            </span>
+            <span
+              class="image-quantity"
+              *ngIf="challenge.participantCount != 1"
+            >
+              <ion-icon
+                class="icon-yellow-fire"
+                src="/assets/challenge/icon-person.svg"
+              >
+              </ion-icon>
+              {{ challenge.participantCount }} personas unidas
+            </span>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="row-content side-margin-12">
+        <ion-col>
+          <span
+            >{{ challenge.startTime | date: 'dd/MM/yy' }} - {{ challenge.endTime
+            | date: 'dd/MM/yy' }}
+          </span>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="row-content side-margin-12">
+        <ion-col>
+          <p *ngFor="let link of challenge.description | challengeDescription">
+            <span class="link-text" *ngIf="!link.route">{{ link.text }}</span>
+          </p>
+        </ion-col>
+      </ion-row>
+
+      <ion-grid class="summary">
+        <ion-row>
+          <ion-col size="4" size-lg="3" size-xs="5" class="title"
+            >Objetivo</ion-col
+          >
+          <ion-col size="8" size-lg="9" size-xs="7" class="description"
+            >{{ challenge.description | challengeMarkdown: '![':']' }}</ion-col
+          >
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="4" size-lg="3" size-xs="5" class="title"
+            >Tipo de desafío</ion-col
+          >
+          <ion-col size="8" size-lg="9" size-xs="7" class="description"
+            >{{ challenge?.hasTeams ? "Equipos" : "Individual" }}</ion-col
+          >
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="4" size-lg="3" size-xs="5" class="title"
+            >Creador</ion-col
+          >
+          <ion-col size="8" size-lg="9" size-xs="7" class="description"
+            >Seguros Bolivar</ion-col
+          >
+        </ion-row>
+      </ion-grid>
+    </ion-grid>
+    <ion-row>
+      <ion-col size="12" class="col-center" *ngIf="!challenge?.joinUserId">
+        <ion-button (click)="onAdd()" class="action-button mb-35">
+          UNIRME AL DESAFÍO
+        </ion-button>
+      </ion-col>
+      <ion-col size="12" class="col-center" *ngIf="challenge?.joinUserId">
+        <ion-button (click)="onRemove()" class="action-button mb-35">
+          ELIMINAR DESAFÍO
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+
+<ng-template #ranking>
+  <ion-row class="row-challenge-ratings">
+    <ion-col size="4">
+      <app-challenge-rating
+        position="1"
+        [name]="firstPlace?.name.firstName"
+        [lastName]="firstPlace?.name.lastName"
+        [progress]="firstPlace?.challengeProgress"
+        [challengeDescription]="challenge?.description"
+      >
+      </app-challenge-rating>
+    </ion-col>
+    <ion-col size="4">
+      <app-challenge-rating
+        position="2"
+        [name]="secondPlace?.name.firstName"
+        [lastName]="secondPlace?.name.lastName"
+        [progress]="secondPlace?.challengeProgress"
+        [challengeDescription]="challenge?.description"
+      >
+      </app-challenge-rating>
+    </ion-col>
+    <ion-col size="4">
+      <app-challenge-rating
+        position="3"
+        [name]="thridPlace?.name.firstName"
+        [lastName]="thridPlace?.name.lastName"
+        [progress]="thridPlace?.challengeProgress"
+        [challengeDescription]="challenge?.description"
+      >
+      </app-challenge-rating>
+    </ion-col>
+  </ion-row>
+</ng-template>

@@ -1,0 +1,88 @@
+{
+    "errors": [],
+    "body": {
+        "data": [
+            {
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://api.int.appsb.segurosbolivar.com/2/messages/5f98363ff747dd479f6d1de5"
+                    }
+                ],
+                "sharing": {
+                    "subjects": [],
+                    "user": false,
+                    "public": false,
+                    "group": false
+                },
+                "id": "5f98363ff747dd479f6d1de5",
+                "rewards": [],
+                "seen": false,
+                "lead": "Cuénteme sobre su hábito de fumar.",
+                "valid": true,
+                "category": "lifestyle",
+                "message": "lifestyle_smoking_now",
+                "order": 1603810878050,
+                "modificationTime": "2020-10-27T15:01:18Z",
+                "body": "!Genial! ¿Hay algo que preferiría no hacer?",
+                "subcategory": "message",
+                "inputs": [
+                    {
+                        "key": "basic_qn_2017_q01",
+                        "type": "select",
+                        "text": "input_basic_qn_2017_q01_text",
+                        "options": [
+                            {
+                                "value": "basic_qn_2017_q01_a1",
+                                "hint": "Muy bien. La fruta fresca le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable. ¡Siga así!",
+                                "text": "Caminar"
+                            },
+                            {
+                                "value": "basic_qn_2017_q01_a2",
+                                "hint": "Muy bien. La fruta fresca le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable. ¡Siga así!",
+                                "text": "Correr"
+                            },
+                            {
+                                "value": "basic_qn_2017_q01_a3",
+                                "hint": "Intente comer dos raciones de fruta al día; le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable.",
+                                "text": "Ciclismo"
+                            },
+                            {
+                                "value": "basic_qn_2017_q01_a4",
+                                "hint": "Intente comer dos raciones de fruta al día; le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable. ¿Le gustaría mejorar su consumo de fruta? Haga clic en el siguiente enlace para recibir orientación: [Visite este enlace](dacadoo://functions/goals/nutrition_p_fi_1)",
+                                "text": "Ninguna en particular"
+                            }
+                        ]
+                    }
+                ],
+                "objectives": [],
+                "icon": "/lifestyle",
+                "subject": {
+                    "id": "5f96d87332a85836bc7a9967",
+                    "kind": "user",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967"
+                        }
+                    ]
+                },
+                "title": "🚬 Pregunta sobre Índice de Salud",
+                "time": "2020-10-27T15:01:18Z",
+                "kind": "message",
+                "creator": {
+                    "id": "5f96d87332a85836bc7a9967",
+                    "kind": "user",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967"
+                        }
+                    ]
+                },
+                "completed": false
+            }
+        ]
+    },
+    "hasErrors": false
+}

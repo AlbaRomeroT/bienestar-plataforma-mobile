@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="292px" height="648px" viewBox="0 0 292 648" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 8</title>
+    <defs>
+        <linearGradient x1="57.6474461%" y1="73.3957194%" x2="43.1419024%" y2="8.52228703%" id="linearGradient-1">
+            <stop stop-color="#0D6122" offset="0%"></stop>
+            <stop stop-color="#128C31" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Menu-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main-menu-copy" transform="translate(1.000000, 1.000000)">
+            <g id="Group-8" transform="translate(0.000000, -1.000000)">
+                <rect id="bgb-white-menu" fill="url(#linearGradient-1)" x="0" y="0" width="290" height="641"></rect>
+                <g id="curve-2" transform="translate(0.000000, 527.000000)">
+                    <path d="M66.8076898,120 C66.8076898,120 102.205127,120 173,120 C158.443132,39.2121975 100.776465,1.7429948 0,7.59239182 C0,7.59239182 0,57.9080148 0,57.9080148 C0,57.9080148 47.5550165,67.2062972 66.8076898,120 Z" id="Path-16" fill-opacity="0.04" fill="#FFFFFF" transform="translate(86.500000, 63.500000) rotate(-360.000000) translate(-86.500000, -63.500000) "></path>
+                    <path d="M0,0.340245019 C109.205723,-4.14644426 170.539056,35.7401407 184,120" id="Path-17" stroke="#FFFFFF" opacity="0.04"></path>
+                </g>
+                <g id="curve-1" transform="translate(103.000000, 0.000000)">
+                    <path d="M67.2663366,223 C67.2663366,223 122.510891,223 233,223 C210.281188,97.1712103 120.281188,38.8120981 -37,47.9226634 C-37,47.9226634 -37,126.290359 -37,126.290359 C-37,126.290359 37.2188119,140.77264 67.2663366,223 Z" id="Path-16-Copy" fill-opacity="0.04" fill="#FFFFFF" transform="translate(98.000000, 135.000000) scale(-1, 1) rotate(-270.000000) translate(-98.000000, -135.000000) "></path>
+                    <path d="M-50,56.5302152 C120.337187,49.5384577 216.003854,111.695053 237,243" id="Path-17-Copy" stroke="#FFFFFF" opacity="0.12" transform="translate(93.500000, 149.500000) scale(-1, 1) rotate(-270.000000) translate(-93.500000, -149.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

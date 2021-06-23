@@ -1,0 +1,238 @@
+.red-border-class {
+  border: 1px solid red;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red !important;
+}
+
+div#errores {
+  box-sizing: border-box;
+  height: 65px;
+  width: 100%;
+  border: 1px solid #facacf;
+  border-radius: 3px;
+  background-color: #f7d4d7;
+}
+
+div#desc-error {
+  height: 64.91px;
+  color: #611a15;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+  padding-left: 17px;
+  /* padding-right: 0px; */
+  padding-top: 11px;
+}
+
+.label-stacked.sc-ion-label-md-h,
+.label-floating.sc-ion-label-md-h {
+  margin-left: 16px !important;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #a7aaaf;
+}
+
+//Rotar la flecha
+#arrow {
+  transform: rotate(270deg);
+  height: 21px;
+}
+
+#icons {
+  transform: rotate(0deg);
+  font-size: 21px;
+  // margin-top: 15px;
+}
+
+//Full text del select
+#select {
+  max-width: 70% !important;
+}
+
+.desc {
+  margin-top: 10px;
+  height: 42px;
+  color: #333333;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+  text-align: center;
+}
+
+.title {
+  /* height: 25px; */
+  color: #333333;
+  font-family: "Roboto Bold Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 21px;
+  text-align: center;
+  margin-left: 42px;
+  margin-right: 42px;
+  margin-top: 32px;
+}
+
+.fields {
+  border-radius: 3px;
+  margin: 11px 2vw;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.11);
+}
+
+.btnGuardar {
+  color: #006d38;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+  --background: #ffdc5d;
+  height: 36px;
+  width: 200px;
+  text-transform: uppercase;
+}
+
+.segment-label {
+  text-transform: none;
+  color: gray;
+}
+
+div.select-icon {
+  --width: 0px !important;
+  --height: 0px;
+}
+
+.submitted.ion-invalid {
+  border-color: #dc3545;
+}
+
+ion-select::part(icon) {
+  display: none !important;
+}
+
+ion-select {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.margin {
+  margin-left: 14px;
+}
+
+.form-content {
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+ion-grid#guardar {
+  border-style: transparent !important;
+}
+
+ion-list#list {
+  padding-bottom: 0px !important;
+}
+
+.datetime-text {
+  margin-left: 16px !important;
+}
+
+ion-datetime#time {
+  padding-left: 0px;
+}
+
+ion-datetime {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.btnAceptarVolver {
+  color: #006d38;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+  --background: #ffdc5d;
+}
+
+.alert {
+  position: absolute;
+  top: 0px;
+  height: 28px;
+  width: 100%;
+  padding: 0px 0px !important;
+  border: 1px solid transparent;
+  z-index: 10000;
+}
+
+.danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+.danger-check {
+  color: #a94442;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+}
+
+.alert.danger p {
+  color: #611a15;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+  margin: auto;
+  margin-top: 3px;
+  margin-left: 20px;
+}
+
+.legalChecks {
+  margin-top: 30px;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.label_checks {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  color: gray;
+}
+
+.checked {
+  --background-checked: #016d38;
+  --border-color: gray;
+  --border-color-checked: transparent !important;
+}
+
+.input-day,
+.input-month,
+.input-year {
+  text-align: center;
+  border-radius: 3px;
+  border-top: 0;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+  border-left: 1px solid rgba(100, 100, 100, 0.1);
+  border-right: 1px solid rgba(100, 100, 100, 0.1);
+  --placeholder-color: #999999;
+  --placeholder-opacity: 0.8;
+}
+
+.input-day,
+.input-month {
+  margin-right: 20px;
+}
+
+.input-label-birthday {
+  --placeholder-color: #999999;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #999999;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-left: 2vw;
+}

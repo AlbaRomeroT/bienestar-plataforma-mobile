@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.003922 0 0 0 0 0.427451 0 0 0 0 0.219608 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Menu-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ver-más-mis-amigos" transform="translate(-303.000000, -298.000000)">
+            <g id="Group-5" transform="translate(18.000000, 229.000000)">
+                <g id="Group-2" transform="translate(285.000000, 69.000000)">
+                    <rect id="Rectangle" fill="#FFE276" x="0" y="0" width="22" height="22" rx="11"></rect>
+                    <g id="atoms-/-icons-/-outline-/-arrow_right-copy-10" transform="translate(7.000000, 7.000000)" filter="url(#filter-1)">
+                        <g>
+                            <rect id="bg-base" x="0" y="0" width="9" height="9"></rect>
+                            <polygon id="check-symbol" fill="#333333" points="3.13636364 6.32462687 1.34659091 4.56156716 0.75 5.14925373 3.13636364 7.5 8.25 2.46268657 7.65340909 1.875"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

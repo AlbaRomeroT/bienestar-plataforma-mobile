@@ -1,0 +1,297 @@
+<ion-toolbar>
+  <app-background-svg-home
+    [cssClass]="'leitmotiv-profesional-data'"
+  ></app-background-svg-home>
+  <ion-row>
+    <ion-col class="p-20" size="12">
+      <h1 class="title-profesional-data">{{title}}</h1>
+      <div class="border-title-profesional-data"></div>
+    </ion-col>
+    <div class="spin">
+      <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+    </div>
+    <ion-col size="12">
+      <ion-card class="ion-card-profesional-data mt-7">
+        <ion-card-header>
+          <ion-card-subtitle class="subtitle-profesional-data"
+            >{{subtitle}}</ion-card-subtitle
+          >
+        </ion-card-header>
+        <ion-card-content>
+          <span class="required-fields">
+            * Todos los campos son obligatorios
+          </span>
+          <form [formGroup]="profesionalForm" (ngSubmit)="next()" novalidate>
+            <ion-list>
+              <ion-label
+                position="stacked"
+                class="labels ok"
+                *ngIf="jobStatus.value"
+              >
+                ¿Seleccione su situación laboral?
+              </ion-label>
+              <ion-item lines="none">
+                <ion-select
+                  slot="start"
+                  placeholder="¿Seleccione su situación laboral?"
+                  class="ion-select"
+                  cancelText="CANCELAR"
+                  okText="ACEPTAR"
+                  [interfaceOptions]="selectJobStatusOptions"
+                  (ionChange)="onJobStatusChange()"
+                  formControlName="jobStatus"
+                  interface="alert"
+                  mode="ios"
+                >
+                  <ion-select-option
+                    *ngFor="let status of jobStatuses"
+                    value="{{status.id}}"
+                  >
+                    {{status.name}}
+                  </ion-select-option>
+                </ion-select>
+              </ion-item>
+
+              <ion-label
+                position="stacked"
+                class="labels"
+                [ngClass]="{'ok': hasArl.value}"
+              >
+                ¿Tiene ARL?
+              </ion-label>
+
+              <ion-segment class="arl-segment" formControlName="hasArl">
+                <ion-segment-button
+                  class="arl-segment-btn-si"
+                  value="true"
+                  layout="icon-start"
+                  lines="none"
+                >
+                  <ion-img
+                    [src]="hasArl.value == 'true'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>Si</ion-label>
+                </ion-segment-button>
+                <ion-segment-button
+                  class="arl-segment-btn-no"
+                  value="false"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="hasArl.value == 'false'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>No</ion-label>
+                </ion-segment-button>
+              </ion-segment>
+
+              <ion-label
+                position="stacked"
+                class="labels"
+                [ngClass]="{'ok': hasBolivarArl.value}"
+              >
+                ¿Cuál es su ARL?
+              </ion-label>
+
+              <ion-segment
+                class="question-arl-segment"
+                formControlName="hasBolivarArl"
+              >
+                <ion-segment-button
+                  class="secure-segment-btn-si"
+                  value="true"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="hasBolivarArl.value == 'true'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>ARL Bolívar</ion-label>
+                </ion-segment-button>
+                <ion-segment-button
+                  class="secure-segment-btn-no"
+                  value="false"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="hasBolivarArl.value == 'false'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>Otra ARL</ion-label>
+                </ion-segment-button>
+              </ion-segment>
+
+              <ion-label
+                position="stacked"
+                class="labels"
+                *ngIf="isEmployee"
+                [ngClass]="{'ok': worksInHealthSector.value}"
+              >
+                ¿Trabaja en el sector salud?
+              </ion-label>
+
+              <ion-segment
+                class="sector-salud-segment"
+                formControlName="worksInHealthSector"
+                *ngIf="isEmployee"
+                (ionChange)="onWorksInHealthSectorChange()"
+              >
+                <ion-segment-button
+                  class="sector-salud-segment-btn-si"
+                  value="true"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="worksInHealthSector.value == 'true'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>Si</ion-label>
+                </ion-segment-button>
+                <ion-segment-button
+                  class="sector-salud-segment-btn-no"
+                  value="false"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="worksInHealthSector.value == 'false'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>No</ion-label>
+                </ion-segment-button>
+              </ion-segment>
+
+              <ion-label
+                position="stacked"
+                class="labels ok"
+                *ngIf="isEmployee && companyName.value"
+              >
+                ¿En cuál empresa labora?
+              </ion-label>
+              <ion-item *ngIf="isEmployee">
+                <ion-input
+                  type="text"
+                  name="name"
+                  placeholder="¿En cuál empresa labora?"
+                  formControlName="companyName"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+
+              <ion-label
+                position="stacked"
+                class="labels ok"
+                *ngIf="isEmployeeOfHealthSector && position.value"
+              >
+                ¿Cuál es su cargo?
+              </ion-label>
+              <ion-item *ngIf="isEmployeeOfHealthSector">
+                <ion-select
+                  slot="start"
+                  placeholder="¿Cuál es su cargo?"
+                  [interfaceOptions]="selectPositionOptions"
+                  cancelText="CANCELAR"
+                  okText="ACEPTAR"
+                  formControlName="position"
+                  interface="alert"
+                  mode="ios"
+                >
+                  <ion-select-option
+                    *ngFor="let item of positions"
+                    value="{{item.id}}"
+                  >
+                    {{item.name}}
+                  </ion-select-option>
+                </ion-select>
+              </ion-item>
+
+              <ion-label
+                position="stacked"
+                class="labels ok"
+                *ngIf="isEmployeeOfHealthSector && jobArea.value"
+              >
+                ¿Cuál es su área de trabajo?
+              </ion-label>
+              <ion-item *ngIf="isEmployeeOfHealthSector">
+                <ion-select
+                  slot="start"
+                  placeholder="¿Cuál es su área de trabajo?"
+                  [interfaceOptions]="selectJobAreaOptions"
+                  cancelText="CANCELAR"
+                  okText="ACEPTAR"
+                  formControlName="jobArea"
+                  interface="alert"
+                  mode="ios"
+                >
+                  <ion-select-option
+                    *ngFor="let item of jobAreas"
+                    value="{{item.id}}"
+                  >
+                    {{item.name}}
+                  </ion-select-option>
+                </ion-select>
+              </ion-item>
+
+              <ion-label position="stacked" class="labels ok" *ngIf="eps.value">
+                ¿Cuál es su EPS?
+              </ion-label>
+              <ion-item>
+                <ion-select
+                  slot="start"
+                  placeholder="¿Cuál es su EPS?"
+                  [interfaceOptions]="selectEpsOptions"
+                  cancelText="CANCELAR"
+                  okText="ACEPTAR"
+                  formControlName="eps"
+                  interface="alert"
+                  mode="ios"
+                >
+                  <ion-select-option
+                    *ngFor="let item of epss"
+                    value="{{item.id_eps}}"
+                  >
+                    {{item.name}}
+                  </ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-list>
+
+            <ng-container>
+              <span *ngIf="!profesionalForm.valid" class="error-message">
+                * Para continuar debe llenar todos los campos
+              </span>
+              <ion-list class="ion-list-content-btns">
+                <ion-row>
+                  <ion-col size="6">
+                    <ion-button
+                      type="button"
+                      fill="clear"
+                      class="btn"
+                      class="button-before"
+                      (click)="previous()"
+                    >
+                      REGRESAR
+                    </ion-button>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-button
+                      type="submit"
+                      fill="clear"
+                      class="btn"
+                      class="button-next"
+                      [disabled]="!profesionalForm.valid"
+                    >
+                      SIGUIENTE
+                    </ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-list>
+            </ng-container>
+          </form>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-toolbar>

@@ -1,0 +1,118 @@
+<app-header></app-header>
+<ion-row class="header-datos">
+  <app-back-button-updated class="back"></app-back-button-updated>
+  <app-widget-header class="title" [title]="title"></app-widget-header>
+</ion-row>
+<ion-content class="ion-content">
+  <ion-grid class="leitmotiv-background">
+    <ion-row >
+
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header class="purpose-list-header actives">
+            <ion-card-title class="text-titulo">Dos cosas que debe conocer de su índice de bienestar</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="card-content">
+            <div class="line-union-bulets"></div>
+            <ion-row>
+              <ion-col size="2">
+                <div>
+                  <ion-img src="/assets/wellness-info/bulet-uno.svg"></ion-img>
+                </div>
+              </ion-col>
+              <ion-col size="10">
+                <div>
+                  <p class="pregunta">¿Qué es el índice de bienestar?
+                  </p>
+                </div>
+                <div>
+                  <p class="text-pregunta">
+                    Es un número entre 0 y 1.000 calculado científicamente con base en su estado de salud (cuerpo), cómo
+                    se siente (mente) y cómo vive (hábitos). Simplificamos su salud para que pueda entenderla y
+                    mejorarla.
+                  </p>
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="2">
+                <div>
+                  <ion-img src="/assets/wellness-info/bulet-dos.svg"></ion-img>
+                </div>
+              </ion-col>
+              <ion-col size="10">
+                <div>
+                  <p class="pregunta">¿Cómo se mide mi salud?
+                  </p>
+                </div>
+                <div class="tabla">
+                  <ion-row class="borde">
+                    <ion-col size="5" class="columna">
+                      <p class="tex-col1">Deficiente:</p>
+                    </ion-col>
+                    <ion-col size="7" class="columna">
+                      <p class="tex-col2">Menor de 479</p>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row class="borde">
+                    <ion-col size="5" class="columna">
+                      <p class="tex-col1">Regular:</p>
+                    </ion-col>
+                    <ion-col size="7" class="columna">
+                      <p class="tex-col2">De 480 a 549</p>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row class="borde">
+                    <ion-col size="5" class="columna">
+                      <p class="tex-col1">Buena:</p>
+                    </ion-col>
+                    <ion-col size="7" class="columna">
+                      <p class="tex-col2">De 550 a 609</p>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row class="borde">
+                    <ion-col size="5" class="columna">
+                      <p class="tex-col1">Muy buena:</p>
+                    </ion-col>
+                    <ion-col size="7" class="columna">
+                      <p class="tex-col2">De 610 a 679</p>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row class="borde">
+                    <ion-col size="5" class="columna">
+                      <p class="tex-col1">Excelente:</p>
+                    </ion-col>
+                    <ion-col size="7" class="columna">
+                      <p class="tex-col2">De 680 a 1.000</p>
+                    </ion-col>
+                  </ion-row>
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row class="indicador-row">
+              <ion-col size="5">
+                <div class="indicador-img">
+                  <ion-img src="/assets/wellness-info/indicador.svg"></ion-img>
+                </div>
+              </ion-col>
+              <ion-col size="7">
+                <div>
+                  <p class="text-pregunta">
+                    Su índice de bienestar se moverá hacia arriba o hacia abajo en tiempo real, dependiendo de los datos que registre de su estado de salud, mente y hábitos.
+                  </p>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" class="boton-save-col">
+        <button  type="button" (click)="goBack()" fill="clear" class="btn">
+                  ENTENDIDO
+                </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

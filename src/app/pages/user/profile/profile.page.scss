@@ -1,0 +1,219 @@
+ion-segment-button::before {
+  border: none;
+}
+
+:host {
+  background-color: #fbfbfb;
+  background-size: 100%;
+}
+
+@media (min-width: 992px), (orientation: landscape) {
+  :host {
+    background: none;
+    background-color: #fbfbfb;
+  }
+}
+
+.color-transparent-class {
+  color: transparent;
+}
+
+.header {
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  background-color: #fbfbfb;
+  height: 45px;
+  .title {
+    color: #1b1b1b;
+    margin-left: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .back {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+.ion-content {
+  --background: #ffffff;
+}
+
+.avatar-center {
+  margin: auto;
+  width: 74px;
+  height: 74px;
+}
+
+.ion-avatar-ion-text {
+  height: 16px;
+  color: #016d38;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.segment-bar {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.ion-segment-tab {
+  text-transform: none;
+  --color-checked: #016d38;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+  .label-transparent {
+    color: transparent;
+  }
+}
+
+.ion-segment-tab::part(indicator) {
+  margin: auto;
+  margin-bottom: 2px;
+  width: 30px;
+}
+
+:host ::ng-deep {
+  .ion-card-ion-card-subtitle {
+    color: #1b1b1b;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: initial;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+
+  .ion-card {
+    border-radius: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+
+  .input-label {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #006e36;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+
+  .input-error {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #de3241;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+
+  .ion-item-ion-input {
+    margin-bottom: 16px;
+    color: #1b1b1b;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
+
+  .ion-select {
+    max-width: 100%;
+    width: 100%;
+    padding-left: -0px;
+    margin-right: 0;
+  }
+}
+
+.ion-checkbox {
+  --background-checked: #016d38 !important;
+}
+
+.ion-radio {
+  --color-checked: #ffdd50 !important;
+}
+
+.ion-item-ion-input {
+  border: solid 1px gray !important;
+  border-radius: 3px !important;
+  background-color: #ffffff !important;
+  height: 47px !important;
+  margin-bottom: 16px !important;
+}
+
+.ion-item-ion-input-no-border {
+  border-bottom: 0.5px solid #e6e6e6;
+  border-radius: 3px !important;
+  background-color: #ffffff !important;
+  height: 47px !important;
+  margin-bottom: 16px !important;
+}
+
+.ion-item-ion-segment {
+  border: none !important;
+  background-color: #ffffff !important;
+  margin-bottom: 20px !important;
+}
+
+.ion-card-ion-label {
+  color: #006e36 !important;
+  font-family: Roboto !important;
+  font-size: 14px !important;
+  letter-spacing: 0 !important;
+}
+
+.ion-card-ion-label-hidden {
+  visibility: hidden;
+  font-family: Roboto !important;
+  font-size: 14px !important;
+  letter-spacing: 0 !important;
+}
+
+.ion-card-ion-card-subtitle {
+  color: #1b1b1b !important;
+  font-family: Roboto !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+.ion-select {
+  max-width: 100% !important;
+  width: 100% !important;
+  direction: ltr !important;
+  padding-left: -0px !important;
+}
+
+.red-border-class {
+  border: 1px solid #de3241;
+  border-radius: 3px !important;
+  background-color: #ffffff !important;
+  height: 47px !important;
+  margin-bottom: 16px !important;
+}
+
+.error-message-validation {
+  color: #de3241 !important;
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-size: 14px !important;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid #de3241 !important;
+}
+
+.ion-input-suffix {
+  position: absolute;
+  left: 0;
+  font-size: 16px !important;
+  top: 12px;
+  color: black;
+  padding-left: 35px;
+  font: inherit;
+}

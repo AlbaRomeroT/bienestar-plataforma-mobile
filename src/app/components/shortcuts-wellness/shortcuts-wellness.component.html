@@ -1,0 +1,98 @@
+<ion-row>
+  <ion-col size="12" class="titulo-inferior">
+    <ion-label (click)="show()">¿Cómo mejorar mi índice de bienestar?</ion-label>
+    <ion-icon class="header-icon" [name]="icono_status" (click)="show()">
+    </ion-icon>
+  </ion-col>
+
+  <ion-grid class="grid" *ngIf="toshow">
+    <ion-row>
+      <ion-col class="first">
+        <ion-row class="header-first">
+          <ion-col size="3" class="header-first__col-one">
+            <ion-row class="header-first__col-one--row">
+              <ion-icon class="header-first__col-one--row" src="/assets/shortcuts-wellness/coach.svg">
+              </ion-icon>
+            </ion-row>
+          </ion-col>
+          <ion-col size="6" class="header-first__col-two">
+            <ion-row class="header-first__col-two--row-one">
+              <span class="header-first__col-two-text" (click)="goTo(1)">Coach</span>
+            </ion-row>
+          </ion-col>
+          <ion-col size="3" class="header-first__col-three">
+            <ion-row class="header-first__col-tree">
+              <ion-icon class="header-first__col-tree" name="chevron-forward-outline" (click)="goTo(1)">
+              </ion-icon>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col class="second">
+        <ion-row class="header-second">
+          <ion-col size="3" class="header-second__col-one">
+            <ion-row class="header-second__col-one--row">
+              <ion-icon class="header-second-icon" src="/assets/shortcuts-wellness/desafios.svg">
+              </ion-icon>
+            </ion-row>
+          </ion-col>
+          <ion-col size="6" class="header-second__col-two">
+            <ion-row class="header-second__col-two--row-one">
+              <span class="header-second__col-two--row-one--text" (click)="goTo(2)">Desafíos</span>
+            </ion-row>
+          </ion-col>
+          <ion-col size="3" class="header-second__col-three">
+            <ion-row class="header-second__col-three">
+              <ion-icon class="header-second__col-three" name="chevron-forward-outline"
+                (click)="goTo(2)"></ion-icon>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="third">
+        <ion-row class="header-third">
+          <ion-col size="3" class="header-third__col-one">
+            <ion-row class="header-third__col-one--row">
+              <ion-icon class="header-third__col-one--row" src="/assets/shortcuts-wellness/logros.svg">
+              </ion-icon>
+            </ion-row>
+          </ion-col>
+          <ion-col size="6" class="header-third__col-two">
+            <ion-row class="header-third__col-two--row-one">
+              <span class="header-third__col-two--row-one" (click)="goTo(3)">Logros</span>
+            </ion-row>
+          </ion-col>
+          <ion-col size="3" class="header-third__col-three">
+            <ion-row class="header-third__col-three--row-one">
+              <ion-icon class="header-third__col-three--row-one" name="chevron-forward-outline" (click)="goTo(3)">
+              </ion-icon>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col class="fourth">
+        <ion-row class="header-fourth">
+          <ion-col size="3" class="header-fourth__col-one">
+            <ion-row class="header-fourth__col-one--row">
+              <ion-icon class="header-fourth__col-one--row" src="/assets/shortcuts-wellness/proposito.svg">
+              </ion-icon>
+            </ion-row>
+          </ion-col>
+          <ion-col size="6" class="header-fourth__col-two">
+            <ion-row class="header-fourth__col-two--row-one">
+              <span class="header-fourth__col-two--row-one" (click)="goTo(4)">Propósitos</span>
+            </ion-row>
+          </ion-col>
+          <ion-col size="3" class="header-fourth__col-three">
+            <ion-row class="header-fourth__col-three--row-one">
+              <ion-icon class="header-fourth__col-three--row-one" name="chevron-forward-outline"
+                (click)="goTo(4)"></ion-icon>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-row>

@@ -1,0 +1,32 @@
+<div class="card-transparent">
+  <ion-grid *ngIf="theres_data && ready && current">
+    <ion-row class="ion-text-center">
+      <ion-col size="6" class="progress-percentage-wrapper-bienestar">
+        <div class="container-progress-percentage">
+          <div class="progress-percentage-bienestar ng-cloak">
+            {{ valor_puntos | number }}
+          </div>
+          <div class="progress-percentage-differences ng-cloak">Puntos</div>
+          <round-progress
+            id="bienestar-with-data"
+            class="round-progress percentageValue"
+            [current]="current"
+            [max]="max"
+            color="#ebcf34"
+            rounded="true"
+            background="#f5f6f9"
+          >
+          </round-progress>
+        </div>
+      </ion-col>
+      <ion-col size="6" class="nivel_progreso">
+        <div class="nivel ng-cloak">
+          Nivel {{nivel}}
+        </div>
+        <div class="nivel_comentario ng-cloak" *ngIf="snivel != ''">
+          Siguiente nivel: <strong class="bold">{{ snivel }}</strong>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

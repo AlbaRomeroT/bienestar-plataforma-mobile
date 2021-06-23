@@ -1,0 +1,12 @@
+<app-header></app-header>
+<ion-content class="content">
+  <div *ngIf="showComponent">
+    <qr-lib-symptom-widget
+      (symptomWidgetEvent)="onSymptomWidgetEvent($event)"
+      [flowType]="flowType"
+      [qrGenerationInfo]="qrGenerationInfo"
+      [docNumber]="docNumber"
+      [env]="env"
+    ></qr-lib-symptom-widget>
+  </div>
+</ion-content>

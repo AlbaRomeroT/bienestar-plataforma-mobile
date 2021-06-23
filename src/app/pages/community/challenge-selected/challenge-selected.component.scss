@@ -1,0 +1,74 @@
+.grid {
+  padding: 0px;
+  background: var(--color-white-0);
+  color: var(--color-black-0);
+  border: 1px solid var(--color-white-7);
+  box-sizing: border-box;
+  --inner-border-width: 0;
+  font-family: var(--global-font-family);
+}
+
+.action-button {
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  --padding-start: 0px;
+  --padding-end: 0px;
+  color: gray;
+}
+
+.avatar {
+  height: 65px;
+  width: 65px;
+  border: 2px solid var(--color-yellow-1);
+  padding-inline-start: 0px;
+}
+
+.text-indicator {
+  position: relative;
+  top: 11px;
+  right: -8px;
+  height: 20px;
+}
+
+.item-inner {
+  border-style: none;
+}
+
+.title {
+  font-family: var(--global-font-family);
+  color: var(--color-black-1);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 17px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.icon-chevron-forward {
+  font-size: 14px;
+  margin-top: 2vw;
+}
+
+.content {
+  color: var(--color-black-1);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 19px;
+  position: absolute;
+  bottom: 16px;
+  font-family: var(--global-font-family);
+}
+
+.min-content-label {
+  min-height: 75px;
+}
+
+.border-radius-bottom {
+  border-radius: 0px 0px 8px 8px;
+}

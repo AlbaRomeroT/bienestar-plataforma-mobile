@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="header">
+    <span class="question">{{ question.question }}</span>
+  </div>
+  <div class="content">
+    <ion-range
+      class="range"
+      [min]="question.response[0].min"
+      [max]="question.response[0].max"
+      (ionChange)="onChange()"
+      step="1"
+      snaps="true"
+      ticks="true"
+      [(ngModel)]="question.value"
+    >
+    </ion-range>
+  </div>
+  <div class="footer">
+    <span class="left">Para nada</span>
+    <span class="right">Mucho</span>
+  </div>
+</div>

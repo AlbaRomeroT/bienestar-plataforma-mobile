@@ -1,0 +1,168 @@
+<app-header></app-header>
+<ion-row class="header-datos-sueno">
+  <app-back-button-updated class="back"></app-back-button-updated>
+  <app-widget-header class="title" [title]="title"></app-widget-header>
+</ion-row>
+<ion-content class="ion-content">
+  <form [formGroup]="sleepForm" (ngSubmit)="guardar()" novalidate>
+    <app-background-svg-home [cssClass]="'leitmotiv-activity'" [routeImage]="'/assets/sleep/fondo.svg'">
+    </app-background-svg-home>
+
+    <ion-row>
+      <ion-col size="12">
+        <div class="card-nota-obligatoria">Los campos marcados con * son obligatorios</div>
+        <ion-card class="ion-card">
+          <ion-card-header class="card-header">
+            <ion-card-title class="card-title">
+              Ingrese las fechas en las que se acost&oacute; y
+                despert&oacute; para llevar su registro de sue&ntilde;o
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+
+            <ion-list>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-label [ngClass]="{
+                'ok': !sleepForm.get('time').hasError('required')
+              }" position="stacked" text-wrap class="label " no-padding>
+                    Me acost&eacute;*
+                  </ion-label>
+                  <ion-item [ngClass]="{
+                'ion-item-ion-input-no-border': sleepinfo?.time,
+                'ion-item-ion-input': !sleepinfo?.time
+              }" lines="none">
+
+                    <ion-datetime 
+                    name="time" 
+                    placeholder="Seleccione la fecha y la hora"
+                    displayFormat="DD/MMM/YYYY - HH:mm a" 
+                    formControlName="time" 
+                    monthShortNames="Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic"
+                    doneText="GUARDAR" cancelText="CANCELAR"
+                    (ionChange)="validarForm()" 
+                    (click)="initTime()"
+                    required>
+                    </ion-datetime>
+                    <ion-icon src="../assets/sleep/icon-calendar.svg" slot="end" class="icon-phone">
+                    </ion-icon>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="12">
+                  <ion-label [ngClass]="{
+                'ok': !sleepForm.get('endTime').hasError('required')
+              }" position="stacked" text-wrap class="label " no-padding>
+                    Me despert&eacute;*
+                  </ion-label>
+                  <ion-item [ngClass]="{
+                'ion-item-ion-input-no-border': sleepinfo?.endTime,
+                'ion-item-ion-input': !sleepinfo?.endTime
+              }" lines="none">
+                    <ion-datetime 
+                    name="endTime" 
+                    formControlName="endTime"
+                      placeholder="Seleccione la fecha y la hora" 
+                      displayFormat="DD/MMM/YYYY - HH:mm a"
+                      required 
+                      monthShortNames="Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic" 
+                      doneText="GUARDAR" cancelText="CANCELAR"
+                      (ionChange)="validarForm()"
+                      (click)="initEndTime()"
+                      required>
+                    </ion-datetime>
+                    <ion-icon src="../assets/sleep/icon-calendar.svg" slot="end" class="icon-phone">
+                    </ion-icon>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="12">
+                  <ion-label [ngClass]="{
+                'ok': sleepForm.get('bed').value 
+              }" position="stacked" text-wrap class="label mb-5">
+                    Tiempo en la cama
+                  </ion-label>
+                  <ion-item [ngClass]="{
+                'ion-item-ion-input-no-border': sleepinfo?.bed,
+                'ion-item-ion-input': !sleepinfo?.bed
+              }" lines="none">
+                    <ion-datetime 
+                    name="bed" 
+                    placeholder="Ej: 08:00" 
+                    displayFormat="HH:mm" 
+                    formControlName="bed"
+                    doneText="GUARDAR" cancelText="CANCELAR"
+                    readonly
+                      >
+                    </ion-datetime>
+                    <ion-icon src="../assets/sleep/icon-bed.svg" slot="end" class="icon-phone">
+                    </ion-icon>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="12">
+                  <ion-label [ngClass]="{
+                'ok': !sleepForm.get('asleep').hasError('required') && 
+                sleepForm.get('asleep').dirty
+              }" position="stacked" text-wrap class="label mb-5">
+                    Horas de sue&ntilde;o*
+                  </ion-label>
+                  <ion-item [ngClass]="{
+                'ion-item-ion-input-no-border': sleepinfo?.asleep,
+                'ion-item-ion-input': !sleepinfo?.asleep
+              }" lines="none">
+                    <ion-datetime 
+                    name="asleep" 
+                    placeholder="Ej: 08:00"
+                      displayFormat="HH:mm" 
+                      formControlName="asleep" 
+                      (ionChange)="validarForm()" 
+                      doneText="GUARDAR" cancelText="CANCELAR"
+                      equired>
+                    </ion-datetime>
+                    <ion-icon src="../assets/sleep/icon-horas.svg" slot="end" class="icon-phone">
+                    </ion-icon>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="12">
+                  <ion-label position="stacked" text-wrap 
+                  [ngClass]="{
+                'ok': !sleepForm.get('awoken').hasError('required') && sleepForm.get('awoken').dirty
+              }" class="label">
+                    Veces que se desperto*
+                  </ion-label>
+                  <ion-item [ngClass]="{
+                'ion-item-ion-input-no-border': sleepinfo?.awoken,
+                'ion-item-ion-input': !sleepinfo?.awoken
+              }" lines="none">
+                    <ion-input 
+                    type="text" 
+                    name="awoken" 
+                    inputmode="numeric"
+                    placeholder="Ej: 0"
+                    formControlName="awoken" 
+                    (ionFocus)="checkInputFocus()" 
+                    (ionBlur)="checkInputBlur()"
+                    (ionChange)="validarForm()" 
+                    pattern="[0-9]*"
+                    required>
+                    </ion-input>
+                    <ion-icon src="../assets/sleep/icon-durmiendo.svg" slot="end" class="icon-phone">
+                    </ion-icon>
+                  </ion-item>
+                </ion-col>
+                <div class="alert-dangerous" *ngIf="awokenError">
+                  <p>El campo solo acepta valores enteros</p>
+                 </div>
+                <ion-col size="12" class="boton-save-col">
+                <button [ngClass]="{'button-disabled': modalIsActive}" type="submit" fill="clear" class="btn"
+                  class="button-save" [disabled]="modalIsActive">
+                  GUARDAR
+                </button>
+              </ion-col>
+              </ion-row>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

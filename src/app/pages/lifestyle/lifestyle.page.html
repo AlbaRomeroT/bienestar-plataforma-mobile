@@ -1,0 +1,16 @@
+<app-header></app-header>
+<ion-row class="header-lifestyle">
+  <app-back-button-updated class="back"></app-back-button-updated>
+  <app-widget-header class="title" [title]="title"></app-widget-header>
+</ion-row>
+<ion-content class="content">
+  <div class="graph-content">
+    <app-histogram-chart
+      [data]="healthScoreData"
+      [type]="'lifestyle'"
+    ></app-histogram-chart>
+  </div>
+  <app-lifestyle-question
+    (messageEvent)="receiveMessage($event)"
+  ></app-lifestyle-question>
+</ion-content>

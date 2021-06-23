@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="329px" height="161px" viewBox="0 0 329 161" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 17</title>
+    <defs>
+        <linearGradient x1="50.24671%" y1="40.7915703%" x2="87.5626193%" y2="53.8987421%" id="linearGradient-1">
+            <stop stop-color="#FFDD00" offset="0.0712626689%"></stop>
+            <stop stop-color="#02D46F" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-4.5%" y="-10.6%" width="109.0%" height="105.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFDD00" offset="0%"></stop>
+            <stop stop-color="#0AD46B" offset="100%"></stop>
+        </linearGradient>
+        <path d="M5,0 L104,0 C106.761424,-7.86517626e-15 109,2.23857625 109,5 L109,13.7783123 L109,13.7783123 L113,19 L109,24.3983921 L109,33 C109,35.7614237 106.761424,38 104,38 L5,38 C2.23857625,38 3.38176876e-16,35.7614237 0,33 L0,5 C-3.38176876e-16,2.23857625 2.23857625,-1.26909153e-15 5,0 Z" id="path-4"></path>
+        <filter x="-6.2%" y="-13.2%" width="112.4%" height="136.8%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.077114292 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Menu-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mi-estilo-de-vida" transform="translate(-16.000000, -140.000000)">
+            <g id="Group-17" transform="translate(16.000000, 140.000000)">
+                <g id="Group-12" transform="translate(18.000000, 0.000000)" stroke="#F4F4F4">
+                    <g id="Group-10" transform="translate(0.000000, 0.500000)">
+                        <line x1="1.61499882" y1="22.5" x2="310.614999" y2="22.5" id="Path-21" opacity="0.587867374"></line>
+                        <line x1="1.61499882" y1="42" x2="310.614999" y2="42" id="Path-21-Copy" opacity="0.587867374"></line>
+                        <line x1="1.61499882" y1="62" x2="310.614999" y2="62" id="Path-21-Copy-2" opacity="0.587867374"></line>
+                        <line x1="1.61499882" y1="82" x2="310.614999" y2="82" id="Path-21-Copy-3" opacity="0.587867374"></line>
+                        <line x1="1.61499882" y1="102" x2="310.614999" y2="102" id="Path-21-Copy-4" opacity="0.587867374"></line>
+                        <line x1="1.61499882" y1="122" x2="310.614999" y2="122" id="Path-21-Copy-5" opacity="0.587867374"></line>
+                        <line x1="1.5" y1="142" x2="310.614999" y2="141.5" id="Path-21-Copy-6"></line>
+                        <line x1="1.5" y1="142" x2="1.5" y2="1" id="Path-21-Copy-7"></line>
+                    </g>
+                </g>
+                <g id="Group-14" transform="translate(0.000000, 9.000000)" fill="#999999" font-family="Roboto-Condensed, Roboto" font-size="10" font-style="condensed" font-weight="normal">
+                    <g id="Group-46" transform="translate(0.000000, 118.000000)">
+                        <text id="520">
+                            <tspan x="0.765625" y="9">520</tspan>
+                        </text>
+                    </g>
+                    <text id="580">
+                        <tspan x="0.765625" y="9">580</tspan>
+                    </text>
+                    <text id="540">
+                        <tspan x="0.765625" y="88">540</tspan>
+                    </text>
+                    <text id="560">
+                        <tspan x="0.765625" y="48">560</tspan>
+                    </text>
+                </g>
+                <g id="Group-13" transform="translate(33.000000, 148.000000)" fill="#999999" font-family="Roboto-Condensed, Roboto" font-size="10" font-style="condensed" font-weight="normal">
+                    <g id="Group-52">
+                        <text id="29-jul">
+                            <tspan x="0.00146484375" y="9">29 jul</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-51" transform="translate(43.000000, 0.000000)">
+                        <text id="30-jul">
+                            <tspan x="0.00146484375" y="9">30 jul</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-50" transform="translate(85.000000, 0.000000)">
+                        <text id="31-jul">
+                            <tspan x="0.00146484375" y="9">31 jul</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-49" transform="translate(126.000000, 0.000000)">
+                        <text id="01-Ago">
+                            <tspan x="0.0717773438" y="9">01 Ago</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-48" transform="translate(168.000000, 0.500000)">
+                        <text id="02-Ago">
+                            <tspan x="0.0717773438" y="9">02 Ago</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-47" transform="translate(212.000000, 0.000000)">
+                        <text id="03-Ago">
+                            <tspan x="0.0717773438" y="9">03 Ago</tspan>
+                        </text>
+                    </g>
+                    <text id="04-Ago">
+                        <tspan x="254.071777" y="9">04 Ago</tspan>
+                    </text>
+                </g>
+                <g id="Group-15" transform="translate(41.000000, 30.000000)">
+                    <path d="M4.5,44.5 L35.8766381,85.3625984 C39.9129077,90.6191356 47.4462161,91.608358 52.7027533,87.5720883 C54.1306885,86.4756381 55.2936157,85.0719445 56.1053743,83.4650066 L83.567169,29.1022938 C86.5554276,23.1868085 93.7733382,20.8138224 99.6888235,23.802081 C101.434945,24.6841494 102.938942,25.9797357 104.069829,27.5760059 L124.635398,56.6047175 C128.466602,62.0125388 135.956312,63.2906394 141.364134,59.4594353 C141.55926,59.3211966 141.750211,59.1771562 141.93673,59.027507 L163.76287,41.5158366 C168.932144,37.368396 176.484834,38.1967554 180.632274,43.3660293 C181.087645,43.9335929 181.490448,44.5413995 181.835705,45.1819372 L206.664203,91.2449932 C209.808746,97.0789035 217.08722,99.2590669 222.92113,96.1145246 C225.432957,94.7606222 227.380124,92.5559493 228.413267,89.8960736 L261,6 L261,6" id="Path-19" stroke="url(#linearGradient-1)" stroke-width="5" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                    <path d="M4.5,57.5 L35.8766381,98.3625984 C39.9129077,103.619136 47.4462161,104.608358 52.7027533,100.572088 C54.1306885,99.4756381 55.2936157,98.0719445 56.1053743,96.4650066 L83.567169,42.1022938 C86.5554276,36.1868085 93.7733382,33.8138224 99.6888235,36.802081 C101.434945,37.6841494 102.938942,38.9797357 104.069829,40.5760059 L124.635398,69.6047175 C128.466602,75.0125388 135.956312,76.2906394 141.364134,72.4594353 C141.55926,72.3211966 141.750211,72.1771562 141.93673,72.027507 L163.76287,54.5158366 C168.932144,50.368396 176.484834,51.1967554 180.632274,56.3660293 C181.087645,56.9335929 181.490448,57.5413995 181.835705,58.1819372 L206.664203,104.244993 C209.808746,110.078904 217.08722,112.259067 222.92113,109.114525 C225.432957,107.760622 227.380124,105.555949 228.413267,102.896074 L261,19 L261,19" id="Path-19-Copy" stroke="#E5E0E0" stroke-width="5" stroke-linecap="round" stroke-linejoin="bevel" filter="url(#filter-2)"></path>
+                    <circle id="Oval-2-Copy-4" stroke="#FFFFFF" fill="#FFDC5D" cx="4.5" cy="44.5" r="4.5"></circle>
+                    <circle id="Oval-2-Copy-5" fill="#FFFFFF" cx="4.5" cy="44.5" r="2.5"></circle>
+                    <g id="Group-16" transform="translate(43.000000, 86.000000)">
+                        <circle id="Oval-2-Copy-4" stroke="#FFFFFF" fill="#FFDC5D" cx="4.5" cy="4.5" r="4.5"></circle>
+                        <circle id="Oval-2-Copy-5" fill="#FFFFFF" cx="4.5" cy="4.5" r="2.5"></circle>
+                    </g>
+                    <circle id="Oval-2-Copy-4" stroke="#FFFFFF" fill="#FFDC5D" cx="93.5" cy="22.5" r="4.5"></circle>
+                    <circle id="Oval-2-Copy-5" fill="#FFFFFF" cx="93.5" cy="22.5" r="2.5"></circle>
+                    <circle id="Oval-2-Copy-4" stroke="#FFFFFF" fill="#FFDC5D" cx="134.5" cy="62.5" r="4.5"></circle>
+                    <circle id="Oval-2-Copy-5" fill="#FFFFFF" cx="134.5" cy="62.5" r="2.5"></circle>
+                    <circle id="Oval-2-Copy-4" stroke="#FFFFFF" fill="#FFDC5D" cx="172.5" cy="37.5" r="4.5"></circle>
+                    <circle id="Oval-2-Copy-5" fill="#FFFFFF" cx="172.5" cy="37.5" r="2.5"></circle>
+                    <circle id="Oval-2-Copy-4" stroke="#FFFFFF" fill="#FFDC5D" cx="219.5" cy="96.5" r="4.5"></circle>
+                    <circle id="Oval-2-Copy-5" fill="#FFFFFF" cx="219.5" cy="96.5" r="2.5"></circle>
+                    <circle id="Oval-2-Copy-4" stroke="#FFFFFF" fill="#FFDC5D" cx="261.5" cy="4.5" r="4.5"></circle>
+                    <circle id="Oval-2-Copy-5" fill="#FFFFFF" cx="261.5" cy="4.5" r="2.5"></circle>
+                </g>
+                <g id="Group-4" transform="translate(41.000000, 70.000000)"></g>
+                <g id="Group-4-Copy" transform="translate(84.000000, 116.000000)"></g>
+                <g id="Group-4-Copy-2" transform="translate(130.000000, 48.000000)"></g>
+                <g id="Group-4-Copy-3" transform="translate(171.000000, 88.000000)"></g>
+                <g id="Group-4-Copy-4" transform="translate(209.000000, 63.000000)"></g>
+                <g id="Group-4-Copy-5" transform="translate(256.000000, 122.000000)"></g>
+                <g id="Group-4-Copy-6" transform="translate(298.000000, 30.000000)"></g>
+                <g id="Group-25" transform="translate(182.000000, 15.000000)">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <path stroke="url(#linearGradient-3)" stroke-width="1" d="M104,0.5 C105.242641,0.5 106.367641,1.00367966 107.181981,1.81801948 C107.99632,2.63235931 108.5,3.75735931 108.5,5 L108.5,5 L108.5,13.9478127 L112.373992,19.0050063 L108.5,24.2333377 L108.5,33 C108.5,34.2426407 107.99632,35.3676407 107.181981,36.1819805 C106.367641,36.9963203 105.242641,37.5 104,37.5 L104,37.5 L5,37.5 C3.75735931,37.5 2.63235931,36.9963203 1.81801948,36.1819805 C1.00367966,35.3676407 0.5,34.2426407 0.5,33 L0.5,33 L0.5,5 C0.5,3.75735931 1.00367966,2.63235931 1.81801948,1.81801948 C2.63235931,1.00367966 3.75735931,0.5 5,0.5 L5,0.5 Z" stroke-linejoin="square" fill="#FBFBFB" fill-rule="evenodd"></path>
+                    </g>
+                    <g id="Group-24" transform="translate(8.000000, 6.000000)" font-family="Roboto-Bold, Roboto" font-size="10" font-weight="bold">
+                        <text id="+20" fill="#006D31">
+                            <tspan x="38.0356445" y="24">+20</tspan>
+                        </text>
+                        <text id="Puntuación-hoy:-570" fill="#333333">
+                            <tspan x="0.4453125" y="10">Puntuación hoy: 570</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

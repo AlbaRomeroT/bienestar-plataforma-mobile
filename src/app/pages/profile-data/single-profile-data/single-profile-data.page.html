@@ -1,0 +1,181 @@
+<ion-toolbar>
+  <app-background-svg-home
+    [cssClass]="'leitmotiv-profile-data'"
+  ></app-background-svg-home>
+  <ion-row>
+    <ion-col class="p-20" size="12">
+      <h1 class="title-profile-data">{{title}}</h1>
+      <div class="border-title-profile-data"></div>
+    </ion-col>
+
+    <div class="spin">
+      <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+    </div>
+
+    <ion-col size="12">
+      <ion-card class="ion-card-profile-data mt-7">
+        <ion-card-header>
+          <ion-card-subtitle class="subtitle-profile-data"
+            >{{subtitle}}</ion-card-subtitle
+          >
+        </ion-card-header>
+        <ion-card-content>
+          <span class="required-fields">
+            * Todos los campos son obligatorios
+          </span>
+          <form [formGroup]="profileForm" (ngSubmit)="next()" novalidate>
+            <ion-list>
+              <ion-label class="label-ok" *ngIf="birthday.value"
+                >Fecha nacimiento</ion-label
+              >
+              <ion-item lines="none">
+                <ion-input
+                  class="input-day"
+                  type="number"
+                  max="31"
+                  min="1"
+                  name="day"
+                  formControlName="day"
+                  placeholder="Día"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                ></ion-input>
+                <ion-input
+                  class="input-month"
+                  type="number"
+                  max="12"
+                  min="1"
+                  name="month"
+                  formControlName="month"
+                  placeholder="Mes"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                ></ion-input>
+                <ion-input
+                  class="input-year"
+                  type="number"
+                  max="3000"
+                  min="1000"
+                  name="year"
+                  formControlName="year"
+                  placeholder="Año"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                ></ion-input>
+              </ion-item>
+              <ion-item
+                [hidden]="true"
+                lines="none"
+                class="item-date"
+                [ngClass]="{'submitted': birthday.value}"
+              >
+                <ion-datetime
+                  name="date"
+                  display-format="DD MMM YYYY"
+                  monthShortNames="Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, 
+                              Septiembre, Octubre, Noviembre, Diciembre"
+                  placeholder="Fecha nacimiento"
+                  cancelText="CANCELAR"
+                  doneText="ACEPTAR"
+                  formControlName="birthday"
+                >
+                </ion-datetime>
+                <ion-icon
+                  src="../assets/profile/icon/icon_calendar.svg"
+                  slot="end"
+                ></ion-icon>
+              </ion-item>
+              <ion-label *ngFor="let error of errorMessages.birthday">
+                <p
+                  class="error-message"
+                  *ngIf="birthday.hasError(error.type) && (birthday.dirty || birthday.value)"
+                >
+                  {{ error.message }}
+                </p>
+              </ion-label>
+              <br />
+
+              <ion-label class="label-ok" *ngIf="phone.value"
+                >Número de celular</ion-label
+              >
+              <ion-item
+                lines="none"
+                class="item-cellphone"
+                [ngClass]="{'submitted': phone.value}"
+              >
+                <ion-input
+                  type="text"
+                  placeholder="Número de celular"
+                  formControlName="phone"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                ></ion-input>
+                <ion-icon
+                  src="../assets/profile/icon/icon_telefono.svg"
+                  slot="end"
+                >
+                </ion-icon>
+              </ion-item>
+              <ion-label *ngFor="let error of errorMessages.phone">
+                <p
+                  class="error-message"
+                  *ngIf="phone.hasError(error.type) && (phone.dirty || phone.value)"
+                >
+                  {{ error.message }}
+                </p>
+              </ion-label>
+              <br />
+
+              <ion-label
+                position="stacked"
+                [ngClass]="{'label-ok': gender.value}"
+                >Sexo</ion-label
+              >
+              <ion-segment class="sex-segment" formControlName="gender">
+                <ion-segment-button
+                  class="sex-segment-btn-masculino"
+                  value="M"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="gender.value == 'M'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>Masculino</ion-label>
+                </ion-segment-button>
+                <ion-segment-button
+                  class="sex-segment-btn-femenino"
+                  value="F"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="gender.value == 'F'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>Femenino</ion-label>
+                </ion-segment-button>
+              </ion-segment>
+            </ion-list>
+
+            <ng-container>
+              <span *ngIf="!profileForm.valid" class="error-message">
+                * Para continuar debe llenar todos los campos
+              </span>
+              <ion-list class="ion-list-content-btn-next">
+                <ion-button
+                  type="submit"
+                  [disabled]="!profileForm.valid"
+                  fill="clear"
+                  class="btn"
+                  class="button-next"
+                >
+                  SIGUIENTE
+                </ion-button>
+              </ion-list>
+            </ng-container>
+          </form>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-toolbar>

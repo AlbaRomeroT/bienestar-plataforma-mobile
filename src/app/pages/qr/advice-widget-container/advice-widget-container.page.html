@@ -1,0 +1,19 @@
+<app-header></app-header>
+<ion-content class="content">
+  <div *ngIf="showComponent">
+    <qr-lib-advice-widget
+      [docNumber]="docNumber"
+      [isDaviviendaEmployee]="isDaviviendaEmployee"
+      [hasBolivarPolicy]="hasBolivarPolicy"
+      [hasBolivarArl]="hasBolivarArl"
+      [isFromHealthSector]="isFromHealthSector"
+      [qrColor]="qrColor"
+      [userName]="userName"
+      [age]="age"
+      [name_arl]="name_arl"
+      [env]="env"
+      (adviceWidgetEvent)="onAdviceWidgetEvent($event)"
+      (adviceWidgetContactEvent)="onAdviceWidgetContactEvent($event)"
+    ></qr-lib-advice-widget>
+  </div>
+</ion-content>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="389px" viewBox="0 0 360 389" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>leitmotiv</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="360" height="389"></rect>
+        <linearGradient x1="92.7451063%" y1="10.7343443%" x2="7.64216214%" y2="97.5140525%" id="linearGradient-3">
+            <stop stop-color="#014A26" offset="0.0448690878%"></stop>
+            <stop stop-color="#0D6122" offset="15.6962627%"></stop>
+            <stop stop-color="#128C31" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="98.3778058%" y1="76.0296436%" x2="4.72478624%" y2="5.49950024%" id="linearGradient-4">
+            <stop stop-color="#014A26" offset="0.0448690878%"></stop>
+            <stop stop-color="#0D6122" offset="15.6962627%"></stop>
+            <stop stop-color="#128C31" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="25.4047028%" y1="37.6472758%" x2="96.5638674%" y2="71.6835217%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.167477054" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Menu-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bienestar-Home" transform="translate(0.000000, -200.000000)">
+            <g id="leitmotiv" transform="translate(0.000000, 200.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g mask="url(#mask-2)">
+                    <g transform="translate(182.000000, 194.500000) scale(1, -1) translate(-182.000000, -194.500000) translate(-4.000000, -3.000000)">
+                        <path d="M2.46165229,49.4080059 C47.5589167,26.2575851 106.573328,11.6503853 179.504886,5.58640659 C252.436444,-0.477572162 316.545518,-0.528373017 371.832107,5.43400402 L372,389 C307.805028,328.671501 245.516746,293.37142 185.135156,283.099756 C124.753566,272.828091 63.0418473,271.564583 0,279.30923 L2.46165229,49.4080059 Z" id="Rectangle" fill="url(#linearGradient-3)" transform="translate(186.000000, 195.000000) scale(1, -1) translate(-186.000000, -195.000000) "></path>
+                        <path d="M2.46165229,45.3368247 C39.5660762,23.7121329 94.5840671,9.86779757 167.515625,3.80381883 C240.447183,-2.26015992 308.552677,-1.07382525 371.832107,7.36282285 L372,390.928819 C307.805028,330.60032 245.516746,295.300239 185.135156,285.028574 C124.753566,274.75691 63.0418473,273.493402 0,281.238049 L2.46165229,45.3368247 Z" id="Rectangle-Copy" fill="url(#linearGradient-4)" transform="translate(186.000000, 195.464409) scale(1, -1) translate(-186.000000, -195.464409) "></path>
+                        <g id="Group-7" stroke-width="1" fill="none" transform="translate(310.500000, 305.500000) scale(1, -1) rotate(-180.000000) translate(-310.500000, -305.500000) translate(252.000000, 216.000000)" opacity="0.04">
+                            <path d="M-31,31.3317389 C75.2381761,26.9572168 134.904843,65.8466372 148,148" id="Path-17" stroke="#FFFFFF" transform="translate(58.500000, 89.500000) scale(-1, 1) rotate(-90.000000) translate(-58.500000, -89.500000) "></path>
+                            <path d="M38.3321452,151 C38.3321452,151 71.8880968,151 139,151 C125.200425,73.7868791 70.5337587,37.9756057 -25,43.5661798 C-25,43.5661798 -25,91.6554478 -25,91.6554478 C-25,91.6554478 20.0810561,100.542302 38.3321452,151 Z" id="Path-16" fill="url(#linearGradient-5)" transform="translate(57.000000, 97.000000) scale(1, -1) rotate(-270.000000) translate(-57.000000, -97.000000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

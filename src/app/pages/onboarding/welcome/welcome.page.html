@@ -1,0 +1,48 @@
+<app-onboarding-header></app-onboarding-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <img
+          src="/assets/onboarding/mano-conc-celular-logo.svg"
+          class="main-image"
+        />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-start">
+        <p class="title">
+          ¡Le damos la bienvenida a la aplicación que le ayuda a cuidar su
+          bienestar!
+        </p>
+        <div class="black-path"></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="ion-text-start description">
+          Conozca los beneficios que le ofrece
+          <strong class="bold-text">Bolívar Conmigo</strong>.
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <div class="progress-bar">
+    <ion-progress-bar
+      class="onboarding-progress-bar"
+      value="0.2"
+    ></ion-progress-bar>
+  </div>
+  <ion-toolbar>
+    <ion-button slot="end" class="next-button" fill="none" (click)="next()"
+      >CONTINUAR
+      <ion-icon
+        slot="end"
+        class="next-button-icon"
+        src="/assets/onboarding/greater-than.svg"
+      ></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

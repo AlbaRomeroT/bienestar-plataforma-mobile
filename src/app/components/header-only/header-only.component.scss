@@ -1,0 +1,37 @@
+ion-header {
+  background-color: white;
+  ion-toolbar:last-of-type {
+    height: 60px;
+    display: flex;
+    align-content: center;
+    --border-width: 0 !important;
+
+    @media (max-width: 320px) {
+      height: 60px;
+    }
+  }
+}
+
+.header-ios {
+  ion-toolbar:last-of-type {
+    height: 22vw;
+
+    @media (max-width: 320px) {
+      height: 60px;
+    }
+  }
+}
+
+.header-ios ion-toolbar:last-of-type {
+  --border-color: transparent;
+}
+
+.image-header {
+  margin-left: auto;
+  height: 20px;
+  margin-right: auto;
+}
+
+.wearable-header::after {
+  background-image: none;
+}

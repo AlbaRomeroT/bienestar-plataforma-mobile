@@ -1,0 +1,68 @@
+<app-header mode="ios"></app-header>
+<ion-content class="ion-content">
+  <app-background-svg-home
+    *ngIf="selectedTab === 'my-wellness'"
+    [cssClass]="'leitmotiv-wellness'"
+    [routeImage]="'assets/leitmotivs/leitmotiv-principal-page-wellness.svg'"
+  >
+  </app-background-svg-home>
+  <ion-segment
+    (ionChange)="segmentChanged($event)"
+    [(ngModel)]="selectedTab"
+    class="segment-bar"
+    size="12"
+    expand="full"
+    scrollable="true"
+    mode="md"
+  >
+    <ng-container>
+      <ion-segment-button value="my-wellness" class="ion-segment-tab">
+        <ion-label class="ion-segment-label">Mi bienestar</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button
+        value="my-health"
+        class="ion-segment-tab"
+        [hidden]="!isClient"
+      >
+        <ion-label class="ion-segment-label">Mi salud</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="my-points" class="ion-segment-tab" [disabled]="isProduction" [ngClass]="{'color-transparent-class':isProduction}">
+        <ion-label class="ion-segment-label">Lealtad</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button
+        value="my-community"
+        class="ion-segment-tab community"
+        (click)="goToCommunity()"
+        [hidden]="true"
+      >
+        <ion-label class="ion-segment-label">Mi comunidad</ion-label>
+      </ion-segment-button>
+    </ng-container>
+  </ion-segment>
+
+  <hr class="segment-border" />
+
+  <div class="body-data-content {{selectedTab}}">
+    <ng-container *ngIf="selectedTab === 'my-wellness'">
+      <app-progress-health-wellness></app-progress-health-wellness>
+      <app-my-wellness></app-my-wellness>
+    </ng-container>
+
+    <ng-container *ngIf="selectedTab === 'my-health'">
+      <app-my-health></app-my-health>
+    </ng-container>
+
+    <ng-container *ngIf="selectedTab === 'my-points'">
+      <app-my-points></app-my-points>
+    </ng-container>
+  </div>
+
+  <ion-row [hidden]="isProduction">
+    <ion-col size="12" class="margin-bottom-10" *ngIf="!reloading">
+      <app-blog></app-blog>
+    </ion-col>
+  </ion-row>
+</ion-content>

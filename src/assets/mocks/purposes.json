@@ -1,0 +1,3631 @@
+{
+  "errors": null,
+  "body": {
+      "data": [
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:08:46Z",
+              "rewards": [],
+              "title": "Sabrosos pescados",
+              "subcategory": "goal",
+              "body": "Le ayudaré a cumplir con sus demandas de proteína. El pescado ofrece grasas y proteínas particularmente de alta calidad.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.576,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 4.0,
+                      "key": "nutrition_p_fi_7",
+                      "unit": "count",
+                      "text": "Sabrosos pescados"
+                  }
+              ],
+              "lead": "![Sabrosos pescados][shutterstock_346099820]Incluya más pescado en su dieta",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f85608e3c3e86342e0b5539",
+              "key": "nutrition_p_fi_7"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:08:45Z",
+              "rewards": [],
+              "title": "Caminar una maratón",
+              "subcategory": "goal",
+              "body": "Registre sus pasos y compruebe cuánto le lleva caminar una maratón completa. Eso es 42.2 km. Recibirá actualizaciones periódicas para informarle sobre dónde se encuentra y cuánto ha progresado.\n\nPiense que este objetivo solo cuenta los pasos que registra mientras camina. Cualquier dato que registre como otro tipo de entrenamiento no cuenta.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.999,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 1.0,
+                      "key": "walk_marathon_01_tenth",
+                      "unit": "count",
+                      "text": "Una décima parte: 4,2 km / 2,7 millas"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "walk_marathon_02_quarter",
+                      "unit": "count",
+                      "text": "Un cuarto: 10,6 km / 6,6 millas"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "walk_marathon_03_half",
+                      "unit": "count",
+                      "text": "La mitad: 21,1 km / 13,1 millas"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "walk_marathon_04_three_quarters",
+                      "unit": "count",
+                      "text": "Tres cuartos: 31,7 km / 19,7 millas"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "walk_marathon_05_full",
+                      "unit": "count",
+                      "text": "Completo: 42,2 km / 26,2 millas"
+                  }
+              ],
+              "lead": "![caminar por el parque][walk_in_park]¿Cuántos pasos le llevaría caminar una maratón?",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f85608d9846bd694f025ad8",
+              "key": "walk_marathon_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:08:43Z",
+              "rewards": [],
+              "title": "Datos clave sobre la actividad: ¿Sabía?",
+              "id": "5f85608ba10bd251ec328b21",
+              "body": "La frecuencia cardíaca es una buena manera de conocer la intensidad de su entrenamiento de resistencia. Para saber cuál es la frecuencia cardíaca que le proporciona el máximo beneficio en términos de salud, puede aplicar la siguiente fórmula (método de Karvonen).\nSu frecuencia cardíaca = frecuencia cardiaca en reposo + 0,6 (frecuencia cardíaca máx. - frecuencia cardiaca en reposo)\n \nLa hemos calculado por usted: ?\n \nTenga en cuenta que este dato es aproximado y que será más exacto cuando introduzca su frecuencia cardíaca en reposo.\nEl mejor momento para medir la frecuencia cardíaca en reposo es por la mañana, justo después de despertarse y antes de salir de la cama. Cuente los latidos de su corazón durante 30 segundos y multiplique la cifra obtenida por 2.\n \nA continuación, introduzca el valor aquí:\n \n[Mis valores corporales?](dacadoo://functions/me/body)",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.5,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "icon": "/heartrate",
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 1.0,
+                      "key": "heartrate_resting_entered",
+                      "unit": "count",
+                      "text": "Datos de frecuencia cardíaca en reposo introducidos"
+                  }
+              ],
+              "lead": "![Datos clave sobre la actividad: ¿Sabía?][movement_keyfacts_endurance]Su objetivo de frecuencia cardíaca.",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "key": "movement_keyfacts_endurance",
+              "subcategory": "goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "stress",
+              "modificationTime": "2020-10-13T08:08:40Z",
+              "rewards": [],
+              "title": "Tómese un respiro.",
+              "subcategory": "goal",
+              "body": "La respiración es la herramienta más accesible y rápida de la que disponemos para aliviar el estrés. Cuando estamos estresados, nuestra respiración se vuelve más superficial y acelerada, pero podemos contrarrestarlo y calmarnos a través de la respiración consciente.\n\nPara lograr este objetivo, durante 12 días le guiaré a través de cuatro ejercicios respiratorios distintos. Tras este proceso podrá elegir el que más le convenga para los días restantes. Encuentre cada día un momento para detenerse y disfrutar de tan solo un minuto de respiración consciente y atenta. Si prefiere hacerlo más veces, ¡adelante!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.999,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 3.0,
+                      "key": "breathing_goal_deep_breathing",
+                      "unit": "count",
+                      "text": "Respiración profunda"
+                  },
+                  {
+                      "targetValue": 3.0,
+                      "key": "breathing_goal_478",
+                      "unit": "count",
+                      "text": "4-7-8"
+                  },
+                  {
+                      "targetValue": 3.0,
+                      "key": "breathing_goal_lions_breath",
+                      "unit": "count",
+                      "text": "Respiración de león"
+                  },
+                  {
+                      "targetValue": 3.0,
+                      "key": "breathing_goal_breath_counting",
+                      "unit": "count",
+                      "text": "Recuento de respiraciones"
+                  },
+                  {
+                      "targetValue": 9.0,
+                      "key": "breathing_goal_you_choose",
+                      "unit": "count",
+                      "text": "¡Usted elige!"
+                  }
+              ],
+              "lead": "![Breathing][breathing_goal]Aprenda a hacer algunos ejercicios respiratorios sencillos.",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f856088851b0931c42512d8",
+              "key": "breathing_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:08:35Z",
+              "rewards": [],
+              "title": "Ciclista avanzado",
+              "subcategory": "goal",
+              "body": "¡Es estupendo que acepte el desafío! Para este objetivo tendrá que hacer 8 x 20.0 km. ¡Si es constante pedaleando ganará distancia!\n\nPara estar cualificado para este objetivo, debe haber monitoreado al menos 2 horas de ciclismo en los últimos 30 días.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": -1.0,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 8.0,
+                      "key": "move_cycling_distance_20_8",
+                      "unit": "count",
+                      "text": "Haga 8 x 20 km en bicicleta"
+                  }
+              ],
+              "lead": "![Ciclista avanzado][cycling_advanced]Llegue al siguiente nivel",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f856083c781ca4a4c1f2339",
+              "key": "cycling_advanced"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:08:35Z",
+              "rewards": [],
+              "cooldownTime": "2020-11-03T22:06:10Z",
+              "title": "Corredor regular",
+              "subcategory": "goal",
+              "body": "¡Muy bien! Quiere mejorar su rutina actual. Para completar este objetivo tiene que correr 4 x 4.0 km. De esta forma, sus sesiones se convertirán en un hábito diario.\n\nPara estar cualificado para este objetivo, debe haber monitoreado al menos 40 minutos corriendo en los últimos 7 días.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.5,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "cooldown",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 4.0,
+                      "key": "move_running_distance_4_4",
+                      "unit": "count",
+                      "text": "Corre 4 x4 km"
+                  }
+              ],
+              "lead": "![Corredor regular][running_regular]Mejore su rutina",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f85608399e53c23005174e5",
+              "key": "running_regular"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:08:32Z",
+              "rewards": [],
+              "title": "8.000 pasos al día",
+              "subcategory": "goal",
+              "body": "Márquese el objetivo de caminar 8000 o más pasos al día. Ya se está moviendo bastante, pero si camina todavía un poco más estará incorporando una rutina muy saludable a su estilo de vida. ¡Pruébelo ahora!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.75,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "subjects": [],
+                  "public": true,
+                  "user": false
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 14.0,
+                      "key": "steps_goal_8000",
+                      "unit": "count",
+                      "text": "Caminar 8.000 pasos al día"
+                  }
+              ],
+              "lead": "![Dé algunos pasos][steps_goal_8000]Dé un paso más...",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f856080bfcc6508ab42809c",
+              "key": "steps_goal_8000"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:08:24Z",
+              "rewards": [],
+              "title": "Ciclista novato",
+              "subcategory": "goal",
+              "body": "¡Genial! Está listo para pedalear más. Para completar este objetivo, haga algunas sesiones con un mínimo de 5.0 km, 7.5 km y 10.0 km por sesión; el orden no importa. ¡Disfrute de la carretera!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.75,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "subjects": [],
+                  "public": true,
+                  "group": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 1.0,
+                      "key": "move_cycling_distance_5",
+                      "unit": "count",
+                      "text": "Monitoree 5 km en bicicleta"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "move_cycling_distance_7_5",
+                      "unit": "count",
+                      "text": "Monitoree 7,5 km en bicicleta"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "move_cycling_distance_10",
+                      "unit": "count",
+                      "text": "Monitoree 10 km en bicicleta"
+                  }
+              ],
+              "lead": "![Ciclista novato][cycling_novice]Tiene que pedalear más",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f8560789cb3cf7dca196309",
+              "key": "cycling_novice"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:08:24Z",
+              "rewards": [],
+              "title": "Agua para la vida",
+              "subcategory": "goal",
+              "body": "Le ayudaré a mejorar su ingesta de líquidos para mantenerse física y mentalmente en forma. Un consumo regular de agua puede prevenir la fatiga, el dolor de cabeza y el estreñimiento.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.582,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "subjects": [],
+                  "public": true,
+                  "group": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "nutrition_p_bev_3",
+                      "unit": "count",
+                      "text": "Agua para la vida"
+                  }
+              ],
+              "lead": "![Agua][shutterstock_45116347]Beba más agua",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f8560786aee255a3d7b4c2c",
+              "key": "nutrition_p_bev_3"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:08:15Z",
+              "rewards": [],
+              "title": "Comer conscientemente",
+              "subcategory": "goal",
+              "body": "Le ayudaré a centrarse en los alimentos cuando coma. Los alimentos le recargan física y mentalmente y debería disfrutarlos. Mediante una ingesta consciente de alimentos y bebidas, no solo apreciará más su comida, sino que también podrá notar antes cuándo está lleno.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.576,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "public": true,
+                  "subjects": [],
+                  "user": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 7.0,
+                      "key": "nutrition_p_eah_1",
+                      "unit": "count",
+                      "text": "Comer conscientemente"
+                  }
+              ],
+              "lead": "![Hora de comer][shutterstock_284570258]Mejore sus hábitos alimenticios",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f85606f718edf168334c7b9",
+              "key": "nutrition_p_eah_1"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:08:08Z",
+              "rewards": [],
+              "title": "Feliz con menos carne",
+              "subcategory": "goal",
+              "body": "Le ayudaré a reducir riesgos de salud asociados con el consumo de carne elevado. Las carnes rojas y los productos de carne procesada pueden aumentar el riesgo de enfermedades cardiovasculares y ciertos tipos de cáncer.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.582,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 6.0,
+                      "key": "nutrition_p_fi_8",
+                      "unit": "count",
+                      "text": "Feliz con menos carne"
+                  }
+              ],
+              "lead": "![Carne procesada][shutterstock_52838584]Reduzca la cantidad de carne procesada en su dieta",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f8560687dfe946f2c2ea83b",
+              "key": "nutrition_p_fi_8"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:08:01Z",
+              "rewards": [],
+              "title": "Caminante novato",
+              "subcategory": "goal",
+              "body": "¡Genial! Desea caminar más. Para completar este objetivo tiene que alternar distancias de 1.0 km, 2.0 km y 3.0 km por sesión. El orden no importa. ¡Diviértase!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.75,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 1.0,
+                      "key": "move_walking_distance_1",
+                      "unit": "count",
+                      "text": "Camine 1 km"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "move_walking_distance_2",
+                      "unit": "count",
+                      "text": "Camine 2 km"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "move_walking_distance_3",
+                      "unit": "count",
+                      "text": "Camine 3 km"
+                  }
+              ],
+              "lead": "![Caminante novato][walking_novice]Quiere caminar más",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f8560610a6bd71dbe054fed",
+              "key": "walking_novice"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:08:01Z",
+              "rewards": [],
+              "title": "Cocinar de manera inteligente",
+              "subcategory": "goal",
+              "body": "Le ayudaré a conocer mejor los alimentos y su preparación. Si cocina para usted, puede determinar qué y cuántos ingredientes entran en su comida.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.57,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 7.0,
+                      "key": "nutrition_p_eah_2",
+                      "unit": "count",
+                      "text": "Cocinar de manera inteligente"
+                  }
+              ],
+              "lead": "![Cocinar][shutterstock_323107886]Cocine para mejorar su salud",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f85606102e4a454c56fb90a",
+              "key": "nutrition_p_eah_2"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:07:54Z",
+              "rewards": [],
+              "title": "Deje de picar entre horas",
+              "subcategory": "goal",
+              "body": "Voy a intentar ayudarle a mejorar su salud y su figura. Eliminar los aperitivos entre comidas es importante para un patrón de alimentación regular, el metabolismo y un peso corporal saludable.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.594,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "public": true,
+                  "subjects": [],
+                  "user": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 7.0,
+                      "key": "nutrition_p_eah_5",
+                      "unit": "count",
+                      "text": "Reduzca los tentempiés"
+                  }
+              ],
+              "lead": "![Comer bien][shutterstock_314300642]Deje de picar entre horas para mejorar lo que come y cuándo lo hace",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f85605a482b405c34530112",
+              "key": "nutrition_p_eah_5"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:07:50Z",
+              "rewards": [],
+              "title": "Coma con menos sal",
+              "subcategory": "goal",
+              "body": "Le ayudaré a pensar más en la sal que añade a los alimentos y reducir la cantidad.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.594,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "public": true,
+                  "subjects": [],
+                  "group": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "salt_goal",
+                      "unit": "count",
+                      "text": "Evite añadir sal a la comida durante 10 días"
+                  }
+              ],
+              "lead": "![Salero][salt_goal]Añada menos sal a la comida en la mesa",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f856056a11b4c2dd72c64ce",
+              "key": "salt_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:07:48Z",
+              "rewards": [],
+              "title": "Céntrese en el aceite",
+              "subcategory": "goal",
+              "body": "Le ayudaré a saber qué aceites son mejores para cocinar y lo guiaré en la elección de una opción más saludable.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.534,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "oil_goal",
+                      "unit": "count",
+                      "text": "Céntrese en utilizar aceite de oliva, de colza, de cacahuete o HOLL para cocinar durante 10 días"
+                  }
+              ],
+              "lead": "![Diferentes aceites para cocinar][oil_goal]Céntrese en el aceite que utiliza para cocinar",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f85605402e4a454c56fb905",
+              "key": "oil_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "lifestyle",
+              "modificationTime": "2020-10-13T08:07:37Z",
+              "rewards": [],
+              "title": "Yoga matutino",
+              "subcategory": "goal",
+              "body": "¿Qué mejor forma de deshacerse de esa somnolencia matutina que con unos minutos de suaves estiramientos y ejercicios de fortalecimiento? Cree una rutina matutina sencilla pero constante que empiece con unos minutos de yoga. Es especialmente beneficioso hacerlo nada más levantarse, ya que ayuda a relajar los músculos, rígidos después de toda la noche en la cama, y a empezar el día con una actitud positiva. Además, ¡a los pocos minutos de haber empezado el día ya tenemos una sensación de logro!\n\nPara completar este objetivo, empiece cada día con al menos diez minutos de yoga. Tómeselo con calma o con energía, ¡como prefiera! Para empezar, puede resultarle útil seguir un vídeo de instrucciones en línea. Sin embargo pronto se sabrá a la perfección su rutina matutina de yoga.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.999,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 21.0,
+                      "key": "morning_yoga_goal",
+                      "unit": "count",
+                      "text": "Empiece el día con yoga."
+                  }
+              ],
+              "lead": "![yoga][morning_yoga_goal]Empiece el día con unos minutos de yoga",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f856049bf8e3f2742114ac3",
+              "key": "morning_yoga_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:07:35Z",
+              "rewards": [],
+              "title": "Mucha verdura",
+              "subcategory": "goal",
+              "body": "Le ayudaré a mantenerse delgado y seguirá sintiéndose saciado. Las verduras crudas y cocidas aportan valiosas vitaminas, minerales y fibra dietética, pero muy pocas calorías.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.57,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "nutrition_p_fi_2",
+                      "unit": "count",
+                      "text": "Mucha verdura"
+                  }
+              ],
+              "lead": "![Verduras][shutterstock_193659017]Aumente su consumo de verdura",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f856047f8ec1b274953387a",
+              "key": "nutrition_p_fi_2"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:07:33Z",
+              "rewards": [],
+              "title": "Ciclista constante",
+              "subcategory": "goal",
+              "body": "¡Excelente! Para completar este objetivo tiene que hacer 4 x 15.0 km. De esta forma, sus sesiones se convertirán en un hábito diario y recorrerá una gran distancia.\n\nPara estar cualificado para este objetivo, debe haber monitoreado al menos 40 minutos de ciclismo en los últimos 7 días.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.5,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 4.0,
+                      "key": "move_cycling_distance_15_4",
+                      "unit": "count",
+                      "text": "Haga 4 x 15 km en bicicleta"
+                  }
+              ],
+              "lead": "![Ciclista constante][cycling_solid]Quiere lograr la distancia",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f8560458bdfb60ad00fa5cc",
+              "key": "cycling_solid"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "lifestyle",
+              "modificationTime": "2020-10-13T08:07:24Z",
+              "rewards": [],
+              "title": "Optimice su consumo de café",
+              "subcategory": "goal",
+              "body": "El café no es tan malo como puede parecerle. Las investigaciones muestran que tomar 2 o 3 tazas de café al día puede beneficiar su salud. De hecho, el consumo de café está asociado a un riesgo más bajo de diabetes, de algunos cánceres y además provee una cantidad importante de antioxidantes. Por otro lado, no hay que ignorar que el consumo elevado de cafeína puede causar problemas de sueño, de hiperactividad o nerviosismo e irregularidades en el ritmo cardíaco. Así qué, ¡el equilibrio es la clave! Escuche su cuerpo y encuentre el nivel de café que funciona mejor para usted.\n\nPara completar este desafío no debe consumir más de 3 tazas de café al día, durante 14 días. ¡Aprenderá también cosas sobre el café a medida que el desafío avanza!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.6,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "public": true,
+                  "subjects": [],
+                  "user": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 14.0,
+                      "key": "coffee_goal",
+                      "unit": "count",
+                      "text": "No beba más de 5 tazas de café al día."
+                  }
+              ],
+              "lead": "![Taza de café][snacks_goal_coffee]Tome la cantidad de café adecuada cada día.",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f85603c716e5e5a45114b0b",
+              "key": "coffee_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:07:22Z",
+              "rewards": [],
+              "title": "Coma menos alimentos fritos",
+              "subcategory": "goal",
+              "body": "Le ayudaré a renovar su dieta y reducir su consumo de alimentos fritos.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.528,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "subjects": [],
+                  "public": true,
+                  "group": false
+              },
+              "availability": "active",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 11.0,
+                      "key": "fried_food_goal",
+                      "unit": "count",
+                      "text": "Evite alimentos fritos durante 11 días"
+                  }
+              ],
+              "lead": "![Alimentos fritos][fried_food_goal]Reduzca la cantidad de alimentos fritos en su dieta",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f85603ab8c0dc695b221c6c",
+              "key": "fried_food_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "body",
+              "modificationTime": "2020-10-13T08:07:18Z",
+              "rewards": [],
+              "title": "Recordatorio para la medicación",
+              "subcategory": "goal",
+              "body": "Un simple recordatorio para que nunca se olvide de tomar su medicación diaria.\n\nEste objetivo dura 30 días. Si desea que sus recordatorios duren más tiempo, simplemente vuelva a añadir el objetivo después de haberlo completado.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.999,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "active",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 30.0,
+                      "key": "medication_reminder_goal",
+                      "unit": "count",
+                      "text": "Reciba recordatorios durante un mes para tomar su medicación"
+                  }
+              ],
+              "lead": "![medicación][medication_reminder_goal]Recuerde tomar su medicación cuando la necesite",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f8560369cfb0d6a816f86d7",
+              "key": "medication_reminder_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "stress",
+              "modificationTime": "2020-10-13T08:07:08Z",
+              "rewards": [],
+              "title": "Escuche hasta que se relaje",
+              "subcategory": "goal",
+              "body": "Cuando vemos o escuchamos un sonido con un ritmo continuo y uniforme, nuestras ondas cerebrales tienden a alinearse con este. Por eso, escuchar música con una determinada frecuencia subyacente afecta a nuestros patrones de ondas cerebrales, que activan un determinado estado mental, como la relajación, el sueño o una mayor atención. Esto es lo que se conoce como «sincronización de las ondas cerebrales».\n\nEs fácil, ¡solo tiene que escuchar! Funciona incluso aunque esté distraído, pero escuchar con plena atención hace que sea más eficaz.\n\nLa sincronización de las ondas cerebrales es una forma natural e increíblemente eficaz de gestionar el estrés, y les funciona a casi todos. Para completar este objetivo, escuche cada día una de las tres pistas de 12 minutos diseñadas específicamente para ayudarle a calmarse y relajarse.\n\nElija una de estas opciones:\n? [Pista de música ??](https://dx45bcqfh1fza.cloudfront.net/Content/Program/Audio/20180424111604693.mp3)\n? [Pista de ruido blanco ??](https://dx45bcqfh1fza.cloudfront.net/Content/Program/Audio/20200227053500000.mp3)",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.999,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "public": true,
+                  "subjects": [],
+                  "user": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 5.0,
+                      "key": "01_awakened_mind_stress_relief_goal",
+                      "unit": "count",
+                      "text": "Semana 1: escuche una pista de Neurosync? como mínimo cinco días"
+                  },
+                  {
+                      "targetValue": 5.0,
+                      "key": "02_awakened_mind_stress_relief_goal",
+                      "unit": "count",
+                      "text": "Semana 2: escuche una pista de Neurosync? como mínimo cinco días"
+                  },
+                  {
+                      "targetValue": 5.0,
+                      "key": "03_awakened_mind_stress_relief_goal",
+                      "unit": "count",
+                      "text": "Semana 3: escuche una pista de Neurosync? como mínimo cinco días"
+                  }
+              ],
+              "lead": "![mente relajada][awakened_mind_stress_relief_goal]Alivie el estrés con solo escuchar 12 minutos al día",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f85602cd80dd40fde66c6e3",
+              "key": "awakened_mind_stress_relief_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:05:36Z",
+              "rewards": [],
+              "title": "Caminante regular",
+              "subcategory": "goal",
+              "body": "¡Muy bien! Quiere ampliar su rutina actual. Para completar este objetivo tiene que caminar 4 x 3.0 km. De esta forma, sus sesiones se convertirán en un hábito diario.\n\nPara estar cualificado para este objetivo, debe haber monitoreado al menos 40 horas caminando en los últimos 7 días.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.1,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "public": true,
+                  "subjects": [],
+                  "group": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 4.0,
+                      "key": "move_walking_distance_3_4",
+                      "unit": "count",
+                      "text": "Monitoree 4 x 3 km"
+                  }
+              ],
+              "lead": "![Caminante regular][walking_regular]Quiere mejorar su rutina",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855fd0a10bd251ec328af6",
+              "key": "walking_regular"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:05:31Z",
+              "rewards": [],
+              "title": "Corredor avanzado",
+              "subcategory": "goal",
+              "body": "¡Impresionante! Está listo para correr todavía más. Para completar este objetivo tiene que correr 8 x 10.0 km. De esta forma, sus sesiones se convertirán en un hábito diario y recorrerá una gran distancia.\n\nPara estar cualificado para este objetivo, debe haber monitoreado al menos 2 horas corriendo en los últimos 30 días.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": -1.0,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "public": true,
+                  "subjects": [],
+                  "user": false
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 8.0,
+                      "key": "move_running_distance_10_8",
+                      "unit": "count",
+                      "text": "Corra 10 km, 8 veces"
+                  }
+              ],
+              "lead": "![Corredor avanzado][running_advanced]Dedique más tiempo a correr",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855fcbc33c653fa048d52b",
+              "key": "running_advanced"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:05:28Z",
+              "rewards": [],
+              "title": "Obtenga sus cereales",
+              "subcategory": "goal",
+              "body": "Voy a intentar ayudarle a sentirse lleno más tiempo y evitar la sensación de hambre entre comidas. Los cereales integrales proporcionan energía saludable para su vida diaria, combinada con fibra y otros valiosos ingredientes.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.546,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 8.0,
+                      "key": "nutrition_p_fi_5",
+                      "unit": "count",
+                      "text": "Obtenga sus granos y cereales"
+                  }
+              ],
+              "lead": "![Cereales][shutterstock_329486732]Incluya más cereales integrales en su dieta",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855fc87dfe946f2c2ea81d",
+              "key": "nutrition_p_fi_5"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:05:21Z",
+              "rewards": [],
+              "cooldownTime": "2021-04-25T22:06:10Z",
+              "title": "Corredor novato",
+              "subcategory": "goal",
+              "body": "¡Muy bien! Para alcanzar este objetivo alterne carreras de un mínimo de 2.0 km, 3.0 km y 4.0 km. El orden no importa. Corra lo que corra, ¡hágalo con una sonrisa!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.75,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "cooldown",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 1.0,
+                      "key": "move_running_distance_2",
+                      "unit": "count",
+                      "text": "Monitoree 2 km corriendo"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "move_running_distance_3",
+                      "unit": "count",
+                      "text": "Monitoree 3 km corriendo"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "move_running_distance_4",
+                      "unit": "count",
+                      "text": "Monitoree 4 km corriendo"
+                  }
+              ],
+              "lead": "![Corredor novato][running_novice]¿Quiere moverse más corriendo?",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855fc10bb4a32ed84cf5c1",
+              "key": "running_novice"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:05:20Z",
+              "rewards": [],
+              "title": "5.000 pasos al día",
+              "subcategory": "goal",
+              "body": "Márquese el objetivo de caminar 5000 o más pasos al día. ¡Levantarse y moverse más es una manera fácil de ayudar a controlar su peso y le hará sentirse sano y lleno de energía durante todo el día!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.75,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "active",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 14.0,
+                      "key": "steps_goal_5000",
+                      "unit": "count",
+                      "text": "Caminar 5.000 pasos al día"
+                  }
+              ],
+              "lead": "![Dé algunos pasos][steps_goal_5000]¡Muévase un poco más!",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855fc0482b405c345300f1",
+              "key": "steps_goal_5000"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "body",
+              "modificationTime": "2020-10-13T08:05:13Z",
+              "rewards": [],
+              "title": "Monitoree el nivel de glucosa en sangre",
+              "subcategory": "goal",
+              "body": "Le ayudaré a adquirir la costumbre de registrar regularmente su nivel de glucosa en sangre.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.75,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "public": true,
+                  "subjects": [],
+                  "group": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 21.0,
+                      "key": "blood_glucose_goal",
+                      "unit": "count",
+                      "text": "Registre sus niveles de glucosa en sangre al menos 3 veces al día."
+                  }
+              ],
+              "lead": "![Medir glucosa en sangre][blood_glucose_goal]Empiece a registrar su nivel de glucosa en sangre con regularidad",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855fb9d98af4216b560220",
+              "key": "blood_glucose_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:05:10Z",
+              "rewards": [],
+              "title": "Corredor experto",
+              "subcategory": "goal",
+              "body": "¡Genial! Ahora es más constante a la hora de correr. Para completar este objetivo tendrá que correr 10 x 12.0 km. Cuando lo haga, su rutina estará bien encaminada.\n\nPara estar cualificado para este objetivo, debe haber monitoreado al menos 2 horas corriendo en los últimos 30 días.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": -1.0,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "public": true,
+                  "subjects": [],
+                  "user": false
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "move_running_distance_12_10",
+                      "unit": "count",
+                      "text": "Corra 10 x 12 km"
+                  }
+              ],
+              "lead": "![Corredor experto][running_master]Quiere prepararse para un desafío importante",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855fb6f8ec1b2749533863",
+              "key": "running_master"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:05:09Z",
+              "rewards": [],
+              "title": "Reduzca las bebidas gaseosas",
+              "subcategory": "goal",
+              "body": "Le ayudaré a consumir la cantidad necesaria líquidos, y sin calorías, lo que afectará positivamente a su cintura y a su salud. Los refrescos contienen azúcar y calorías y no proporcionan nutrientes saludables.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.588,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "nutrition_p_bev_5",
+                      "unit": "count",
+                      "text": "Reduzca las bebidas gaseosas"
+                  }
+              ],
+              "lead": "![Refrescos][shutterstock_270785642]Reduzca su consumo de refrescos",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855fb53b8e7f62f04566f2",
+              "key": "nutrition_p_bev_5"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:05:08Z",
+              "rewards": [],
+              "title": "Velocidad y distancia",
+              "subcategory": "goal",
+              "body": "Su rutina está progresando muy bien. Tenemos un desafío para usted: monitoree una sesión rápida y otra más larga corriendo para lograr este objetivo. Primero debe correr 5.0 km en no más de 25 minutos. Para lograrlo debe correr a un ritmo de 5 minutos por kilómetro o mayor. La carrera larga debe ser de al menos 10.0 km y puede tomarse el tiempo que desee para terminarla. Y ahora ¡vaya a correr!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": -1.0,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 1.0,
+                      "key": "move_running_fast",
+                      "unit": "count",
+                      "text": "Entrenamiento de velocidad"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "move_running_long",
+                      "unit": "count",
+                      "text": "Entrenamiento de distancia"
+                  }
+              ],
+              "lead": "![Velocidad y distancia][running_balance]Encuentre su equilibrio al correr",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855fb4718edf168334c784",
+              "key": "running_balance"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:05:05Z",
+              "rewards": [],
+              "subcategory": "goal",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.588,
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "nutrition_p_bev_2",
+                      "unit": "count",
+                      "text": "objective_nutrition_p_bev_2_text"
+                  }
+              ],
+              "sharing": {
+                  "group": false,
+                  "public": true,
+                  "subjects": [],
+                  "user": false
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "kind": "sysmessage",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "key": "nutrition_p_bev_2",
+              "id": "5f855fb1a11b4c2dd72c64a8"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:05:03Z",
+              "rewards": [],
+              "title": "10 000 pasos al día",
+              "subcategory": "goal",
+              "body": "Márquese el objetivo de caminar 10 000 o más pasos al día. ¿Sabía que se recomienda andar 10 000 pasos al día para tener un estilo de vida saludable? Hacer esto cada día significa aportar algo más a su estilo de vida saludable y activo. ¡Puede ser más sencillo de lo que imagina!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.75,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "public": true,
+                  "subjects": [],
+                  "group": false
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 14.0,
+                      "key": "steps_goal_10000",
+                      "unit": "count",
+                      "text": "Camine 10.000 pasos al día"
+                  }
+              ],
+              "lead": "![Dé algunos pasos][steps_goal_10000]Lleve un estilo de vida activo",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855faf0bb4a32ed84cf5b7",
+              "key": "steps_goal_10000"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "stress",
+              "modificationTime": "2020-10-13T08:05:02Z",
+              "rewards": [],
+              "title": "Mente libre de estrés",
+              "subcategory": "goal",
+              "body": "Le ayudaré a reducir el estrés en su vida mediante consejos y trucos para afrontarlo.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.75,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 7.0,
+                      "key": "stress_goal",
+                      "unit": "count",
+                      "text": "Mente libre de estrés"
+                  }
+              ],
+              "lead": "![Objetivo mente libre de estrés][sweets_goal_meditation]Reduzca el estrés en su vida",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855fae4ac0190957236c72",
+              "key": "stress_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:04:49Z",
+              "rewards": [],
+              "title": "Quemar alimentos paso a paso",
+              "subcategory": "goal",
+              "body": "Siempre podemos comprobar cuántas calorías hay en las comidas que ingerimos, pero ¿sabe cómo se traduce eso en movimiento? ¿Cuántos pasos necesitamos caminar para quemar las calorías de una banana? Descúbralo con este objetivo.\n\nSu meta es caminar los pasos suficientes para quemar de manera gradual todas las comidas enumeradas en los objetivos. Le sorprendería saber cuántos son... Recibirá actualizaciones periódicas para informarle de dónde se encuentra y cuánto le queda para lograr su próximo objetivo. ¡Comencemos!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.999,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 1.0,
+                      "key": "01_food_sushi",
+                      "unit": "count",
+                      "text": "Una porción de sushi (50 kcal)."
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "02_food_banana",
+                      "unit": "count",
+                      "text": "Una banana (105 kcal)"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "03_food_bagel",
+                      "unit": "count",
+                      "text": "Un bagel solo (230 kcal)"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "04_food_avocado",
+                      "unit": "count",
+                      "text": "Un aguacate (300 kcal)"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "05_food_cheese_100g",
+                      "unit": "count",
+                      "text": "100 g de queso cheddar (400 kcal)"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "06_food_fries_large",
+                      "unit": "count",
+                      "text": "Una porción grande de patatas fritas (500 kcal)"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "07_food_roast_chicken_quarter",
+                      "unit": "count",
+                      "text": "Un cuarto de pollo asado (650 kcal)"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "08_food_apple_pie_half",
+                      "unit": "count",
+                      "text": "Media tarta de manzana (830 kcal)"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "09_food_cashews_200g",
+                      "unit": "count",
+                      "text": "200 g de anacardos (1100 kcal)"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "10_food_chips_large",
+                      "unit": "count",
+                      "text": "Una bolsa grande de patatas fritas (1230 kcal)"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "11_food_fish_fingers",
+                      "unit": "count",
+                      "text": "20 varitas de pescado (1400 kcal)"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "13_food_pizza_takeaway",
+                      "unit": "count",
+                      "text": "Una pizza grande (2090 kcal)"
+                  }
+              ],
+              "lead": "![caminar por la calle][steps_burn_calories]Compruebe cuántos pasos tarda en quemar diferentes alimentos.",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855fa10a6bd71dbe054fc7",
+              "key": "steps_burning_food_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:04:48Z",
+              "rewards": [],
+              "title": "Ciclista experto",
+              "subcategory": "goal",
+              "body": "Para completar este objetivo tendrá que hacer 10 x 25.0 km. De este modo tendrá una base más sólida para desafíos todavía mayores.\n\nPara estar cualificado para este objetivo, debe haber monitoreado al menos 2 horas de ciclismo en los últimos 30 días.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": -1.0,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "move_cycling_distance_25_10",
+                      "unit": "count",
+                      "text": "Haga 10 x 25 km en bicicleta"
+                  }
+              ],
+              "lead": "![Ciclista experto][cycling_master]¿Está listo para un desafío importante?",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855fa06aee255a3d7b4be8",
+              "key": "cycling_master"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "sleep",
+              "modificationTime": "2020-10-13T08:04:36Z",
+              "rewards": [],
+              "title": "Las siete reglas de oro",
+              "subcategory": "goal",
+              "body": "Esto es su curso sobre Sueño. Durante siete días, aprenderá poco a poco las bases para lograr un sueño reparador.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.999,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 7.0,
+                      "key": "sleepfit_g1_7_golden_rules",
+                      "unit": "count",
+                      "text": "Esta es su guía principal de los aspectos esenciales para lograr un buen sueño durante toda su vida."
+                  }
+              ],
+              "lead": "![persona durmiendo][sleepfit_g1_7_golden_rules]Comience a crear las bases de un sueño reparador",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f94b8c0dc695b221c4b",
+              "key": "sleepfit_g1_7_golden_rules"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:04:35Z",
+              "rewards": [],
+              "title": "Concienciación sobre el alcohol",
+              "subcategory": "goal",
+              "body": "Le ayudaré a calcular la cantidad de alcohol que consume cada día con el objetivo de reducirla si es necesario.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.594,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "public": true,
+                  "subjects": [],
+                  "group": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 14.0,
+                      "key": "alcohol_goal",
+                      "unit": "count",
+                      "text": "No tome alcohol durante 14 días"
+                  }
+              ],
+              "lead": "![Concienciación sobre el alcohol][alcohol_goal]Sea más consciente de cuánto alcohol consume",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f93482b405c345300d8",
+              "key": "alcohol_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "smoking",
+              "modificationTime": "2020-10-13T08:04:34Z",
+              "rewards": [],
+              "title": "Dejar de fumar",
+              "subcategory": "goal",
+              "body": "Dejar de fumar es uno de los pasos más importantes para vivir más y mejorar la calidad de vida. No es fácil, pero con la mentalidad adecuada y determinación podrá hacerlo.\n\nPara tener las máximas probabilidades de éxito, debe entender a lo que se enfrenta y aprender formas de hacerlo. Por eso, es muy recomendable abordar el objetivo **Deje de fumar: preparación** la semana antes de dejarlo.\n\nCuando esté preparado para aceptar el desafío, añada el objetivo **Deje de fumar**. ¡Buena suerte!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.999,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "public": true,
+                  "subjects": [],
+                  "group": false
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 21.0,
+                      "key": "smoking_goal",
+                      "unit": "count",
+                      "text": "Diga «no» a fumar."
+                  }
+              ],
+              "lead": "![Romper un cigarrillo][smoking_goal]Deje de fumar, para siempre.",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f929beb226ab53d732e",
+              "key": "smoking_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "sleep",
+              "modificationTime": "2020-10-13T08:04:34Z",
+              "rewards": [],
+              "title": "Menos estrés, más sueño",
+              "subcategory": "goal",
+              "body": "El estrés diario a menudo nos desborda por la noche, lo cual afecta a nuestra capacidad para quedarnos y permanecer dormidos. Está garantizado: ¡la increíble «Rutina de tres pasos» de Sleepfit romperá el ciclo de estrés y le ayudará a dormir de nuevo!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.999,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 7.0,
+                      "key": "sleepfit_g3_less_stress_more_sleep",
+                      "unit": "count",
+                      "text": "Aprenda la «Rutina de tres pasos» como una solución sencilla para impedir que el estrés se interponga en su período de sueño."
+                  }
+              ],
+              "lead": "![persona durmiendo][sleepfit_g3_less_stress_more_sleep]Impida que sus pensamientos se interpongan en su período de sueño aprendiendo la «Rutina de tres pasos»",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f922451bb7eee64e735",
+              "key": "sleepfit_g3_less_stress_more_sleep"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:04:27Z",
+              "rewards": [],
+              "title": "Legumbres maravillosas",
+              "subcategory": "goal",
+              "body": "Le ayudaré a prevenir el estreñimiento y a sentirse lleno durante más tiempo. Las legumbres tienen un alto contenido en proteínas y proporcionan energía de larga duración.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.54,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 3.0,
+                      "key": "nutrition_p_fi_6",
+                      "unit": "count",
+                      "text": "Legumbres maravillosas"
+                  }
+              ],
+              "lead": "![Legumbres][shutterstock_102557018]Incluya más legumbres en su dieta",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f8b13c87662b40be8a9",
+              "key": "nutrition_p_fi_6"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "smoking",
+              "modificationTime": "2020-10-13T08:04:23Z",
+              "rewards": [],
+              "title": "Dejar de fumar: la preparación",
+              "subcategory": "goal",
+              "body": "Le ayudaré a tener las mejores oportunidades de éxito cuando deje de fumar. Durante una semana le propondré una tarea diaria para completar que le ayudará a pensar y reflexionar, así como consejos que le guiarán en su viaje hacia la abstención.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.75,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 1.0,
+                      "key": "smoking_goal_pre_1",
+                      "unit": "count",
+                      "text": "Enumere qué le gusta de fumar"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "smoking_goal_pre_2",
+                      "unit": "count",
+                      "text": "Enumere las razones por las que dejar de fumar no será fácil"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "smoking_goal_pre_3",
+                      "unit": "count",
+                      "text": "Enumere qué no le gusta de fumar"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "smoking_goal_pre_4",
+                      "unit": "count",
+                      "text": "Piense qué le incita a fumar"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "smoking_goal_pre_5",
+                      "unit": "count",
+                      "text": "Comunique a sus familiares y amigos que lo dejará"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "smoking_goal_pre_6",
+                      "unit": "count",
+                      "text": "Piense en formas de evitar los antojos"
+                  },
+                  {
+                      "targetValue": 1.0,
+                      "key": "smoking_goal_pre_7",
+                      "unit": "count",
+                      "text": "Deshágase de todo aquello que le recuerde a fumar"
+                  }
+              ],
+              "lead": "![Preparación para dejar de fumar][smoking_goal_pre]Cambie de mentalidad para dejar de fumar definitivamente",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f873c3e86342e0b54d7",
+              "key": "smoking_goal_pre"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:04:22Z",
+              "rewards": [],
+              "title": "Diga no a los dulces",
+              "subcategory": "goal",
+              "body": "Le ayudaré a frenar los antojos de dulces. Minimizar los alimentos dulces en su dieta beneficia a su salud y a su peso, al mismo tiempo que convierte los caprichos ocasionales en algo aún más agradable.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.552,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "subjects": [],
+                  "public": true,
+                  "group": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 4.0,
+                      "key": "nutrition_p_fi_12",
+                      "unit": "count",
+                      "text": "Diga no a los dulces"
+                  }
+              ],
+              "lead": "![Dulces][shutterstock_152271107]Reduzca la cantidad de dulces que consume",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f867dfe946f2c2ea7f5",
+              "key": "nutrition_p_fi_12"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:04:18Z",
+              "rewards": [],
+              "title": "Caminante avanzado",
+              "subcategory": "goal",
+              "body": "¡Impresionante! Quiere ampliar su rutina de paseos actual. Para completar este objetivo tiene que caminar 8 x 6.0 km. De esta forma, sus sesiones se convertirán en un hábito diario y recorrerá una gran distancia.\n\nPara estar cualificado para este objetivo, debe haber monitoreado al menos 2 horas caminando en los últimos 30 días.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": -1.0,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "subjects": [],
+                  "public": true,
+                  "group": false
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 8.0,
+                      "key": "move_walking_distance_6_8",
+                      "unit": "count",
+                      "text": "Camine 8 x 6 km"
+                  }
+              ],
+              "lead": "![Caminante avanzado][walking_advanced]Quiere caminar más",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f82716e5e5a45114adb",
+              "key": "walking_advanced"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:04:15Z",
+              "rewards": [],
+              "cooldownTime": "2020-11-03T22:06:10Z",
+              "title": "Corredor constante",
+              "subcategory": "goal",
+              "body": "¡Excelente! Quiere que sus sesiones se conviertan en una rutina fija. Para completar este objetivo tiene que correr 4 x 6.0 km. Recuerde: ¡siga moviéndose!\nPara estar cualificado para este objetivo, debe haber monitoreado al menos 40 minutos corriendo en los últimos 7 días.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.1,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "cooldown",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 4.0,
+                      "key": "move_running_distance_6_4",
+                      "unit": "count",
+                      "text": "Corra 4 x 6 km"
+                  }
+              ],
+              "lead": "![Corredor constante][running_solid]Desea estabilizar su rutina de correr",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f7fbfcc6508ab42804e",
+              "key": "running_solid"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "sleep",
+              "modificationTime": "2020-10-13T08:04:13Z",
+              "rewards": [],
+              "title": "La gran guía del sueño",
+              "subcategory": "goal",
+              "body": "Durante siete días le enseñaré todo lo que necesita para comenzar a tener un buen sueño. ¡Use estos consejos para ajustar su ritmo y recuperarlo cuando vuelva a las andadas!",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.999,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 7.0,
+                      "key": "sleepfit_g2_great_sleep_guide",
+                      "unit": "count",
+                      "text": "Consúltela cada día para construir su caja de herramientas para un buen sueño."
+                  }
+              ],
+              "lead": "![persona durmiendo][sleepfit_g2_great_sleep_guide]Una guía paso a paso de los hábitos diarios que llevan a un sueño reparador",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f7d7dfe946f2c2ea7f0",
+              "key": "sleepfit_g2_great_sleep_guide"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "sleep",
+              "modificationTime": "2020-10-13T08:04:11Z",
+              "rewards": [],
+              "title": "Dormir mejor",
+              "subcategory": "goal",
+              "body": "El sueño se basa en rutinas. Acostarse y despertarse a la misma hora cada día (incluso los fines de semana) ayuda a educar a nuestro reloj biológico de que es hora de echar el cierre. Y nos despertamos más frescos. Tras añadir este objetivo establecerá una hora para recibir un recordatorio para acostarse por la noche. Asimismo, recibirá algunos consejos sobre cómo puede proporcionarse el mejor sueño posible.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.75,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 7.0,
+                      "key": "sleep_goal",
+                      "unit": "count",
+                      "text": "Durante 7 noches, duerma las horas recomendadas para su grupo de edad"
+                  }
+              ],
+              "lead": "![Objetivo de sueño][objetivo de sueño]Establezca una rutina de sueño.",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f7bcb2de702e0185a5e",
+              "key": "sleep_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:04:10Z",
+              "rewards": [],
+              "title": "Súper ensalada",
+              "subcategory": "goal",
+              "body": "Le ayudaré a sentirse en forma. La lechuga y otras verduras para ensalada son bajas en calorías a la vez que proporcionan valiosas vitaminas, minerales y fibra dietética.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.564,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 8.0,
+                      "key": "nutrition_p_fi_3",
+                      "unit": "count",
+                      "text": "Súper ensalada"
+                  }
+              ],
+              "lead": "![Ensalada][shutterstock_174457319]Añada más ensaladas y verduras a su dieta",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f7a390b9b6dca253d62",
+              "key": "nutrition_p_fi_3"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:04:10Z",
+              "rewards": [],
+              "title": "Caminante constante",
+              "subcategory": "goal",
+              "body": "¡Excelente! Quiere ampliar su rutina actual. Para completar este objetivo tiene que caminar 4 x 4.0 km. De esta forma, sus sesiones se convertirán en un hábito diario y recorrerá una gran distancia.\n\nPara estar cualificado para este objetivo, debe haber monitoreado al menos 40 minutos caminando en los últimos 7 días.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.5,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "public": true,
+                  "subjects": [],
+                  "group": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 4.0,
+                      "key": "move_walking_distance_4_4",
+                      "unit": "count",
+                      "text": "Camine 4 x 4 km"
+                  }
+              ],
+              "lead": "![Caminante constante][walking_solid]Quiere ampliar su actual rutina",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f7a386d6c4085207ef7",
+              "key": "walking_solid"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:04:09Z",
+              "rewards": [],
+              "title": "Vuélvase loco por las nueces",
+              "subcategory": "goal",
+              "body": "Le ayudaré a hacer algo bueno para su corazón y su cerebro, e incluso para su figura. Las nueces están cargadas de nutrientes saludables.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.588,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "subjects": [],
+                  "public": true,
+                  "user": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 4.0,
+                      "key": "nutrition_p_fi_9",
+                      "unit": "count",
+                      "text": "Vuélvase loco por las nueces"
+                  }
+              ],
+              "lead": "![Frutos secos][shutterstock_142886560]Añada más frutos secos y semillas a su dieta",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f7922f466337b655dec",
+              "key": "nutrition_p_fi_9"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:04:07Z",
+              "rewards": [],
+              "title": "No más comida rápida",
+              "subcategory": "goal",
+              "body": "Cuando coma fuera le ayudaré a optimizar la elección de sus comidas, así como a indicarle la manera adecuada de ingerir los alimentos. Es importante la calidad nutricional y cómo come su comida.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.588,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "nutrition_p_eah_6",
+                      "unit": "count",
+                      "text": "No más comida rápida"
+                  }
+              ],
+              "lead": "![Cómo come][shutterstock_272788793]Elija mejor lo que come",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f77d80dd40fde66c6bd",
+              "key": "nutrition_p_eah_6"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:04:03Z",
+              "rewards": [],
+              "title": "Ciclista regular",
+              "subcategory": "goal",
+              "body": "¡Muy bien! Quiere tomarse el ciclismo en serio. Para completar este objetivo tendrá que hacer 4 x 10.0 km. De esta forma, sus sesiones se convertirán en una rutina habitual.\n\nPara estar cualificado para este objetivo, debe haber registrado al menos 40 minutos de ciclismo en los últimos 7 días.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.1,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "public": true,
+                  "subjects": [],
+                  "group": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 4.0,
+                      "key": "move_cycling_distance_10_4",
+                      "unit": "count",
+                      "text": "Haga 4 x 10 km en bicicleta"
+                  }
+              ],
+              "lead": "![Ciclista regular][cycling_regular]Tiene que hacer más en sus entrenamientos",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f7348daab43c802e40b",
+              "key": "cycling_regular"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "body",
+              "modificationTime": "2020-10-13T08:04:02Z",
+              "rewards": [],
+              "title": "Registre su presión arterial",
+              "subcategory": "goal",
+              "body": "Le ayudaré a adquirir la costumbre de registrar regularmente su presión arterial.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.75,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "subjects": [],
+                  "public": true,
+                  "user": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 30.0,
+                      "key": "blood_pressure_goal",
+                      "unit": "count",
+                      "text": "Mida y registre su presión arterial al menos dos veces al día."
+                  }
+              ],
+              "lead": "![Registrar presión arterial][blood_pressure_goal]Empiece a registrar su presión arterial con regularidad",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f72a08f62644206edd7",
+              "key": "blood_pressure_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:04:02Z",
+              "rewards": [],
+              "title": "Súper ensalada y verduras",
+              "subcategory": "goal",
+              "body": "Le ayudaré a aumentar su ingesta de verduras y ensaladas. Las verduras y ensaladas ofrecen una combinación óptima de ingredientes saludables.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.594,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "nutrition_p_fi_4",
+                      "unit": "count",
+                      "text": "Súper ensalada y verduras"
+                  }
+              ],
+              "lead": "![Ensaladas y verduras][shutterstock_250389784]Incluya más ensaladas y verduras en su dieta",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f7222f466337b655de7",
+              "key": "nutrition_p_fi_4"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:03:59Z",
+              "rewards": [],
+              "title": "Caminante experto",
+              "subcategory": "goal",
+              "body": "¡Genial! Está preparado para un gran un desafío. Para completar este objetivo tendrá que caminar 10 x 5.0 km. La actividad regular ayuda a crear una rutina y 5.0 km es una sesión excelente.\n\nPara estar cualificado para este objetivo, debe haber monitoreado al menos 2 horas caminando en los últimos 30 días.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": -1.0,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "subjects": [],
+                  "public": true,
+                  "user": false
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "move_walking_distance_8_10",
+                      "unit": "count",
+                      "text": "Camine 10 x 8 km"
+                  }
+              ],
+              "lead": "![Caminante experto][walking_master]Está preparado para un desafío importante",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f6f7872461bab664968",
+              "key": "walking_master"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:03:57Z",
+              "rewards": [],
+              "title": "Coma mejor en el desayuno y el almuerzo",
+              "subcategory": "goal",
+              "body": "Le ayudaré a obtener suficiente energía saludable de sus comidas principales para mantenerse en forma. Cuando siga un ritmo de comidas regular, es bueno que sienta hambre y saciedad, ya que constituyen el fundamento para comer más sano y tener un mejor peso.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.582,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "nutrition_p_eah_3",
+                      "unit": "count",
+                      "text": "Coma mejor en el desayuno y el almuerzo"
+                  }
+              ],
+              "lead": "![Comer bien][shutterstock_125561126]Céntrese en las comidas principales para mejorar lo que come y cuándo lo hace",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f6dc33c653fa048d4f9",
+              "key": "nutrition_p_eah_3"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:03:57Z",
+              "rewards": [],
+              "title": "Desayuno energético",
+              "subcategory": "goal",
+              "body": "Le ayudaré a recargarse de energía para comenzar el día. La primera comida del día es la base de un patrón de alimentación saludable y puede ayudar a prevenir los antojos.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.564,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "subjects": [],
+                  "public": true
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 10.0,
+                      "key": "nutrition_p_eah_7",
+                      "unit": "count",
+                      "text": "Desayuno energético"
+                  }
+              ],
+              "lead": "![Desayuno][shutterstock_141359404]Saque más partido a su primera comida del día",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f6d7dfe946f2c2ea7e6",
+              "key": "nutrition_p_eah_7"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "stress",
+              "modificationTime": "2020-10-13T08:03:49Z",
+              "rewards": [],
+              "title": "Meditar conscientemente",
+              "subcategory": "goal",
+              "body": "La meditación puede tener un profundo efecto calmante, aclarar nuestra mente y llenarnos de paz y conciencia. Es un modo ideal de aliviar la presión y el estrés a los que nos enfrentamos día a día, para dejarnos con un sentimiento positivo y una mejor concentración. Incluso es posible que vea que la meditación le ayuda a dormir mejor o a deshacerse de ese aturdimiento mañanero, lo cual le hará sentirse despejado para comenzar el día. \n\nIntente encontrar unos minutos en su rutina diaria para meditar. Es mejor si lo hace todos los días a la misma hora. Asegúrese de buscar un lugar tranquilo, lejos de las distracciones, donde pueda estar consigo mismo y sus pensamientos. Si prueba la meditación por primera vez o si prefiere recibir orientación, existen muchas aplicaciones, podcasts y sitios web sobre ello que pueden servirle de ayuda. Prepárese para disfrutar su dosis diaria de relajación.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.999,
+              "kind": "sysmessage",
+              "sharing": {
+                  "user": false,
+                  "group": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 21.0,
+                      "key": "meditation_goal",
+                      "unit": "count",
+                      "text": "Dedique tiempo a meditar."
+                  }
+              ],
+              "lead": "![Meditación][meditation_goal_cover]Dedique unos momentos a meditar cada día.",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f65a10bd251ec328aba",
+              "key": "meditation_goal"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "nutrition",
+              "modificationTime": "2020-10-13T08:03:48Z",
+              "rewards": [],
+              "title": "Fruto para la vida",
+              "subcategory": "goal",
+              "body": "Le ayudaré a comer más fruta. La fruta proporciona valiosas vitaminas, minerales y fibra dietética.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.558,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "public": true,
+                  "subjects": [],
+                  "user": false
+              },
+              "availability": "available",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 14.0,
+                      "key": "nutrition_p_fi_1",
+                      "unit": "count",
+                      "text": "La fruta como aperitivo saludable"
+                  }
+              ],
+              "lead": "![Fruta][fruit_in_bowls]Incluya más fruta en su dieta",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f648bdfb60ad00fa57b",
+              "key": "nutrition_p_fi_1"
+          },
+          {
+              "creator": {
+                  "id": "5f8558491e61d12d85759aa0",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f8558491e61d12d85759aa0"
+                      }
+                  ]
+              },
+              "category": "movement",
+              "modificationTime": "2020-10-13T08:03:46Z",
+              "rewards": [],
+              "title": "3.000 pasos al día",
+              "subcategory": "goal",
+              "body": "Márquese el objetivo de caminar 3000 o más pasos al día. Si en este momento se encuentra por debajo de este número, aumentar la cantidad de pasos que da realmente le ayudará a sentirse más en forma, a ser más activo y a tener un estilo de vida más saludable.",
+              "expirationTime": "2020-11-27T19:37:37Z",
+              "importance": 0.999,
+              "kind": "sysmessage",
+              "sharing": {
+                  "group": false,
+                  "user": false,
+                  "public": true,
+                  "subjects": []
+              },
+              "availability": "unavailable",
+              "valid": true,
+              "client": {
+                  "id": "5de00ae15411828b7be40b70",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "rel": "self",
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5de00ae15411828b7be40b70"
+                      }
+                  ]
+              },
+              "links": [],
+              "objectives": [
+                  {
+                      "targetValue": 14.0,
+                      "key": "steps_goal_3000",
+                      "unit": "count",
+                      "text": "Camine 3.000 pasos al día"
+                  }
+              ],
+              "lead": "![Dé algunos pasos][steps_goal_3000]¡Póngase en marcha!",
+              "subject": {
+                  "id": "5f8558491e61d12d85759a92",
+                  "kind": "system",
+                  "links": []
+              },
+              "id": "5f855f6253e49e6e1509e814",
+              "key": "steps_goal_3000"
+          }
+      ],
+      "error": null,
+      "error_description": null
+  },
+  "hasErrors": false
+}

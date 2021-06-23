@@ -1,0 +1,37 @@
+<ion-content>
+  <ion-grid style="width: 100%; height: 100%">
+    <ion-row>
+      <ion-col size="12" style="margin-top: 10px">
+        <div class="icon-container text-align-center">
+          <ion-img id="resumen" src="{{ modalIconPath }}"></ion-img>
+        </div>
+      </ion-col>
+      <ion-col size="12" class="text-align-center" style="text-align: center">
+        <ion-label class="title">
+          {{ modalTitle }}
+        </ion-label>
+      </ion-col>
+      <ion-col size="12" class="text-align-center" style="text-align: center">
+        <div class="desc-container">
+          <p class="desc">
+            {{ modalDescription }}
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row style="margin-bottom: 10px">
+      <div class="button-container">
+        <ion-col>
+          <ion-button class="btn-action" (click)="dismiss(true)">{{
+            modalConfirmButtonText
+          }}</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button class="btn-back" (click)="dismiss(false)">{{
+            modalCancelButtonText
+          }}</ion-button>
+        </ion-col>
+      </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>

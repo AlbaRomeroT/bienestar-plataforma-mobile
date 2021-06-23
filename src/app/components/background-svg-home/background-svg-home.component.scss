@@ -1,0 +1,241 @@
+.leitmotiv-home {
+  position: absolute;
+  width: 100vw;
+  height: 46vh;
+  top: 32%;
+  @media screen and (max-width: 575px) {
+    width: 100vw;
+    height: 62vh;
+    top: 28%;
+  }
+  @media screen and (max-width: 414px) {
+    width: 100vw;
+    height: 62vh;
+    top: 44%;
+  }
+  @media screen and (max-width: 412px) {
+    width: 100vw;
+    height: 62vh;
+    top: 32%;
+  }
+  @media screen and (max-width: 411px) {
+    width: 100vw;
+    height: 62vh;
+    top: 44%;
+  }
+  @media screen and (max-width: 393px) {
+    width: 100vw;
+    height: 62vh;
+    top: 35%;
+  }
+  @media screen and (max-width: 375px) {
+    width: 100vw;
+    height: 62vh;
+    top: 35%;
+  }
+  @media screen and (max-width: 360px) {
+    width: 100vw;
+    height: 62vh;
+    top: 44%;
+  }
+  @media screen and (max-width: 320px) {
+    width: 100vw;
+    height: 62vh;
+    top: 54%;
+  }
+}
+
+.leitmotiv-personal-data {
+  position: absolute;
+  width: 100vw;
+  height: 46vh;
+  top: 9%;
+  @media screen and (max-width: 575px) {
+    width: 100vw;
+    height: 62vh;
+    top: 9%;
+  }
+  @media screen and (max-width: 375px) {
+    width: 100vw;
+    height: 62vh;
+    top: 9%;
+  }
+  @media screen and (max-width: 360px) {
+    width: 100vw;
+    height: 62vh;
+    top: 9%;
+  }
+}
+
+.leitmotiv-profesional-data {
+  position: absolute;
+  width: 100vw;
+  height: 46vh;
+  top: 13%;
+  @media screen and (max-width: 575px) {
+    width: 100vw;
+    height: 62vh;
+    top: 13%;
+  }
+  @media screen and (max-width: 375px) {
+    width: 100vw;
+    height: 62vh;
+    top: 13%;
+  }
+  @media screen and (max-width: 360px) {
+    width: 100vw;
+    height: 62vh;
+    top: 13%;
+  }
+}
+
+.leitmotiv-profile-data {
+  position: absolute;
+  width: 100vw;
+  height: 46vh;
+  top: 28%;
+  @media screen and (max-width: 575px) {
+    width: 100vw;
+    height: 62vh;
+    top: 28%;
+  }
+  @media screen and (max-width: 375px) {
+    width: 100vw;
+    height: 62vh;
+    top: 28%;
+  }
+  @media screen and (max-width: 360px) {
+    width: 100vw;
+    height: 62vh;
+    top: 28%;
+  }
+}
+
+.leitmotiv-login {
+  position: absolute;
+  width: 100vw;
+  height: 46vh;
+  @media screen and (max-width: 575px) {
+    width: 100vw;
+    height: 110vw;
+    margin-top: -6vw;
+  }
+}
+
+.leitmotiv-profile {
+  position: absolute;
+  width: 100vw;
+  height: 46vh;
+  @media screen and (max-width: 575px) {
+    width: 100vw;
+    height: 110vw;
+  }
+}
+
+.leitmotiv-wellness {
+  position: absolute;
+  width: 100vw;
+  height: 49vh;
+  top: 18%;
+  @media screen and (max-width: 576px) {
+    width: 100vw;
+    height: 62vh;
+    top: 18vw;
+  }
+  @media screen and (max-width: 413px) {
+    width: 100vw;
+    height: 62vh;
+    top: 1em;
+  }
+  @media screen and (max-width: 412px) {
+    width: 100vw;
+    height: 62vh;
+    top: 3em;
+  }
+  @media screen and (max-width: 376px) {
+    width: 100vw;
+    height: 62vh;
+    top: 4em;
+  }
+  @media screen and (max-width: 361px) {
+    width: 100vw;
+    height: 62vh;
+    top: 4em;
+  }
+}
+
+.leitmotiv-health {
+  display: none;
+}
+
+.leitmotiv-activity {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+}
+
+.leitmotiv-challenges {
+  position: absolute;
+  width: 100vw;
+  height: 49vh;
+  top: 18%;
+  @media screen and (max-width: 576px) {
+    width: 100vw;
+    height: 62vh;
+    top: 18vw;
+  }
+  @media screen and (max-width: 413px) {
+    width: 100vw;
+    height: 62vh;
+    top: 1em;
+  }
+  @media screen and (max-width: 412px) {
+    width: 100vw;
+    height: 62vh;
+    top: 3em;
+  }
+  @media screen and (max-width: 376px) {
+    width: 100vw;
+    height: 62vh;
+    top: 4em;
+  }
+  @media screen and (max-width: 361px) {
+    width: 100vw;
+    height: 62vh;
+    top: 4em;
+  }
+}
+
+.leitmotiv-community {
+  position: absolute;
+  width: 100vw;
+  top: 10.5vw;
+}
+
+.leitmotiv-my-community {
+  position: absolute;
+  width: 100vw;
+  height: 49vh;
+  top: 18%;
+  @media screen and (max-width: 575px) {
+    width: 100vw;
+    height: 62vh;
+    top: 12%;
+  }
+  @media screen and (max-width: 375px) {
+    width: 100vw;
+    height: 62vh;
+    top: 13%;
+  }
+  @media screen and (max-width: 360px) {
+    width: 100vw;
+    height: 62vh;
+    top: 22%;
+  }
+}
+
+.leitmotiv-my-points {
+  position: absolute;
+  width: 100vw;
+  top: 120px;
+}

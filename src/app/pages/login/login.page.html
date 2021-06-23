@@ -1,0 +1,278 @@
+<app-header-only></app-header-only>
+<ion-content>
+  <ion-row>
+    <ion-toolbar [hidden]="additional">
+      <ion-segment
+        class="segment-bar"
+        (ionChange)="segmentChanged($event)"
+        mode="md"
+      >
+        <ion-segment-button class="segment-buttons" value="login">
+          <ion-label class="segment-label">Iniciar sesión</ion-label>
+        </ion-segment-button>
+        <ion-segment-button class="segment-buttons" value="register">
+          <ion-label class="segment-label">Crear cuenta</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  </ion-row>
+  <app-background-svg-home
+    [hidden]="!showScreen"
+    [cssClass]="'leitmotiv-login'"
+  ></app-background-svg-home>
+  <ion-grid class="content-login" [hidden]="!showScreen">
+    <ion-row>
+      <ion-col size="12" class="col-card">
+        <div>
+          <div
+            [hidden]="switchTabsOn"
+            id="register-box"
+            *ngIf="!additional"
+          ></div>
+          <div
+            [hidden]="!switchTabsOn"
+            id="login-box"
+            *ngIf="!additional"
+          ></div>
+          <div *ngIf="additional">
+            <div class="error-container">
+              <div
+                id="errores"
+                *ngIf="((formGroup.get('num_doc').touched || 
+              formGroup.get('num_doc').dirty) && 
+              !formGroup.get('num_doc').valid) || (formGroup.get('tipo_doc').touched || 
+              formGroup.get('tipo_doc').dirty) && 
+              !formGroup.get('tipo_doc').valid"
+              >
+                <div id="desc-error">
+                  Parece que falta algo, verifique los campos señalados para
+                  continuar
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="title ion-text-center">Datos personales</p>
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="12" class="ion-text-center">
+                    <p class="desc">
+                      Por favor ingrese sus datos para disfrutar los beneficios
+                      de nuestra aplicaci&oacute;n
+                    </p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+            <div [formGroup]="formGroup">
+              <ion-list>
+                <ion-item
+                  lines="none"
+                  class="tipo_doc"
+                  [ngClass]="{'red-border-class':    (formGroup.get('tipo_doc').touched || 
+                formGroup.get('tipo_doc').dirty) && 
+                !formGroup.get('tipo_doc').valid }"
+                >
+                  <ion-select
+                    interface="action-sheet"
+                    [interfaceOptions]="selectOptions"
+                    placeholder="Tipo de documento"
+                    slot="start"
+                    cancelText="Cancelar"
+                    formControlName="tipo_doc"
+                    id="select"
+                  >
+                    <ion-select-option
+                      *ngFor="let td of tipo_docs"
+                      value="{{td.id}}"
+                      >{{td.name}}</ion-select-option
+                    >
+                  </ion-select>
+                  <ion-icon
+                    id="arrow"
+                    slot="end"
+                    src="/../../assets/svg/icon-arrow.svg"
+                  ></ion-icon>
+                </ion-item>
+              </ion-list>
+              <div
+                *ngIf="(formGroup.get('tipo_doc').dirty || formGroup.get('tipo_doc').touched) || v_tipo_doc"
+                style="margin-bottom: 10px; margin-top: 10px"
+              >
+                <span
+                  *ngIf="formGroup.invalid && formGroup.get('tipo_doc').errors?.required"
+                  class="message-span-error"
+                  >El tipo de documento es requerido</span
+                >
+              </div>
+              <ion-item
+                lines="none"
+                class="num_doc"
+                [ngClass]="{'red-border-class':    (formGroup.get('num_doc').touched || 
+              formGroup.get('num_doc').dirty) && 
+              !formGroup.get('num_doc').valid }"
+              >
+                <ion-input
+                  formControlName="num_doc"
+                  id="num_doc"
+                  placeholder="Número de documento"
+                  class="ion-no-padding margin"
+                >
+                </ion-input>
+                <ion-icon
+                  *ngIf="(formGroup.get('num_doc').touched || 
+                formGroup.get('num_doc').dirty) && 
+                !formGroup.get('num_doc').valid"
+                  name="close-outline"
+                  id="close-outline"
+                  slot="end"
+                  [style.color]="'#EF3B51'"
+                >
+                </ion-icon>
+              </ion-item>
+            </div>
+            <div
+              *ngIf="(formGroup.get('num_doc').dirty || formGroup.get('num_doc').touched) || v_num_doc"
+              style="margin-bottom: 10px; margin-top: 10px"
+            >
+              <span
+                *ngIf="formGroup.invalid && formGroup.get('num_doc').errors?.required"
+                class="message-span-error"
+                >El n&uacute;mero de documento es requerido</span
+              >
+              <span
+                *ngIf="formGroup.invalid && formGroup.get('num_doc').errors?.minlength"
+                class="message-span-error"
+                >El n&uacute;mero de documento debe tener mínimo 5
+                carácteres</span
+              ><br />
+              <span
+                *ngIf="formGroup.invalid && formGroup.get('num_doc').errors?.maxlength"
+                class="message-span-error"
+                >El n&uacute;mero de documento debe tener máximo 10
+                carácteres</span
+              ><br />
+              <span
+                *ngIf="formGroup.invalid && formGroup.get('num_doc').errors?.pattern"
+                class="message-span-error"
+                >Solo se permiten n&uacute;meros</span
+              >
+            </div>
+            <div *ngIf="v_valDoc" style="margin-bottom: 10px; margin-top: 10px">
+              <span class="message-span-error"
+                >La combinacion de tipo y número de documento ya existe</span
+              >
+            </div>
+            <div *ngIf="v_check" style="margin-bottom: 10px; margin-top: 10px">
+              <span class="message-span-error"
+                >Debe aceptar el tratamiento de datos personales para poder
+                crear su cuenta</span
+              >
+            </div>
+            <div class="legalChecks">
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="2">
+                    <ion-checkbox
+                      class="checked"
+                      [(ngModel)]="auth_data"
+                      (ionChange)="validCheck()"
+                    ></ion-checkbox>
+                  </ion-col>
+                  <ion-col size="10">
+                    <ion-label class="label_checks">{{autorizacion}}</ion-label>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="2">
+                    <ion-checkbox
+                      class="checked"
+                      [(ngModel)]="auth_offers"
+                    ></ion-checkbox>
+                  </ion-col>
+                  <ion-col size="10">
+                    <ion-label class="label_checks"
+                      >{{autorizacion_offers}}</ion-label
+                    >
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+            <div class="content-btn-create-account">
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="12">
+                    <ion-button
+                      shape="round"
+                      (click)="validDocument()"
+                      class="btnGuardar"
+                    >
+                      CREAR CUENTA</ion-button
+                    >
+                  </ion-col>
+                  <ion-col size="12" style="display: block">
+                    <ion-button
+                      class="terminoss ion-text-center ion-align-items-center"
+                      (click)="callModalTreatment()"
+                      >Tratamientos de datos</ion-button
+                    >
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+          </div>
+          <div
+            class="ion-align-items-center"
+            *ngIf="!additional"
+            style="margin-top: -115px"
+          >
+            <app-terms-treatments
+              *ngIf="!switchTabsOn"
+              class="ion-align-items-center"
+            ></app-terms-treatments>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row
+      [hidden]="!switchTabsOn"
+      id="login-footer-hide"
+      *ngIf="!additional"
+    >
+      <div class="account-creation">
+        <h1>¿Aún no tiene una cuenta?</h1>
+        <ion-button
+          class="account-creation-button"
+          (click)="goToTab('register')"
+          expand="full"
+        >
+          <ion-icon
+            slot="start"
+            src="/../../../assets/svg/icon-user.svg"
+          ></ion-icon>
+          <small>Regístrese</small>
+        </ion-button>
+      </div>
+    </ion-row>
+    <ion-row
+      [hidden]="switchTabsOn"
+      id="register-footer-hide"
+      *ngIf="!additional"
+    >
+      <div class="account-creation">
+        <h1>¿Ya tiene una cuenta?</h1>
+        <ion-button
+          class="account-creation-button"
+          (click)="goToTab('login')"
+          expand="full"
+        >
+          <ion-icon
+            class="icon"
+            slot="start"
+            src="/../../../assets/svg/icon-user.svg"
+          ></ion-icon>
+          <small>Inicie sesión</small>
+        </ion-button>
+      </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>

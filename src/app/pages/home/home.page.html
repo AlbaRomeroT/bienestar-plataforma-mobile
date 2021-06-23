@@ -1,0 +1,55 @@
+<app-header></app-header>
+<ion-content class="ion-content">
+  <app-background-svg-home
+    [cssClass]="'leitmotiv-home'"
+  ></app-background-svg-home>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" *ngIf="!reloading" [hidden]="!isProduction">
+        <app-blog></app-blog>
+      </ion-col>
+      <ion-col
+        size="12"
+        class="margin-top-4 bottom-no-padding-no-margin"
+        *ngIf="!reloading"
+      >
+        <app-progress-health></app-progress-health>
+      </ion-col>
+      <ion-col size="12" *ngIf="!reloading" [hidden]="isProduction">
+        <app-qr-pass></app-qr-pass>
+      </ion-col>
+      <ion-col size="12" class="padding-left-right-4 margin-bottom-4">
+        <app-purpose (click)="goToPurpose()"></app-purpose>
+      </ion-col>
+      <ion-col size="6" class="padding-left-right-4 margin-bottom-4">
+        <app-community (click)="goToCommunity()"></app-community>
+      </ion-col>
+      <ion-col size="6" class="padding-left-right-4 margin-bottom-4">
+        <app-coach (click)="goToCoach()"></app-coach>
+      </ion-col>
+      <ion-col size="12" class="margin-bottom-10" *ngIf="!reloading" [hidden]="isProduction">
+        <app-blog></app-blog>
+      </ion-col>
+      <ion-col size="6" class="ion-text-center" [hidden]="true">
+        <ion-button
+          (click)="logout()"
+          expand="block"
+          fill="solid"
+          shape="round"
+        >
+          Logout
+        </ion-button>
+      </ion-col>
+      <ion-col size="6" class="ion-text-center" [hidden]="true">
+        <ion-button
+          (click)="goToOnboarding()"
+          expand="block"
+          fill="solid"
+          shape="round"
+        >
+          Onboarding
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

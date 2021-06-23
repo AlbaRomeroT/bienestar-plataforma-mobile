@@ -1,0 +1,190 @@
+@media (min-width: 992px), (orientation: landscape) {
+  :host,
+  .body-data-content {
+    background: none !important;
+    background-color: var(--color-white-1) !important;
+  }
+}
+
+.header {
+  border-bottom: 1px solid var(--color-white-2);
+  border-top: 1px solid var(--color-white-2);
+  background-color: var(--color-white-1);
+  height: 45px;
+  .title {
+    color: var(--color-black-1);
+    margin-left: 10px;
+    font-family: var(--global-font-family);
+  }
+  .back {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+.body-data-content {
+  background: url("/assets/leitmotivs/leitmotiv-second-page.svg") 0 0/100%
+    no-repeat;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--color-white-1);
+  background-size: 100%;
+}
+
+.info-message {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.info-message span {
+  color: var(--color-white-0);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+  text-align: center;
+}
+
+/**categorias**/
+
+.ion-segment-button {
+  min-width: 90px;
+  min-height: 23px;
+  margin: 0px 5px;
+  font-size: 12px;
+  font-family: var(--global-font-family);
+  letter-spacing: 0;
+  line-height: 14px;
+  text-align: center;
+  background-color: var(--color-white-3);
+  box-shadow: inset 0 1px 3px 0 var(--color-black-alpha-6);
+  --border-radius: 20px;
+}
+
+/****/
+
+.card-content {
+  // height: 117px;
+  padding: 0px;
+}
+
+.firts-two-content {
+  min-height: 90px;
+}
+
+.image-content {
+  padding: 0px;
+  height: 127px;
+}
+
+.image {
+  border: 0;
+  height: 100%;
+}
+
+.text-content {
+  background-color: var(--color-white-0);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.text-content .title-content {
+  padding: 0px;
+  width: 100%;
+  color: var(--color-black-2);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  padding: 2px 5px 0px 5px;
+}
+
+.text-content .date-content {
+  color: var(--color-gray-3);
+  font-family: var(--global-font-family);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+  padding: 2px 5px 0px 5px;
+}
+
+.text-content .description-content {
+  width: 100%;
+  color: var(--color-black-0);
+  font-family: var(--global-font-family);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+  padding: 0px;
+  margin: 0px;
+  max-height: 38px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.action-button-right {
+  text-transform: none;
+  --background: var(--color-yellow-1);
+  --border-radius: 20px 0px 0px 20px;
+  --color: var(--color-green-1);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+  height: 24px;
+}
+
+.action-button-left {
+  text-transform: none;
+  --background: var(--color-yellow-1);
+  --border-radius: 0px 20px 20px 0px;
+  --color: var(--color-green-1);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+  height: 24px;
+}
+
+.row-footer-right {
+  margin-bottom: -10px;
+  margin-right: -18px;
+}
+
+.row-footer-left {
+  margin-bottom: -10px;
+  margin-left: -18px;
+}
+
+.view-more-text {
+  color: var(--color-green-1);
+  font-family: var(--global-font-family);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.view-more-text-icon {
+  padding-top: 8px;
+}
+
+.spin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.ion-spinner {
+  width: 28px;
+  height: 28px;
+  stroke: var(--color-black-3);
+  fill: var(--color-black-4);
+}

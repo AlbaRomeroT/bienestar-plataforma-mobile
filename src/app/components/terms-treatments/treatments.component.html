@@ -1,0 +1,27 @@
+<app-header-only></app-header-only>
+
+<ion-content>
+  <ion-row class="header">
+    <app-back-button-updated
+      class="back"
+      (click)="dismiss()"
+    ></app-back-button-updated>
+    <app-widget-header
+      class="title"
+      [title]="'Tratamiento de datos'"
+    ></app-widget-header>
+  </ion-row>
+
+  <ion-row class="ion-margin">
+    <ion-col size="12">
+      <div class="ion-align-items-center ion-text-center">
+        <ion-spinner name="bubbles" [hidden]="htmlPolicies"></ion-spinner>
+      </div>
+      <div
+        [innerHTML]="htmlPolicies"
+        class="text-html"
+        [hidden]="!htmlPolicies"
+      ></div>
+    </ion-col>
+  </ion-row>
+</ion-content>

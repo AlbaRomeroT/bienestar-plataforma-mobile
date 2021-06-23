@@ -1,0 +1,65 @@
+<app-header></app-header>
+<ion-content class="ion-content">
+  <ion-row class="header">
+    <app-back-button-updated class="back"></app-back-button-updated>
+    <app-widget-header class="title" [title]="'Mi perfil'"></app-widget-header>
+  </ion-row>
+
+  <ion-row class="ion-text-center ion-align-items-center ion-margin-vertical">
+    <ion-col size="12">
+      <ion-avatar class="avatar-center">
+        <img [src]="photo" alt="Foto" />
+      </ion-avatar>
+    </ion-col>
+    <ion-col size="12" [hidden]="true">
+      <ion-label class="ion-avatar-ion-text" text-wrap>Cambiar foto</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-segment
+    #myToolbar
+    (ionChange)="tabChange($event)"
+    class="segment-bar"
+    size="12"
+    expand="full"
+    scrollable="true"
+    value="{{currentTab}}"
+    mode="md"
+  >
+    <ion-segment-button value="Perfil" class="ion-segment-tab">
+      <ion-label>Mi perfil</ion-label>
+    </ion-segment-button>
+    <ion-segment-button
+      value="Profesional"
+      class="ion-segment-tab"
+      [disabled]="isProduction"
+      [ngClass]="{'color-transparent-class':isProduction}"
+    >
+      <ion-label>Informaci&oacute;n profesional</ion-label>
+    </ion-segment-button>
+    <ion-segment-button
+      value="Family"
+      class="ion-segment-tab"
+      [disabled]="isProduction"
+      [ngClass]="{'color-transparent-class':isProduction}"
+    >
+      <ion-label>Informaci&oacute;n familiar</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <app-background-svg-home
+    [cssClass]="'leitmotiv-profile'"
+  ></app-background-svg-home>
+
+  <div *ngIf="showPerfil">
+    <app-personal [parentEvent]="parentEvent"></app-personal>
+  </div>
+
+  <div *ngIf="showProfesional">
+    <app-professional [parentEvent]="parentEvent"></app-professional>
+  </div>
+
+  <div *ngIf="showFamily">
+    <app-family [parentEvent]="parentEvent"></app-family>
+  </div>
+</ion-content>

@@ -1,0 +1,33 @@
+<div class="item">
+  <p class="title" [ngClass]="{ bold: expanded }">
+    {{ historyPoint.eventDetails.descHeader }}
+  </p>
+  <span class="points">+{{ historyPoint.earned | number }} puntos</span>
+
+  <span class="expand" (click)="onExpand()">
+    <ion-icon name="chevron-up-outline" *ngIf="expanded"></ion-icon>
+    <ion-icon name="chevron-down-outline" *ngIf="!expanded"></ion-icon>
+  </span>
+</div>
+
+<div class="spin">
+  <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+</div>
+
+<div class="additional-data animated fadeIn" *ngIf="expanded">
+  <div class="section">
+    <span class="title">Fecha de actividad:</span>
+    <p class="data">{{ historyPoint.time | date: "dd/MM/yy" }}</p>
+  </div>
+  <div class="section">
+    <span class="title">Descripción:</span>
+    <p class="data">{{ historyPoint.eventDetails.descBody }}</p>
+  </div>
+  <div class="section">
+    <span class="title">Total puntos a la fecha:</span>
+    <div class="data">
+      <ion-icon src="/assets/points/coins.svg" *ngIf="expanded"></ion-icon>
+      <span>{{ historyPoint.pointsAtDate | number }}</span>
+    </div>
+  </div>
+</div>

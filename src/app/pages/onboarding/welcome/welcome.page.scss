@@ -1,0 +1,134 @@
+ion-content {
+  --background: var(--color-white-0) !important;
+  --color: var(--color-black-0);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 21px;
+  margin: 0px 20px;
+}
+
+@media (max-width: 320px) {
+  ion-content {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0px 14px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 360px) {
+  ion-content {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+ion-grid {
+  margin: 2px 20px;
+}
+
+.onboarding-progress-bar {
+  width: 92px;
+  height: 9px;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 25px;
+  --progress-background: linear-gradient(
+    to right,
+    var(--color-yellow-alpha-1),
+    var(--color-green-10)
+  );
+  --buffer-background: var(--color-white-11);
+}
+
+.main-image {
+  height: 230px;
+}
+
+@media (max-width: 320px) {
+  .main-image {
+    height: 150px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 360px) {
+  .main-image {
+    height: 206px;
+  }
+}
+
+ion-footer {
+  background: var(--color-white-0);
+  margin: auto;
+}
+
+ion-footer .progress-bar {
+  background: var(--color-white-0);
+  margin-bottom: 10px;
+}
+
+ion-toolbar {
+  --background: var(--color-white-0) !important;
+  --color: var(--color-black-0);
+  font-family: var(--global-font-family);
+}
+
+.next-button {
+  text-transform: none;
+  --background: #ffdc5d;
+  --border-radius: 20px;
+  --color: #0f6e27 !important;
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  width: 133px;
+  height: 36px;
+  margin-right: 23px;
+  margin-bottom: 18px;
+}
+
+.next-button-icon {
+  height: 17px;
+  width: 17px;
+}
+
+.black-path {
+  margin-top: 21px;
+  box-sizing: border-box;
+  height: 1px;
+  width: 51px;
+  border: 2px solid var(--color-black-0);
+  border-radius: 10px;
+}
+
+.title {
+  color: var(--color-black-0);
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+  font-family: var(--global-font-family);
+}
+
+.description {
+  font-size: 16px;
+  font-family: var(--global-font-family);
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 360px) {
+  .title {
+    font-size: 21px;
+    line-height: 22px;
+  }
+}
+
+.bold-text {
+  font-weight: bold;
+}

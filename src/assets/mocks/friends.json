@@ -1,0 +1,37 @@
+{
+  "errors": [],
+  "body": 
+  [
+    {
+      "id": "5fc1f8a4e640421f9671cc54",
+      "photo": null,
+      "displayName": "Ana Cáceres"
+    },
+    {
+      "id": "b",
+      "photo": null,
+      "displayName": "Ana Figueroa"
+    },
+    {
+      "id": "5fbff3f1c2e1f92c531ac2b8",
+      "photo": null,
+      "displayName": "Ana Peralta"
+    },
+    {
+      "id": "d",
+      "photo": null,
+      "displayName": "Camilo Daza"
+    },
+    {
+      "id": "e",
+      "photo": null,
+      "displayName": "Estefanía Ordóñez Parra Moreno"
+    },
+    {
+      "id": "f",
+      "photo": null,
+      "displayName": "Karen Castro"
+    }
+  ],
+  "hasErrors": false
+}

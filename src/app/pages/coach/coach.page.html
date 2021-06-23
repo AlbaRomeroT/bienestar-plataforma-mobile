@@ -1,0 +1,179 @@
+<app-header-only></app-header-only>
+
+<ion-row class="header">
+  <app-back-button-updated class="back"></app-back-button-updated>
+  <app-widget-header class="title" [title]="title"></app-widget-header>
+</ion-row>
+
+<ion-row class="tabs-coach">
+  <ion-col
+    size="6"
+    class="__tabs-coach--col-contain-purpose"
+    (click)="goToPurpose()"
+  >
+    <div class="__tabs-coach--col-contain-purpose--text-purpose">
+      <ion-icon slot="start" class="icon-purpose" src="/assets/coach/Shape.svg"></ion-icon> Ir a
+      Propósitos <ion-icon slot="end" name="chevron-forward-outline" class="icon-chevron-forward-outline"></ion-icon>
+    </div>
+  </ion-col>
+  <ion-col
+    size="6"
+    class="__tabs-coach--col-contain-achievement"
+    (click)="goToAchievement()"
+    [disabled]="isProduction"
+  >
+    <div class="__tabs-coach--col-contain-achievement--text-achievement" [hidden]="isProduction">
+      <ion-icon slot="start" class="icon-achievement" src="/assets/coach/Vector.svg"></ion-icon> Ir a
+      Logros <ion-icon slot="end" name="chevron-forward-outline" class="icon-chevron-forward-outline"></ion-icon>
+    </div>
+  </ion-col>
+</ion-row>
+
+<ion-content class="content">
+  <div class="spin">
+    <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+  </div>
+
+  <div class="chat">
+    <ion-list class="coach-group">
+      <div class="animated fadeIn" *ngFor="let question of chat">
+        <div class="coach-chat-header">
+          <ion-avatar class="avatar">
+            <img src="/assets/coach/new-coach.jpg" alt="" />
+          </ion-avatar>
+          <ion-label class="info ion-text-nowrap">
+            <h1 class="title">Mi coach</h1>
+            <span class="hour"
+              >{{ question.completionTime | date: "hh:mm a - dd 'de' MMMM"
+              }}</span
+            >
+          </ion-label>
+        </div>
+        <div class="coach-chat-content">
+          <div class="text">
+            <p *ngFor="let paragraph of question | coachQuestion">
+              <ng-container *ngFor="let item of paragraph.content">
+                <!-- text -->
+                <ng-container *ngIf="item.type == 'text'">
+                  <span>{{item.text}}</span>
+                </ng-container>
+
+                <!-- strong text -->
+                <ng-container *ngIf="item.type == 'strong'">
+                  <strong>{{item.text}}</strong>
+                </ng-container>
+
+                <!-- link text -->
+                <ng-container *ngIf="item.type == 'link'">
+                  <a class="link" (click)="navigateTo(item.url)">
+                    {{item.text}}
+                  </a>
+                </ng-container>
+
+                <!-- mp3 text -->
+                <ng-container *ngIf="item.type == 'mp3'">
+                  <a class="link" (click)="openExternaLink(item.url)">
+                    {{item.text}}
+                  </a>
+                </ng-container>
+              </ng-container>
+            </p>
+          </div>
+        </div>
+
+        <div class="user-chat" *ngIf="question.inputs.length > 0">
+          <div class="user-chat-options">
+            <div *ngIf="question.completed == false">
+              <ion-radio-group
+                *ngIf="question.inputs[0].type != 'number' && question.inputs[0].type != 'slider'"
+                [(ngModel)]="question.inputs[0].selected"
+              >
+                <ion-item
+                  class="radio-item item-text-wrap"
+                  *ngFor="let option of question.inputs[0].options"
+                >
+                  <ion-label class="radio-button-text"
+                    >{{ option.text }}</ion-label
+                  >
+                  <ion-radio
+                    class="radio"
+                    mode="md"
+                    slot="start"
+                    color="success"
+                    [value]="option"
+                  ></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+
+              <div *ngIf="question.inputs[0].type == 'number'">
+                <div class="badge-item">
+                  <ion-badge color="success" slot="end"
+                    >{{question.inputs[0].selected.value ?
+                    question.inputs[0].selected.value : "-"}}</ion-badge
+                  >
+                </div>
+
+                <ion-range
+                  class="range"
+                  [min]="question.inputs[0].min"
+                  [max]="question.inputs[0].max"
+                  step="1"
+                  snaps="true"
+                  ticks="true"
+                  [(ngModel)]="question.inputs[0].selected.value"
+                >
+                </ion-range>
+              </div>
+
+              <div *ngIf="question.inputs[0].type == 'slider'">
+                <div class="content">
+                  <ion-range
+                    class="range"
+                    [min]="0"
+                    [max]="10"
+                    step="1"
+                    snaps="true"
+                    ticks="true"
+                    [(ngModel)]="question.inputs[0].selected.value"
+                  >
+                  </ion-range>
+                </div>
+                <div class="footer-slider">
+                  <span class="left-slider">Para nada</span>
+                  <span class="right-slider">Mucho</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="user-chat-response" *ngIf="question.completed == true">
+              {{ question | coachResponse }}
+            </p>
+          </div>
+          <ion-avatar class="avatar">
+            <img src="/assets/coach/user.svg" alt="" />
+          </ion-avatar>
+        </div>
+      </div>
+      <ion-row>
+        <ion-col class="ion-no-padding ion-no-margin">
+          <ion-button
+            class="ion-no-padding ion-no-margin skip-button"
+            [disabled]="lastChat?.completed || lastChat?.inputs.length == 0"
+            (click)="skip(lastChat)"
+            size="full"
+            >OMITIR
+          </ion-button>
+        </ion-col>
+        <ion-col class="ion-no-padding ion-no-margin">
+          <ion-button
+            class="ion-no-padding ion-no-margin save-button"
+            [disabled]="lastChat?.completed || lastChat?.inputs.length == 0"
+            (click)="onSave()"
+            size="full"
+            >ENVIAR
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+  </div>
+</ion-content>

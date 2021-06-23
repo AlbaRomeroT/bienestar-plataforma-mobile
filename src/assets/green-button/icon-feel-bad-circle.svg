@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-14.0%" y="-10.0%" width="128.0%" height="128.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15586757 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter id="filter-3">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.003922 0 0 0 0 0.427451 0 0 0 0 0.219608 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Green-Button" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mvp-home--copy" transform="translate(-263.000000, -466.000000)">
+            <g id="Group-6" transform="translate(267.000000, 468.000000)">
+                <g id="Oval-Copy-23">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-4" transform="translate(13.000000, 13.000000)">
+                    <polygon id="Path-4" fill="#FFE277" points="4.90337432 15.7392936 7.57035596 13.6247172 11.150571 22.2003931 8.02697265 22.6890102"></polygon>
+                    <g id="accident-person" filter="url(#filter-3)">
+                        <g transform="translate(2.000000, 0.000000)">
+                            <path d="M19.9,17.78 C18.42,14.47 15.62,12.21 12.22,11.52 C14.22,10.64 15.63,8.61 15.63,6.26 C15.63,3.1 13.1,0.53 10,0.53 C6.89,0.53 4.37,3.1 4.37,6.26 C4.37,8.62 5.78,10.65 7.79,11.53 C4.87,12.14 2.29,13.94 0.72,16.6 C0.28,17.35 0.04,18.22 0.04,19.12 L0.04,20.09 C0.04,21.96 1.49,23.48 3.28,23.48 L12.09,23.48 C13.88,23.48 15.33,21.96 15.33,20.09 C15.33,18.22 13.88,16.7 12.09,16.7 L7.97,16.7 L6.53,13.39 C7.78,12.89 9.14,12.65 10.55,12.73 C14.11,12.93 17.12,15.04 18.61,18.37 C18.77,18.73 19.19,18.89 19.55,18.73 C19.9,18.56 20.06,18.14 19.9,17.78 Z M5.78,6.26 C5.78,3.88 7.67,1.95 10,1.95 C12.32,1.95 14.22,3.88 14.22,6.26 C14.22,8.64 12.33,10.57 10,10.57 C7.68,10.57 5.78,8.63 5.78,6.26 Z M1.46,20.08 L1.46,19.11 C1.46,18.46 1.63,17.84 1.94,17.31 C1.97,17.25 2.01,17.21 2.05,17.15 L4.18,22.05 L3.28,22.05 C2.28,22.05 1.46,21.17 1.46,20.08 Z M12.08,18.11 C13.08,18.11 13.9,18.99 13.9,20.08 C13.9,21.17 13.08,22.05 12.08,22.05 L10.29,22.05 C10.29,22.05 10.29,22.04 10.29,22.04 L8.58,18.11 L12.08,18.11 L12.08,18.11 Z M8.75,22.05 L5.72,22.05 L3.02,15.85 C3.67,15.12 4.42,14.5 5.25,14.01 L8.75,22.05 Z" id="Shape" fill="#016D38"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

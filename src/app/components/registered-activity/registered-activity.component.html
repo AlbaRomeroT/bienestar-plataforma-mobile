@@ -1,0 +1,77 @@
+<ion-card class="ion-card">
+  <ion-row class="header-registered-activity" (click)="goTo()">
+    <ion-avatar class="avatar">
+      <img src="assets/activities/user.svg" alt="" />
+    </ion-avatar>
+    <ion-label class="info ion-text-nowrap">
+      <h1 class="name">{{ profile?.name.displayName }}</h1>
+      <span class="hour">{{
+        activity?.object.modificationTime | formsCustomDate
+      }}</span>
+    </ion-label>
+  </ion-row>
+  <ion-card-content class="content">
+    <ion-row>
+      <ion-text class="activity-label">
+        Actividad realizada:
+        <strong class="bold-text">{{
+          activity?.object.activity | activityTranslate: activitiesTranslate
+        }}</strong
+        >, durante
+        <strong class="bold-text"
+          >{{
+            activity?.object.duration / 60 | number: "1.2-2"
+          }}
+          minutos.</strong
+        >
+      </ion-text>
+    </ion-row>
+    <ion-row class="kcal">
+      <ion-icon class="icon-yellow-fire" src="/assets/activities/fire.svg">
+      </ion-icon>
+      <ion-text class="kcal-label" *ngIf="activity?.object.energy"
+        >{{
+          activity?.object.energy | activityKcal | async | number: "1.0-0"
+        }}
+        Kcal</ion-text
+      >
+    </ion-row>
+  </ion-card-content>
+  <ion-card-footer class="social-network">
+    <ion-toolbar class="ion-text-right footer-toolbar">
+      <ion-row>
+        <ion-col size="7">
+          <div class="likes">{{ likesToSend | likesSummary }}</div>
+        </ion-col>
+        <ion-col size="5">
+          <div class="likes-comments">
+            <button class="button" (click)="nonLike()" *ngIf="isLike">
+              <ion-icon
+                slot="icon-only"
+                class="icon liked"
+                name="heart-outline"
+              ></ion-icon
+              >{{ likes }}
+            </button>
+            <button class="button" (click)="onLike()" *ngIf="!isLike">
+              <ion-icon
+                slot="icon-only"
+                class="icon"
+                name="heart-outline"
+              ></ion-icon
+              >{{ likes }}
+            </button>
+            <button class="button" (click)="onOpenModalComments()">
+              <ion-icon
+                slot="icon-only"
+                class="icon"
+                name="chatbox-outline"
+              ></ion-icon>
+              {{ comments }}
+            </button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-card-footer>
+</ion-card>

@@ -1,0 +1,174 @@
+<app-header></app-header>
+<ion-content class="ion-content" #pageTop>
+  <div class="spin">
+    <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+  </div>
+
+  <ion-row class="header">
+    <app-back-button-updated class="back"></app-back-button-updated>
+    <app-widget-header class="title" [title]="'Propósitos'"></app-widget-header>
+  </ion-row>
+
+  <div class="body-data-content">
+    <ion-row>
+      <ion-col size="10" offset="1" class="ion-text-center">
+        <div class="info-message">
+          <span>Añada los propósitos que desea lograr</span>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+  <ion-row class="bar-shadow">
+    <ion-col size="12">
+      <ion-segment
+        expand="full"
+        scrollable="true"
+        [(ngModel)]="selectedCategory"
+        mode="ios"
+      >
+        <ion-segment-button
+          class="ion-segment-button"
+          value="all"
+          id="seg-all"
+          (click)="focusSegment('seg-all')"
+        >
+          <ion-label class="label-categories">Todas</ion-label>
+        </ion-segment-button>
+        <ion-segment-button
+          class="ion-segment-button"
+          value="activity"
+          id="seg-movement"
+          (click)="focusSegment('seg-movement')"
+        >
+          <ion-label class="label-categories">Actividad física</ion-label>
+        </ion-segment-button>
+        <ion-segment-button
+        class="ion-segment-button"
+        value="indulgences"
+        id="seg-body"
+        (click)="focusSegment('seg-body')"
+      >
+        <ion-label class="label-categories">Hábitos</ion-label>
+        
+      </ion-segment-button>
+        <ion-segment-button
+          class="ion-segment-button"
+          value="mindfulness"
+          id="seg-lifestyle"
+          (click)="focusSegment('seg-lifestyle')"
+        >
+          <ion-label class="label-categories">Mente</ion-label>
+        </ion-segment-button>
+        <ion-segment-button
+          class="ion-segment-button"
+          value="nutrition"
+          id="seg-nutrition"
+          (click)="focusSegment('seg-nutrition')"
+        >
+          <ion-label class="label-categories">Nutrición</ion-label>
+        </ion-segment-button>
+        <ion-segment-button
+          class="ion-segment-button"
+          value="sleep"
+          id="seg-sleep"
+          (click)="focusSegment('seg-sleep')"
+        >
+          <ion-label class="label-categories">Sueño</ion-label>
+          
+        </ion-segment-button>
+      </ion-segment>
+    </ion-col>
+  </ion-row>
+
+  <ion-card
+    *ngFor="let item of purposes | startswithArrayField:selectedCategory:(selectedCategory == 'all'? null: 'category') | slice:0:maxShow ; let odd=odd; let even=even;"
+    class="ion-margin"
+  >
+    <ion-card-content class="card-content" *ngIf="item.title != null">
+      <ion-row>
+        <ion-col size="4" class="image-content" *ngIf="even">
+          <img
+            src="/assets/purpose/images/{{item?.key || item.message}}_thumbnail.jpg"
+            onError="src = '/assets/purpose/purpose-default.png'"
+            alt=""
+            class="image"
+          />
+        </ion-col>
+
+        <ion-col size="8" class="text-content">
+          <div class="firts-two-content">
+            <ion-row>
+              <ion-col>
+                <p class="title-content">{{ getLeadTextClear(item.lead) }}</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <p class="description-content">{{ item.title }}</p>
+              </ion-col>
+            </ion-row>
+          </div>
+
+          <ion-row
+            class="ion-no-margin ion-no-padding row-footer-right"
+            *ngIf="even"
+          >
+            <ion-col size="5" class="ion-no-border ion-no-margin ion-text-left">
+              <div class="view-more-text" (click)="viewPurposeDetail(item)">
+                Ver más >
+              </div>
+            </ion-col>
+            <ion-col
+              size="7"
+              class="ion-no-border ion-no-margin ion-text-right"
+            >
+              <ion-button
+                class="action-button-right ion-no-margin"
+                fill="none"
+                (click)="onAdd(item)"
+                >Añadir
+                <ion-icon slot="end" name="add-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+
+          <ion-row
+            class="ion-no-margin ion-no-padding row-footer-left"
+            *ngIf="odd"
+          >
+            <ion-col size="7" class="ion-no-border ion-no-margin ion-text-left">
+              <ion-button
+                class="action-button-left ion-no-margin"
+                fill="none"
+                (click)="onAdd(item)"
+                >Añadir
+                <ion-icon slot="end" name="add-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col
+              size="5"
+              class="ion-no-border ion-no-margin ion-text-right"
+            >
+              <div class="view-more-text" (click)="viewPurposeDetail(item)">
+                Ver más >
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+
+        <ion-col size="4" class="image-content" *ngIf="odd">
+          <img
+            src="/assets/purpose/images/{{item?.key || item.message}}_thumbnail.jpg"
+            onError="src = '/assets/purpose/purpose-default.png'"
+            alt=""
+            class="image"
+          />
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-infinite-scroll (ionInfinite)="showMore($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

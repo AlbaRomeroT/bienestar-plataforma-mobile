@@ -1,0 +1,530 @@
+<form
+  [formGroup]="userForm"
+  (ngSubmit)="onSubmitTemplate()"
+  *ngIf="personalInfo?.email"
+  novalidate
+>
+  <ion-row>
+    <ion-col size="12">
+      <ion-card class="ion-card">
+        <ion-card-header style="background: #fbfbfb">
+          <ion-card-subtitle class="ion-card-ion-card-subtitle">
+            <ion-text class="ion-text-capitalize"
+              >&nbsp;&nbsp;Mi perfil</ion-text
+            >
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-label
+              [ngClass]="{
+                'input-label':
+                  personalInfo?.name &&
+                  !userForm.get('name').hasError('required'),
+                'input-error':
+                  userForm.get('name').hasError('required') ||
+                  userForm.get('name').hasError('validName')
+              }"
+            >
+              Nombres
+            </ion-label>
+            <ion-item
+              [ngClass]="{
+                'red-border-class': userForm.get('name').hasError('required'),
+                'ion-item-ion-input': !userForm.get('name').hasError('required')
+              }"
+              lines="none"
+            >
+              <ion-input
+                formControlName="name"
+                type="text"
+                name="name"
+                placeholder="Nombres"
+                (ionFocus)="checkInputFocus()"
+                (ionBlur)="checkInputBlur()"
+              >
+              </ion-input>
+            </ion-item>
+            <ion-item *ngIf="userForm.get('name').errors" lines="none">
+              <span
+                *ngIf="userForm.get('name').hasError('required')"
+                class="input-error"
+              >
+                El nombre es requerido.
+              </span>
+              <span
+                *ngIf="userForm.get('name').hasError('validName')"
+                class="input-error"
+              >
+                El nombre no es v&aacute;lido.
+              </span>
+            </ion-item>
+            <ion-label
+              position="stacked"
+              [ngClass]="{
+                'input-label':
+                  personalInfo?.lastName &&
+                  !userForm.get('lastName').hasError('required'),
+                'input-error':
+                  userForm.get('lastName').hasError('required') ||
+                  userForm.get('lastName').hasError('validName')
+              }"
+            >
+              Apellidos
+            </ion-label>
+            <ion-item
+              [ngClass]="{
+                'red-border-class': userForm
+                  .get('lastName')
+                  .hasError('required'),
+                'ion-item-ion-input': !userForm
+                  .get('lastName')
+                  .hasError('required')
+              }"
+              lines="none"
+            >
+              <ion-input
+                type="text"
+                name="lastName"
+                formControlName="lastName"
+                placeholder="Apellidos"
+                (ionFocus)="checkInputFocus()"
+                (ionBlur)="checkInputBlur()"
+              ></ion-input>
+            </ion-item>
+            <ion-item *ngIf="userForm.get('lastName').errors" lines="none">
+              <span
+                *ngIf="userForm.get('lastName').hasError('required')"
+                class="input-error"
+              >
+                El apellido es requerido.
+              </span>
+              <span
+                *ngIf="userForm.get('lastName').hasError('validName')"
+                class="input-error"
+              >
+                EL apellido no es v&aacute;lido.
+              </span>
+            </ion-item>
+            <ion-label
+              position="stacked"
+              [ngClass]="{
+                'input-label':
+                  personalInfo?.documentType &&
+                  !userForm.get('documentType').hasError('required'),
+                'input-error': userForm.get('documentType').hasError('required')
+              }"
+            >
+              Tipo documento
+            </ion-label>
+            <ion-item
+              [ngClass]="{
+                'red-border-class': userForm
+                  .get('documentType')
+                  .hasError('required'),
+                'ion-item-ion-input': !userForm
+                  .get('documentType')
+                  .hasError('required')
+              }"
+              lines="none"
+            >
+              <ion-select
+                slot="start"
+                (ionChange)="typeDocumentChange($event)"
+                class="ion-select"
+                [(ngModel)]="personalInfo.documentType"
+                formControlName="documentType"
+                interface="popover"
+                mode="md"
+              >
+                <ion-select-option
+                  *ngFor="let td of doc_types"
+                  value="{{ td.id }}"
+                >
+                  {{ td.name }}
+                </ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item *ngIf="userForm.get('documentType').errors" lines="none">
+              <span
+                *ngIf="userForm.get('documentType').hasError('required')"
+                class="input-error"
+              >
+                El tipo de documento es requerido.
+              </span>
+            </ion-item>
+            <ion-label
+              position="stacked"
+              [ngClass]="{
+                'input-label':
+                  personalInfo?.document &&
+                  !userForm.get('document').hasError('required'),
+                'input-error':
+                  userForm.get('document').hasError('required') ||
+                  userForm.get('document').hasError('validDocument')
+              }"
+            >
+              Documento de identidad
+            </ion-label>
+            <ion-item
+              [ngClass]="{
+                'red-border-class': userForm
+                  .get('document')
+                  .hasError('required'),
+                'ion-item-ion-input': !userForm
+                  .get('document')
+                  .hasError('required')
+              }"
+              lines="none"
+            >
+              <ion-input
+                type="text"
+                name="document"
+                formControlName="document"
+                placeholder="Documento"
+                (ionFocus)="checkInputFocus()"
+                (ionBlur)="checkInputBlur()"
+              >
+              </ion-input>
+            </ion-item>
+            <ion-item *ngIf="userForm.get('document').errors" lines="none">
+              <span
+                *ngIf="userForm.get('document').hasError('required')"
+                class="input-error"
+              >
+                El documento es requerido.
+              </span>
+              <span
+                *ngIf="userForm.get('document').hasError('validDocument')"
+                class="input-error"
+              >
+                El documento no es v&aacute;lido.
+              </span>
+            </ion-item>
+            <ion-label
+              position="stacked"
+              class="ion-card-ion-label"
+              *ngIf="personalInfo?.email"
+            >
+              Correo
+            </ion-label>
+            <ion-item class="ion-item-ion-input" lines="none">
+              <ion-input
+                type="email"
+                name="email"
+                formControlName="email"
+                disabled="true"
+                placeholder="Correo"
+              >
+              </ion-input>
+              <ion-icon
+                src="../assets/profile/icon/icon_mail.svg"
+                slot="end"
+              ></ion-icon>
+            </ion-item>
+            <ion-label
+              position="stacked"
+              [ngClass]="{
+                'input-label': !userForm
+                  .get('phone')
+                  .hasError('validPhoneNumber'),
+                'input-error': userForm
+                  .get('phone')
+                  .hasError('validPhoneNumber')
+              }"
+            >
+              Tel&eacute;fono
+            </ion-label>
+            <ion-item
+              [ngClass]="{
+                'red-border-class': userForm
+                  .get('phone')
+                  .hasError('validPhoneNumber'),
+                'ion-item-ion-input': !userForm
+                  .get('phone')
+                  .hasError('validPhoneNumber'),
+                'ion-item-ion-input-no-border': !personalInfo?.phone
+              }"
+              lines="none"
+            >
+              <ion-input
+                type="number"
+                name="phone"
+                formControlName="phone"
+                placeholder="Tel&eacute;fono"
+                (ionFocus)="checkInputFocus()"
+                (ionBlur)="checkInputBlur()"
+              >
+              </ion-input>
+              <ion-icon
+                src="../assets/profile/icon/icon_telefono.svg"
+                slot="end"
+              >
+              </ion-icon>
+            </ion-item>
+            <ion-item *ngIf="userForm.get('phone').errors" lines="none">
+              <span
+                *ngIf="userForm.get('phone').hasError('validPhoneNumber')"
+                class="input-error"
+              >
+                N&uacute;mero tel&eacute;fonico no permitido.
+              </span>
+            </ion-item>
+            <ion-label
+              position="stacked"
+              [ngClass]="{
+                'input-label':
+                  personalInfo?.birthday &&
+                  !userForm.get('birthday').hasError('validAdult'),
+                'input-error': userForm.get('birthday').hasError('validAdult')
+              }"
+              [hidden]="isProduction"
+            >
+              Fecha nacimiento
+            </ion-label>
+            <ion-item lines="none" [hidden]="true">
+              <ion-input
+                class="input-day ion-item-ion-input"
+                type="number"
+                max="31"
+                min="1"
+                name="day"
+                formControlName="day"
+                placeholder="Día"
+                (ionFocus)="checkInputFocus()"
+                (ionBlur)="checkInputBlur()"
+              ></ion-input>
+              <ion-input
+                class="input-month ion-item-ion-input"
+                type="number"
+                max="12"
+                min="1"
+                name="month"
+                formControlName="month"
+                placeholder="Mes"
+                (ionFocus)="checkInputFocus()"
+                (ionBlur)="checkInputBlur()"
+              ></ion-input>
+              <ion-input
+                class="input-year ion-item-ion-input"
+                type="number"
+                max="3000"
+                min="1000"
+                name="year"
+                formControlName="year"
+                placeholder="Año"
+                (ionFocus)="checkInputFocus()"
+                (ionBlur)="checkInputBlur()"
+              ></ion-input>
+            </ion-item>
+            <ion-item
+              [ngClass]="{
+                'red-border-class': userForm
+                  .get('birthday')
+                  .hasError('validAdult'),
+                'ion-item-ion-input':
+                  !userForm.get('birthday').hasError('validAdult') &&
+                  personalInfo?.birthday,
+                'ion-item-ion-input-no-border': !personalInfo?.birthday
+              }"
+              lines="none"
+              [hidden]="isProduction"
+            >
+              <ion-datetime
+                [pickerOptions]="customPickerOptions"
+                name="date"
+                value="{{ personalInfo.birthday | date: 'yyyy-MM-dd' }}"
+                display-format="DD MMM YYYY"
+                monthShortNames="Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, 
+                                                       Septiembre, Octubre, Noviembre, Diciembre"
+                placeholder="Fecha nacimiento"
+                cancelText="CANCELAR"
+                doneText="ACEPTAR"
+                formControlName="birthday"
+              >
+              </ion-datetime>
+              <ion-icon
+                src="../assets/profile/icon/icon_calendar.svg"
+                slot="end"
+              ></ion-icon>
+            </ion-item>
+            <ion-item
+              *ngIf="userForm.get('birthday').errors"
+              lines="none"
+              style="display: none"
+            >
+              <span
+                *ngIf="userForm.get('birthday').hasError('validAdult')"
+                class="input-error"
+              >
+                Debe ser mayor de edad.
+              </span>
+            </ion-item>
+            <ion-label
+              position="stacked"
+              class="input-label"
+              style="display: none"
+              >Sexo</ion-label
+            >
+            <ion-item
+              class="ion-item-ion-segment"
+              lines="none"
+              style="display: none"
+            >
+              <ion-segment
+                class="gender-segment"
+                color="warning"
+                formControlName="gender"
+                size="12"
+                expand="full"
+              >
+                <ion-segment-button
+                  value="F"
+                  layout="icon-start"
+                  class="ion-segment-button-gender"
+                >
+                  <ion-img
+                    class="icon-segment"
+                    [src]="
+                      userForm.get('gender').value == 'F'
+                        ? '../assets/profile/select.svg'
+                        : '../assets/profile/unselect.svg'
+                    "
+                  >
+                  </ion-img>
+                  <ion-label
+                    *ngIf="userForm.get('gender').value === 'F'"
+                    class="label-segment text-black"
+                    >Femenino
+                  </ion-label>
+                  <ion-label
+                    *ngIf="userForm.get('gender').value !== 'F'"
+                    class="label-segment"
+                    >Femenino</ion-label
+                  >
+                </ion-segment-button>
+                <ion-segment-button
+                  value="M"
+                  layout="icon-start"
+                  class="ion-segment-button-gender"
+                >
+                  <ion-img
+                    class="icon-segment"
+                    [src]="
+                      userForm.get('gender').value == 'M'
+                        ? '../assets/profile/select.svg'
+                        : '../assets/profile/unselect.svg'
+                    "
+                  >
+                  </ion-img>
+                  <ion-label
+                    *ngIf="userForm.get('gender').value === 'M'"
+                    class="label-segment text-black"
+                    >Masculino
+                  </ion-label>
+                  <ion-label
+                    *ngIf="userForm.get('gender').value !== 'M'"
+                    class="label-segment"
+                    >Masculino</ion-label
+                  >
+                </ion-segment-button>
+              </ion-segment>
+            </ion-item>
+            <ion-label
+              position="stacked"
+              class="input-label"
+              style="display: none"
+            >
+              Peso
+            </ion-label>
+            <ion-item
+              [ngClass]="{
+                'ion-item-ion-input': personalInfo?.weight,
+                'ion-item-ion-input-no-border': !personalInfo?.weight
+              }"
+              lines="none"
+              style="display: none"
+            >
+              <ion-select
+                placeholder="Peso"
+                formControlName="weight"
+                (ionChange)="weightChange($event)"
+                class="ion-select"
+                [(ngModel)]="personalInfo.weight"
+                interface="popover"
+                mode="md"
+              >
+                <ion-select-option
+                  *ngFor="let item of weightArray"
+                  [value]="item"
+                >
+                  {{ item }}Kg
+                </ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-label
+              position="stacked"
+              class="input-label"
+              style="display: none"
+            >
+              Altura
+            </ion-label>
+            <ion-item
+              [ngClass]="{
+                'ion-item-ion-input':
+                  !userForm.get('height').errors && personalInfo?.height,
+                'ion-item-ion-input-no-border': !personalInfo?.height
+              }"
+              lines="none"
+              style="display: none"
+            >
+              <ion-select
+                placeholder="Altura"
+                (ionChange)="heightChange($event)"
+                class="ion-select"
+                formControlName="height"
+                [(ngModel)]="personalInfo.height"
+                interface="popover"
+                mode="md"
+              >
+                <ion-select-option
+                  *ngFor="let item of heightArray"
+                  [value]="item"
+                >
+                  {{ item }}cm
+                </ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-grid style="padding-left: 20px !important">
+    <ion-row>
+      <ion-col size="12">
+        <div *ngIf="v_valDoc" style="margin-bottom: 10px; margin-top: 10px">
+          <span class="message-span-error"
+            >La combinacion de tipo y número de documento ya existe</span
+          >
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ng-container>
+    <ion-row>
+      <ion-col
+        size="12"
+        style="
+          text-align: center;
+          margin-bottom: 30px;
+          margin-top: 20px !important;
+        "
+      >
+        <button type="submit" fill="clear" class="btn" class="button-save" [disabled]="modalIsActive">
+          GUARDAR
+        </button>
+      </ion-col>
+    </ion-row>
+  </ng-container>
+</form>

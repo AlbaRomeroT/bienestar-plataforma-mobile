@@ -1,0 +1,96 @@
+.ion-justify-content-center {
+  display: flex;
+}
+
+.ion-content {
+  --background: var(--color-white-0);
+  margin-bottom: 20vw;
+}
+
+ion-grid {
+  height: 120%;
+}
+
+.main-image {
+  height: 230px;
+}
+
+@media (max-width: 320px) {
+  .main-image {
+    height: 110px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 360px) {
+  .main-image {
+    height: 130px;
+  }
+}
+
+.oh-oh-sus-datos-n {
+  height: 65px;
+  width: 295px;
+  color: var(--color-green-1);
+  font-family: var(--global-font-family) !important;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: -2px !important;
+  margin-left: 20px !important;
+}
+
+.pruebe-nuevamente-ah {
+  height: 62px;
+  width: 296px;
+  opacity: 0.9;
+  color: var(--color-black-2);
+  font-family: var(--global-font-family) !important;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+  margin-left: 30px !important;
+  margin-bottom: 50px !important;
+}
+
+.bg-color {
+  --border-radius: 20px;
+  --background: var(--color-yellow-1);
+  --color: var(--color-green-6);
+  font-family: var(--global-font-family) !important;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  height: 36px;
+  width: 238px;
+}
+
+.bg-color-no-selected {
+  box-sizing: border-box !important;
+  height: 36px;
+  width: 238px;
+  --border: 1px solid var(--color-yellow-1);
+  --border-radius: 20px;
+  border-radius: 20px;
+  --background: var(--color-white-0);
+  box-shadow: 0 2px 2px 0 var(--color-black-alpha-8);
+  font-family: var(--global-font-family) !important;
+  --color: var(--color-green-6);
+}
+
+.spin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+ion-spinner {
+  width: 28px;
+  height: 28px;
+  stroke: var(--color-black-3);
+  fill: var(--color-black-4);
+}

@@ -1,0 +1,96 @@
+.ion-card {
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 10px 10px 0px 10px;
+  margin: 10px 18px;
+  color: #1b1b1b;
+}
+
+.header {
+  display: flex;
+  .avatar {
+    height: 33px;
+    width: 33px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 14px 12px;
+  }
+  .info {
+    margin: 0px 0px 4px 44px;
+    .name {
+      color: #1b1b1b;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 19px;
+    }
+    .hour {
+      color: #333333;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 16px;
+    }
+  }
+}
+
+.content {
+  padding-inline-start: 4px;
+}
+
+.kcal {
+  margin-top: 10px;
+  .icon-yellow-fire {
+    height: 24px;
+    width: 20px;
+  }
+  .kcal-label {
+    margin: 5px 10px 5px 10px;
+    color: #333333;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+}
+
+.social-network {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .button {
+    background-color: transparent;
+    font-size: 12px;
+    height: 22px;
+    color: #707070;
+    .liked {
+      color: #fe6060;
+    }
+  }
+  .icon {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+hr {
+  background-color: lightgrey;
+}
+
+.footer-toolbar {
+  --min-height: 0px !important;
+  padding-bottom: 0;
+}
+
+.likes {
+  display: inline-block;
+  font-size: 12px;
+  text-align: left;
+  width: 100%;
+  p {
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin: 15px 5px 4px 15px;
+  }
+}

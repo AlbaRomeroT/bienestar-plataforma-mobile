@@ -1,0 +1,18 @@
+{
+  "appId": "com.segurosbolivar.bolivarconmigo",
+  "appName": "Bolívar Conmigo",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000
+    }
+  },
+  "server": {
+    "allowNavigation": [
+      "*.segurosbolivar.com"
+    ]
+  },
+  "cordova": {}
+}

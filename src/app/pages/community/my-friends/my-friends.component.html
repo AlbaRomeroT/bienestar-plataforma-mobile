@@ -1,0 +1,140 @@
+<div class="component-content">
+  <div id="finder" class="item-list">
+    <ion-input
+      class="input-search"
+      [(ngModel)]="filterText"
+      placeholder="Encontrar amigos"
+      (ngModelChange)="filterChange($event)"
+      (ionFocus)="checkInputFocus()"
+      (ionBlur)="checkInputBlur()"
+    ></ion-input>
+    <ion-icon
+      slot="end"
+      class="icon-search"
+      src="/assets/activities/searching-magnifying-glass.svg"
+    ></ion-icon>
+  </div>
+
+  <ion-card class="ion-card">
+    <div class="ion-margin-top">
+      <app-title
+        [text]="'Mis solicitudes de amistad'"
+        [cssClass]="'text-activity'"
+      ></app-title>
+      <div
+        class="ion-align-items-center ion-text-center"
+        *ngIf="isLoadingFriendRequests"
+      >
+        <br />
+        <ion-spinner class="ion-spinner" name="bubbles"></ion-spinner>
+      </div>
+      <div class="ion-margin" *ngIf="!haveFriendRequestList()">
+        <ion-label class="item-label"
+          >No tiene solicitudes de amistad</ion-label
+        >
+      </div>
+      <ion-list class="ion-list" *ngIf="haveFriendRequestList()">
+        <ion-item
+          lines="none"
+          class="item-activity"
+          *ngFor="let item of getFriendRequestList() | slice: 0:5"
+        >
+          <img
+            [src]="null"
+            class="photo"
+            onError="src = '/assets/menu/profile-without-photo.svg'"
+            alt=""
+          />
+          <ion-label class="item-label">{{ item.name?.displayName }}</ion-label>
+          <div
+            *ngIf="item.requestAccepted"
+            (click)="viewFriendProfile(item)"
+            class="label-view-profile"
+            end
+          >
+            Ver perfil
+          </div>
+          <div
+            *ngIf="block && !item.requestAccepted"
+            class="ion-align-items-center ion-text-center mt-50-percentage"
+          >
+            <ion-spinner class="ion-spinner" name="bubbles"></ion-spinner>
+          </div>
+          <div *ngIf="!block">
+            <ion-icon
+              *ngIf="!item.requestAccepted"
+              (click)="handlerFriendRequest(false, item)"
+              class="icon-close"
+              src="/assets/community/close.svg"
+              end
+            ></ion-icon>
+            <ion-icon
+              *ngIf="!item.requestAccepted"
+              (click)="handlerFriendRequest(true, item)"
+              class="icon-check"
+              src="/assets/community/check.svg"
+              end
+            ></ion-icon>
+          </div>
+        </ion-item>
+        <ion-row
+          class="ion-align-items-center ion-text-center padding-view-more"
+        >
+          <ion-col size="12">
+            <ion-label
+              (click)="goToViewFriendRequests()"
+              class="label-view-more-requests"
+              >Ver más</ion-label
+            >
+          </ion-col>
+        </ion-row>
+      </ion-list>
+    </div>
+  </ion-card>
+
+  <ion-card class="ion-card">
+    <div class="ion-margin-vertical">
+      <app-title [text]="'Mis amigos'" [cssClass]="'text-activity'"></app-title>
+      <div
+        class="ion-align-items-center ion-text-center"
+        *ngIf="isLoadingFriends"
+      >
+        <br />
+        <ion-spinner class="ion-spinner" name="bubbles"></ion-spinner>
+      </div>
+      <div class="ion-margin" *ngIf="!haveFriendsList()">
+        <ion-label class="item-label">No tiene amigos aún</ion-label>
+      </div>
+      <div *ngIf="haveFriendsList()">
+        <ion-list class="ion-list">
+          <ion-item
+            lines="none"
+            class="item-activity"
+            *ngFor="let item of getFriendsList()"
+          >
+            <img
+              (click)="viewFriendProfile(item)"
+              [src]="null"
+              class="photo"
+              onError="src = '/assets/menu/profile-without-photo.svg'"
+              alt=""
+            />
+            <ion-label (click)="viewFriendProfile(item)" class="item-label">{{
+              item.name?.displayName
+            }}</ion-label>
+            <ion-icon
+              (click)="viewFriendProfile(item)"
+              class="icon-arrow"
+              src="/assets/body/arrow-right.svg"
+              end
+            >
+            </ion-icon>
+          </ion-item>
+        </ion-list>
+        <ion-infinite-scroll (ionInfinite)="showMoreFriends($event)">
+          <ion-infinite-scroll-content></ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+      </div>
+    </div>
+  </ion-card>
+</div>

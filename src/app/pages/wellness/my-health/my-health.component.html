@@ -1,0 +1,100 @@
+<ion-row class="header">
+  <app-back-button-updated class="back"></app-back-button-updated>
+  <app-widget-header class="title" [title]="'Salud'"></app-widget-header>
+</ion-row>
+
+<div class="spin">
+  <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+</div>
+
+<app-background-svg-home
+    [cssClass]="'leitmotiv-health'"
+    [routeImage]="'assets/leitmotivs/leitmotiv-principal-page-wellness.svg'">
+  </app-background-svg-home>
+
+<ng-container *ngFor="let selectedCard of collections">
+  <ion-row>
+    <ion-col size="12" *ngIf="selectedCard.tipoCarnet.includes('BOL')">
+      <app-national-health-card
+        [data]="selectedCard"
+      ></app-national-health-card>
+    </ion-col>
+
+    <ion-col size="12" *ngIf="selectedCard.tipoCarnet.includes('BUPA')">
+      <app-foreign-health-card [data]="selectedCard"></app-foreign-health-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <ion-button
+        class="action-button"
+        fill="none"
+        (click)="changeSide(selectedCard)"
+        >{{ sideButtonText(selectedCard) }}
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ng-container>
+
+<ion-row>
+  <ion-col size="12">
+    <app-title [text]="'Solicite aquí su cita médica virtual'"></app-title>
+  </ion-col>
+</ion-row>
+<ion-row class="pb-10">
+  <ion-col size="6">
+    <ion-card>
+      <ion-card-content (click)="onCallHelpNumber()" id="my-health-call-number">
+        <div class="ion-text-center">
+          <ion-row>
+            <ion-col size="12">
+              <img
+                src="/assets/help-center/icon-phone.svg"
+                class="my-health-image-help"
+                alt=""
+              />
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <span class="text-my-health"
+                >Ll&aacute;menos a la l&iacute;nea
+                <span class="text-link-my-health">{{ callHelpNumber }}</span
+                >.</span
+              >
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size="6">
+    <ion-card>
+      <ion-card-content
+        (click)="openStoreWhatsapp(whatsappHelpClientNumber)"
+        id="open-whatsappHelpClientNumber"
+      >
+        <div class="ion-text-center">
+          <ion-row>
+            <ion-col size="12">
+              <img
+                src="/assets/help-center/icon-chat.svg"
+                class="my-health-image-help"
+                alt=""
+              />
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <span class="text-my-health"
+                >Escr&iacute;banos v&iacute;a
+                <span class="text-link-my-health">Whatsapp</span>.</span
+              >
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-row>

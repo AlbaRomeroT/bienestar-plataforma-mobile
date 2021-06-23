@@ -1,0 +1,134 @@
+<div class="spin">
+  <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+</div>
+
+<app-background-svg-home
+  [cssClass]="'leitmotiv-challenges'"
+  [routeImage]="'/assets/leitmotivs/leitmotiv-second-page.svg'"
+  [hidden]="sectiontToShow === sections.challenges?false:true"
+></app-background-svg-home>
+
+<ng-container *ngIf="sectiontToShow === sections.challenges; else emptyCondition">
+  <ion-grid
+  fixed
+  class="challenge-grid"
+>
+  <ion-row class="bar-shadow">
+    <ion-col class="ion-text-center">
+      <ion-segment
+        scrollable
+        [(ngModel)]="selectedStatus"
+        (ionChange)="statusChanged($event)"
+        mode="ios"
+      >
+        <ion-segment-button
+          class="segment-statuses"
+          id="seg-actives"
+          value="actives"
+        >
+          <ion-label class="label-statuses">Aceptados</ion-label>
+        </ion-segment-button>
+        <ion-segment-button
+          class="segment-statuses"
+          id="seg-completed"
+          [disabled]="completedDisable"
+          value="completed"
+        >
+          <ion-label class="label-statuses">Finalizados</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-col>
+  </ion-row>
+  <ion-row class="leitmotiv-background">
+    <ion-list fixed class="challenge-list">
+      <div
+        class="challenge-list-header actives"
+        *ngIf="selectedStatus === statuses.actives"
+      >
+        <div class="over-image"></div>
+
+        <ion-grid class="grid-header">
+          <div class="ion-row">
+            <p class="title-content">¡Añada nuevos desafios!</p>
+          </div>
+          <div class="ion-row">
+            <p class="description-content">Interactue con su comunidad</p>
+          </div>
+        </ion-grid>
+      </div>
+
+      <div
+        class="challenge-list-header completed"
+        *ngIf="selectedStatus === statuses.completed"
+      >
+        <div class="over-image"></div>
+
+        <ion-grid class="grid-header">
+          <div class="ion-row">
+            <p class="title-content">¡Bien hecho!</p>
+          </div>
+          <div class="ion-row">
+            <p class="description-content">Siga cumpliendo sus desafios</p>
+          </div>
+        </ion-grid>
+      </div>
+      <div
+        *ngFor="let challenge of challenges | challengeStatusFilter:selectedStatus;  let isFinal = last"
+      >
+        <app-challenge-selected
+          [challenge]="challenge"
+          [cssClass]="isFinal?'border-radius-bottom':''"
+          [isEdit]="isEdit"
+        >
+        </app-challenge-selected>
+      </div>
+    </ion-list>
+  </ion-row>
+  <ion-row *ngIf="selectedStatus === statuses.actives">
+    <ion-col class="ion-text-center">
+      <ion-button class="action-button" fill="none" (click)="goToAddChallenge()"
+        >VER DESAFÍOS DISPONIBLES
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ng-container>
+
+<ng-template #emptyCondition>
+  <ng-container>
+    <ion-grid fixed class="empty-grid" [hidden]="showSpinner">
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <img
+            src="/assets/activities/recent-activities-empty.png"
+            class="main-image"
+            alt=""
+          />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <span class="title"> ¡Aún no hay desafÍos que mostrar! </span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <span class="description">
+            ¡Explore y elija los retos que desea lograr e interactue de manera
+            activa con su comunidad!
+          </span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-button
+            class="action-button"
+            fill="none"
+            (click)="goToAddChallenge()"
+            >VER DESAFÍOS DISPONIBLES
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ng-container>
+</ng-template>

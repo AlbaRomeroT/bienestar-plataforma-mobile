@@ -1,0 +1,27 @@
+{
+  "errors": [],
+  "body": {
+    "sex": "male",
+    "dateOfBirth": "1970-01-01",
+    "height": 1.82,
+    "waist": 0.9,
+
+    "mass": 76,
+    "fatMass": 9.2,
+
+    "resting": 59,
+
+    "bmi": 22.944088878155,
+
+    "systolic": 119,
+    "diastolic": 59,
+
+    "tsc": 3.2,
+    "hdl": 1.8,
+    "ldl": 2.1,
+    "tgl": 0.7,
+    "fbg": 4.9,
+    "cbg": 5.1
+  },
+  "hasErrors": false
+}

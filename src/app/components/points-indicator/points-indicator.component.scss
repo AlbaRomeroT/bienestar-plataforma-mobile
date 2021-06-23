@@ -1,0 +1,283 @@
+.progress-percentage-wrapper {
+  position: relative;
+  margin: 8px auto;
+  font-size: 30px;
+}
+
+.progress-percentage-wrapper-bienestar {
+  position: relative;
+  margin: 8px auto;
+  font-size: 30px;
+}
+
+.container-progress-percentage {
+  border-radius: 99px;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #ddd;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.container-progress-percentage-cero {
+  border-radius: 99px;
+  width: 35vw;
+  height: 34.6vw;
+  border: 2px solid #ddd;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.responsive[_nghost-fgm-c132] > svg[_ngcontent-fgm-c132] {
+  border-radius: 99px;
+  border: 2px solid #ddd;
+}
+
+.progress-percentage {
+  position: absolute;
+  color: black;
+  width: 100%;
+  text-align: center !important;
+  top: 30%;
+  left: 0%;
+  z-index: 99;
+  font-size: 43px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.progress-percentage-bienestar {
+  position: absolute;
+  color: black;
+  width: 100%;
+  text-align: center !important;
+  top: 48px;
+  left: 0%;
+  z-index: 99;
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.progress-percentage-differences {
+  position: absolute;
+  color: black;
+  width: 100%;
+  text-align: center !important;
+  top: 55%;
+  left: -1%;
+  z-index: 99;
+  font-size: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.nivel {
+  width: 100%;
+  text-align: left !important;
+  left: -1%;
+  z-index: 99;
+
+  color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.nivel_progreso {
+  color: white;
+  padding-top: 45px;
+  position: relative;
+  margin: 8px auto;
+}
+
+.nivel_comentario {
+  width: 100%;
+  text-align: left !important;
+  left: -1%;
+  z-index: 99;
+
+  color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.round-progress#cero.percentageValue {
+  height: 100% !important;
+  width: 100% !important;
+  display: inline-block !important;
+  padding-bottom: 66% !important;
+}
+
+.round-progress#bienestar-with-data.percentageValue {
+  height: 100% !important;
+  width: 100% !important;
+  display: inline-block !important;
+  padding-bottom: 66% !important;
+}
+
+circle {
+  stroke-width: 33px !important;
+}
+
+.progress-percentage-cero {
+  position: absolute;
+  color: rgb(216, 193, 193);
+  width: 100%;
+  text-align: center !important;
+  top: 28%;
+  left: 0%;
+  z-index: 99;
+  font-size: 33px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.progress-percentage-wrapper-cero {
+  position: relative;
+  margin: 8px auto;
+  font-size: 30px;
+}
+
+.round-progress#cero {
+  margin-left: 0.8px;
+  margin-top: 0.4px;
+  width: 180px !important;
+  display: contents;
+}
+
+ion-label#title {
+  text-align-last: left;
+  color: #1b1b1b;
+  font-weight: bold;
+  font-family: "Roboto Bold Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+ion-label#desc {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 11px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+ion-label#complete {
+  color: #016d38;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-align: end;
+}
+
+.card {
+  border-radius: 8px;
+  background: linear-gradient(180deg, #f7f7f7 0%, #eeeeee 100%);
+}
+
+.card-transparent {
+  background: rgba(255, 255, 255, 0) !important;
+  box-shadow: none !important;
+}
+
+.messages {
+  margin-top: 0px;
+}
+
+.progress-bar-estilo {
+  height: 10px;
+  width: 75px;
+  margin-top: 10px;
+  border-radius: 5px;
+  --background: #095b1d !important;
+  --progress-background: linear-gradient(90deg, #ffdd00 0.07%, #02d46f 100%);
+}
+
+.range {
+  width: 90%;
+  --bar-background: linear-gradient(
+    to bottom,
+    lightgray,
+    #f3f3f3,
+    #f6f6f6,
+    #f3f3f3,
+    lightgray
+  );
+  --bar-background-active: linear-gradient(
+    to right,
+    #ffdd00,
+    #02d46f
+  ) !important;
+  --bar-border-radius: 15px;
+  --bar-height: 10px;
+  --height: 24px;
+  --knob-background: none !important;
+  --knob-box-shadow: none;
+  --knob-size: 22px;
+  padding-left: 0px;
+  opacity: 1;
+}
+
+.disableBar {
+  pointer-events: none;
+}
+
+.progress-buffer-bar {
+  --background: green !important;
+}
+
+.bars {
+  color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0px;
+  line-height: 10px;
+}
+
+.bars2 {
+  color: #202020;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+.titulo {
+  color: #016d38;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.arrow {
+  transform: rotate(180deg);
+  padding: 0px;
+  margin-left: 0px;
+  height: 12px;
+  color: #0f7127;
+  margin-top: 14px;
+}
+
+.col-space {
+  margin-bottom: 10px;
+}
+
+.minititle {
+  text-align-last: end;
+  display: flex;
+}
+
+.spacio-col {
+  padding-left: 10px;
+}
+
+ion-range.range-knob {
+  width: 0px !important;
+}

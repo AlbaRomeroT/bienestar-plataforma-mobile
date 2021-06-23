@@ -1,0 +1,167 @@
+<div class="body-data-content">
+  <ion-row>
+    <ion-col size="8" offset="2" class="ion-text-center">
+      <div class="info-message">
+        <span>Conozca y complete la información sobre su cuerpo:</span>
+      </div>
+    </ion-col>
+  </ion-row>
+</div>
+
+<div
+  class="ion-align-items-center ion-text-center"
+  *ngIf="!bodySurveyQuestions"
+>
+  <br />
+  <ion-spinner class="ion-spinner" name="bubbles"></ion-spinner>
+</div>
+
+<div *ngIf="bodySurveyQuestions">
+  <ion-row class="bar-shadow">
+    <ion-col size="12">
+      <ion-segment
+        id="selected-category"
+        expand="full"
+        scrollable="true"
+        [(ngModel)]="selectedCategory"
+        mode="ios"
+      >
+        <ion-segment-button
+          class="ion-segment-button"
+          [value]="categories[0]"
+          id="seg-{{ categories[0] }}"
+          (click)="focusSegment('seg-' + categories[0])"
+        >
+          <ion-label class="label-categories">Corazón y sangre</ion-label>
+        </ion-segment-button>
+        <ion-segment-button
+          class="ion-segment-button"
+          [value]="categories[1]"
+          id="seg-{{ categories[1] }}"
+          (click)="focusSegment('seg-' + categories[1])"
+        >
+          <ion-label class="label-categories">Hipertensión</ion-label>
+        </ion-segment-button>
+        <ion-segment-button
+          class="ion-segment-button"
+          [value]="categories[2]"
+          id="seg-{{ categories[2] }}"
+          (click)="focusSegment('seg-' + categories[2])"
+        >
+          <ion-label class="label-categories">Diabetes</ion-label>
+        </ion-segment-button>
+        <ion-segment-button
+          class="ion-segment-button"
+          [value]="categories[3]"
+          id="seg-{{ categories[3] }}"
+          (click)="focusSegment('seg-' + categories[3])"
+        >
+          <ion-label class="label-categories">Enfermedad renal</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-col>
+  </ion-row>
+  <div class="body-medical-values-questions-content">
+    <ion-card
+      class="ion-card"
+      *ngFor="
+        let question of bodySurveyQuestions
+          | subcategoryFilter: selectedCategory
+      "
+    >
+      <ion-card-header class="ion-card-header ion-align-items-center">
+        <ion-row class="ion-align-items-center">
+          <span
+            [ngClass]="{
+              'ion-card-subtitle': true,
+              'question-red':
+                isSubmit &&
+                (question.value == null ||
+                  question.value === undefined ||
+                  question.value == '')
+            }"
+            class=""
+            >{{ question.question }}</span
+          >
+        </ion-row>
+      </ion-card-header>
+      <ion-card-content class="margin-fixeds">
+        <ion-row>
+          <ion-col size="12">
+            <div class="ion-card-text">{{ question.recommendation }}</div>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="question.response.length === 2">
+          <ion-col size="8">
+            <ion-segment
+              class="question-segment"
+              color="warning"
+              [(ngModel)]="question.value"
+            >
+              <ion-segment-button
+                *ngFor="let res of question.response"
+                [value]="res.key"
+                layout="icon-start"
+              >
+                <ion-img
+                  class="icon-segment"
+                  *ngIf="res.key == true"
+                  [src]="
+                    question.value === 'true'
+                      ? 'assets/health-indicator/select.svg'
+                      : 'assets/health-indicator/unselect.svg'
+                  "
+                >
+                </ion-img>
+                <ion-img
+                  class="icon-segment"
+                  *ngIf="res.key == false"
+                  [src]="
+                    question.value === 'false'
+                      ? 'assets/health-indicator/select.svg'
+                      : 'assets/health-indicator/unselect.svg'
+                  "
+                >
+                </ion-img>
+                <ion-label class="label-segment">{{ res.value }}</ion-label>
+              </ion-segment-button>
+            </ion-segment>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="question.response.length > 2">
+          <ion-col size="12">
+            <ion-item class="ion-item-ion-input">
+              <ion-select
+                slot="start"
+                interface="action-sheet"
+                class="ion-select"
+                [(ngModel)]="question.value"
+                [interfaceOptions]="{ translucent: true }"
+                cancelText="Cancelar"
+                placeholder="Seleccione..."
+              >
+                <ion-select-option
+                  *ngFor="let res of question.response"
+                  [value]="res.key"
+                >
+                  {{ res.value }}
+                </ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+    <ion-row>
+      <ion-col size="12" class="ion-text-right">
+        <button (click)="save()" class="save-button" [disabled]="isLoading">
+          {{
+            selectedCategory === categories[categories.length - 1]
+              ? "GUARDAR"
+              : "SIGUIENTE"
+          }}
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

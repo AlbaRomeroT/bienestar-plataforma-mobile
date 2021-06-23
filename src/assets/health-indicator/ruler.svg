@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>right icon</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.003922 0 0 0 0 0.427451 0 0 0 0 0.219608 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-petición-de-datos" transform="translate(-295.000000, -341.000000)">
+            <g id="Group-2" transform="translate(26.000000, 329.000000)">
+                <g id="right-icon" transform="translate(269.000000, 12.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                    <g id="ruler" filter="url(#filter-1)">
+                        <g transform="translate(0.000000, 7.000000)">
+                            <path d="M23,0.8 L1,0.8 C0.6,0.8 0.3,1.1 0.3,1.5 L0.3,8.6 C0.3,9 0.6,9.3 1,9.3 L23,9.3 C23.4,9.3 23.7,9 23.7,8.6 L23.7,1.5 C23.7,1.1 23.4,0.8 23,0.8 Z M22.3,7.9 L1.7,7.9 L1.7,2.1 L3.3,2.1 L3.3,4 C3.3,4.4 3.6,4.7 4,4.7 C4.4,4.7 4.7,4.4 4.7,4 L4.7,2.1 L7.3,2.1 L7.3,4 C7.3,4.4 7.6,4.7 8,4.7 C8.4,4.7 8.7,4.4 8.7,4 L8.7,2.1 L11.3,2.1 L11.3,6 C11.3,6.4 11.6,6.7 12,6.7 C12.4,6.7 12.7,6.4 12.7,6 L12.7,2.1 L15.3,2.1 L15.3,4 C15.3,4.4 15.6,4.7 16,4.7 C16.4,4.7 16.7,4.4 16.7,4 L16.7,2.1 L19.3,2.1 L19.3,4 C19.3,4.4 19.6,4.7 20,4.7 C20.4,4.7 20.7,4.4 20.7,4 L20.7,2.1 L22.4,2.1 L22.4,7.9 L22.3,7.9 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

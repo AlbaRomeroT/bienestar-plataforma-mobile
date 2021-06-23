@@ -1,0 +1,182 @@
+<ion-grid class="grid">
+  <ion-row>
+    <ion-col class="first">
+      <ion-row class="header-steps">
+        <ion-col size="3" class="header-steps__col-one">
+          <ion-row class="header-steps__col-one--row">
+            <ion-icon
+              class="header-steps__col-one--row--icon-steps"
+              src="/assets/wellness/steps.svg"
+            >
+            </ion-icon>
+          </ion-row>
+          <!--ion-row>
+            <span class="before">{{
+          indicators?.data[1]?.sums?.steps - indicators?.data[0]?.sums?.steps
+            | numberSign
+        }}</span>
+          </ion-row-->
+        </ion-col>
+        <ion-col size="6" class="header-steps__col-two">
+          <ion-row class="header-steps__col-two--row-one">
+            <span class="header-steps__col-two--row-one--steps-today"
+              >Pasos hoy</span
+            >
+          </ion-row>
+          <ion-row class="header-steps__col-two--row-two">
+            <span class="header-steps__col-two--row-two--steps-today-result" *ngIf="indicators?.data[1]?.sums?.steps">{{
+              indicators?.data[1]?.sums?.steps
+            }}</span>
+            <span class="header-steps__col-two--row-two--steps-today-result" *ngIf="!indicators?.data[1]?.sums?.steps">0</span>
+          </ion-row>
+        </ion-col>
+        <ion-col size="3" class="header-steps__col-three">
+          <ion-row class="header-steps__col-three--row-one">
+            <ion-icon
+              class="header-steps__col-three--row-one--icon"
+              name="chevron-forward-outline"
+            ></ion-icon>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+
+    <ion-col class="second">
+      <ion-row class="header-distance">
+        <ion-col size="3" class="header-distance__col-one">
+          <ion-row class="header-distance__col-one--row">
+            <ion-icon
+              class="header-distance__col-one--row--icon-distance"
+              src="/assets/wellness/icono-distancia-recorrida.svg"
+            >
+            </ion-icon>
+          </ion-row>
+          <!--ion-row>
+            <span class="before">{{
+          indicators?.data[1]?.sums?.distance -
+            indicators?.data[0]?.sums?.distance | numberSign
+        }}</span>
+          </ion-row-->
+        </ion-col>
+        <ion-col size="6" class="header-distance__col-two">
+          <ion-row class="header-distance__col-two--row-one">
+            <span class="header-distance__col-two--row-one--distance-today"
+              >Hoy recorrí</span
+            >
+          </ion-row>
+          <ion-row class="header-distance__col-two--row-two">
+            <span
+              class="header-distance__col-two--row-two--distance-today-result"
+              >{{ indicators?.data[1]?.sums?.distance }}<small *ngIf="indicators?.data[1]?.sums?.distance">m</small></span
+            >
+            <span
+              class="header-distance__col-two--row-two--distance-today-result"
+              >0<small *ngIf="!indicators?.data[1]?.sums?.distance">m</small></span
+            >
+          </ion-row>
+        </ion-col>
+        <ion-col size="3" class="header-distance__col-three">
+          <ion-row class="header-distance__col-three--row-one">
+            <ion-icon
+              class="header-distance__col-three--row-one--icon"
+              name="chevron-forward-outline"
+            ></ion-icon>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="third">
+      <ion-row class="header-energy">
+        <ion-col size="3" class="header-energy__col-one">
+          <ion-row class="header-energy__col-one--row">
+            <ion-icon
+              class="header-energy__col-one--row--icon-energy"
+              src="/assets/wellness/fire.svg"
+            >
+            </ion-icon>
+          </ion-row>
+          <!--ion-row>
+            <span class="before">{{
+          (indicators?.data[1]?.sums?.energy -
+            indicators?.data[0]?.sums?.energy) /
+            4184 | numberSign
+        }}</span>
+          </ion-row-->
+        </ion-col>
+        <ion-col size="6" class="header-energy__col-two">
+          <ion-row class="header-energy__col-two--row-one">
+            <span class="header-energy__col-two--row-one--energy-today"
+              >Calorías</span
+            >
+          </ion-row>
+          <ion-row class="header-energy__col-two--row-two">
+            <span class="header-energy__col-two--row-two--energy-today-result"
+              >{{ indicators?.data[1]?.sums?.energy / 4184 | number: "1.2-2"
+              }}<small>kcal</small></span
+            >
+          </ion-row>
+        </ion-col>
+        <ion-col size="3" class="header-energy__col-three">
+          <ion-row class="header-energy__col-three--row-one">
+            <ion-icon
+              class="header-energy__col-three--row-one--icon"
+              name="chevron-forward-outline"
+            ></ion-icon>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col class="fourth">
+      <ion-row class="header-asleep">
+        <ion-col size="3" class="header-asleep__col-one">
+          <ion-row class="header-asleep__col-one--row">
+            <ion-icon
+              class="header-asleep__col-one--row--icon-asleep"
+              src="/assets/wellness/moon.svg"
+            >
+            </ion-icon>
+          </ion-row>
+          <!--ion-row>
+            <span class="before">{{
+            indicators?.data[1]?.sums?.asleep -
+              indicators?.data[0]?.sums?.asleep | numberSign: true
+          }}
+          {{
+            indicators?.data[1]?.sums?.asleep -
+              indicators?.data[0]?.sums?.asleep | secondsToHours
+          }}<small>h</small
+          >{{
+            indicators?.data[1]?.sums?.asleep -
+              indicators?.data[0]?.sums?.asleep | secondsToMinutes
+          }}<small>min</small></span>
+          </ion-row-->
+        </ion-col>
+        <ion-col size="6" class="header-asleep__col-two">
+          <ion-row class="header-asleep__col-two--row-one">
+            <span class="header-asleep__col-two--row-one--asleep-today"
+              >Dormí</span
+            >
+          </ion-row>
+          <ion-row class="header-asleep__col-two--row-two">
+            <span class="header-asleep__col-two--row-two--asleep-today-result"
+              >{{ indicators?.data[1]?.sums?.asleep | secondsToHours
+              }}<small>h</small
+              >{{ indicators?.data[1]?.sums?.asleep | secondsToMinutes
+              }}<small>min</small></span
+            >
+          </ion-row>
+        </ion-col>
+        <ion-col size="3" class="header-asleep__col-three">
+          <ion-row class="header-asleep__col-three--row-one">
+            <ion-icon
+              class="header-asleep__col-three--row-one--icon"
+              name="chevron-forward-outline"
+            ></ion-icon>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-grid>

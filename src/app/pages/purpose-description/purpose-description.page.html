@@ -1,0 +1,95 @@
+<app-header></app-header>
+<ion-content class="content">
+  <div class="spin">
+    <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+  </div>
+  <ion-row class="header">
+    <app-back-button-updated class="back"></app-back-button-updated>
+    <app-widget-header class="title" [title]="title"></app-widget-header>
+  </ion-row>
+  <div class="data-content">
+    <ion-grid class="grid-shadow">
+      <ion-row class="row-image">
+        <ion-col size="12" class="ion-no-padding">
+          <div class="image-content">
+            <img
+              src="/assets/purpose/images/{{purpose?.key}}_image.jpg"
+              onError="src = '/assets/purpose/purpose-default-large.png'"
+              alt=""
+              class="image"
+            />
+            <ion-button
+              class="image-button"
+              fill="clear"
+              (click)="onAdd()"
+              *ngIf="purpose?.subject?.kind == 'system'"
+            >
+              Añadir
+              <ion-icon name="add-outline" slot="end"></ion-icon>
+            </ion-button>
+            <span class="image-title">{{ purpose.title }}</span>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="row-title">
+        <ion-col>
+          <span> {{ purpose.lead | leadTextClear }} </span>
+        </ion-col>
+      </ion-row>
+      <ion-row class="row-content side-margin-12">
+        <ion-col>
+          <p *ngFor="let link of purpose.body | purposeBody">
+            <span *ngIf="!link.route">{{ link.text }}</span>
+
+            <span *ngIf="link.mp3">{{ link.before }}</span>
+            <a
+              class="link"
+              *ngIf="link.mp3"
+              (click)="openExternaLink(link.mp3)"
+            >
+              {{link.name}}
+            </a>
+            <span *ngIf="link.mp3">{{ link.after }}</span>
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="side-margin-12">
+        <ion-col size="1" class="col-title"> # </ion-col>
+        <ion-col size="8" class="col-title"> Objetivos </ion-col>
+        <ion-col size="3" class="col-title"> Estados </ion-col>
+      </ion-row>
+      <ion-row
+        *ngFor="let objetive of purpose.objectives; let index = index"
+        class="border-top-1 side-margin-12"
+      >
+        <ion-col size="1" class="col-description"> {{ index + 1 }} </ion-col>
+        <ion-col size="8" class="col-description">
+          {{ objetive.text }}
+        </ion-col>
+        <ion-col size="3" class="col-description">
+          {{ objetive.value? objetive.value: 0 }} / {{ objetive.targetValue }}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-row>
+      <ion-col
+        size="12"
+        class="col-center"
+        *ngIf="purpose?.subject?.kind == 'system'"
+      >
+        <ion-button (click)="onAdd()" class="action-button mb-35">
+          AÑADIR PROPÓSITO
+        </ion-button>
+      </ion-col>
+      <ion-col
+        size="12"
+        class="col-center"
+        *ngIf="purpose?.subject?.kind == 'user'"
+      >
+        <ion-button (click)="onRemove()" class="action-button mb-35">
+          ELIMINAR PROPÓSITO
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

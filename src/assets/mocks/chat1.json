@@ -1,0 +1,93 @@
+{
+    "errors": [],
+    "body": {
+        "data": [
+            {
+                "seen": false,
+                "body": "En las últimas dos semanas, ¿cuántas veces ha tomado 2 o más raciones de fruta al día? \n\nNo incluya los zumos de frutas. Una ración es aproximadamente 150 g de fruta cruda o cocinada, 30 g de fruta deshidratada.\n![Fruta][fruit_goal_various_fresh_fruits]",
+                "subcategory": "message",
+                "lead": "Responda a esta pregunta para ayudarme a conocer mejor sus hábitos alimenticios.",
+                "inputs": [
+                    {
+                        "options": [
+                            {
+                                "hint": "Muy bien. La fruta fresca le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable. ¡Siga así!",
+                                "text": "Siempre",
+                                "value": "basic_qn_2017_q01_a1"
+                            },
+                            {
+                                "hint": "Muy bien. La fruta fresca le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable. ¡Siga así!",
+                                "text": "A menudo",
+                                "value": "basic_qn_2017_q01_a2"
+                            },
+                            {
+                                "hint": "Intente comer dos raciones de fruta al día; le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable.",
+                                "text": "De vez en cuando",
+                                "value": "basic_qn_2017_q01_a3"
+                            },
+                            {
+                                "hint": "Intente comer dos raciones de fruta al día; le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable. ¿Le gustaría mejorar su consumo de fruta? Haga clic en el siguiente enlace para recibir orientación: [Visite este enlace](dacadoo://functions/goals/nutrition_p_fi_1)",
+                                "text": "Casi nunca",
+                                "value": "basic_qn_2017_q01_a4"
+                            },
+                            {
+                                "hint": "Intente comer más fruta; le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable. ¿Le gustaría mejorar su consumo de fruta? Haga clic en el siguiente enlace para recibir orientación: [Visite este enlace](dacadoo://functions/goals/nutrition_p_fi_1)",
+                                "text": "Nunca",
+                                "value": "basic_qn_2017_q01_a5"
+                            }
+                        ],
+                        "text": "input_basic_qn_2017_q01_text",
+                        "type": "select",
+                        "key": "basic_qn_2017_q01"
+                    }
+                ],
+                "creator": {
+                    "kind": "user",
+                    "id": "5f96d87332a85836bc7a9967",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967"
+                        }
+                    ]
+                },
+                "sharing": {
+                    "group": false,
+                    "subjects": [],
+                    "user": false,
+                    "public": false
+                },
+                "icon": "/nutrition",
+                "order": 1603810878000,
+                "modificationTime": "2020-10-27T15:01:18Z",
+                "subject": {
+                    "kind": "user",
+                    "id": "5f96d87332a85836bc7a9967",
+                    "links": [
+                        {
+                            "rel": "self",
+                            "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967"
+                        }
+                    ]
+                },
+                "category": "nutrition",
+                "time": "2020-10-27T15:01:18Z",
+                "kind": "message",
+                "completed": false,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://api.int.appsb.segurosbolivar.com/2/messages/5f98363ff747dd479f6d1de3"
+                    }
+                ],
+                "objectives": [],
+                "message": "basic_qn_2017_01",
+                "id": "5f98363ff747dd479f6d1de3",
+                "rewards": [],
+                "valid": true,
+                "title": "Seguros a la mano"
+            }
+        ]
+    },
+    "hasErrors": false
+}

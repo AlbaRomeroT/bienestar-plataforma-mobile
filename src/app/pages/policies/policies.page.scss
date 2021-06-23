@@ -1,0 +1,25 @@
+.header {
+  height: 45px;
+  .title {
+    color: var(--color-black-1);
+    margin-left: 10px;
+    font-family: var(--global-font-family);
+  }
+  .back {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+.text-html {
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-black-2);
+}
+
+ion-spinner {
+  color: var(--color-green-1);
+}

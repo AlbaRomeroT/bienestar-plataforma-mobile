@@ -1,0 +1,68 @@
+:host {
+  background-color: #fbfbfb;
+}
+
+@media (min-width: 992px), (orientation: landscape) {
+  :host {
+    background: none;
+    background-color: #fbfbfb;
+  }
+}
+
+.ion-content {
+  --background: #fff;
+}
+
+.color-transparent-class {
+  color: transparent;
+}
+
+.segment-bar {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 16px;
+  font-size: 14px;
+  .ion-segment-label {
+    margin-bottom: 1px;
+  }
+}
+
+.ion-segment-tab {
+  text-transform: none;
+  --color-checked: #016d38;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+
+.ion-segment-tab::part(indicator) {
+  margin: auto;
+  width: 30px;
+}
+
+.community {
+  color: #fff;
+}
+
+.body-data-content {
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-color: #fbfbfb;
+  background-size: 100%;
+}
+
+.body-data-content.my-health {
+  background: url("/assets/leitmotivs/bottom-leimotiv-health.svg") 0 0/100%
+    no-repeat;
+  background-position: bottom;
+}
+
+.segment-border {
+  border-bottom: 1px solid #e6e6e6;
+  margin: -2.5px 0px 0px 0px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10vw;
+}

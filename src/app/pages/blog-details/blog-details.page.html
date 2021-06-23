@@ -1,0 +1,22 @@
+<app-header></app-header>
+<ion-row class="header-blog">
+  <app-back-button-updated
+    class="back"
+    (click)="clean()"
+  ></app-back-button-updated>
+  <app-widget-header
+    class="title-back-button"
+    [title]="titleBackButton"
+  ></app-widget-header>
+</ion-row>
+<ion-content>
+  <ion-row class="ion-margin">
+    <ion-col size="12">
+      <div class="ion-align-items-center ion-text-center">
+        <ion-spinner name="bubbles" [hidden]="htmlBlog"></ion-spinner>
+      </div>
+      <p class="title-blog" [hidden]="!htmlBlog">{{ title }}</p>
+      <div [innerHTML]="htmlBlog" class="text-html" [hidden]="!htmlBlog"></div>
+    </ion-col>
+  </ion-row>
+</ion-content>

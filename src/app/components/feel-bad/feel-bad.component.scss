@@ -1,0 +1,82 @@
+.checkedColor {
+  --background-checked: green;
+  --border-color-checked: transparent;
+  margin-inline-end: 13px;
+}
+
+.text-label {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333333;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+.bg-color {
+  --border-radius: 20px;
+  --background: #ffdc5d;
+  --color: #006d38;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  height: 36px;
+  width: 121px;
+  margin-top: 15px;
+}
+
+.checksFonts {
+  --color: #333333;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.selectedRadio {
+  --color-checked: #ffdc5d;
+}
+
+.ion-radio-group-arl {
+  width: 100%;
+}
+
+.radio-separate-left {
+  margin-left: 10%;
+}
+
+.radio-separate-right {
+  margin-right: 20%;
+}
+
+.radio-label {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333333;
+  line-height: 18px;
+  font-size: 14px;
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+div#errores {
+  box-sizing: border-box;
+  height: 65px;
+  width: 100%;
+  border: 1px solid #facacf;
+  border-radius: 3px;
+  background-color: #f7d4d7;
+}
+
+div#desc-error {
+  height: 64.91px;
+  color: #611a15;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 21px;
+  margin-top: 21px;
+}
+
+.ion-spinner {
+  color: #016d38;
+}

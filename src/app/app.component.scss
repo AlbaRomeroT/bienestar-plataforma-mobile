@@ -1,0 +1,11 @@
+ion-menu {
+  z-index: 30002;
+}
+
+.splash {
+  z-index: 1000000;
+  background-color: var(--color-white-0);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

@@ -1,0 +1,9 @@
+<app-header></app-header>
+<ion-content class="content">
+  <qr-lib-update-widget
+    [docNumber]="docNumber"
+    [env]="env"
+    (updateWidgetEvent)="onUpdateWidgetEvent($event)"
+  >
+  </qr-lib-update-widget>
+</ion-content>

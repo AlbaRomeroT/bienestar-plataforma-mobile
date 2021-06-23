@@ -1,0 +1,190 @@
+<div *ngIf="spinner">
+  <div class="ion-align-items-center ion-text-center" style="padding-top: 30px">
+    <ion-spinner class="ion-spinner" name="bubbles"></ion-spinner>
+  </div>
+</div>
+  
+<div *ngIf="!spinner">
+  <div class="container body">
+    <div class="ion-padding">
+      <div>
+        <div id="finder" class="item-list">
+          <ion-input
+            class="finderInput"
+            [(ngModel)]="filterActivity"
+            placeholder="Buscar"
+            (ionFocus)="checkInputFocus()"
+            (ionBlur)="checkInputBlur()"
+            (ionChange)="checkInputChange()"
+            [disabled]="isFinderDisabled"
+          ></ion-input>
+          <ion-icon
+            name="chevron-down-outline"
+            slot="end"
+            class="icon-search"
+            (click)="onSearchActivity()"
+          ></ion-icon>
+        </div>
+
+        <div
+          *ngIf="activities && activities.length > 0"
+          class="activitiesgruper"
+        >
+          <ion-list>
+            <ion-item
+              lines="none"
+              (click)="selectActivity(item)"
+              class="item-activity"
+              *ngFor="
+                let item of activitiesFilter
+                  | startswithArrayField: filterActivity:'name'
+              "
+            >
+              <ion-label class="item-label">{{ item.name }}</ion-label>
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+    </div>
+
+    <div class="progress-wrapper">
+      <div class="contain-row-letter">
+        <ion-row class="letter-container">
+          <ion-col size="4" class="font-size-col">H</ion-col>
+          <ion-col size="4" class="font-size-col">M</ion-col>
+          <ion-col size="4" class="font-size-col">S</ion-col>
+        </ion-row>
+        <div [innerHTML]="clock" class="current2"></div>
+      </div>
+      <div class="container-progress-percentage">
+        <div class="container-progress">
+          <round-progress
+            id="with-data"
+            class="percentageValue"
+            [current]="current"
+            [max]="max"
+            color="url(#gradient)"
+            [background]="background"
+            [radius]="radius"
+            [stroke]="stroke"
+            [semicircle]="semicircle"
+            [rounded]="rounded"
+            [clockwise]="clockwise"
+            [responsive]="responsive"
+            [duration]="duration"
+            [animation]="animation"
+            [animationDelay]="animationDelay"
+          >
+          </round-progress>
+        </div>
+      </div>
+    </div>
+
+    <ion-grid>
+      <ion-row class="principal-content-row">
+        <ion-col size="2" class="col-stop">
+          <ion-row class="content-row-stop">
+            <ion-col>
+              <ion-img
+                id="stop"
+                src="/assets/chronometer/stop.svg"
+                (click)="callModal('1')"
+              >
+              </ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-text> Borrar </ion-text>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="4" class="col-play-pause">
+          <ion-row class="content-row-play-pause-resume">
+            <ion-col>
+              <ion-img
+                id="play"
+                src="/assets/chronometer/play.svg"
+                *ngIf="play && !pause && !resumen"
+                (click)="startTimer()"
+              >
+              </ion-img>
+              <ion-img
+                id="pause"
+                src="/assets/chronometer/pause.svg"
+                *ngIf="!play && pause && !resumen"
+                (click)="pauseTimer()"
+              >
+              </ion-img>
+              <ion-img
+                id="resumen"
+                src="/assets/chronometer/resumen.svg"
+                *ngIf="!pause && resumen"
+                (click)="startTimer()"
+              >
+              </ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-text *ngIf="play && !pause && !resumen"> Iniciar </ion-text>
+              <ion-text *ngIf="!play && pause && !resumen"> Pausar </ion-text>
+              <ion-text *ngIf="!pause && resumen"> Reanudar </ion-text>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="2" class="col-save">
+          <ion-row class="content-row-save">
+            <ion-col>
+              <ion-img
+                id="save"
+                src="/assets/chronometer/save.svg"
+                (click)="callModal('2')"
+              ></ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-text> Guardar </ion-text>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="card-calories">
+        <ion-col size="12" class="box-title">Energía gastada</ion-col>
+        <ion-col size="4">
+          <ion-img id="fuego" src="/assets/chronometer/fire.svg"></ion-img>
+        </ion-col>
+        <ion-col size="8" style="text-align: left"
+          >{{ caloriesFull }} <ion-label class="kcal">Kcal</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="addGrid">
+      <ion-row>
+        <ion-col size="4" (click)="goToAddAct()">
+          <ion-icon
+            class="icons-add"
+            id="activities"
+            src="/assets/chronometer/add_act_manually.svg"
+          ></ion-icon>
+          <ion-row class="title-add">Añadir actividad manualmente</ion-row>
+        </ion-col>
+
+        <ion-col size="4" (click)="goToAddSleep()">
+          <ion-icon
+            class="icons-add"
+            id="sleep"
+            src="/assets/chronometer/add_sleep.svg"
+          ></ion-icon>
+          <ion-row class="title-add">Añadir datos de sueño</ion-row>
+        </ion-col>
+
+        <ion-col size="4" (click)="goToBody()">
+          <ion-icon
+            class="icons-add"
+            id="body_val"
+            src="/assets/chronometer/add_body_val.svg"
+          ></ion-icon>
+          <ion-row class="title-add">Añadir valores corporales</ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</div>

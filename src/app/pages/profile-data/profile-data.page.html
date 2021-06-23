@@ -1,0 +1,61 @@
+<app-header></app-header>
+<ion-content class="ion-content-profile-data">
+  <div *ngIf="currentStep==steps.perfil">
+    <app-single-profile-data (nextEvent)="tabChange($event)">
+    </app-single-profile-data>
+  </div>
+
+  <div *ngIf="currentStep==steps.profesional">
+    <app-single-profesional-data
+      (nextEvent)="tabChange($event)"
+      (previousEvent)="tabChange($event)"
+    >
+    </app-single-profesional-data>
+  </div>
+
+  <div *ngIf="currentStep==steps.personal">
+    <app-single-personal-data
+      (saveEvent)="save()"
+      (previousEvent)="tabChange($event)"
+    >
+    </app-single-personal-data>
+  </div>
+
+  <ion-segment
+    #myToolbarProfileData
+    (ionChange)="tabChange($event)"
+    class="segment-bar"
+    size="12"
+    expand="full"
+    scrollable="true"
+    [(ngModel)]="currentStep"
+    mode="md"
+  >
+    <ion-segment-button
+      class="ion-segment-tab"
+      id="seg-perfil"
+      disabled
+      [value]="steps.perfil"
+    >
+      <div class="follow-tab-first"></div>
+    </ion-segment-button>
+    <ion-segment-button
+      class="ion-segment-tab"
+      id="seg-profesional"
+      disabled
+      [value]="steps.profesional"
+    >
+      <div class="follow-tab-secondary"></div>
+    </ion-segment-button>
+    <ion-segment-button
+      class="ion-segment-tab"
+      id="seg-personal"
+      disabled
+      [value]="steps.personal"
+    >
+      <div class="follow-tab-tertiary"></div>
+    </ion-segment-button>
+  </ion-segment>
+  <br />
+  <br />
+</ion-content>

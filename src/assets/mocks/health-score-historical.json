@@ -1,0 +1,71 @@
+{
+  "errors": [],
+    "body": [
+      {
+          "components": {
+              "body": 416,
+              "lifestyle": 701,
+              "feelings": 520
+          },
+          "score": 558,
+          "date": "2019-08-12"
+      }, {
+          "components": {
+              "body": 425,
+              "lifestyle": 706,
+              "feelings": 500
+          },
+          "score": 561,
+          "date": "2019-08-11"
+      }, {
+          "components": {
+              "body": 357,
+              "lifestyle": 588,
+              "feelings": 510
+          },
+          "score": 484,
+          "date": "2019-08-10"
+      }, {
+          "components": {
+              "body": 410,
+              "lifestyle": 706,
+              "feelings": 550
+          },
+          "score": 485,
+          "date": "2019-08-09"
+      }, {"components": {
+              "body": 450,
+              "lifestyle": 594,
+              "feelings": 530
+          },
+          "score": 487,
+          "date": "2019-08-08"
+      }, {
+          "components": {
+              "body": 357,
+              "lifestyle": 706,
+              "feelings": 500
+          },
+          "score": 489,
+          "date": "2019-08-07"
+      }, {
+          "components": {
+              "body": 384,
+              "lifestyle": 706,
+              "feelings": 530
+          },
+          "score": 489,
+          "date": "2019-08-06"
+      }, {
+          "components": {
+              "body": 421,
+              "lifestyle": 595,
+              "feelings": 540
+          },
+          "score": 487,
+          "date": "2019-08-05"
+      }
+    ]
+    ,"hasErrors": false
+}
+

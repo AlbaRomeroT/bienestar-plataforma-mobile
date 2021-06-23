@@ -1,0 +1,251 @@
+.content {
+  --background: var(--color-white-0);
+  color: var(--color-black-0);
+  font-family: var(--global-font-family);
+}
+
+.data-content {
+  background: url("../../../assets/purpose/leitmotiv-bottom.svg") 0 0/100%
+    no-repeat;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: var(--color-white-1);
+  background-size: 100%;
+}
+
+.header-md::after {
+  display: none;
+}
+
+.header-challenge-description {
+  border-bottom: 1px solid var(--color-white-2);
+  border-top: 1px solid var(--color-white-2);
+  background-color: var(--color-white-1);
+  height: 45px;
+  .title {
+    color: var(--color-black-1);
+    margin-left: 10px;
+    font-family: var(--global-font-family);
+  }
+  .back {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+.row-image {
+  height: 128px;
+  width: 100%;
+}
+
+.image-content {
+  height: 123px;
+  border-width: 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 0px !important;
+  background: var(--color-black-0);
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  opacity: 0.4;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.image-title {
+  width: 100%;
+  color: var(--color-white-1);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  bottom: 36px;
+  left: 16px;
+}
+
+.image-quantity {
+  color: var(--color-white-0);
+  font-family: var(--global-font-family);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+.image-quantity ion-icon {
+  margin-right: 4px;
+}
+
+.image-button {
+  position: absolute;
+  top: -4px;
+  right: -2px;
+  text-transform: none;
+  --background: var(--color-yellow-1);
+  --border-radius: 20px 0px 0px 20px;
+  --color: var(--color-green-1);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+  height: 30px;
+}
+
+.image-content .over-image {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black-alpha-3);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  opacity: 0.5;
+}
+
+.action-button {
+  text-transform: none;
+  --background: var(--color-yellow-1);
+  --border-radius: 20px;
+  --color: $ !important;
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.row-title {
+  margin: 21px 12px 0px 12px;
+  color: var(--color-black-1);
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.row-content {
+  color: var(--color-gray-3);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.link-text {
+  font-size: 14px;
+  color: var(--color-black-0);
+}
+
+.border-top-1 {
+  border-top: 1px solid var(--color-white-4);
+}
+
+.side-margin-12 {
+  margin: 0px 12px;
+}
+
+.col-title {
+  color: var(--color-black-2);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.col-description {
+  color: var(--color-gray-3);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.col-center {
+  text-align: center;
+}
+
+.grid-shadow {
+  background-color: var(--color-white-0);
+  box-shadow: 1px 1px 10px 1px var(--color-black-alpha-2);
+  margin: 18px;
+  border-radius: 8px;
+  padding: 0px 0px 25px;
+}
+
+.grid-shadow.rating {
+  padding: 10px;
+}
+
+.spin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+ion-spinner {
+  width: 28px;
+  height: 28px;
+  stroke: var(--color-black-3);
+  fill: var(--color-black-4);
+}
+
+.link {
+  color: var(--color-green-5) !important;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.rating-title {
+  color: var(--color-black-1);
+  font-family: var(--global-font-family);
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.rating-text {
+  color: var(--color-black-1);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19px;
+  margin-top: 10px;
+}
+
+.summary {
+  margin: 10px;
+  .title {
+    color: var(--color-black-2);
+    font-family: var(--global-font-family);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+  .description {
+    color: var(--color-gray-3);
+    font-family: var(--global-font-family);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+}
+
+.row-challenge-ratings{
+  align-items: flex-end;
+}
+
+

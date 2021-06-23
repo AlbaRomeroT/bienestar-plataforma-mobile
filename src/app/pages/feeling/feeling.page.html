@@ -1,0 +1,72 @@
+<app-header></app-header>
+<ion-row class="header">
+  <app-back-button-updated class="back"></app-back-button-updated>
+  <app-widget-header class="title" [title]="title"></app-widget-header>
+</ion-row>
+<ion-content class="content">
+  <div class="spin">
+    <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+  </div>
+  <div class="graph-content">
+    <app-histogram-chart
+      [data]="healthScoreData"
+      [type]="'feelings'"
+    ></app-histogram-chart>
+  </div>
+  <div class="info-message">
+    <span>
+      Actualicemos su estado de ánimo. Mueva el nivel de las barras hacia los
+      lados según cada pregunta:
+    </span>
+  </div>
+  <ion-grid fixed class="grid">
+    <ion-row class="bar-shadow">
+      <ion-col size="12">
+        <ion-segment
+          scrollable
+          [(ngModel)]="selectedCategory"
+          (ionChange)="categoryChanged($event)"
+          mode="ios"
+        >
+          <ion-segment-button
+            class="segment-categories"
+            id="seg-feeling"
+            value="feeling"
+          >
+            <ion-label class="label-categories">¿Cómo se siente?</ion-label>
+          </ion-segment-button>
+          <ion-segment-button
+            class="segment-categories"
+            id="seg-body"
+            value="body"
+          >
+            <ion-label class="label-categories"
+              >Hablemos de su cuerpo</ion-label
+            >
+          </ion-segment-button>
+          <ion-segment-button
+            class="segment-categories"
+            id="seg-habits"
+            value="habits"
+          >
+            <ion-label class="label-categories"
+              >Revisemos sus hábitos</ion-label
+            >
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+    <ion-row
+      *ngFor="let question of feelingQuestions?.questionList | subcategoryFilter:selectedCategory"
+    >
+      <ion-col size="12">
+        <app-feeling-question [question]="question"></app-feeling-question>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" class="align-right">
+        <button (click)="next()" class="action-button" [disabled]="modalIsActive">{{ buttonText }}</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

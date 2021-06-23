@@ -1,0 +1,135 @@
+.ion-justify-content-center {
+  display: flex;
+}
+
+.ion-content {
+  --background: white;
+  margin-bottom: 20vw;
+}
+
+.btn-desconectar {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #016d38;
+  background: none;
+}
+
+.main-image,
+.icon-desc {
+  width: 74px;
+  height: 65px;
+}
+
+.main-image {
+  padding-top: 30px;
+  left: 147.11px;
+  top: 181px;
+}
+
+.bg-color {
+  --border-radius: 20px;
+  --background: #ffdc5d;
+  --color: #006d38;
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  height: 36px;
+  width: 122px;
+}
+
+.bg-color-no-selected {
+  box-sizing: border-box !important;
+  height: 36px;
+  width: 238px;
+  --border: 1px solid #ffdc5d;
+  --border-radius: 20px;
+  border-radius: 20px;
+  --background: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.09);
+  font-family: "Roboto Condensed", sans-serif !important;
+  --color: #006d38;
+}
+
+.content-text {
+  width: 80%;
+  opacity: 0.9;
+  color: #666666;
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: left;
+  margin-left: 30px !important;
+}
+
+.content-text-update {
+  opacity: 0.9;
+  color: #666666;
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: left;
+  margin-left: 30px !important;
+}
+
+.ion-justify-content-center {
+  display: flex;
+  margin-top: 60px;
+}
+
+.name {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-style: "bold";
+}
+
+.header-body {
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  background-color: #fbfbfb;
+  height: 45px;
+  overflow: visible;
+  .title {
+    color: #1b1b1b;
+    margin-left: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    overflow: visible !important;
+  }
+  .back {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+ion-spinner {
+  transform: scale(3);
+}
+
+ion-content.background {
+  --background: url("/assets/leitmotivs/bottom-leimotiv.svg") 0 0/100% 190%
+    no-repeat white;
+}
+
+.mt-50-percentage {
+  margin-top: 50%;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.content-desc {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  margin-left: -3vw;
+  width: 100vw;
+}

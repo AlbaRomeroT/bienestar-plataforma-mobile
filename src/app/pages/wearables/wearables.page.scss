@@ -1,0 +1,89 @@
+.header-wearables {
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #fff;
+  height: 45px;
+  overflow: visible;
+  .title {
+    color: #1b1b1b;
+    margin-left: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    overflow: visible !important;
+  }
+  .back {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+#content {
+  margin: 20px;
+}
+
+.rectangle {
+  margin: 5px 15px;
+  height: 97px;
+  width: 97px;
+  opacity: 0.6;
+  border-radius: 8px;
+  background-color: #e4e4e4;
+  //box-shadow: 0px 0px 5px rgb(0 0 0 / 40%);
+  position: relative;
+}
+
+.desc {
+  height: 112px;
+  width: 100%;
+  color: #666666;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.title {
+  height: 19px;
+  width: 228px;
+  color: #1b1b1b;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.block p {
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  top: 16vw;
+}
+
+.block img {
+  position: absolute;
+  margin: 16px;
+  width: 65px;
+  height: 40px;
+}
+
+.connected {
+  background-color: rgb(255, 255, 255) !important;
+  /* text-align: center; */
+  color: #1b1b1b;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  opacity: initial !important;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin: 5px 15px;
+  height: 97px;
+  width: 97px;
+}
+
+.wearables-row {
+  margin-right: 20px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}

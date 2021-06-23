@@ -1,0 +1,321 @@
+.content-background {
+  display: block;
+  position: relative;
+  order: -1;
+  width: 100%;
+  z-index: 10;
+}
+
+.content-login {
+  background-color: var(--color-white-0);
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.col-card {
+  background-color: var(--color-white-0);
+  border-radius: 10px;
+}
+
+#num_doc {
+  padding-left: 1.2em !important;
+}
+
+.segment-bar {
+  --min-height: 40px;
+}
+
+.segment-buttons {
+  color: var(--color-green-1);
+  font-family: var(--global-font-family);
+  letter-spacing: 0;
+  border-top: 0px;
+}
+
+ion-segment-button::part(indicator) {
+  margin: auto;
+  margin-bottom: 2px;
+  width: 50px;
+}
+
+.segment-button-checked {
+  --indicator-color: var(--color-green-1);
+}
+
+.segment-label {
+  text-transform: none;
+  color: var(--color-gray-0);
+  font-family: var(--global-font-family);
+}
+
+.segment-button-checked .segment-label {
+  color: var(--color-green-0);
+}
+
+.account-creation {
+  padding: 10px;
+  background: linear-gradient(
+    180deg,
+    var(--color-black-alpha-9) 0%,
+    var(--color-black-alpha-10) 100%
+  );
+  padding: 0px;
+  width: 100%;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 0;
+}
+
+.account-creation h1 {
+  margin-top: 10px;
+  text-transform: none;
+  height: 21px;
+  color: var(--color-gray-3);
+  //font-family: "Roboto";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 21px;
+  text-align: center;
+}
+
+.account-creation-button {
+  --background: transparent !important;
+  --box-shadow: none;
+}
+
+.account-creation-button small {
+  margin-left: 8px;
+  text-transform: none;
+  text-decoration: underline;
+  height: 19px;
+  color: var(--color-green-1);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.terminos {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  /*optional*/
+  font-family: var(--font-family-2);
+  /*input has OS specific font-family*/
+  color: var(--color-blue-1);
+  cursor: pointer;
+}
+
+.ion-text-center {
+  line-height: 0px;
+}
+
+.content-btn-create-account {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 0px;
+}
+
+.red-border-class {
+  border: 1px solid var(--color-red-0);
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid var(--color-red-0) !important;
+}
+
+div#errores {
+  color: var(--color-red-4);
+  text-align: left;
+  font-size: 14px;
+  line-height: 21px;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  background-color: var(--color-red-light-1);
+  font-family: var(--global-font-family);
+}
+
+.message-span-error {
+  color: var(--color-red-0);
+  margin-top: 2vw;
+}
+
+.label-stacked.sc-ion-label-md-h,
+.label-floating.sc-ion-label-md-h {
+  margin-left: 16px !important;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--color-gray-7);
+}
+
+#ion-input-0-lbl {
+  color: var(--color-gray-8);
+  font-family: var(--global-font-family);
+}
+
+//Rotar la flecha
+#arrow {
+  transform: rotate(270deg);
+  font-size: 16px;
+}
+//Full text del select
+#select {
+  max-width: 70% !important;
+  font-family: var(--global-font-family);
+}
+
+.desc {
+  margin-top: 10px;
+  height: 42px;
+  color: var(--color-black-2);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+  text-align: center;
+}
+
+.title {
+  margin-top: 21px;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 25px;
+  /*  width: 280px; */
+  color: var(--color-black-2);
+  font-family: var(--global-font-family);
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 21px;
+  text-align: center;
+}
+
+.item-inner {
+  border: none;
+}
+
+.num_doc {
+  margin-top: 29px;
+  margin-left: 0px;
+  background: var(--color-white-0);
+  border-color: var(--color-gray-9);
+  border-radius: 1vw;
+  border-right: 2px solid var(---color-gray-alpha-2);
+  border-top: 2px solid var(---color-gray-alpha-1);
+  border-left: 2px solid var(---color-gray-alpha-2);
+  border-bottom: 2px solid var(--color-gray-10);
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  font-family: var(--global-font-family);
+  width: 100%;
+}
+
+.tipo_doc {
+  margin-top: 37px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background: var(--color-white-0);
+  border-color: var(--color-gray-9);
+  border-radius: 1vw;
+  border-right: 2px solid var(---color-gray-alpha-2);
+  border-top: 2px solid var(---color-gray-alpha-1);
+  border-left: 2px solid var(---color-gray-alpha-2);
+  border-bottom: 2px solid var(--color-gray-10);
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  font-family: var(--global-font-family);
+  width: 100%;
+}
+
+.btnGuardar {
+  margin-top: 29px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 200px;
+  color: var( --color-green-6);
+  --background: var(--color-yellow-1);
+  font-family: var(--global-font-family);
+}
+
+.segment-label {
+  text-transform: none;
+  color: var(--color-gray-0);
+}
+
+div.select-icon {
+  --width: 0px !important;
+  --height: 0px;
+}
+
+.submitted.ion-invalid {
+  border-color: var(--color-red-3);
+}
+
+ion-select::part(icon) {
+  display: none !important;
+}
+ion-select {
+  .select-text {
+    font-family: var(--global-font-family);
+  }
+}
+
+ion-item {
+  --inner-border-width: 0;
+}
+
+/* Login transversal */
+#confirmPassRegister {
+  margin-top: 8vw !important;
+}
+
+.form-login legend {
+  display: none !important;
+}
+
+.legalChecks {
+  margin-top: 30px;
+}
+
+.label_checks {
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  color: var(--color-gray-0);
+}
+
+.checked {
+  --background-checked: var(--color-green-1);
+  --border-color: var(--color-gray-0);
+  --border-color-checked: transparent !important;
+}
+
+.terminoss {
+  --background: none !important;
+  --border: none;
+  --padding: 0 !important;
+  /*optional*/
+  --text-decoration: underline;
+  font-size: 12px;
+  color: var(--color-green-1);
+  text-decoration: underline;
+  text-align: center;
+  display: flex;
+  font-family: var(--global-font-family);
+  text-transform: initial;
+  /*input has OS specific font-family*/
+  --color: var(--color-blue-1);
+  --cursor: pointer;
+  --box-shadow: none;
+  --text-transform: none !important;
+}

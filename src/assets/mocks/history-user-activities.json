@@ -1,0 +1,134 @@
+{
+    "errors": [],
+    "body": {
+        "data": [
+            {
+                "duration": "167",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "18 de Agosto, 10:40 A.M",
+                "normenergy": "3"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "10 de Octubre, 10:40 A.M",
+                "normenergy": "45"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "10 de Octubre, 10:40 A.M",
+                "normenergy": "68"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "10 de Octubre, 10:40 A.M",
+                "normenergy": "80"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "10 de Octubre, 10:40 A.M",
+                "normenergy": "60"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "10 de Octubre, 10:40 A.M",
+                "normenergy": "70"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "10 de Octubre, 10:40 A.M",
+                "normenergy": "40"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "10 de Octubre, 10:40 A.M",
+                "normenergy": "15"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "2020-10-28T20:59:23Z",
+                "normenergy": "2"
+            },
+            {
+                "duration": "2",
+                "activity": "skipping",
+                "normpower": "12.784444444444",
+                "modificationTime": "10 de Octubre, 10:40 A.M",
+                "normenergy": "1534.1333333333"
+            },
+            {
+                "duration": "2",
+                "activity": "ballet",
+                "normpower": "5.8111111111111",
+                "modificationTime": "10 de Octubre, 10:40 A.M",
+                "normenergy": "56"
+            },
+            {
+                "duration": "2",
+                "activity": "Ciclismo",
+                "normpower": "6.3922222222222",
+                "modificationTime": "10 de Octubre, 10:40 A.M",
+                "normenergy": "79"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "11 de Octubre, 08:40 A.M",
+                "normenergy": "45"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "11 de Octubre, 08:40 A.M",
+                "normenergy": "46"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "11 de Octubre, 08:40 A.M",
+                "normenergy": "46"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "11 de Octubre, 08:40 A.M",
+                "normenergy": "43"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "11 de Octubre, 08:40 A.M",
+                "normenergy": "77"
+            },
+            {
+                "duration": "2",
+                "activity": "Caminata",
+                "normpower": "3.9100823045267",
+                "modificationTime": "11 de Octubre, 08:40 A.M",
+                "normenergy": "77"
+            }
+        ]
+    },
+    "hasErrors": false
+}

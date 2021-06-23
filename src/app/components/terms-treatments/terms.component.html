@@ -1,0 +1,27 @@
+<app-header-only></app-header-only>
+
+<ion-content>
+  <ion-row class="header">
+    <app-back-button-updated
+      class="back"
+      (click)="dismiss()"
+    ></app-back-button-updated>
+    <app-widget-header
+      class="title"
+      [title]="'Términos y condiciones'"
+    ></app-widget-header>
+  </ion-row>
+
+  <ion-row class="ion-margin">
+    <ion-col size="12">
+      <div class="ion-align-items-center ion-text-center">
+        <ion-spinner name="bubbles" [hidden]="htmlTerms"></ion-spinner>
+      </div>
+      <div
+        [innerHTML]="htmlTerms"
+        class="text-html"
+        [hidden]="!htmlTerms"
+      ></div>
+    </ion-col>
+  </ion-row>
+</ion-content>

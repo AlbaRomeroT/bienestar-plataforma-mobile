@@ -1,0 +1,617 @@
+[
+    {
+        "key": "gardening",
+        "name": "Jardinería",
+        "phrase": "haciendo jardinería"
+    },
+    {
+        "key": "treadmill",
+        "name": "Cinta de caminar",
+        "phrase": "en una cinta de caminar"
+    },
+    {
+        "key": "cx_worx",
+        "name": "CXWorx®",
+        "phrase": "haciendo CXWorx®"
+    },
+    {
+        "key": "indoor_cycling",
+        "name": "Ciclismo indoor",
+        "phrase": "haciendo ciclismo indoor"
+    },
+    {
+        "key": "ballroom_dance",
+        "name": "Baile de salón",
+        "phrase": "haciendo baile de salón"
+    },
+    {
+        "key": "volleyball",
+        "name": "Voleibol",
+        "phrase": "jugando a voleibol"
+    },
+    {
+        "key": "yoga",
+        "name": "Yoga",
+        "phrase": "haciendo yoga"
+    },
+    {
+        "key": "body_balance",
+        "name": "BodyBalance®",
+        "phrase": "haciendo BodyBalance®"
+    },
+    {
+        "key": "general_workout_session",
+        "name": "Entrenamiento general",
+        "phrase": "haciendo un entrenamiento general"
+    },
+    {
+        "key": "kitesurfing",
+        "name": "Kitesurf",
+        "phrase": "haciendo kitesurf"
+    },
+    {
+        "key": "stepper",
+        "name": "Stepper",
+        "phrase": "haciendo escalera"
+    },
+    {
+        "key": "fishing",
+        "name": "Pesca",
+        "phrase": "haciendo pesca"
+    },
+    {
+        "key": "aikido",
+        "name": "Aikido",
+        "phrase": "haciendo aikido"
+    },
+    {
+        "key": "rowing_machine",
+        "name": "Máquina de remo",
+        "phrase": "haciendo remo"
+    },
+    {
+        "key": "windsurfing",
+        "name": "Windsurf",
+        "phrase": "haciendo windsurf"
+    },
+    {
+        "key": "riding",
+        "name": "Montar a caballo",
+        "phrase": "montando a caballo"
+    },
+    {
+        "key": "water_aerobics",
+        "name": "Aerobic en el agua",
+        "phrase": "haciendo aerobic en el agua"
+    },
+    {
+        "key": "tubing",
+        "name": "Tubing",
+        "phrase": "haciendo tubing"
+    },
+    {
+        "key": "ballet",
+        "name": "Ballet",
+        "phrase": "haciendo ballet"
+    },
+    {
+        "key": "skipping",
+        "name": "Salto a la cuerda",
+        "phrase": "haciendo salto a la cuerda"
+    },
+    {
+        "key": "meditation",
+        "name": "Meditación",
+        "phrase": "haciendo meditación"
+    },
+    {
+        "key": "roller_skiing",
+        "name": "Rodillo de esquí",
+        "phrase": "haciendo skiroll"
+    },
+    {
+        "key": "polo",
+        "name": "Polo",
+        "phrase": "jugando a polo"
+    },
+    {
+        "key": "beach_volleyball",
+        "name": "Voleibol de playa",
+        "phrase": "jugando a voleibol de playa"
+    },
+    {
+        "key": "pixformance",
+        "name": "Pixformance (de Mrs. Sporty)",
+        "phrase": "haciendo Pixformance"
+    },
+    {
+        "key": "fencing",
+        "name": "Esgrima",
+        "phrase": "haciendo esgrima"
+    },
+    {
+        "key": "breast_stroke",
+        "name": "Natación estilo braza",
+        "phrase": "haciendo natación estilo braza"
+    },
+    {
+        "key": "water_polo",
+        "name": "Waterpolo",
+        "phrase": "haciendo waterpolo"
+    },
+    {
+        "key": "trackandfield",
+        "name": "Atletismo",
+        "phrase": "haciendo atletismo"
+    },
+    {
+        "key": "sailing",
+        "name": "Vela",
+        "phrase": "haciendo vela"
+    },
+    {
+        "key": "wakeboarding",
+        "name": "Wakeboard",
+        "phrase": "haciendo wakeboard"
+    },
+    {
+        "key": "racquetball",
+        "name": "Frontón",
+        "phrase": "jugando a frontón"
+    },
+    {
+        "key": "cross_trainer",
+        "name": "Cross Trainer",
+        "phrase": "haciendo elíptica"
+    },
+    {
+        "key": "running",
+        "name": "Correr",
+        "phrase": "corriendo"
+    },
+    {
+        "key": "muay_thai_boxing",
+        "name": "Muay thai boxeo",
+        "phrase": "haciendo muay thai"
+    },
+    {
+        "key": "kickboxing",
+        "name": "Kickboxing",
+        "phrase": "haciendo kickboxing"
+    },
+    {
+        "key": "power_yoga",
+        "name": "Power Yoga",
+        "phrase": "haciendo power yoga"
+    },
+    {
+        "key": "paddle_boarding",
+        "name": "Stand Up Paddle (SUP)",
+        "phrase": "haciendo paddle boarding"
+    },
+    {
+        "key": "sledging",
+        "name": "Trineo",
+        "phrase": "haciendo trineo"
+    },
+    {
+        "key": "netball",
+        "name": "Netball",
+        "phrase": "jugando a netball"
+    },
+    {
+        "key": "water_skiing",
+        "name": "Esquí acuático",
+        "phrase": "haciendo esquí acuático"
+    },
+    {
+        "key": "skiing_crosscountry",
+        "name": "Esquí de fondo",
+        "phrase": "haciendo esquí de fondo"
+    },
+    {
+        "key": "legs_bums_tums",
+        "name": "Piernas, glúteos y abdomen",
+        "phrase": "haciendo piernas, glúteos y abdomen"
+    },
+    {
+        "key": "all_over_body_workout",
+        "name": "Sesión con todo el cuerpo",
+        "phrase": "haciendo una sesión con todo el cuerpo"
+    },
+    {
+        "key": "hip_hop",
+        "name": "Hip Hop",
+        "phrase": "bailando hip hop"
+    },
+    {
+        "key": "field_hockey",
+        "name": "Hockey sobre hierba",
+        "phrase": "jugando a hockey sobre hierba"
+    },
+    {
+        "key": "snow_mountaineering",
+        "name": "Alpinismo",
+        "phrase": "haciendo alpinismo"
+    },
+    {
+        "key": "skitouring",
+        "name": "Esquí de travesía",
+        "phrase": "haciendo esquí de travesía"
+    },
+    {
+        "key": "kettlebells",
+        "name": "Pesas Rusas",
+        "phrase": "haciendo una sesión con pesa rusa"
+    },
+    {
+        "key": "cycling",
+        "name": "Ciclismo",
+        "phrase": "haciendo ciclismo"
+    },
+    {
+        "key": "iceskating",
+        "name": "Patinaje sobre hielo",
+        "phrase": "haciendo patinaje sobre hielo"
+    },
+    {
+        "key": "scuba_diving",
+        "name": "Buceo",
+        "phrase": "haciendo buceo"
+    },
+    {
+        "key": "cricket",
+        "name": "Cricket",
+        "phrase": "jugando a cricket"
+    },
+    {
+        "key": "squash",
+        "name": "Squash",
+        "phrase": "jugando a squash"
+    },
+    {
+        "key": "crawl",
+        "name": "Natación estilo crol",
+        "phrase": "haciendo natación estilo crol"
+    },
+    {
+        "key": "circuit_training",
+        "name": "Circuito de entrenamiento",
+        "phrase": "haciendo un circuito de entrenamiento"
+    },
+    {
+        "key": "step",
+        "name": "Step",
+        "phrase": "haciendo step"
+    },
+    {
+        "key": "golf",
+        "name": "Golf",
+        "phrase": "jugando a golf"
+    },
+    {
+        "key": "body_combat",
+        "name": "BodyCombat®",
+        "phrase": "haciendo BodyCombat®"
+    },
+    {
+        "key": "paddle_boating",
+        "name": "Paddle board",
+        "phrase": "haciendo paddle boating"
+    },
+    {
+        "key": "soccer",
+        "name": "Fútbol",
+        "phrase": "jugando a fútbol"
+    },
+    {
+        "key": "kayaking",
+        "name": "Kayak",
+        "phrase": "haciendo kayak"
+    },
+    {
+        "key": "wheeling",
+        "name": "Ir en silla de ruedas",
+        "phrase": "ir en silla de ruedas"
+    },
+    {
+        "key": "gym",
+        "name": "Gimnasio",
+        "phrase": "entrenando en el gimnasio"
+    },
+    {
+        "key": "walking",
+        "name": "Caminar",
+        "phrase": "caminando"
+    },
+    {
+        "key": "jiu_jitsu",
+        "name": "Jiu Jitsu",
+        "phrase": "haciendo jiu jitsu"
+    },
+    {
+        "key": "snowboarding",
+        "name": "Snowboard",
+        "phrase": "haciendo snowboard"
+    },
+    {
+        "key": "hockey",
+        "name": "Hockey sobre hielo",
+        "phrase": "jugando a hockey sobre hielo"
+    },
+    {
+        "key": "handball",
+        "name": "Balonmano",
+        "phrase": "jugando a balonmano"
+    },
+    {
+        "key": "tabletennis",
+        "name": "Tenis de mesa",
+        "phrase": "jugando a tenis de mesa"
+    },
+    {
+        "key": "wheelchair_basketball",
+        "name": "Baloncesto en silla de ruedas",
+        "phrase": "jugar a baloncesto en silla de ruedas"
+    },
+    {
+        "key": "formation_dance",
+        "name": "Baile de salón (Formación)",
+        "phrase": "haciendo baile de salón (formación)"
+    },
+    {
+        "key": "baseball",
+        "name": "Béisbol",
+        "phrase": "jugando a béisbol"
+    },
+    {
+        "key": "judo",
+        "name": "Judo",
+        "phrase": "haciendo judo"
+    },
+    {
+        "key": "aerobics",
+        "name": "Ejercicios aeróbicos",
+        "phrase": "haciendo ejercicios aeróbicos"
+    },
+    {
+        "key": "abdominal_training",
+        "name": "Sesión de abdominales",
+        "phrase": "haciendo una sesión de abdominales"
+    },
+    {
+        "key": "individual_medley",
+        "name": "Natación a 4 estilos",
+        "phrase": "haciendo natación a 4 estilos"
+    },
+    {
+        "key": "nordic_walking",
+        "name": "Senderismo nórdico",
+        "phrase": "haciendo senderismo nórdico"
+    },
+    {
+        "key": "mountain_biking",
+        "name": "Bicicleta de montaña",
+        "phrase": "haciendo bicicleta de montaña"
+    },
+    {
+        "key": "general_martial_arts",
+        "name": "Artes marciales generales",
+        "phrase": "haciendo artes marciales generales"
+    },
+    {
+        "key": "boxing_fit",
+        "name": "Boxeo Fit",
+        "phrase": "haciendo boxeo fit"
+    },
+    {
+        "key": "rugby",
+        "name": "Rugby",
+        "phrase": "jugando a rugby"
+    },
+    {
+        "key": "orienteering",
+        "name": "Orientación",
+        "phrase": "haciendo orientación"
+    },
+    {
+        "key": "body_jam",
+        "name": "BodyJam®",
+        "phrase": "haciendo BodyJam®"
+    },
+    {
+        "key": "badminton",
+        "name": "Bádminton",
+        "phrase": "jugando a bádminton"
+    },
+    {
+        "key": "e_bike",
+        "name": "Bicicleta eléctrica",
+        "phrase": "Ciclismo eléctrico"
+    },
+    {
+        "key": "kung_fu",
+        "name": "Kung Fu",
+        "phrase": "haciendo kung fu"
+    },
+    {
+        "key": "climbing",
+        "name": "Escalada",
+        "phrase": "haciendo escalada"
+    },
+    {
+        "key": "back_stroke",
+        "name": "Natación estilo espalda",
+        "phrase": "haciendo natación estilo espalda"
+    },
+    {
+        "key": "kendo",
+        "name": "Kendo",
+        "phrase": "haciendo kendo"
+    },
+    {
+        "key": "boxing",
+        "name": "Boxeo",
+        "phrase": "haciendo boxeo"
+    },
+    {
+        "key": "cardio_dance",
+        "name": "Cardio Dance",
+        "phrase": "haciendo cardio dance"
+    },
+    {
+        "key": "body_pump",
+        "name": "BodyPump®",
+        "phrase": "haciendo BodyPump®"
+    },
+    {
+        "key": "surfing",
+        "name": "Surf",
+        "phrase": "haciendo surf"
+    },
+    {
+        "key": "handcycling",
+        "name": "Bicicleta manual",
+        "phrase": "Ciclismo manual"
+    },
+    {
+        "key": "basketball",
+        "name": "Baloncesto",
+        "phrase": "jugando a baloncesto"
+    },
+    {
+        "key": "american_football",
+        "name": "Fútbol americano",
+        "phrase": "jugando a fútbol americano"
+    },
+    {
+        "key": "stretching",
+        "name": "Estiramiento",
+        "phrase": "haciendo estiramientos"
+    },
+    {
+        "key": "wheelchair_table_tennis",
+        "name": "Ping pong en silla de ruedas",
+        "phrase": "jugar a ping pong en silla de ruedas"
+    },
+    {
+        "key": "inline_skating",
+        "name": "Patinaje en línea",
+        "phrase": "haciendo patinaje en línea"
+    },
+    {
+        "key": "curling",
+        "name": "Curling",
+        "phrase": "haciendo curling"
+    },
+    {
+        "key": "tennis",
+        "name": "Tenis",
+        "phrase": "jugando a tenis"
+    },
+    {
+        "key": "touch_rugby",
+        "name": "Rugby de contacto",
+        "phrase": "jugando a rugby de contacto"
+    },
+    {
+        "key": "rowing",
+        "name": "Remo",
+        "phrase": "remando"
+    },
+    {
+        "key": "salsa",
+        "name": "Salsa",
+        "phrase": "bailando salsa"
+    },
+    {
+        "key": "pilates",
+        "name": "Pilates",
+        "phrase": "haciendo pilates"
+    },
+    {
+        "key": "snow_shoe_walking",
+        "name": "Caminar con raquetas de nieve",
+        "phrase": "caminando con raquetas de nieve"
+    },
+    {
+        "key": "weight_lifting",
+        "name": "Levantamiento de pesas",
+        "phrase": "haciendo levantamiento de pesas"
+    },
+    {
+        "key": "body_toning",
+        "name": "Body Toning",
+        "phrase": "haciendo Body Toning"
+    },
+    {
+        "key": "butterfly",
+        "name": "Natación estilo mariposa",
+        "phrase": "haciendo natación estilo mariposa"
+    },
+    {
+        "key": "karate",
+        "name": "Kárate",
+        "phrase": "haciendo kárate"
+    },
+    {
+        "key": "zumba",
+        "name": "Zumba®",
+        "phrase": "haciendo Zumba®"
+    },
+    {
+        "key": "freestyle",
+        "name": "Natación general",
+        "phrase": "haciendo natación"
+    },
+    {
+        "key": "body_step",
+        "name": "BodyStep®",
+        "phrase": "haciendo BodyStep®"
+    },
+    {
+        "key": "trampoline",
+        "name": "Trampolín",
+        "phrase": "saltando en trampolín"
+    },
+    {
+        "key": "spinning",
+        "name": "Spinning",
+        "phrase": "haciendo spinning"
+    },
+    {
+        "key": "body_vive",
+        "name": "BodyVive®",
+        "phrase": "haciendo BodyVive®"
+    },
+    {
+        "key": "body_attack",
+        "name": "BodyAttack®",
+        "phrase": "haciendo BodyAttack®"
+    },
+    {
+        "key": "mountain_hiking",
+        "name": "Senderismo",
+        "phrase": "haciendo senderismo"
+    },
+    {
+        "key": "taekwondo",
+        "name": "Taekwondo",
+        "phrase": "haciendo taekwondo"
+    },
+    {
+        "key": "brazilian_jiu_jitsu",
+        "name": "Jiu jitsu brasileño",
+        "phrase": "haciendo jiu jitsu brasileño"
+    },
+    {
+        "key": "tai_chi",
+        "name": "Tai Chi",
+        "phrase": "haciendo tai chi"
+    },
+    {
+        "key": "skiing_downhill",
+        "name": "Esquí alpino",
+        "phrase": "haciendo esquí alpino"
+    }
+  ]

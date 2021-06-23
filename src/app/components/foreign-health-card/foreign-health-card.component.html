@@ -1,0 +1,39 @@
+<ng-container *ngIf="data.side == 'front'">
+  <ion-card class="health-card">
+    <div
+      class="cover-image"
+      [style]="frontImage | backgroudStyleSanitizer"
+    ></div>
+
+    <span class="title {{ imageType }}">{{ data.nombreProducto }}</span>
+
+    <span class="name {{ imageType }}"
+      >{{ data.nombresTomador }} {{ data.apellidosTomador }}</span
+    >
+
+    <span class="description {{ imageType }} di"
+      >DI. {{ data.numeroDocumento }}
+    </span>
+
+    <span class="description {{ imageType }} ph"
+      >P.H {{ data.numeroPolizaPH }}
+    </span>
+
+    <span class="description {{ imageType }} dates"
+      >VIGENCIA DESDE: {{ data.fechaInicio | date: "dd-MM-yyyy" }}
+    </span>
+
+    <span class="description {{ imageType }} nui">NUI: {{ data.nui }}</span>
+
+    <span class="description {{ imageType }} bid">BID: {{ data.bid }}</span>
+  </ion-card>
+</ng-container>
+
+<ng-container *ngIf="data.side == 'back'">
+  <ion-card class="health-card">
+    <div
+      class="cover-image"
+      [style]="backImage | backgroudStyleSanitizer"
+    ></div>
+  </ion-card>
+</ng-container>

@@ -1,0 +1,202 @@
+<app-header></app-header>
+<ion-row class="header-manual-activity">
+  <app-back-button-updated class="back"></app-back-button-updated>
+  <app-widget-header class="title" [title]="title"></app-widget-header>
+</ion-row>
+
+<ion-content class="content">
+  <div class="spin">
+    <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+  </div>
+
+  <form [formGroup]="activityForm" (ngSubmit)="onSave()" novalidate>
+    <app-background-svg-home [cssClass]="'leitmotiv-activity'" [routeImage]="'/assets/sleep/fondo.svg'">
+    </app-background-svg-home>
+
+    <ion-card>
+      <ion-card-header class="card-header">
+        <ion-card-title class="card-title">
+          Registrar actividad manual
+        </ion-card-title>
+        <span>Los campos marcados con * son obligatorios.</span>
+      </ion-card-header>
+
+      <ion-card-content class="card-content">
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-label class="label" 
+              [ngClass]="{'ok': activity.value, 'error': datetimeError}">
+              Nombre de la actividad*
+            </ion-label>
+            <ng-select id="activity"
+              (focus)="checkInputFocus()"
+              (blur)="checkInputBlur()"
+              class="inputs"
+              [items]="activities"
+              bindLabel="name"
+              labelForId="state"
+              [multiple]="false"
+              placeholder="Seleccione la actividad"
+              clearAllText="Clear"
+              formControlName="activity">
+            </ng-select>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-label class="label" 
+              [ngClass]="{'ok': datetime.value, 'error': datetimeError}">
+              Fecha y hora*
+            </ion-label>
+            <ion-item lines="none"
+              class="inputs">
+
+              <ion-datetime class="duration" placeholder="Seleccione fecha y hora" 
+                displayFormat="DD/MMM/YYYY - HH:mm" formControlName="datetime"
+                (click)="initTime()"
+                [max]="maxDate" [hourValues]="hours"
+                monthShortNames="Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic"
+                done-text="GUARDAR" cancelText="CANCELAR">
+              </ion-datetime> 
+
+              <ion-icon
+                class="input-icon"
+                src="../assets/activities/calendar.svg"
+                slot="end">
+              </ion-icon>
+            </ion-item>
+          </ion-col>
+          <div class="alert-dangerous" *ngIf="datetimeError">
+            <p>{{ datetimeError }}</p>
+           </div>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-label class="label" 
+              [ngClass]="{'ok': duration.value, 'error': durationError}">
+              Duración*
+            </ion-label>
+            <ion-item lines="none"
+              class="inputs">
+              <ion-datetime class="duration" 
+                placeholder="Duración*" 
+                displayFormat="HH:mm" 
+                formControlName="duration"
+                done-text="GUARDAR" 
+                cancelText="CANCELAR">
+              </ion-datetime> 
+              <ion-icon
+                class="input-icon"
+                src="../assets/activities/clock.svg"
+                slot="end">
+              </ion-icon>
+            </ion-item>
+          </ion-col>
+          <div class="alert-dangerous" *ngIf="durationError">
+            <p>{{ durationError }}</p>
+           </div>
+        </ion-row>
+
+        <ion-row>
+          <ion-col *ngIf="selectedActivityHasDistance">
+            <ion-label class="label"
+              [ngClass]="{'ok': distance.value, 'error': distanceError}">
+              Distancia (km)
+            </ion-label>
+            <ion-input
+              (ionFocus)="checkInputFocus()"
+              (ionBlur)="checkInputBlur()"
+              class="inputs"
+              type="text"
+              inputmode="numeric"
+              placeholder="Ej: 10 km"
+              formControlName="distance">
+            </ion-input>
+          </ion-col>
+          <ion-col *ngIf="selectedActivityHasAscent">
+            <ion-label class="label"
+              [ngClass]="{'ok': ascent.value, 'error': ascentError}">
+              Ascenso (m)
+            </ion-label>
+            <ion-input
+              (ionFocus)="checkInputFocus()"
+              (ionBlur)="checkInputBlur()"
+              class="inputs"
+              type="text"
+              inputmode="numeric"
+              placeholder="Ej: 100 m"
+              formControlName="ascent">
+            </ion-input>
+          </ion-col>
+          <ion-col *ngIf="selectedActivityHasDescent">
+            <ion-label class="label"
+              [ngClass]="{'ok': descent.value, 'error': descentError}">
+              Descenso (m)
+            </ion-label>
+            <ion-input
+              (ionFocus)="checkInputFocus()"
+              (ionBlur)="checkInputBlur()"
+              class="inputs"
+              type="text"
+              inputmode="numeric"
+              placeholder="Ej: 100 m"
+              formControlName="descent">
+            </ion-input>
+          </ion-col>
+
+          <div class="alert-dangerous" *ngIf="distanceError">
+            <p>{{ distanceError }}</p>
+           </div>
+           <div class="alert-dangerous" *ngIf="ascentError">
+            <p>{{ ascentError }}</p>
+           </div>
+           <div class="alert-dangerous" *ngIf="descentError">
+            <p>{{ descentError }}</p>
+           </div>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12">
+            <ion-label class="label"
+              [ngClass]="{'ok': heartRate.value, 'error': heartRateError}">
+              Frecuencia cardíaca
+            </ion-label>
+            <ion-item lines="none" class="inputs">
+              <ion-input
+                (ionFocus)="checkInputFocus()"
+                (ionBlur)="checkInputBlur()"
+                type="text"
+                inputmode="numeric"
+                placeholder="Ej: 50 LPM"
+                formControlName="heartRate">
+              </ion-input>
+              <ion-icon
+                class="input-icon"
+                src="../assets/activities/heart.svg"
+                slot="end">
+              </ion-icon>
+            </ion-item>
+          </ion-col>
+          <div class="alert-dangerous" *ngIf="heartRateError">
+            <p>{{ heartRateError }}</p>
+           </div>
+        </ion-row>
+
+        <ion-row>
+          <ion-col size="12" class="ion-text-center">
+            <ion-button type="submit" class="action-button" fill="none" 
+              [disabled]="!activityForm.valid">
+              GUARDAR
+            </ion-button>
+          </ion-col>
+        </ion-row>
+        
+      </ion-card-content>
+    </ion-card>
+
+  </form>
+
+</ion-content>

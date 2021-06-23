@@ -1,0 +1,41 @@
+<app-header></app-header>
+<ion-row class="header-community">
+  <app-back-button-updated class="back"></app-back-button-updated>
+  <app-widget-header class="title" [title]="title"></app-widget-header>
+</ion-row>
+<ion-content class="ion-content">
+  <app-background-svg-home
+    *ngIf="selectedTab !== 'challenges'"
+    [cssClass]="'leitmotiv-community'"
+    [routeImage]="'/assets/leitmotivs/leitmotiv-second-page.svg'"
+  ></app-background-svg-home>
+  <ion-segment
+    [(ngModel)]="selectedTab"
+    class="segment-bar"
+    size="12"
+    expand="full"
+    scrollable="true"
+    mode="md"
+  >
+    <ion-segment-button value="friends" class="ion-segment-tab">
+      <ion-label>Mis amigos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="recentActivity" class="ion-segment-tab">
+      <ion-label>Actividad reciente</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="challenges" class="ion-segment-tab">
+      <ion-label>Desafíos</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <div class="body-data-content">
+    <div [hidden]="selectedTab !== 'friends'">
+      <app-my-friends></app-my-friends>
+    </div>
+    <div *ngIf="selectedTab === 'recentActivity'">
+      <app-recent-activities></app-recent-activities>
+    </div>
+    <div *ngIf="selectedTab === 'challenges'">
+      <app-challenges *ngIf="!reloading"></app-challenges>
+    </div>
+  </div>
+</ion-content>

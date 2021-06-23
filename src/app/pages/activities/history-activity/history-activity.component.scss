@@ -1,0 +1,74 @@
+.ion-card {
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 8px;
+  background-color: var(--color-white-0);
+  box-shadow: 0 1px 10px 0 var(--color-black-alpha-2);
+}
+
+.icon-yellow-fire {
+  height: 24px;
+  width: 20px;
+}
+
+.kcal-label {
+  height: 16px !important;
+  width: 175px !important;
+  color: var(--color-black-1);
+  font-family: var(--global-font-family);
+  font-size: 14px !important;
+  letter-spacing: 0 !important;
+  margin-left: 15px !important;
+}
+
+.activity-label {
+  color: var(--color-black-1);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.header-card {
+  width: 100%;
+  height: 100px;
+}
+
+.ion-card-ion-card-subtitle {
+  color: var(--color-black-1);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.avatar-card {
+  height: 40px;
+  width: 40px;
+}
+
+.user-name {
+  width: 248px !important;
+  color: var(--color-black-1) !important;
+  font-family: var(--global-font-family) !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  letter-spacing: 0 !important;
+  line-height: 19px !important;
+}
+
+.activity-date {
+  height: 21px;
+  width: 248px;
+  color: var(--color-black-2);
+  font-family: var(--global-font-family) !important;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+
+.bold-text {
+  font-weight: bold;
+}

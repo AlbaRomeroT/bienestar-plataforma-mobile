@@ -1,0 +1,362 @@
+.content {
+  --background: var(--color-white-0);
+  color: var(--color-black-0);
+  font-family: var(--global-font-family);
+}
+
+.header {
+  border-bottom: 1px solid var(--color-white-2);
+  border-top: 1px solid var(--color-white-2);
+  background-color: var(--color-white-3);
+  height: 45px;
+  .title {
+    color: var(--color-black-1);
+    margin-left: 10px;
+    font-family: var(--global-font-family);
+  }
+  .back {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+.color-transparent-class {
+  color: transparent;
+}
+
+.tabs-coach {
+  background-color: var(--color-white-0);
+  border-bottom: 2px solid var(--color-white-3);
+  display: flex;
+  align-items: center;
+  .__tabs-coach--col-contain-purpose--text-purpose {
+    color: var(--color-green-1);
+    font-family: var(--global-font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    height: 10vw;
+    .icon-purpose{
+      color: var(--color-green-1);
+      font-size: 27px;
+      margin-right: 3vw;
+    }
+    .icon-chevron-forward-outline {
+      font-size: 14px;
+      color: var(--color-green-1);
+      margin-left: 3vw;
+    }
+  }  
+  .__tabs-coach--col-contain-achievement--text-achievement {
+    color: var(--color-green-1);
+    font-family: var(--global-font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    opacity: 0.5;
+    .icon-achievement {
+      color: var(--color-green-1);
+      font-size: 27px;
+      margin-right: 3vw;
+    }
+    .icon-chevron-forward-outline {
+      font-size: 14px;
+      color: var(--color-green-1);
+      margin-left: 3vw;
+    }
+  }
+}
+
+.__tabs-coach--col-contain-purpose:hover {
+  opacity: 0.7;
+}
+
+
+.chat {
+  margin: 10px;
+}
+
+.coach-group {
+  width: 100%;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--color-black-0);
+
+  box-shadow: 0 1px 10px 0 var(--color-black-alpha-2);
+  padding: 0px;
+  margin-bottom: 40px;
+}
+
+.header-chat {
+  background-color: var(--color-white-8);
+  padding: 8px;
+  font-weight: bold;
+}
+
+.coach-chat-header {
+  display: flex;
+  .avatar {
+    margin: 10px;
+    height: 31px;
+    width: 31px;
+  }
+  .info {
+    padding: 16px 0px;
+    .title {
+      color: var(--color-black-1);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 2px;
+    }
+    .hour {
+      color: var(--color-black-1);
+      font-size: 10px;
+      letter-spacing: 0;
+      line-height: 2px;
+    }
+  }
+}
+
+.coach-chat-content {
+  padding: 0px 5px;
+  margin: -10px 5px 0px 30px;
+  .image {
+    margin: 10px 0px;
+  }
+  .text {
+    border-radius: 0 14px 14px 14px;
+    background-color: var(--color-black-9);
+    box-shadow: 0 2px 4px 0 var(--color-black-alpha-7);
+    padding: 5px 19px;
+    text-align: left;
+    p {
+      color: var(--color-black-0);
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 18px;
+      .link {
+        color: var(--color-green-5) !important;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      strong {
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.user-chat {
+  margin-top: 10px;
+  position: relative;
+  .user-chat-options {
+    margin: 0px 50px 10px 10px;
+    border-radius: 14px 0px 14px 14px;
+    background-color: var(--color-white-6);
+    box-shadow: 0 2px 4px 0 var(--color-black-alpha-7);
+    padding: 10px 0px;
+  }
+  .text {
+    border-radius: 0 14px 14px 14px;
+    box-shadow: 0 2px 4px 0 var(--color-black-alpha-7);
+    padding: 5px 19px;
+    color: var(--color-black-0);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+  .avatar {
+    margin: 10px;
+    height: 31px;
+    width: 31px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+  }
+  .radio-item {
+    --background: transparent;
+    --inner-border-width: 0px !important;
+    --min-height: 0px;
+    color: var(--color-black-0);
+    font-size: 14px;
+    letter-spacing: 0;
+    height: fit-content;
+  }
+  .radio {
+    box-sizing: border-box;
+    height: 17px;
+    width: 17px;
+    --color: var(--color-green-5);
+    --ion-color-base: var(--color-yellow-1) !important;
+  }
+}
+
+.radio-button-text {
+  white-space: normal !important;
+}
+
+.skip-button {
+  border: 1px solid var(--color-yellow-1);
+  border-radius: 0px 0px 0px 8px;
+  --background: var(--color-white-0);
+  --box-shadow: 0px;
+  color: var(--color-green-6);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+
+.save-button {
+  border: 1px solid var(--color-yellow-1);
+  --background: var(--color-yellow-1);
+  --box-shadow: 0px;
+  color: var(--color-green-6);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+
+.user-chat-response {
+  margin: 4px 13px 4px 20px;
+  color: var(--color-black-0);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+// Animaciones
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  .fast {
+    -webkit-animation-duration: 700ms;
+    animation-duration: 700ms;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.badge-item {
+  background: transparent;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.range {
+  width: 100%;
+  --bar-background: linear-gradient(
+    to bottom,
+    var(--color-white-0),
+    var(--color-white-3),
+    var(--color-white-5),
+    var(--color-white-3),
+    var(--color-white-0)
+  );
+  --bar-background-active: linear-gradient(
+    to right,
+    var(--color-yellow-2),
+    var(--color-green-7)
+  );
+  --bar-border-radius: 10px;
+  --bar-height: 10px;
+  --height: 24px;
+  --knob-background: var(--color-green-7);
+  --knob-size: 22px;
+}
+
+ion-range::part(tick) {
+  height: 4px;
+  width: 1px;
+  top: 24px;
+  background: var(--color-green-8);
+}
+
+ion-range::part(tick-active) {
+  height: 4px;
+  width: 1px;
+  top: 24px;
+  background: var(--color-green-8);
+}
+
+.spin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+ion-spinner {
+  width: 28px;
+  height: 28px;
+  stroke: var(--color-black-3);
+  fill: var(--color-black-4);
+}
+
+.footer-slider {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 28px;
+  display: block;
+}
+
+.left-slider {
+  float: left;
+  color: var(--color-green-9);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+  margin-top: 5px;
+  margin-left: 9px;
+  margin-bottom: 14px;
+}
+
+.right-slider {
+  float: right;
+  color: var(--color-green-9);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+  margin-top: 5px;
+  margin-right: 9px;
+  margin-bottom: 14px;
+}
+
+ion-button {
+  font-family: var(--global-font-family);
+}

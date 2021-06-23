@@ -1,0 +1,11 @@
+<app-header></app-header>
+<ion-content class="content">
+  <div *ngIf="showComponent">
+    <qr-lib-history-widget
+      [docNumber]="docNumber"
+      [env]="env"
+      (historyWidgetEvent)="onHistoryWidgetEvent($event)"
+    >
+    </qr-lib-history-widget>
+  </div>
+</ion-content>

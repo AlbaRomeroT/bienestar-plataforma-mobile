@@ -1,0 +1,139 @@
+.item {
+  border-radius: 3px;
+  background-color: #fafafa;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  border-left: 3px solid #ffdc5d;
+  min-height: 71px;
+  position: relative;
+  margin-top: 15px;
+  padding: 5px 5px 12px 5px;
+  .title {
+    color: #333333;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 18px;
+    width: 84vw;
+    padding: 10px 10px 0px;
+    display: block;
+    margin: 0px;
+    margin-bottom: 3px;
+  }
+  .points {
+    color: #02d46f;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 21px;
+    margin-left: 10px;
+  }
+  .expand {
+    color: #016d38;
+    font-size: 25px;
+    font-weight: bolder;
+
+    position: absolute;
+    top: 30px;
+    right: 14px;
+  }
+}
+
+.additional-data {
+  border: 1px solid #e2e2e2;
+  .section {
+    color: #333333;
+    background-color: #f6f9f7;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+    border-bottom: 1px solid #e2e2e2;
+    min-height: 67px;
+    .title {
+      display: block;
+      color: #333333;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 16px;
+
+      padding-top: 13px;
+      padding-left: 10px;
+    }
+    .data {
+      color: #333333;
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 20px;
+      padding-left: 10px;
+      margin: 1px 0px 5px;
+      ion-icon {
+        margin-right: 8px;
+        margin-top: 5px;
+        height: 25px;
+        width: 36px;
+      }
+      span {
+        vertical-align: super;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.spin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+ion-spinner {
+  width: 28px;
+  height: 28px;
+  stroke: #444;
+  fill: #222;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  .fast {
+    -webkit-animation-duration: 700ms;
+    animation-duration: 700ms;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}

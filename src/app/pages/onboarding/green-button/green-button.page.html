@@ -1,0 +1,95 @@
+<app-onboarding-header></app-onboarding-header>
+<ion-content>
+  <form [formGroup]="greenButtonForm" (ngSubmit)="save()" novalidate>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <img src="/assets/onboarding/green-button.svg" class="main-image" />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-start">
+          <p class="title">Botón Verde</p>
+          <div class="black-path"></div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div>
+            <p class="ion-text-start description">
+              Con este botón, puede acceder rápidamente cuando tenga alguna
+              emergencia médica, sospecha de COVID-19 o necesite una guía.
+            </p>
+            <p class="ion-text-start description">
+              Déjenos su número de celular para comunicarnos cuando requiera
+              ayuda:
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label
+            class="label-input"
+            *ngIf="phone.value"
+            [ngClass]="{'error-message': 
+              phone.hasError('validPhoneNumber') && 
+              (phone.dirty || isSubmitted)}"
+          >
+            Ingrese su número de celular
+          </ion-label>
+          <ion-input
+            type="text"
+            class="phone"
+            placeholder="Ingrese su número de celular"
+            class="form-controll"
+            [ngClass]="{'submitted': isSubmitted}"
+            formControlName="phone"
+          >
+          </ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <div *ngFor="let error of errorMessages.phone">
+            <div
+              class="alert-dangerous"
+              *ngIf="phone.hasError(error.type) && (phone.dirty || isSubmitted) && phone.value"
+            >
+              <p>{{ error.message }}</p>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <div class="progress-bar">
+    <ion-progress-bar
+      class="onboarding-progress-bar"
+      value="1"
+    ></ion-progress-bar>
+  </div>
+  <ion-toolbar>
+    <ion-button slot="start" class="skip-button" fill="none" (click)="next()"
+      >Configurar después
+      <ion-icon
+        slot="end"
+        class="skip-button-icon"
+        name="close-outline"
+      ></ion-icon>
+    </ion-button>
+    <ion-button
+      slot="end"
+      class="next-button"
+      fill="none"
+      [disabled]="!greenButtonForm.valid"
+      (click)="save()"
+      >GUARDAR
+      <ion-icon
+        slot="end"
+        class="next-button-icon"
+        src="/assets/onboarding/greater-than.svg"
+      ></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

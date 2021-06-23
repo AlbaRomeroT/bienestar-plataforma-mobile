@@ -1,0 +1,59 @@
+.content {
+  color: var(--color-black-0);
+  font-family: var(--global-font-family);
+}
+
+.spin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+ion-spinner {
+  width: 28px;
+  height: 28px;
+  stroke: var(--color-black-3);
+  fill: var(--color-black-4);
+}
+
+.empty-grid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .title {
+    color: var(--color-black-1);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-align: center;
+  }
+  .description {
+    margin-top: 7px;
+    color: var(--color-gray-3);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+.recent-activities-grid {
+  padding: 0px;
+  margin-bottom: 25px;
+}
+
+.leitmotiv-background {
+  background: url("../../../../assets/activities/leitmotiv.svg") 0 0/100%
+    no-repeat;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--color-white-1);
+  background-size: 100%;
+  padding: 0px;
+}
+
+.registered-activity {
+  width: 100%;
+}

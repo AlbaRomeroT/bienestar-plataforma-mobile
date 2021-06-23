@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="57px" viewBox="0 0 57 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <defs>
+        <circle id="path-1" cx="26.5" cy="26.5" r="26.5"></circle>
+        <filter x="-7.5%" y="-3.8%" width="115.1%" height="115.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Menu-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pausar-2" transform="translate(-152.000000, -433.000000)">
+            <g id="Group-3" transform="translate(154.000000, 433.000000)">
+                <g id="Oval-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFDC5D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M22.5105388,18.8968824 L35.5518236,26.6401453 C36.0267083,26.922108 36.1831023,27.5356541 35.9011396,28.0105388 C35.8157466,28.1543585 35.6956433,28.2744618 35.5518236,28.3598547 L22.5105388,36.1031176 C22.0356541,36.3850804 21.422108,36.2286863 21.1401453,35.7538016 C21.0484118,35.5993032 21,35.4229426 21,35.2432629 L21,19.7567371 C21,19.2044524 21.4477153,18.7567371 22,18.7567371 C22.1796797,18.7567371 22.3560403,18.8051489 22.5105388,18.8968824 Z" id="Path-2-Copy-2" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

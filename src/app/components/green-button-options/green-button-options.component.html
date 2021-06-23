@@ -1,0 +1,125 @@
+<div class="inner-content">
+  <div *ngIf="!celular">
+    <app-green-button-title
+      [title]="'Necesitamos su número celular para poder continuar'"
+      [modal]="modal"
+      (onDismiss)="dismiss()"
+    >
+    </app-green-button-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+          <div class="ion-text-center">
+            <p class="text">
+              Por favor ingrese su número para darle atención inmediata
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <form #userForm="ngForm" (ngSubmit)="onFormSubmit(userForm)">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <div class="ion-text-center">
+              <input
+                type="text"
+                class="cellphone"
+                required
+                name="mobileNumber"
+                [ngModel]="user.mobileNumber"
+                [pattern]="mobNumberPattern"
+                #mobNumber="ngModel"
+                placeholder="Número de celular"
+              />
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <div class="ion-text-center">
+              <div
+                *ngIf="
+                  mobNumber.errors &&
+                  userForm.submitted &&
+                  !isValidFormSubmitted
+                "
+                [ngClass]="'error'"
+              >
+                <div *ngIf="mobNumber.errors.pattern">Número no valido</div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <div class="ion-text-center">
+              <button type="submit" slot="end" class="next-button" fill="none">
+                GUARDAR
+              </button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+  <div *ngIf="inicio">
+    <div *ngIf="!medEmergency && !isFeelBad">
+      <app-green-button-title
+        [title]="titleEmergency"
+        [modal]="modal"
+        (onDismiss)="dismiss()"
+      ></app-green-button-title>
+      <br />
+      <ion-row class="ion-text-center">
+        <ion-col size="6">
+          <ion-fab-button
+            color="light"
+            class="fab-center"
+            (click)="emergencia()"
+          >
+            <ion-icon src="/assets/green-button/icon-urgency.svg"></ion-icon>
+          </ion-fab-button>
+          <br />
+          <ion-label class="label-button-option"
+            >Tengo una emergencia médica</ion-label
+          >
+        </ion-col>
+        <ion-col size="4" [hidden]="true">
+          <ion-fab-button color="light" class="fab-center">
+            <ion-icon src="/assets/green-button/icon-covid.svg"></ion-icon>
+          </ion-fab-button>
+          <br />
+          <ion-label class="label-button-option"
+            >Tengo síntomas de COVID-19</ion-label
+          >
+        </ion-col>
+        <ion-col size="6">
+          <ion-fab-button
+            color="light"
+            class="fab-center"
+            (click)="onFeelBad()"
+          >
+            <ion-icon src="/assets/green-button/feel-bad-icon.svg"></ion-icon>
+          </ion-fab-button>
+          <br />
+          <ion-label class="label-button-option">Me siento mal</ion-label>
+        </ion-col>
+      </ion-row>
+    </div>
+    <app-medical-emergency
+      [modal]="modal"
+      *ngIf="medEmergency"
+      [(medEmergency)]="medEmergency"
+    ></app-medical-emergency>
+    <app-feel-bad
+      [modal]="modal"
+      *ngIf="isFeelBad"
+      [(isFeelBad)]="isFeelBad"
+    ></app-feel-bad>
+  </div>
+</div>

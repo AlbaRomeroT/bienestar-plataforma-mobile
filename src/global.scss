@@ -1,0 +1,319 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+
+@font-face {
+  font-family: "Roboto Bold Condensed";
+  src: url("/assets/fonts/RobotoCondensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("/assets/fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("/assets/fonts/Roboto-Medium.ttf");
+}
+
+.green-button-class {
+  .modal-wrapper {
+    min-height: 200px;
+    max-height: 90%;
+    --height: auto;
+    background: var(--color-white-0);
+    position: fixed;
+    width: 95%;
+    bottom: 0;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+    &.bottom {
+      align-items: flex-end;
+    }
+
+    .ion-page {
+      padding-bottom: 35px;
+
+      position: relative;
+      display: block;
+      contain: content;
+
+      .inner-content {
+        max-height: 80vh;
+        overflow: auto;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.green-padding-bottom-content {
+  --padding-bottom: 12px;
+}
+
+.pop-over-style .popover-content {
+  min-height: 120vw !important;
+  --min-width: 90% !important;
+  --height: auto;
+  position: fixed !important;
+  width: 94% !important;
+  top: 15%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.action-sheet-button-inner.sc-ion-action-sheet-ios {
+  font-family: var(--global-font-family);
+  color: var(--color-black-0);
+}
+
+.round-progress path {
+  stroke: url(#gradient);
+}
+
+.sign-out-actions-modal {
+  z-index: 100000 !important;
+}
+
+.generic-action-modal,
+.activities-actions-modal,
+.activities-actions-modal-delete,
+.activities-actions-modal-purpose,
+.activities-actions-modal-add,
+.activities-actions-modal-save,
+.sign-out-actions-modal {
+  .modal-wrapper {
+    max-height: 90%;
+    --height: auto;
+    position: fixed;
+    width: 80%;
+    bottom: 20%;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+}
+
+.activities-actions-modal {
+  .modal-wrapper {
+    min-height: 90%;
+    width: 95%;
+    bottom: 0;
+    margin-bottom: 0px;
+  }
+}
+
+.activities-actions-modal-save {
+  .modal-wrapper {
+    min-height: 85vw;
+  }
+}
+
+.activities-actions-modal-delete {
+  .modal-wrapper {
+    min-height: 80vw;
+  }
+}
+
+.generic-action-modal {
+  .modal-wrapper {
+    width: 80%;
+    height: 350px;
+  }
+}
+
+.activities-actions-modal-purpose,
+.activities-actions-modal-add,
+.sign-out-actions-modal {
+  .modal-wrapper {
+    min-height: 77vw;
+    @media screen and (max-width: 321px) {
+      min-height: 77vw;
+    }
+  }
+}
+
+.disconect-modal-wearables {
+  .modal-wrapper {
+    max-height: 90%;
+    --height: auto;
+    position: fixed;
+    width: 82%;
+    bottom: 20%;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+}
+
+.disconect-modal-wearables {
+  .modal-wrapper {
+    min-height: 75vw;
+    @media screen and (max-width: 321px) {
+      min-height: 100vw;
+    }
+  }
+}
+
+.picker-button.sc-ion-picker-ios,
+.picker-button.ion-activated.sc-ion-picker-ios {
+  color: var(--color-black-0);
+  font-family: var(--global-font-family);
+}
+
+.native-input.sc-ion-input-ios {
+  font-family: var(--global-font-family);
+}
+
+ion-picker-column {
+  font-family: var(--global-font-family);
+}
+
+.alert-radio-label.sc-ion-alert-md,
+.alert-title.sc-ion-alert-md,
+.alert-button-inner.sc-ion-alert-md {
+  font-family: var(--global-font-family);
+}
+
+.alert-button-inner.sc-ion-alert-md {
+  color: var(--color-gray-1);
+}
+
+[aria-checked="true"].sc-ion-alert-md .alert-radio-icon.sc-ion-alert-md {
+  border-color: var(--color-gray-1);
+}
+
+.alert-radio-inner.sc-ion-alert-md {
+  background-color: var(--color-gray-1);
+}
+
+.picker-opt.picker-opt-selected,
+.picker-button.sc-ion-picker-md {
+  color: var(--color-green-2);
+  font-family: var(--global-font-family);
+}
+
+[aria-checked="true"].sc-ion-alert-ios .alert-radio-label.sc-ion-alert-ios {
+  color: var(--color-green-1);
+}
+
+[aria-checked="true"].sc-ion-alert-ios .alert-radio-inner.sc-ion-alert-ios {
+  border-color: var(--color-green-1);
+}
+
+.alert-button.sc-ion-alert-ios .alert-button-inner.sc-ion-alert-ios {
+  color: var(--color-green-1);
+}
+
+.alert-wrapper.sc-ion-alert-ios{
+  font-family: var(--global-font-family);
+}
+
+// to show all text content in ion-select control
+.alert-radio-label.sc-ion-alert-md,
+.alert-radio-label.sc-ion-alert-ios {
+  white-space: normal !important;
+}
+
+.alert-tappable.sc-ion-alert-md,
+.alert-tappable.sc-ion-alert-ios {
+  contain: content !important;
+  height: auto !important;
+}
+
+/* specific styles for QR's update form fields */
+.qr-lib-update-field .mat-form-field-outline {
+  color: transparent;
+  border-radius: 3px;
+  background-color: var(--color-white-0);
+  box-shadow: 0 2px 2px 0 var(--color-black-alpha-1);
+}
+
+.qr-lib-update-field.mat-focused .mat-form-field-outline {
+  color: var(--color-green-1);
+}
+
+.qr-lib-update-field mat-label {
+  color: var(---color-gray-2);
+}
+
+.qr-lib-update-field.mat-focused mat-label {
+  color: var(--color-green-1);
+}
+
+.qr-lib-update-field .mat-select-arrow {
+  border: solid var(--color-green-1);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.reason-dropdown {
+  width: 70vw;
+}
+
+.qr-inactive-card-prompt {
+  font-size: 12px !important;
+}
+
+ion-button {
+  --background-activated: var(--color-green-1);
+  --background-hover: var(--color-green-1);
+  --background-focused: var(--color-green-1);
+}
+
+ion-select-popover {
+  ion-radio {
+    --color-checked: var(---color-gray-2);
+  }
+  ion-label {
+    font-family: var(--global-font-family) !important;
+  }
+}
+
+// datetime picker
+.mat-datepicker-toggle-active {
+  color: var(--color-green-2) !important;
+}
+
+.mat-calendar-body-selected {
+  background-color: var(--color-green-2) !important;
+}
+
+.survey-modal .modal-wrapper {
+  height: 55%;
+  top: 45%;
+  position: absolute; 
+  display: block;  
+}
+
+/* fin specific styles for QR's update form fields */

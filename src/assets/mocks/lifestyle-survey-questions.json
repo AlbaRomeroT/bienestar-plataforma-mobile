@@ -1,0 +1,223 @@
+{
+    "errors": [],
+    "body": {
+        "category": "LIFESTYLE",
+        "questionList": {
+            "exercise": [
+                {
+                    "id": "exerciseLevel",
+                    "value": "1",
+                    "question": "En promedio, ¿cuál es su frecuencia de ejercicio a la semana?",
+                    "response": [
+                        {
+                            "key": "0",
+                            "value": "Ninguno"
+                        },
+                        {
+                            "key": "1",
+                            "value": "Bajo (hasta 1.5 h/semana)"
+                        },
+                        {
+                            "key": "2",
+                            "value": "Medio (hasta 3.5 h/semana"
+                        },
+                        {
+                            "key": "3",
+                            "value": "Medio Alto (hasta 6 h/semana)"
+                        },
+                        {
+                            "key": "4",
+                            "value": "Alto (por encima de 6 h/semana"
+                        }
+                    ]
+                }
+            ],
+            "alcohol": [
+                {
+                    "id": "alcohol",
+                    "value": "0",
+                    "question": "¿Cuántas bebidas alcohólicas toma al día?",
+                    "recommendation": "Tenga en cuenta que varía según la bebida en el caso de Cerveza es de 330 ml (11.2 onzas); en caso de Vino es de 150 ml (5 onzas); y para Licor es de 30 ml( 1 onza) ",
+                    "response": [
+                        {
+                            "key": "0",
+                            "value": "0"
+                        },
+                        {
+                            "key": "1",
+                            "value": "0.5"
+                        },
+                        {
+                            "key": "2",
+                            "value": "1"
+                        },
+                        {
+                            "key": "3",
+                            "value": "1.5"
+                        },
+                        {
+                            "key": "4",
+                            "value": "2"
+                        },
+                        {
+                            "key": "5",
+                            "value": "2.5"
+                        },
+                        {
+                            "key": "6",
+                            "value": "3"
+                        },
+                        {
+                            "key": "7",
+                            "value": "3.5"
+                        },
+                        {
+                            "key": "8",
+                            "value": "4"
+                        },
+                        {
+                            "key": "9",
+                            "value": "4.5"
+                        },
+                        {
+                            "key": "10",
+                            "value": "5"
+                        },
+                        {
+                            "key": "11",
+                            "value": "5.5"
+                        },
+                        {
+                            "key": "12",
+                            "value": "6"
+                        },
+                        {
+                            "key": "13",
+                            "value": "6.5"
+                        },
+                        {
+                            "key": "14",
+                            "value": "7"
+                        }
+                    ]
+                }
+            ],
+            "coffee": [
+                {
+                    "id": "coffee",
+                    "value": "0",
+                    "question": "En promedio ¿Cuántas tazas de café toma al día ?",
+                    "response": [
+                        {
+                            "key": "0",
+                            "value": "0 tazas"
+                        },
+                        {
+                            "key": "1",
+                            "value": "1 taza"
+                        },
+                        {
+                            "key": "2",
+                            "value": "2 tazas"
+                        },
+                        {
+                            "key": "3",
+                            "value": "3 tazas"
+                        },
+                        {
+                            "key": "4",
+                            "value": "4 tazas"
+                        },
+                        {
+                            "key": "5",
+                            "value": "5 tazas"
+                        },
+                        {
+                            "key": "6",
+                            "value": "6 tazas"
+                        },
+                        {
+                            "key": "7",
+                            "value": "7 tazas"
+                        },
+                        {
+                            "key": "8",
+                            "value": "8 tazas"
+                        },
+                        {
+                            "key": "9",
+                            "value": "9 tazas"
+                        },
+                        {
+                            "key": "10",
+                            "value": "10 tazas"
+                        }
+                    ]
+                }
+            ],
+            "smoke": [
+                {
+                    "id": "smoking",
+                    "questions": [
+                        {
+                            "id": "smokingNow",
+                            "value": "true",
+                            "question": "¿Es fumador?",
+                            "response": [
+                                {
+                                    "key": "true",
+                                    "value": "Si"
+                                },
+                                {
+                                    "key": "false",
+                                    "value": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "smokingEver",
+                            "value": "false",
+                            "question": "¿Ha sido fumador antes?",
+                            "response": [
+                                {
+                                    "key": "true",
+                                    "value": "Si"
+                                },
+                                {
+                                    "key": "false",
+                                    "value": "No"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "food": [
+                {
+                    "id": "diet",
+                    "value": "Vegan",
+                    "question": "¿Sigue alguna de estas dietas?",
+                    "response": [
+                        {
+                            "key": "Vegetarian",
+                            "value": "Vegetariana"
+                        },
+                        {
+                            "key": "Vegan",
+                            "value": "Vegana"
+                        },
+                        {
+                            "key": "Pescatarian",
+                            "value": "Pescatariana"
+                        },
+                        {
+                            "key": "None ",
+                            "value": "Ninguna de estas"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "hasErrors": false
+}

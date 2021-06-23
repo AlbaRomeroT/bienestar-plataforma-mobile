@@ -1,0 +1,14 @@
+<ion-fab
+  vertical="bottom"
+  horizontal="center"
+  slot="fixed"
+  id="ion-fab-green-button"
+>
+  <ion-fab-button
+    (click)="presentModal()"
+    color="light"
+    [class]="isLoading || isActive ? 'is-active' : ''"
+  >
+    <img class="img-green-button" />
+  </ion-fab-button>
+</ion-fab>

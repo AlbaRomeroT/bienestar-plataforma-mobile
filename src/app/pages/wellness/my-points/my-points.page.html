@@ -1,0 +1,75 @@
+<div class="spin">
+  <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+</div>
+
+<app-background-svg-home [cssClass]="'leitmotiv-my-points'" [routeImage]="'assets/leitmotivs/leitmotiv-second-page.svg'"
+  [hidden]="sectiontToShow === sections.points?false:true">
+</app-background-svg-home>
+
+<ion-grid fixed class="empty-grid boot-image" *ngIf="sectiontToShow == sections.empty">
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <img src="/assets/points/points_default.png" class="main-image" alt="" />
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <span class="title-empty">¡Aún no tiene puntos acumulados!</span>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid fixed class="empty-grid" *ngIf="sectiontToShow == sections.points">
+  <ion-row>
+    <ion-col size="12">
+      <app-points-indicator [valor_puntos]="puntosActual"></app-points-indicator>
+    </ion-col>
+  </ion-row>
+
+  <div class="card-transparent">
+    <div class="card-content">
+      <ion-row>
+        <ion-col size="5" class="image-content"> </ion-col>
+        <ion-col size="7" class="text-content">
+          <ion-grid class="grid-content">
+            <ion-row>
+              <ion-col>
+                <p class="title-content">
+                  ¡Grandes premios le esperan!
+                </p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <p class="description-content">
+                  Pronto podrá canjear sus puntos por fabulosos premios.
+                </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  <ion-row class="down">
+    <ion-col size="12">
+      <app-widget-header [title]="title" [cssClassContentTitle]="'content-my-points'" [cssClassTitle]="'text'">
+      </app-widget-header>
+      <ng-container *ngFor="let item of history">
+        <app-point-item [historyPoint]="item"></app-point-item>
+      </ng-container>
+
+      <ng-container *ngIf="viewHistory">
+        <div class="view-history-button" (click)="onViewHistory()">
+          Consulta todo el historial de puntos
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </div>
+      </ng-container>
+
+      <ion-infinite-scroll (ionInfinite)="getHistoryNext()" [disabled]="viewHistory">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </ion-col>
+  </ion-row>
+</ion-grid>

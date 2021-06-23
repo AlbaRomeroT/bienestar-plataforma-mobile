@@ -1,0 +1,70 @@
+ion-col {
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.card-transparent {
+  background: rgba(255, 255, 255, 0) !important;
+  box-shadow: none !important;
+}
+
+.card-content {
+  height: 117px;
+  border-radius: 8px;
+  padding: 0px !important;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.image-content {
+  height: 117px;
+  min-height: 117px;
+  border-width: 1px;
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 0px !important;
+
+  background: url("/../../../assets/purpose/purpose-default.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: transparent;
+}
+
+.grid-content {
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+}
+
+.text {
+  color: #fff;
+}
+
+.text-content {
+  background-color: #ffffff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  .title-content {
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+    width: 100%;
+    color: #333333;
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+  .description-content {
+    width: 100%;
+    color: #666666;
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 18px;
+    padding: 2px;
+    margin: 0px;
+  }
+}

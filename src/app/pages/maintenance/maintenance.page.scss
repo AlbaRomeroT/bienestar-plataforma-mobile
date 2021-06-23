@@ -1,0 +1,25 @@
+.content {
+  font-family: var(--global-font-family);
+  color: var(--color-black-2);
+}
+
+.title {
+  color: var(--color-black-0);
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.black-path {
+  margin-top: 21px;
+  box-sizing: border-box;
+  height: 1px;
+  width: 51px;
+  border: 2px solid var(--color-black-0);
+  border-radius: 10px;
+}

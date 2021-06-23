@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="164px" height="118px" viewBox="0 0 164 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 10</title>
+    <defs>
+        <linearGradient x1="50%" y1="23.7610512%" x2="49.9978653%" y2="88.8933262%" id="linearGradient-1">
+            <stop stop-color="#10B457" offset="0%"></stop>
+            <stop stop-color="#4ED64D" offset="25.8547966%"></stop>
+            <stop stop-color="#F9DC02" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="63.2670219%" y1="82.0801925%" x2="46.3834851%" y2="45.3783407%" id="linearGradient-2">
+            <stop stop-color="#EEEEEE" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M51.3468555,0 C79.7049408,0 102.693711,22.4797425 102.693711,50.2099101 C102.693711,77.9400778 79.7049408,100.41982 51.3468555,100.41982 C22.9887703,100.41982 0,77.9400778 0,50.2099101 C0,22.4797425 22.9887703,0 51.3468555,0 Z M51.3468555,13.3893094 C30.5008458,13.3893094 13.601816,29.8744538 13.601816,50.2099101 C13.601816,70.5453664 30.5008458,87.0305109 51.3468555,87.0305109 C72.1928652,87.0305109 89.091895,70.5453664 89.091895,50.2099101 C89.091895,29.8744538 72.1928652,13.3893094 51.3468555,13.3893094 Z" id="path-3"></path>
+        <filter x="-1.9%" y="-2.0%" width="103.9%" height="104.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50.24671%" y1="0.554499986%" x2="87.5626193%" y2="70.93465%" id="linearGradient-5">
+            <stop stop-color="#FFDD00" offset="0.0712626689%"></stop>
+            <stop stop-color="#02D46F" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-6" x="0.200357536" y="4.87041718" width="31.9" height="14.3157895" rx="7.15789474"></rect>
+        <filter x="-15.7%" y="-27.9%" width="131.3%" height="169.9%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Menu-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2" transform="translate(-98.000000, -45.000000)">
+            <g id="Group-10" transform="translate(98.606383, 45.000000)">
+                <path d="M0.775108677,45.1634971 C-11.0002114,132.96646 114.898363,124.575656 140.282553,105.656609 C165.666743,86.7375621 181.081629,33.3434702 122.541933,36.0356628 C91.5240937,37.4621478 77.1421399,10.3656577 54.9520191,2.26267566 C35.2629191,-4.92702938 6.31115856,3.88380552 0.775108677,45.1634971 Z" id="Path-3-Copy" fill="url(#linearGradient-1)"></path>
+                <g id="Group-5" transform="translate(18.393617, 14.000000)">
+                    <g id="Group-2" transform="translate(11.288733, 0.000000)">
+                        <ellipse id="Oval" fill="url(#linearGradient-2)" cx="51.3468555" cy="50.2099101" rx="51.3468555" ry="50.2099101"></ellipse>
+                        <g id="Group-17" transform="translate(0.000000, 0.334733)">
+                            <g id="Group-8">
+                                <g id="Combined-Shape">
+                                    <use fill="#F6F6F6" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                </g>
+                                <path d="M51.5336687,6.69465468 C24.2624761,7.07304423 6.85005043,28.489942 6.80090802,50.2094526 C6.75297596,71.9289633 24.0436775,93.7242505 51.3391811,93.7242505 C71.984879,93.8000023 91.2410539,79.876819 95.892803,57.398854" id="Path-2" stroke="url(#linearGradient-5)" stroke-width="7" stroke-linecap="round" stroke-linejoin="bevel" transform="translate(51.346856, 50.209910) scale(-1, 1) translate(-51.346856, -50.209910) "></path>
+                            </g>
+                            <text id="530" font-size="20" font-weight="normal" font-family="'Roboto Condensed', sans-serif" fill="#333333">
+                                <tspan x="37.0899672" y="59.8171938">530</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-20" transform="translate(0.002814, 38.356557)">
+                        <g id="Rectangle-Copy-3">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                        </g>
+                        <text id="+4" font-size="10" font-weight="bold" line-spacing="18" font-family="'Roboto Condensed', sans-serif" fill="#016D38">
+                            <tspan x="10.779351" y="14.9687447">+4</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,149 @@
+ion-segment-button::before {
+  border: none;
+}
+
+.ion-segment-button {
+  min-width: 160px;
+  min-height: 23px;
+  margin: 0px 5px;
+  font-size: 12px;
+  font-family: var(--global-font-family);
+  letter-spacing: 0;
+  line-height: 14px;
+  text-align: center;
+  background-color: var(--color-white-3);
+  box-shadow: inset 0 1px 3px 0 var(--color-black-alpha-6);
+  --border-radius: 20px;
+}
+
+.label-categories {
+  background-color: transparent;
+  color: var(--color-gray-4);
+  letter-spacing: 0;
+  text-align: center;
+  min-width: 145px;
+}
+
+#selected-category {
+  .segment-button-checked {
+    background-color: var(--color-yellow-1);
+  }
+}
+
+.segment-button-checked {
+  --indicator-color: var(--color-yellow-1);
+  box-shadow: inherit;
+}
+
+.segment-button-checked .label-categories {
+  color: var(--color-black-0);
+}
+
+.segment-scrollable {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+.bar-shadow {
+  box-shadow: 0 1px 4px -2px var(--color-gray-0);
+}
+
+.ion-card-text {
+  color: var(--color-gray-3);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.question-red {
+  color: var(--color-red-2);
+}
+
+.radio-label {
+  color: var(--color-gray-2);
+  font-family: var(--global-font-family);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+  margin-left: 10px;
+}
+
+.radio-separate-right {
+  margin-right: 30px;
+}
+
+.radio-checked + .radio-label {
+  color: var(--color-black-0);
+}
+
+ion-radio-group {
+  ion-col {
+    margin: 0 2vw 0 0;
+    .selectedRadio {
+      --color-checked: var(--color-yellow-1);
+      margin: -1vw 0;
+    }
+    ion-label {
+      margin-left: 3vw;
+    }
+  }
+}
+
+.icon-segment {
+  height: 19px;
+  width: 42px;
+}
+
+.segment-button-checked .icon-segment {
+  color: var(--color-green-1);
+}
+
+.label-segment {
+  font-family: var(--global-font-family);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-transform: none;
+}
+
+.segment-button-checked .label-segment {
+  color: var(--color-black-0);
+}
+
+.question-segment {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background: var(--color-white-0);
+}
+
+ion-segment-button {
+  padding: 0px;
+  color: var(--color-gray-2);
+}
+
+ion-segment-button::part(indicator) {
+  height: 0px;
+}
+
+.ion-spinner {
+  color: var(--color-green-1);
+}
+
+.save-button {
+  text-transform: none;
+  background-color: var(--color-yellow-1);
+  border-radius: 99px;
+  color: var(--color-green-2);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  width: 133px;
+  height: 36px;
+  margin-bottom: 18px;
+  margin-right: 10px;
+  margin-top: 15px;
+}

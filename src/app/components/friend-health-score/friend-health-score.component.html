@@ -1,0 +1,46 @@
+<content class="profile" *ngIf="profile && healthScore">
+  <ion-row>
+    <ion-col class="fix-col">
+      <ion-avatar class="avatar">
+        <img src="assets/activities/user.svg" alt="" />
+      </ion-avatar>
+    </ion-col>
+
+    <ion-col>
+      <div class="name">
+        <span> {{ profile.name.displayName }}</span>
+      </div>
+    </ion-col>
+
+    <ion-col class="fix-col">
+      <div class="container-progress-percentage">
+        <div class="progress-percentage-bienestar">{{ healthScore.score }}</div>
+        <round-progress
+          id="bienestar-with-data"
+          class="percentage"
+          [current]="healthScore.score"
+          [max]="1000"
+          [stroke]="13"
+          [radius]="45"
+          [semicircle]="false"
+          [rounded]="true"
+          [responsive]="true"
+          [clockwise]="true"
+          [color]="true ? 'url(#progress-gradient)' : '#FFFFFF'"
+          [background]="'#f5f6f9'"
+          [duration]="1000"
+          [animation]="'easeOutCubic'"
+          [animationDelay]="100"
+        >
+        </round-progress>
+      </div>
+    </ion-col>
+  </ion-row>
+</content>
+
+<svg style="height: 0px; width: 0px">
+  <linearGradient id="progress-gradient" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="5%" stop-color="#ffdd00" />
+    <stop offset="95%" stop-color="#02d46f" />
+  </linearGradient>
+</svg>

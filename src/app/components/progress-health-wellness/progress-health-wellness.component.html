@@ -1,0 +1,166 @@
+<div class="card-transparent">
+  <ion-grid *ngIf="theres_data && ready">
+    <ion-row class="ion-text-center">
+      <ion-col size="12" class="col-contain-title">
+        <ion-text class="title-indicator">Mi índice de salud</ion-text> 
+        <ion-icon class="icon-info"  name="information-circle-outline" (click)="info()"></ion-icon>
+      </ion-col>
+      <ion-col size="6" class="progress-percentage-wrapper-bienestar">
+        <div class="container-progress-percentage">
+          <div class="progress-percentage-differences ng-cloak">
+            {{
+              response_wellness.yesterday > response_wellness.health_indicator
+                ? response_wellness.health_indicator -
+                  response_wellness.yesterday
+                : "+" +
+                  (response_wellness.health_indicator -
+                    response_wellness.yesterday)
+            }}
+          </div>
+          <div class="progress-percentage-bienestar ng-cloak">
+            {{ response_wellness.health_indicator }}
+          </div>
+          <div class="progress-percentage-state ng-cloak">
+            {{estadoWell}}
+          </div>
+          <round-progress
+            id="bienestar-with-data"
+            class="percentageValue"
+            [current]="current"
+            [max]="max"
+            [stroke]="stroke"
+            [radius]="radius"
+            [semicircle]="semicircle"
+            [rounded]="rounded"
+            [responsive]="responsive"
+            [clockwise]="clockwise"
+            [color]="gradient ? 'url( #mi-bienestar2)' : color"
+            [background]="background"
+            [duration]="duration"
+            [animation]="animation"
+            [animationDelay]="animationDelay"
+          ></round-progress>
+          
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <ion-col size="12">
+          <ion-row class="row-contain-tab" (click)="goToBody()">
+            <ion-col class="col-contain">
+              <ion-label class="bars">Cuerpo ></ion-label>
+            </ion-col>
+            <ion-col class="col-contain">
+              <ion-range
+                class="range disableBar"
+                min="0"
+                max="1000"
+                value="{{ response_wellness.body }}"
+              ></ion-range>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row-contain-tab" (click)="goToFeeling()">
+            <ion-col class="col-contain">
+              <ion-label class="bars">Mente ></ion-label>
+            </ion-col>
+            <ion-col class="col-contain">
+              <ion-range
+                class="range disableBar"
+                min="0"
+                max="1000"
+                value="{{ response_wellness.feelings }}"
+              ></ion-range>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row-contain-tab" (click)="goToLifestyle()">
+            <ion-col class="col-contain">
+              <ion-label class="bars">Hábitos ></ion-label>
+            </ion-col>
+            <ion-col class="col-contain">
+              <ion-range
+                class="range disableBar"
+                min="0"
+                max="1000"
+                value="{{ response_wellness.lifestyle }}"
+              ></ion-range>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card *ngIf="!theres_data && ready" class="card">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="progress-percentage-wrapper-cero" size="5">
+          <div class="progress-percentage-cero ng-cloak">
+            {{ response_wellness.health_indicator }}
+          </div>
+          <div class="container-progress-percentage-cero">
+            <round-progress
+              id="cero"
+              class="percentageValue"
+              [current]="current"
+              [max]="max"
+              [stroke]="stroke"
+              [radius]="radius"
+              [semicircle]="semicircle"
+              [rounded]="rounded"
+              [responsive]="responsive"
+              [clockwise]="clockwise"
+              [color]="gradient ? 'url( #no-mi-bienestar )' : color"
+              [background]="background"
+              [duration]="duration"
+              [animation]="animation"
+              [animationDelay]="animationDelay"
+            ></round-progress>
+          </div>
+        </ion-col>
+        <ion-col size="7">
+          <div class="messages">
+            <ion-row class="spacio-col">
+              <ion-label id="title"
+                >Su indicador de salud aún está en construcción</ion-label
+              >
+              <ion-label id="desc"
+                >Por favor complete su información para conocer sus
+                indicadores</ion-label
+              >
+              <ion-col
+                size="10"
+                (click)="callModalWellness()"
+                style="padding-top: 14px"
+              >
+                <ion-label id="complete">Completar información</ion-label>
+              </ion-col>
+              <ion-col size="2">
+                <img
+                  src="/assets/icon-arrow-back.svg"
+                  class="ion-margin-top ion-margin-horizontal arrow"
+                  alt="arrow"
+                />
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <svg style="height: 0px; width: 0px">
+    <linearGradient id="mi-bienestar" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="5%" stop-color="#ffdd00" />
+      <stop offset="95%" stop-color="#02d46f" />
+    </linearGradient>
+  </svg>
+  <svg style="height: 0px; width: 0px">
+    <linearGradient id="mi-bienestar2" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="5%" stop-color="#ffdd00" />
+      <stop offset="95%" stop-color="#02d46f" />
+    </linearGradient>
+  </svg>
+  <svg style="height: 0px; width: 0px">
+    <linearGradient id="no-mi-bienestar" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="20%" stop-color="#f5ff80" />
+      <stop offset="80%" stop-color="#ffdd00" />
+    </linearGradient>
+  </svg>
+</div>

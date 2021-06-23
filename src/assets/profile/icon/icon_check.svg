@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="14px" viewBox="0 0 19 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>atoms / icons / outline / check-symbol</title>
+    <g id="Menu-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Panel-perfil-avatar" transform="translate(-145.000000, -1084.000000)">
+            <g id="Group-3" transform="translate(144.000000, 1080.000000)">
+                <g id="Group" transform="translate(0.000000, 0.418994)">
+                    <g id="atoms-/-icons-/-outline-/-check-symbol" transform="translate(10.500000, 10.500000) rotate(-360.000000) translate(-10.500000, -10.500000) ">
+                        <rect id="bg-base" x="0" y="0" width="21" height="21"></rect>
+                        <polygon id="check-symbol" fill="#016D38" points="7.31818182 14.7574627 3.14204545 10.6436567 1.75 12.0149254 7.31818182 17.5 19.25 5.74626866 17.8579545 4.375"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

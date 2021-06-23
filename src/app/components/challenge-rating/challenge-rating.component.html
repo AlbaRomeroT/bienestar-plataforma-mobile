@@ -1,0 +1,20 @@
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-avatar class="avatar" [ngClass]="{ first: position == 1, second: position == 2, third: position == 3 }">
+        <img src="/assets/coach/user.svg" alt="" />
+      </ion-avatar>
+      <ion-badge class="rating">{{ position }}</ion-badge>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <span class="name" *ngIf="name">{{ name | slice: 0:9 }} {{ lastName | slice: 0:1 }}</span> 
+    <span class="name" *ngIf="!name" style="color: #fff;">-</span>
+  </ion-row>
+  <ion-row>
+    <span class="description" *ngIf="progress"
+      >{{ progress | number: "1.2-2" }}
+      {{ challengeDescription | challengeMarkdown: "*[":"]" }}</span>
+    <span class="description" style="color: #fff;" *ngIf="!progress">-</span>
+  </ion-row>
+</ion-grid>

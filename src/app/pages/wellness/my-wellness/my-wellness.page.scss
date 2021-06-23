@@ -1,0 +1,48 @@
+.text {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.text-link {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #016d38;
+  text-decoration: underline;
+}
+
+.ion-card {
+  border-radius: 10px;
+  height: 68%;
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 150px;
+}
+
+.link-no-decorator {
+  text-decoration: none;
+  color: inherit;
+}
+
+.no-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.title-no-margin {
+  margin-top: -16px;
+}
+
+.col-container-text {
+  height: 14vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}

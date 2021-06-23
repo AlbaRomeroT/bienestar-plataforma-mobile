@@ -1,0 +1,29 @@
+.terminos {
+  --background: none !important;
+  --border: none;
+  --padding: 0 !important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  --color: #069;
+  --cursor: pointer;
+  --box-shadow: none;
+  --text-transform: none !important;
+  --text-decoration: underline;
+  font-size: 12px;
+  color: #016d38;
+  font-family: Roboto;
+  text-decoration: underline;
+  text-align: center;
+  display: flex;
+  font-family: "Roboto Condensed";
+}
+
+ion-button.terminos.md.button.button-solid.ion-activatable.ion-focusable.hydrated {
+  text-transform: none;
+  display: revert;
+}
+
+div#mensaje {
+  line-height: 0px;
+}

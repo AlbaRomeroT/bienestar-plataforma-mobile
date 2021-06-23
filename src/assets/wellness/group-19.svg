@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 19</title>
+    <g id="Menu-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Bienestar-Home" transform="translate(-237.000000, -609.000000)" stroke-width="2">
+            <g id="Group-19" transform="translate(238.000000, 610.000000)">
+                <line x1="28.6699" y1="47.9238" x2="29.5959" y2="53.4808" id="Stroke-1" stroke="#FFCD00"></line>
+                <line x1="24.4043" y1="53.4805" x2="25.3453" y2="47.8275" id="Stroke-3" stroke="#FFCD00"></line>
+                <path d="M15.8779,46.7803 C12.8669,47.4443 9.0859,48.2663 6.4139,48.8073 C1.2829,49.8453 -0.0001,54.0003 -0.0001,54.0003" id="Stroke-5" stroke="#000000"></path>
+                <path d="M38.1221,46.7803 C41.1331,47.4443 44.9141,48.2663 47.5861,48.8073 C52.7171,49.8453 54.0001,54.0003 54.0001,54.0003" id="Stroke-7" stroke="#000000"></path>
+                <polyline id="Stroke-9" stroke="#000000" points="20.7695 42.0576 15.8775 46.7806 19.7305 51.9226 24.9225 46.7306"></polyline>
+                <polyline id="Stroke-11" stroke="#000000" points="33.2305 42.0576 38.1225 46.7806 34.2695 51.9226 29.0775 46.7306"></polyline>
+                <path d="M20.7695,38.0732 L21.8075,44.6542 C21.8075,44.6542 23.8845,46.7302 26.9995,46.7302 C30.1155,46.7302 32.1925,44.6542 32.1925,44.6542 L33.2305,38.4232" id="Stroke-13" stroke="#006D31"></path>
+                <path d="M33.2305,14.5386 L40.5005,15.5776 L39.4615,29.0716 C39.4615,34.7866 31.1545,39.4616 27.0005,39.4616 C22.8455,39.4616 14.5385,34.7866 14.5385,29.0716 L13.5005,17.6536 C25.9615,17.6536 34.2695,10.3846 34.2695,10.3846" id="Stroke-15" stroke="#006D31"></path>
+                <path d="M13.5,10.3901 C13.5,4.6761 20.253,0.0001 25.967,0.0001 L28.033,0.0001 C33.747,0.0001 40.5,4.6761 40.5,10.3901" id="Stroke-17" stroke="#006D31"></path>
+            </g>
+        </g>
+    </g>
+</svg>

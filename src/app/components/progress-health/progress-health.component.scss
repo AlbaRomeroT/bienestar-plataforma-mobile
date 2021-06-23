@@ -1,0 +1,304 @@
+.progress-percentage-differences {
+  position: absolute;
+  color: #319e31;
+  width: 100%;
+  text-align: center !important;
+  top: 25%;
+  left: 8%;
+  z-index: 99;
+  font-size: 15px;
+  font-family: "Roboto Condensed", sans-serif;
+  @media (max-width: 320px) {
+    top: 18%;
+    left: 14%;
+  }
+}
+
+.progress-percentage-state {
+  position: absolute;
+  width: 34vw;
+  bottom: 2em;
+  z-index: 99;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center !important;
+  color: #333333;
+  @media (max-width: 414px) {
+    bottom: 2.6em;
+    left: 14%;
+  }
+  @media (max-width: 375px) {
+    bottom: 2.3em;
+    left: 12%;
+  }
+  @media screen and (max-width: 320px) {
+    bottom: 3em;
+    width: 33vw;
+    left: 16%;
+  }
+}
+
+.progress-percentage-wrapper {
+  position: relative;
+  margin: 0px auto;
+  font-size: 30px;
+}
+
+.progress-percentage-wrapper-bienestar {
+  position: relative;
+  margin: 8px auto;
+  font-size: 30px;
+}
+
+.container-progress-percentage {
+  border-radius: 99px;
+  width: 35vw;
+  height: 35vw;
+  border: 2px solid #ddd;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.container-progress-percentage-cero {
+  border-radius: 99px;
+  width: 35vw;
+  height: 34.6vw;
+  border: 2px solid #ddd;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.responsive[_nghost-fgm-c132] > svg[_ngcontent-fgm-c132] {
+  border-radius: 99px;
+  border: 2px solid #ddd;
+}
+
+/* .progress-percentage {
+    position: absolute;
+    color: black;
+    width: 100%;
+    text-align: center !important;
+    top: 35%;
+    left: 0%;
+} */
+
+.progress-percentage {
+  position: absolute;
+  color: var(--color-black-2);
+  width: 100%;
+  text-align: center !important;
+  top: 2.5em;
+  left: 10%;
+  z-index: 99;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: var(--global-font-family);
+  @media (max-width: 320px) {
+    top: 2em;
+    left: 14%;
+  }
+}
+
+round-progress#cero.percentageValue {
+  height: 100% !important;
+  width: 100% !important;
+  display: inline-block !important;
+  padding-bottom: 66% !important;
+}
+
+round-progress#bienestar-with-data.percentageValue {
+  height: 150px !important;
+  width: 151px !important;
+  display: inline-block !important;
+  padding-bottom: 66% !important;
+}
+
+circle {
+  stroke-width: 33px !important;
+}
+
+.progress-percentage-cero {
+  color: black;
+  width: 100%;
+  z-index: 99;
+  font-size: 33px;
+  font-family: "Roboto Condensed", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-1%, -80%);
+
+  @media screen and (max-width: 576px) {
+    transform: translate(-3%, -65%);
+  }
+  @media screen and (max-width: 414px) {
+    transform: translate(-0.5vw, -3.2vh);
+  }
+  @media screen and (max-width: 375px) {
+    transform: translate(-0.3vw, -4.3vh);
+  }
+  @media screen and (max-width: 360px) {
+    transform: translate(-1vw, -3.5vh);
+  }
+}
+
+.progress-percentage-wrapper-cero {
+  position: relative;
+  margin: 8px auto;
+  font-size: 30px;
+}
+
+round-progress#cero {
+  margin-left: 0.8px;
+  margin-top: 0.4px;
+  width: 180px !important;
+  display: contents;
+}
+
+ion-label#title {
+  text-align-last: left;
+  color: #333;
+  font-weight: 500;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+ion-label#desc {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+ion-label#complete {
+  color: #016d38;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-align: end;
+}
+
+.card {
+  border-radius: 8px;
+  background: linear-gradient(180deg, #f7f7f7 0%, #eeeeee 100%);
+  margin-bottom: 0px;
+}
+
+.card-transparent {
+  background: rgba(255, 255, 255, 0) !important;
+  box-shadow: none !important;
+}
+
+.messages {
+  margin-top: 12px;
+}
+
+.progress-bar-estilo {
+  height: 9px;
+  width: 57px;
+  border-radius: 5px;
+  margin-top: 6px;
+  --background: #fcfcfc !important;
+  --progress-background: linear-gradient(90deg, #ffdd00 0.07%, #02d46f 100%);
+}
+
+.progress-buffer-bar {
+  --background: green !important;
+}
+
+.bars {
+  color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.bars2 {
+  color: #202020;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.titulo {
+  color: #016d38;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-left: 45%;
+}
+
+.arrow {
+  transform: rotate(180deg);
+  padding: 0px;
+  margin-left: 8px;
+  height: 12px;
+  color: #0f7127;
+  margin-top: 2px;
+}
+
+.col-space {
+  margin-bottom: 10px;
+}
+
+.progress-buffer-bar::before {
+  box-shadow: inset 0 4px 5px 0 #ddd !important;
+  content: "Hola" !important;
+}
+
+.minititle {
+  text-align-last: end;
+  display: flex;
+}
+
+.spacio-col {
+  padding-left: 10px;
+}
+
+.range {
+  width: 110%;
+  --bar-background: linear-gradient(
+    to bottom,
+    lightgray,
+    #f3f3f3,
+    #f6f6f6,
+    #f3f3f3,
+    lightgray
+  );
+  --bar-background-active: linear-gradient(
+    to right,
+    #ffdd00,
+    #02d46f
+  ) !important;
+  --bar-border-radius: 10px;
+  --bar-height: 10px;
+  --height: 5px;
+  --knob-background: none;
+  --knob-box-shadow: none;
+  --knob-border-radius: none;
+  --knob-size: 22px;
+  opacity: 1;
+}
+
+.disableBar {
+  pointer-events: none;
+}
+
+.icon-info {
+  margin-left: 1vw;
+  font-size: 17.91px;
+  color: #0f7127;
+}
+
+.col-content-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}

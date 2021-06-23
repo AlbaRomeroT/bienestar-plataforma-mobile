@@ -1,0 +1,46 @@
+:host {
+  background-color: var(--color-white-1);
+}
+
+@media (min-width: 992px), (orientation: landscape) {
+  :host {
+    background-color: var(--color-white-1);
+  }
+}
+
+.ion-content {
+  --background: var(--color-white-10);
+}
+
+.padding-left-right-4 {
+  padding: 0 4vw;
+}
+
+.margin-t-2-b-4 {
+  margin: 2vw 0vw 4vw 0;
+}
+
+.margin-top-10 {
+  margin-top: 10vw;
+}
+
+.margin-top-4 {
+  margin-top: 4vw;
+}
+
+.margin-top-7 {
+  margin-top: 7vw;
+}
+
+.margin-bottom-4 {
+  margin-bottom: 4vw;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10vw;
+}
+
+.bottom-no-padding-no-margin {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}

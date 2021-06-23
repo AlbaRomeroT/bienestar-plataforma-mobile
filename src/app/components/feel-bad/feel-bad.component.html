@@ -1,0 +1,75 @@
+<app-green-button-title
+  [title]="titles[0]"
+  [modal]="modal"
+  [showBack]="true"
+  (onBack)="onBack()"
+  (onDismiss)="dismiss()"
+>
+</app-green-button-title>
+<br />
+<div class="error-container">
+  <div id="errores" *ngIf="showErrorFeel" class="ion-text-center">
+    <div id="desc-error">{{ showedErrorFeel }}</div>
+  </div>
+</div>
+<br />
+<div
+  class="ion-align-items-center ion-text-center"
+  *ngIf="step !== 3 && step !== 1"
+>
+  <ion-spinner class="ion-spinner" name="bubbles"></ion-spinner>
+</div>
+<br />
+<!-- Corporative whatsapp -->
+<div *ngIf="step === 1">
+  <ion-row class="ion-text-center ion-margin-horizontal">
+    <ion-col size="12">
+      <img src="/assets/green-button/whatsapp.svg" alt="WhatsApp" />
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-text-center ion-margin-horizontal">
+    <ion-col size="12">
+      <ion-label class="text-label">
+        Después de iniciar el chat, escriba el número 7 para recibir atención
+        médica de nuestros profesionales.
+      </ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <div class="ion-text-center">
+        <ion-button
+          (click)="openStoreWhatsapp(whatsappHelpClientNumber, 'Hola')"
+          class="bg-color"
+          >INICIAR CHAT</ion-button
+        >
+      </div>
+    </ion-col>
+  </ion-row>
+</div>
+<!-- DoctorAki whatsapp -->
+<div *ngIf="step === 3">
+  <ion-row class="ion-text-center ion-margin-horizontal">
+    <ion-col size="12">
+      <img src="/assets/green-button/whatsapp.svg" alt="WhatsApp" />
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-text-center ion-margin-horizontal">
+    <ion-col size="12">
+      <ion-label class="text-label">
+        Inicie un chat con nuestro equipo de DoctorAkí.
+      </ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <div class="ion-text-center">
+        <ion-button
+          (click)="openStoreWhatsapp(whatsappHelpNumber, 'Hola, DoctorAkí')"
+          class="bg-color"
+          >INICIAR CHAT</ion-button
+        >
+      </div>
+    </ion-col>
+  </ion-row>
+</div>

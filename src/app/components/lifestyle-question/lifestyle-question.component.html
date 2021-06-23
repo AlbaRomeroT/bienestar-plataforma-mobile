@@ -1,0 +1,189 @@
+<div class="body-data-content">
+  <ion-row>
+    <ion-col size="8" offset="2" class="ion-text-center">
+      <div class="info-message">
+        <span>
+          Responda las siguientes preguntas de acuerdo a su estilo de vida:
+        </span>
+      </div>
+    </ion-col>
+  </ion-row>
+</div>
+<div class="card">
+  <ion-row class="bar-shadow">
+    <ion-col size="12">
+      <ion-segment expand="full" scrollable="true" mode="ios"> </ion-segment>
+    </ion-col>
+  </ion-row>
+  <div class="lifestyle-medical-values-questions-content">
+    <ion-card
+      class="ion-card"
+      *ngFor="let question of lifestyleSurveyQuestions"
+    >
+      <ion-card-header class="ion-card-header ion-align-items-center">
+        <ion-row class="ion-align-items-center">
+          <div *ngIf="question.id == 'exerciseLevel'">
+            <img src="../../../assets/lifestyle/icon weight.svg" alt="" />
+            <span class="ion-card-subtitle">
+              &nbsp;&nbsp;&nbsp;&nbsp;Ejercicio
+            </span>
+          </div>
+          <div *ngIf="question.id == 'alcohol'">
+            <img src="../../../assets/lifestyle/Icon beer.svg" alt="" />
+            <span class="ion-card-subtitle">
+              &nbsp;&nbsp;&nbsp;&nbsp;Alcohol
+            </span>
+          </div>
+          <div *ngIf="question.id == 'coffee'">
+            <img src="../../../assets/lifestyle/Icon coffee.svg" alt="" />
+            <span class="ion-card-subtitle">
+              &nbsp;&nbsp;&nbsp;&nbsp;Café
+            </span>
+          </div>
+          <div *ngIf="question.id == 'smoking'">
+            <img src="../../../assets/lifestyle/Icon Smoke.svg" alt="" />
+            <span class="ion-card-subtitle">
+              &nbsp;&nbsp;&nbsp;&nbsp;Cigarrillo
+            </span>
+          </div>
+          <div *ngIf="question.id == 'diet'">
+            <img src="../../../assets/lifestyle/Icon Manzana.svg" alt="" />
+            <span class="ion-card-subtitle">
+              &nbsp;&nbsp;&nbsp;&nbsp;Práctica dietética
+            </span>
+          </div>
+        </ion-row>
+      </ion-card-header>
+      <ng-container *ngIf="question.id != 'smoking'">
+        <ion-card-header class="ion-card-header ion-align-items-center" alt="">
+          <ion-row class="ion-align-items-center">
+            <span class="ion-card-title">{{ question.question }}</span>
+          </ion-row>
+        </ion-card-header>
+        <ion-card-content class="margin-fixeds">
+          <ion-row>
+            <ion-col size="12">
+              <div class="ion-card-text">{{ question.recommendation }}</div>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="question.response.length === 2">
+            <ion-col size="12">
+              <ion-radio-group [(ngModel)]="question.value">
+                <ion-col
+                  size="6"
+                  class="radio-separate-right ion-align-items-center"
+                  *ngFor="let res of question.response"
+                >
+                  <ion-radio
+                    [value]="res.key"
+                    class="selectedRadio"
+                  ></ion-radio>
+                  <ion-label class="radio-label">{{ res.value }}</ion-label>
+                </ion-col>
+              </ion-radio-group>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="question.response.length > 2">
+            <ion-col size="12">
+              <ion-item class="ion-item-ion-input">
+                <ion-select
+                  slot="start"
+                  interface="action-sheet"
+                  class="ion-select"
+                  [(ngModel)]="question.value"
+                  [interfaceOptions]="{ translucent: true }"
+                  cancelText="Cancelar"
+                  placeholder="Seleccione..."
+                >
+                  <ion-select-option
+                    *ngFor="let res of question.response"
+                    [value]="res.key"
+                  >
+                    {{ res.value }}
+                  </ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ng-container>
+      <div *ngIf="question.id == 'smoking'">
+        <ng-container *ngFor="let questionSmoke of question.questions">
+          <ion-card-header
+            class="ion-card-header ion-align-items-center"
+            alt=""
+          >
+            <ion-row class="ion-align-items-center">
+              <span class="ion-card-title">{{ questionSmoke.question }}</span>
+            </ion-row>
+          </ion-card-header>
+          <ion-card-content class="margin-fixeds">
+            <ion-row *ngIf="questionSmoke.response.length === 2">
+              <ion-col size="8">
+                <ion-segment
+                  class="question-segment"
+                  color="warning"
+                  [(ngModel)]="questionSmoke.value"
+                >
+                  <ion-segment-button
+                    *ngFor="let res of questionSmoke.response"
+                    [value]="res.key"
+                    layout="icon-start"
+                  >
+                    <ion-img
+                      class="icon-segment"
+                      *ngIf="res.key == 'true'"
+                      [src]="
+                        questionSmoke.value === 'true'
+                          ? '../../../assets/lifestyle/select.svg'
+                          : '../../../assets/lifestyle/unselect.svg'
+                      "
+                    >
+                    </ion-img>
+                    <ion-img
+                      class="icon-segment"
+                      *ngIf="res.key == 'false'"
+                      [src]="
+                        questionSmoke.value === 'false'
+                          ? '../../../assets/lifestyle/select.svg'
+                          : '../../../assets/lifestyle/unselect.svg'
+                      "
+                    >
+                    </ion-img>
+                    <ion-label class="label-segment">{{ res.value }}</ion-label>
+                  </ion-segment-button>
+                </ion-segment>
+              </ion-col>
+            </ion-row>
+            <ion-row *ngIf="questionSmoke.response.length > 2">
+              <ion-col size="12">
+                <ion-item class="ion-item-ion-input">
+                  <ion-select
+                    slot="start"
+                    interface="action-sheet"
+                    class="ion-select"
+                    [interfaceOptions]="{ translucent: true }"
+                    cancelText="Cancelar"
+                    placeholder="Seleccione..."
+                  >
+                    <ion-select-option
+                      *ngFor="let res of questionSmoke.response"
+                      [value]="res.key"
+                    >
+                      {{ res.value }}
+                    </ion-select-option>
+                  </ion-select>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ng-container>
+      </div>
+    </ion-card>
+    <ion-row>
+      <ion-col size="12" class="ion-text-right">
+        <button (click)="save()" class="save-button" [disabled]="modalIsActive">GUARDAR</button>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

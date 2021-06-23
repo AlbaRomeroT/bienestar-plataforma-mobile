@@ -1,0 +1,56 @@
+<app-header></app-header>
+<ion-content class="ion-content">
+  <ion-row class="header">
+    <app-back-button-updated class="back"></app-back-button-updated>
+    <app-widget-header
+      class="title"
+      [title]="'Solicitudes de amistad'"
+    ></app-widget-header>
+  </ion-row>
+
+  <div class="ion-margin-horizontal">
+    <div *ngIf="haveFriendRequestList()">
+      <ion-list>
+        <ion-item
+          lines="none"
+          class="item-activity"
+          *ngFor="let item of getFriendRequestList()"
+        >
+          <img
+            [src]="null"
+            class="photo"
+            onError="src = '/assets/menu/profile-without-photo.svg'"
+            alt=""
+          />
+          <ion-label class="item-label">{{item.name?.displayName}}</ion-label>
+          <div
+            *ngIf="item.requestAccepted"
+            (click)="viewFriendProfile(item)"
+            class="label-view-profile"
+            end
+          >
+            Ver perfil
+          </div>
+          <ion-icon
+            *ngIf="!item.requestAccepted"
+            (click)="handlerFriendRequest(false, item)"
+            class="icon-close"
+            src="/assets/community/close.svg"
+            end
+          ></ion-icon>
+          <ion-icon
+            *ngIf="!item.requestAccepted"
+            (click)="handlerFriendRequest(true, item)"
+            class="icon-check"
+            src="/assets/community/check.svg"
+            end
+          ></ion-icon>
+        </ion-item>
+      </ion-list>
+
+      <ion-infinite-scroll (ionInfinite)="showMoreFriendRequests($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </div>
+  </div>
+</ion-content>

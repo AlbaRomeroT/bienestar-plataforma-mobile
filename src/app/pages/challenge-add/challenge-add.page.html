@@ -1,0 +1,139 @@
+<app-header></app-header>
+<ion-content class="ion-content" #pageTop>
+  <div class="spin">
+    <ion-spinner
+      class="ion-spinner"
+      name="bubbles"
+      [hidden]="!showSpinner"
+    ></ion-spinner>
+  </div>
+  <ion-row class="header">
+    <app-back-button-updated class="back"></app-back-button-updated>
+    <app-widget-header
+      class="title"
+      [title]="'Mi comunidad'"
+    ></app-widget-header>
+  </ion-row>
+  <div class="body-data-content">
+    <ion-row>
+      <ion-col size="10" offset="1" class="ion-text-center">
+        <div class="info-message">
+          <span>Añada los desafíos que desea lograr</span>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <ion-row>
+    <ion-col size="12">
+      <app-title
+        [text]="'Desafíos disponibles'"
+        [cssClass]="'text-activity'"
+      ></app-title>
+    </ion-col>
+  </ion-row>
+
+  <ion-card
+    *ngFor="let item of challenges | challengeStatusFilter : 'actives' | slice:0:maxShow ; let odd=odd; let even=even;"
+    class="ion-margin"
+  >
+    <ion-card-content class="card-content" *ngIf="item.name != null">
+      <ion-row>
+        <ion-col size="4" class="image-content" *ngIf="even">
+          <img
+            [src]="item.safeMediaUrl"
+            onError="src = '/assets/purpose/purpose-default.png'"
+            class="image"
+            alt=""
+          />
+        </ion-col>
+
+        <ion-col size="8" class="text-content">
+          <div class="firts-two-content">
+            <ion-row class="ion-no-padding ion-no-margin">
+              <ion-col class="ion-no-padding ion-no-margin">
+                <div class="title-content">{{ item.name }}</div>
+              </ion-col>
+            </ion-row>
+            <ion-row class="ion-no-padding ion-no-margin">
+              <ion-col class="ion-no-padding ion-no-margin">
+                <div class="date-content">
+                  {{ (item.startTime | date: 'dd/MM/yy') + ' - ' + (item.endTime
+                  | date: 'dd/MM/yy') }}
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <p class="description-content">
+                  {{ removeMarckDowns(item.description)}}
+                </p>
+              </ion-col>
+            </ion-row>
+          </div>
+
+          <ion-row
+            class="ion-no-margin ion-no-padding row-footer-right"
+            *ngIf="even"
+          >
+            <ion-col size="5" class="ion-no-border ion-no-margin ion-text-left">
+              <div class="view-more-text" (click)="viewChallengeDetail(item)">
+                Ver más >
+              </div>
+            </ion-col>
+            <ion-col
+              size="7"
+              class="ion-no-border ion-no-margin ion-text-right"
+            >
+              <ion-button
+                class="action-button-right ion-no-margin"
+                fill="none"
+                (click)="onAdd(item)"
+                >Unirme
+                <ion-icon slot="end" name="add-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+
+          <ion-row
+            class="ion-no-margin ion-no-padding row-footer-left"
+            *ngIf="odd"
+          >
+            <ion-col size="7" class="ion-no-border ion-no-margin ion-text-left">
+              <ion-button
+                class="action-button-left ion-no-margin"
+                fill="none"
+                (click)="onAdd(item)"
+                >Unirme
+                <ion-icon slot="end" name="add-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col
+              size="5"
+              class="ion-no-border ion-no-margin ion-text-right"
+            >
+              <div class="view-more-text" (click)="viewChallengeDetail(item)">
+                Ver más >
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+
+        <ion-col size="4" class="image-content" *ngIf="odd">
+          <img
+            [src]="item.safeMediaUrl"
+            onError="src = '/assets/purpose/purpose-default.png'"
+            class="image"
+            alt=""
+          />
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-infinite-scroll (ionInfinite)="showMore($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+  <br />
+</ion-content>

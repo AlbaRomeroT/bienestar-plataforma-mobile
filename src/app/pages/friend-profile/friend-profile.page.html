@@ -1,0 +1,70 @@
+<app-header-only></app-header-only>
+
+<ion-row class="header">
+  <app-back-button-updated
+    class="back"
+    [segment]="segmentReturn"
+  ></app-back-button-updated>
+  <app-widget-header class="title" [title]="title"></app-widget-header>
+</ion-row>
+
+<ion-content class="empty-leitmotiv-background">
+  <div class="spin">
+    <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+  </div>
+
+  <ion-row class="health-score-row">
+    <app-friend-health-score
+      *ngIf="id"
+      class="health-score"
+      [profile]="profile"
+      [healthScore]="healthScore"
+    >
+    </app-friend-health-score>
+  </ion-row>
+
+  <ion-grid
+    fixed
+    *ngIf="sectiontToShow == sections.empty"
+    class="empty-leitmotiv-background empty-grid"
+  >
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <img src="/assets/activities/img-empty.svg" class="main-image" alt="" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <span class="title">
+          ¡{{profile?.name?.firstName}} no tiene actividades <br />
+          para compartir!
+        </span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <span class="description"> Sugiérale completar alguna actividad </span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid
+    fixed
+    *ngIf="sectiontToShow == sections.activities"
+    class="recent-activities-grid"
+  >
+    <ion-row class="leitmotiv-background">
+      <app-friend-activity
+        class="friend-activity"
+        *ngFor="let activity of activities"
+        [activitiesTranslate]="activitiesTranslate"
+        [activity]="activity"
+        [profile]="profile"
+      >
+      </app-friend-activity>
+      <ion-infinite-scroll (ionInfinite)="getNextActivities()">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </ion-row>
+  </ion-grid>
+</ion-content>

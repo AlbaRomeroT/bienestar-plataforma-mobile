@@ -1,0 +1,606 @@
+<app-header></app-header>
+<ion-row class="header-body">
+  <app-back-button-updated class="back"></app-back-button-updated>
+  <app-widget-header class="title" [title]="title"></app-widget-header>
+</ion-row>
+<ion-content class="ion-content">
+  <app-histogram-chart
+    [data]="healthScoreData"
+    [type]="'body'"
+  ></app-histogram-chart>
+  <form [formGroup]="bodyForm" novalidate [hidden]="showBodySurvey">
+    <div class="body-data-content">
+      <ion-row>
+        <ion-col size="8" offset="2" class="ion-text-center">
+          <div class="info-message">
+            <span
+              >Complete la siguiente información sobre su cuerpo y estado de
+              salud:</span
+            >
+          </div>
+        </ion-col>
+      </ion-row>
+      <div class="ion-align-items-center ion-text-center" *ngIf="!bodyData">
+        <ion-spinner class="ion-spinner" name="bubbles"></ion-spinner>
+      </div>
+      <div *ngIf="bodyData">
+        <ion-card class="ion-card">
+          <ion-card-header class="ion-card-header ion-align-items-center">
+            <ion-row class="ion-align-items-center">
+              <img src="/assets/body/icon-person.svg" alt="" />
+              <span class="ion-card-subtitle">
+                &nbsp;&nbsp;&nbsp;&nbsp;Información
+              </span>
+            </ion-row>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-row>
+                <ion-col size="2">
+                  <ion-label
+                    position="stacked"
+                    class="input-label"
+                    [ngClass]="{'input-label':(!(bodyForm.get('sex').hasError('required'))),'input-error': bodyForm.get('sex').hasError('required')}"
+                  >
+                    Sexo
+                  </ion-label>
+                  <ion-icon
+                    name="help-circle-outline"
+                    class="icon-question"
+                    [hidden]="true"
+                    (click)="actionShowHelp()"
+                  >
+                  </ion-icon>
+                </ion-col>
+                <ion-col size="10" [hidden]="!showMessageForHelp">
+                  <div class="content-message-for-help">
+                    <ion-icon
+                      name="close"
+                      class="icon-close"
+                      (click)="actionShowHelp()"
+                    ></ion-icon>
+                    <p class="message-for-help">
+                      Necesitamos conocer su sexo de nacimiento. Nuestra empresa
+                      es inclusiva.
+                    </p>
+                  </div>
+                </ion-col>
+              </ion-row>
+              <ion-item
+                class="ion-item-ion-segment"
+                lines="none"
+                [ngClass]="{'red-border-class': bodyForm.get('sex').hasError('required'), 'ion-item-ion-input':!(bodyForm.get('sex').hasError('required'))}"
+              >
+                <ion-segment
+                  class="gender-segment"
+                  color="warning"
+                  formControlName="sex"
+                  size="12"
+                  expand="full"
+                >
+                  <ion-segment-button
+                    value="female"
+                    layout="icon-start"
+                    class="ion-segment-button-gender"
+                  >
+                    <ion-img
+                      class="icon-segment"
+                      [src]="bodyForm.get('sex').value == 'female' ? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                    >
+                    </ion-img>
+                    <ion-label
+                      *ngIf="bodyForm.get('sex').value === 'female'"
+                      class="label-segment text-black"
+                      >Femenino
+                    </ion-label>
+                    <ion-label
+                      *ngIf="bodyForm.get('sex').value !== 'female'"
+                      class="label-segment"
+                      >Femenino</ion-label
+                    >
+                  </ion-segment-button>
+                  <ion-segment-button
+                    value="male"
+                    layout="icon-start"
+                    class="ion-segment-button-gender"
+                  >
+                    <ion-img
+                      class="icon-segment"
+                      [src]="bodyForm.get('sex').value == 'male' ? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                    >
+                    </ion-img>
+                    <ion-label
+                      *ngIf="bodyForm.get('sex').value === 'male'"
+                      class="label-segment text-black"
+                      >Masculino
+                    </ion-label>
+                    <ion-label
+                      *ngIf="bodyForm.get('sex').value !== 'male'"
+                      class="label-segment"
+                      >Masculino</ion-label
+                    >
+                  </ion-segment-button>
+                </ion-segment>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('sex').errors" lines="none">
+                <span
+                  *ngIf="bodyForm.get('sex').hasError('required')"
+                  class="input-error"
+                >
+                  El genero es requerido.
+                </span>
+              </ion-item>
+              <ion-label
+                position="stacked"
+                class="input-label"
+                (click)="dateTimeBirthday.open()"
+              >
+                Edad
+              </ion-label>
+
+              <ion-item lines="none" [hidden]="true">
+                <ion-input
+                  class="input-day"
+                  type="number"
+                  max="31"
+                  min="1"
+                  name="day"
+                  formControlName="day"
+                  placeholder="Día"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                ></ion-input>
+                <ion-input
+                  class="input-month"
+                  type="number"
+                  max="12"
+                  min="1"
+                  name="month"
+                  formControlName="month"
+                  placeholder="Mes"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                ></ion-input>
+                <ion-input
+                  class="input-year"
+                  type="number"
+                  max="3000"
+                  min="1000"
+                  name="year"
+                  formControlName="year"
+                  placeholder="Año"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                ></ion-input>
+              </ion-item>
+
+              <ion-item
+                class="ion-item-ion-input"
+                (click)="dateTimeBirthday.open()"
+              >
+                <ion-input
+                  formControlName="age"
+                  type="text"
+                  name="age"
+                  placeholder="Edad"
+                  (click)="dateTimeBirthday.open()"
+                >
+                </ion-input>
+                <ion-icon
+                  name="calendar-outline"
+                  (click)="dateTimeBirthday.open()"
+                ></ion-icon>
+
+                <ion-datetime
+                  #birthday
+                  value="{{this.bodyData.dateOfBirth | date:'yyyy-MM-dd'}}"
+                  (ionChange)="updateBirthday(birthday.value)"
+                  display-format="DD MMM YYYY"
+                  monthShortNames="Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, 
+                Septiembre, Octubre, Noviembre, Diciembre"
+                  placeholder="Fecha nacimiento"
+                  cancelText="CANCELAR"
+                  doneText="ACEPTAR"
+                  [max]="maxAdultDate"
+                >
+                </ion-datetime>
+              </ion-item>
+              <ion-item *ngIf="bodyData.dateOfBirth == null" lines="none">
+                <span class="input-error"> La edad es requerida. </span>
+              </ion-item>
+              <ion-label
+                position="stacked"
+                [ngClass]="{'input-label':(!(bodyForm.get('height').hasError('required'))),'input-error': bodyForm.get('height').hasError('required')}"
+              >
+                Estatura
+              </ion-label>
+              <ion-item
+                [ngClass]="{'red-border-class': bodyForm.get('height').hasError('required'), 'ion-item-ion-input':!(bodyForm.get('height').hasError('required'))}"
+              >
+                <ion-input
+                  formControlName="height"
+                  type="text"
+                  name="height"
+                  placeholder="Estatura"
+                >
+                </ion-input>
+                <ion-select
+                  slot="start"
+                  class="ion-select"
+                  cancelText="CANCELAR"
+                  okText="ACEPTAR"
+                  placeholder="Estatura"
+                  formControlName="height"
+                  interface="alert"
+                  mode="ios"
+                >
+                  <ion-select-option
+                    *ngFor="let item of heightArray"
+                    [value]="item"
+                  >
+                    {{item}} cm
+                  </ion-select-option>
+                </ion-select>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('height').errors" lines="none">
+                <span
+                  *ngIf="bodyForm.get('height').hasError('required')"
+                  class="input-error"
+                >
+                  La estatura es requerida.
+                </span>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="ion-card">
+          <ion-card-header class="ion-card-header ion-align-items-center">
+            <ion-row class="ion-align-items-center">
+              <img src="/assets/body/icon-arm.svg" alt="" />
+              <span class="ion-card-subtitle">
+                &nbsp;&nbsp;&nbsp;&nbsp;Valores corporales
+              </span>
+            </ion-row>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-label
+                position="stacked"
+                [ngClass]="{'input-label':(!(bodyForm.get('weight').hasError('required'))),'input-error': bodyForm.get('weight').hasError('required')}"
+              >
+                Peso
+              </ion-label>
+              <ion-item
+                [ngClass]="{'red-border-class': bodyForm.get('weight').hasError('required'), 'ion-item-ion-input':!(bodyForm.get('weight').hasError('required'))}"
+              >
+                <ion-select
+                  slot="start"
+                  class="ion-select"
+                  cancelText="CANCELAR"
+                  okText="ACEPTAR"
+                  placeholder="Peso"
+                  formControlName="weight"
+                  interface="alert"
+                  mode="ios"
+                >
+                  <ion-select-option
+                    *ngFor="let item of weightArray"
+                    [value]="item"
+                  >
+                    {{item}} kg
+                  </ion-select-option>
+                </ion-select>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('weight').errors" lines="none">
+                <span
+                  *ngIf="bodyForm.get('weight').hasError('required')"
+                  class="input-error"
+                >
+                  El peso es requerido.
+                </span>
+              </ion-item>
+              <ion-label position="stacked" class="input-label">
+                Índice de masa grasa
+              </ion-label>
+              <ion-item class="ion-item-ion-input">
+                <ion-input
+                  class="fatMass"
+                  formControlName="fatMass"
+                  type="text"
+                  name="fatMass"
+                  placeholder="Ejemplo: 2.4 - 60.75 kg"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('fatMass').errors" lines="none">
+                <span class="input-error">
+                  El Valor debe estar entre 2.4 y 60.75 kg
+                </span>
+              </ion-item>
+              <ion-label position="stacked" class="input-label">
+                Índice de masa corporal
+              </ion-label>
+              <ion-item class="ion-item-ion-input">
+                <ion-input
+                  formControlName="bmi"
+                  type="text"
+                  name="bmi"
+                  placeholder="Índice de masa corporal"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+              <ion-label position="stacked" class="input-label">
+                Circunferencia de la cintura
+              </ion-label>
+              <ion-item class="ion-item-ion-input">
+                <ion-input
+                  formControlName="waist"
+                  type="text"
+                  name="waist"
+                  placeholder="Ejemplo: 52.5 - 169.0 cm"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('waist').errors" lines="none">
+                <span class="input-error">
+                  El Valor debe estar entre 52.5 y 169.0 cm
+                </span>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="ion-card">
+          <ion-card-header class="ion-card-header ion-align-items-center">
+            <ion-row class="ion-align-items-center">
+              <img src="/assets/body/heart-frecuency.svg" alt="" />
+              <span class="ion-card-subtitle">
+                &nbsp;&nbsp;&nbsp;&nbsp;Frecuencia cardíaca y presión arterial
+              </span>
+            </ion-row>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-label position="stacked" class="input-label">
+                Frecuencia cardíaca Lpm (28-143 bpm)
+              </ion-label>
+              <ion-item class="ion-item-ion-input">
+                <ion-input
+                  formControlName="resting"
+                  type="text"
+                  name="resting"
+                  placeholder="Ejemplo: 28 - 143 bpm"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('resting').errors" lines="none">
+                <span class="input-error">
+                  El Valor debe estar entre 28 y 143 bpm
+                </span>
+              </ion-item>
+              <ion-label position="stacked" class="input-label">
+                Presión arterial sistólica (60-210 mmHg)
+              </ion-label>
+              <ion-item class="ion-item-ion-input">
+                <ion-input
+                  formControlName="systolic"
+                  type="text"
+                  name="systolic"
+                  placeholder="Ejemplo: 60 - 210 mmHg"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('systolic').errors" lines="none">
+                <span class="input-error">
+                  El Valor debe estar entre 80 y 210 mmHg
+                </span>
+              </ion-item>
+              <ion-label position="stacked" class="input-label">
+                Presión arterial diastólica (50-120 mmHg)
+              </ion-label>
+              <ion-item class="ion-item-ion-input">
+                <ion-input
+                  formControlName="diastolic"
+                  type="text"
+                  name="diastolic"
+                  placeholder="Ejemplo: 50 - 120 mmHg"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('diastolic').errors" lines="none">
+                <span class="input-error">
+                  El Valor debe estar entre 50 y 120 mmHg
+                </span>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="ion-card">
+          <ion-card-header class="ion-card-header ion-align-items-center">
+            <ion-row class="ion-align-items-center">
+              <img src="/assets/body/icon-blood.svg" alt="" />
+              <span class="ion-card-subtitle">
+                &nbsp;&nbsp;&nbsp;&nbsp;Valores sanguíneos
+              </span>
+            </ion-row>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-label position="stacked" class="input-label">
+                Colesterol total
+              </ion-label>
+              <ion-item class="ion-item-ion-input">
+                <ion-input
+                  formControlName="tsc"
+                  type="text"
+                  name="tsc"
+                  placeholder="Ejemplo: 58.1 - 696.0 mg/dl"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('tsc').errors" lines="none">
+                <span class="input-error">
+                  El Valor debe estar entre 58.1 y 696.0 mg/dl
+                </span>
+              </ion-item>
+              <ion-label position="stacked" class="input-label">
+                HDL (Colesterol “bueno”)
+              </ion-label>
+              <ion-item class="ion-item-ion-input">
+                <ion-input
+                  formControlName="hdl"
+                  type="text"
+                  name="hdl"
+                  placeholder="Ejemplo: 7.8 - 197.2 mg/dl"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('hdl').errors" lines="none">
+                <span class="input-error">
+                  El Valor debe estar entre 7.8 y 197.2 mg/dl
+                </span>
+              </ion-item>
+              <ion-label position="stacked" class="input-label">
+                LDL (Colesterol “malo”)
+              </ion-label>
+              <ion-item class="ion-item-ion-input">
+                <ion-input
+                  formControlName="ldl"
+                  type="text"
+                  name="ldl"
+                  placeholder="Ejemplo: 19.4 - 386.6 mg/dl"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('ldl').errors" lines="none">
+                <span class="input-error">
+                  El Valor debe estar entre 19.4 y 386.6 mg/dl
+                </span>
+              </ion-item>
+              <ion-label position="stacked" class="input-label">
+                Triglicéridos
+              </ion-label>
+              <ion-item class="ion-item-ion-input">
+                <ion-input
+                  formControlName="tgl"
+                  type="text"
+                  name="tgl"
+                  placeholder="Ejemplo: 17.7 - 3587.0 mg/dl"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('tgl').errors" lines="none">
+                <span class="input-error">
+                  El Valor debe estar entre 17.7 y 3587.0 mg/dl
+                </span>
+              </ion-item>
+              <ion-label position="stacked" class="input-label">
+                Glucosa en ayunas
+              </ion-label>
+              <ion-item class="ion-item-ion-input">
+                <ion-input
+                  formControlName="fbg"
+                  type="text"
+                  name="fbg"
+                  placeholder="Ejemplo: 72.0 - 324.0 mg/dl"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('fbg').errors" lines="none">
+                <span class="input-error">
+                  El Valor debe estar entre 72.0 y 324.0 mg/dl
+                </span>
+              </ion-item>
+              <ion-label position="stacked" class="input-label">
+                Glucosa continua
+              </ion-label>
+              <ion-item class="ion-item-ion-input">
+                <ion-input
+                  formControlName="cbg"
+                  type="text"
+                  name="cbg"
+                  placeholder="Ejemplo: 50.4 - 250.1 mg/dl"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                >
+                </ion-input>
+              </ion-item>
+              <ion-item *ngIf="bodyForm.get('cbg').errors" lines="none">
+                <span class="input-error">
+                  El Valor debe estar entre 50.4 y 250.1 mg/dl
+                </span>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </div>
+    <div class="body-medical-values-content">
+      <ion-card class="ion-card">
+        <ion-card-header class="ion-card-header ion-align-items-center">
+          <ion-row class="ion-align-items-center">
+            <img src="/assets/body/icon-person-group.svg" alt="" />
+            <span class="ion-card-subtitle">
+              &nbsp;&nbsp;&nbsp;&nbsp;Valores médicos
+            </span>
+          </ion-row>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="medical-values-text">
+            Conocer algunos antecedentes médicos nos ayudará a construir las
+            mejores recomendaciones para su bienestar. Llene unas sencillas
+            preguntas para lograrlo.
+          </div>
+          <ion-row class="ion-align-items-center ion-text-right">
+            <ion-col size="12" class="ion-text-right ion-align-items-center">
+              <div class="medical-values-link" (click)="onShowBodySurvey()">
+                <span class="medical-values-link-text">
+                  Llenar valores médicos
+                </span>
+                <span class="medical-values-link-icon">
+                  &nbsp;&nbsp;&nbsp;<img
+                    src="/assets/body/arrow-right.svg"
+                    alt=""
+                  />
+                </span>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+      <ion-row>
+        <ion-col size="12" class="ion-text-right">
+          <button (click)="save()" class="save-button" [disabled]="isLoading">
+            GUARDAR
+          </button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </form>
+  <app-body-survey
+    *ngIf="showBodySurvey"
+    [(showBodySurvey)]="showBodySurvey"
+    (showBodySurveyChange)="receiveMessage($event)"
+  ></app-body-survey>
+</ion-content>

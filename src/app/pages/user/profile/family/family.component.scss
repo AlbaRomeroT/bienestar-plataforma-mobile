@@ -1,0 +1,171 @@
+.ion-card-ion-card-subtitle {
+  text-align: center;
+}
+
+.input-label {
+  color: #323232;
+}
+
+ion-segment-button::before {
+  border: none;
+}
+
+.left {
+  float: left;
+}
+
+.ion-button-save {
+  margin: 25px 5px 5px 5px !important;
+  display: block !important;
+  height: 30px !important;
+  color: #016d38 !important;
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-size: 19px !important;
+  letter-spacing: 0 !important;
+  line-height: 16px;
+}
+
+.ion-radio {
+  --color-checked: #ffdd50 !important;
+  border-radius: 100px;
+}
+
+.ion-checkbox {
+  height: 19px;
+  width: 19px;
+  --background-checked: #016d38 !important;
+}
+
+.item.sc-ion-label-ios-h,
+.item .sc-ion-label-ios-h {
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-size: 14px;
+}
+
+.disease-segment,
+.dependents-segment {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background: #ffffff;
+}
+
+ion-segment-button {
+  padding: 0px;
+  color: #999999;
+}
+
+ion-segment-button::part(indicator) {
+  height: 0px;
+}
+
+.segment-button-checked .label-segment {
+  color: #000000;
+}
+
+.icon-segment {
+  height: 19px;
+  width: 42px;
+}
+
+.segment-button-checked .icon-segment {
+  color: #016d38;
+}
+
+.label-segment {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-transform: none;
+}
+
+ion-input {
+  font-size: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.icon-phone {
+  font-size: 5.5vw;
+}
+
+.content-img-icon {
+  padding: 15px 0px;
+  font-size: 10px;
+}
+
+.img-icon {
+  height: 36px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.selected-card:hover {
+  border: 1px solid#FFDD50;
+}
+
+.selected-card:visited {
+  border: 1px solid#FFDD50;
+}
+
+.selected-card:active {
+  border: 1px solid#FFDD50;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.button-save {
+  background-color: #ffdc5d;
+  border-radius: 99px;
+  box-shadow: 0px 2px #ddd;
+  color: #0f6e27;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  width: 133px;
+  height: 36px;
+}
+
+.live-with-checkbox {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 4vw;
+  --border-radius: 3px;
+  --border-width: 1px;
+  --ion-color-base: #016d38;
+  --background-checked: #016d38;
+  --border-color-checked: #016d38;
+}
+
+ul {
+  .item-of-disease {
+    color: #323232;
+  }
+}
+
+.label-live-with {
+  color: #000;
+}
+
+.liveWith {
+  ion-checkbox {
+    margin-left: -2vw;
+  }
+}
+
+.ion-item-ion-input {
+  border-top: 0;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+  border-left: 1px solid rgba(100, 100, 100, 0.1);
+  border-right: 1px solid rgba(100, 100, 100, 0.1);
+  border-radius: 3px;
+  margin-top: 5vw;
+}
+
+.diseases-segment-btn-si {
+  margin-left: -15vw;
+}

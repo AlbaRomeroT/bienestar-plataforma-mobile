@@ -1,0 +1,330 @@
+ion-content {
+  --background: var(--color-white-0) !important;
+  --color: var(--color-black-0);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 21px;
+  margin: 0px 20px;
+}
+
+.description {
+  font-family: var(--global-font-family);
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--color-black-2);
+}
+
+.column-center-items {
+  margin: 5.7% 0px;
+}
+
+@media (max-width: 320px) {
+  ion-content {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0px 14px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 360px) {
+  ion-content {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+ion-grid {
+  margin: 2px 20px;
+}
+
+.onboarding-progress-bar {
+  width: 92px;
+  height: 9px;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 25px;
+  --progress-background: linear-gradient(
+    to right,
+    var(--color-yellow-alpha-1),
+    var(--color-green-10)
+  );
+  --buffer-background: var(--color-white-11);
+}
+
+.main-image {
+  height: 118px;
+}
+
+@media (max-width: 320px) {
+  .main-image {
+    height: 97px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 360px) {
+  .main-image {
+    height: 119px;
+  }
+}
+
+ion-footer {
+  background: var(--color-white-0);
+  margin: auto;
+}
+
+ion-footer .progress-bar {
+  background: var(--color-white-0);
+  margin-bottom: 10px;
+}
+
+ion-toolbar {
+  --background: var(--color-white-0) !important;
+  --color: var(--color-black-0);
+  font-family: var(--global-font-family);
+}
+
+.next-button {
+  text-transform: none;
+  --background: var(--color-yellow-1);
+  --border-radius: 20px;
+  --color: var(--color-green-2) !important;
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  width: 133px;
+  height: 36px;
+  margin-right: 23px;
+  margin-bottom: 18px;
+}
+
+.next-button-icon {
+  height: 17px;
+  width: 17px;
+}
+
+.skip-button {
+  text-transform: none;
+  --background: transparent;
+  --border-radius: 20px;
+  --color: var(--color-green-2) !important;
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-bottom: 18px;
+}
+
+.skip-button-icon {
+  height: 17px;
+  width: 17px;
+}
+
+.black-path {
+  margin-top: 21px;
+  box-sizing: border-box;
+  height: 1px;
+  width: 51px;
+  border: 2px solid var(--color-black-0);
+  border-radius: 10px;
+}
+
+.title {
+  font-family: var(--global-font-family);
+  color: var(--color-black-0);
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 360px) {
+  .title {
+    font-size: 21px;
+    line-height: 22px;
+  }
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+ion-select {
+  --placeholder-color: var(--color-gray-2);
+  --placeholder-opacity: 1;
+  font-family: var(--global-font-family);
+  color: var(--color-black-0);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+
+  --padding-top: 2px;
+  --padding-end: 2px;
+  --padding-bottom: 2px;
+  --padding-start: 2px;
+  border-bottom: 1px solid;
+  border-color: var(--color-gray-2);
+}
+
+ion-datetime {
+  --placeholder-color: var(--color-gray-2);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+
+  --padding-top: 2px;
+  --padding-end: 2px;
+  --padding-bottom: 2px;
+  --padding-start: 2px;
+  border-bottom: 1px solid;
+  border-color: var(--color-gray-2);
+  .ion-invalid {
+    .ion-dirty {
+      border-color: var(--color-red-3);
+    }
+  }
+}
+
+.submitted {
+  .ion-invalid {
+    border-color: var(--color-red-3);
+  }
+}
+
+.col-gender {
+  margin-top: 12px;
+}
+
+.gender-label,
+.birthday-label {
+  --placeholder-color: var(--color-gray-2);
+  font-family: var(--global-font-family);
+  color: var(--color-gray-2);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.gender-segment {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background: var(--color-white-0);
+}
+
+ion-segment-button {
+  --padding-start: 0;
+  color: var(--color-gray-2);
+  margin-left: -12vw;
+}
+
+ion-segment-button::before {
+  border: none;
+}
+
+ion-segment-button::part(indicator) {
+  height: 0px;
+}
+
+.row-content-birthday {
+  margin-left: 0;
+  margin-top: 20px;
+  .item-content-birthday  {
+    margin-left: -5vw;
+    .ion-item-ion-input {
+      border-top: 0;
+      border-bottom: 1px solid var(--color-gray-2);
+      border-left: 0;
+      border-right: 0;
+    }
+    .input-day,
+    .input-month,
+    .input-year {
+      text-align: center;
+      font-size: 14px;
+      line-height: 16px;
+      font-family: var(--global-font-family);
+    }
+    .input-day::placeholder,
+    .input-month::placeholder,
+    .input-year::placeholder {
+      color: var(--color-black-alpha-3);
+    }
+    .input-day,
+    .input-month {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .row-content-birthday {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.label-segment {
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-transform: none;
+}
+
+.icon-segment {
+  height: 19px;
+  width: 42px;
+}
+
+.segment-button-checked {
+  .label-segment {
+    color: var(--color-black-0);
+  }
+  .icon-segment {
+    color: var(--color-green-1);
+  }
+}
+
+.label-input {
+  color: var(--color-green-1);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  .error-message {
+    color: var(--color-red-3);
+  }
+}
+
+.alert {
+  position: absolute;
+  top: 0;
+  height: 35px;
+  width: 100%;
+  padding: 2px !important;
+  border: 1px solid transparent;
+  z-index: 10000;
+  .danger {
+    color: var(--color-red-5);
+    background-color: var(--color-red-light-2);
+    border-color: var(--color-red-light-3);
+    p {
+      color: var(--color-red-6);
+      font-family: var(--global-font-family);
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 21px;
+      margin: auto;
+      margin-top: 3px;
+      margin-left: 20px;
+    }
+  }
+}

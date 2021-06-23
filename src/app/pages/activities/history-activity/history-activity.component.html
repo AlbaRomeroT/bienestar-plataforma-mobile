@@ -1,0 +1,51 @@
+<div class="ion-padding">
+  <ion-card
+    *ngFor="let activity of _historyActivityScroll | sortBy:'desc':'modificationTime'"
+    class="ion-card"
+    style="margin-bottom: 15px !important"
+  >
+    <ion-card-header style="margin-bottom: 0px !important">
+      <ion-row>
+        <ion-col size="2">
+          <ion-avatar>
+            <img [src]="photo" alt="Foto" class="avatar-card" />
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="10">
+          <ion-card-title class="user-name">{{ _userName }}</ion-card-title>
+          <ion-card-subtitle class="ion-card-ion-card-subtitle">
+            <ion-text class="activity-date">{{
+              activity.modificationTime | formsCustomDate
+            }}</ion-text>
+          </ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+    </ion-card-header>
+    <ion-card-content style="margin-top: -20px !important">
+      <ion-row>
+        <ion-text class="activity-label">
+          Usted ha estado activo
+          <strong class="bold-text">{{ activity.activity }}</strong
+          >, durante
+          <strong class="bold-text"
+            >{{ activity.duration / 60 | number: "1.2-2" }} minutos.</strong
+          >
+        </ion-text>
+      </ion-row>
+      <ion-row style="margin-top: 10px !important">
+        <ion-icon class="icon-yellow-fire" src="/assets/activities/fire.svg">
+        </ion-icon>
+        <ion-text class="kcal-label" *ngIf="activity?.energy"
+          >{{ activity.energy | number: "1.2-2" }} Kcal</ion-text
+        >
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="crescent"
+      loadingText="Cargando actividades..."
+    >
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</div>

@@ -1,0 +1,48 @@
+<app-header></app-header>
+<ion-content class="ion-content">
+  <ion-row class="header">
+    <app-back-button-updated class="back"></app-back-button-updated>
+    <app-widget-header
+      class="title"
+      [title]="'Notificaciones'"
+    ></app-widget-header>
+  </ion-row>
+
+  <ion-row class="ion-align-items-center">
+    <div class="ion-padding">
+      <ion-list *ngFor="let notification of _historyNotificationScroll">
+        <ion-item
+          lines="none"
+          class="item-notification"
+          (click)="navigateTo(notification)"
+          *ngIf="notification.body != 'Renueve su suscripción ahora.'"
+        >
+          <ion-col>
+            <ion-avatar class="avatar-container">
+              <img [src]="photo" alt="Foto" class="avatar-card" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <ion-row>
+              <ion-text class="item-label"
+                >{{getLeadTextClear(notification.body)}}</ion-text
+              > </ion-row
+            ><ion-row
+              ><ion-label class="notification-date"
+                >{{notification.modificationTime | formsCustomDate}}</ion-label
+              >
+            </ion-row>
+          </ion-col>
+        </ion-item>
+      </ion-list>
+
+      <ion-infinite-scroll threshold="10px" (ionInfinite)="loadData($event)">
+        <ion-infinite-scroll-content
+          loadingSpinner="crescent"
+          loadingText="Cargando actividades..."
+        >
+        </ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </div>
+  </ion-row>
+</ion-content>

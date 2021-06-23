@@ -1,0 +1,37 @@
+<app-header-only
+  class="ion-no-border"
+  [cssClass]="'wearable-header'"
+></app-header-only>
+<ion-row class="header-wearables">
+  <app-back-button-updated class="back"></app-back-button-updated>
+  <app-widget-header class="title" [title]="title" cssClassContentTitle="content-wearables"></app-widget-header>
+</ion-row>
+
+<ion-content>
+  <div id="content">
+    <p class="desc" style="text-align: justify" [innerHtml]="description"></p>
+  </div>
+
+  <ion-row class="wearables-row">
+    <ion-col
+      size="4"
+      *ngFor="let dev of wearables"
+      (click)="setup(dev.key, dev)"
+    >
+      <div class="block" [ngClass]="(dev.connected)?'connected':'rectangle'">
+        <img src="{{dev.image}}" alt="Wearables connections" />
+        <p>{{dev.name}}</p>
+      </div>
+    </ion-col>
+    <ion-col size="4" *ngIf="currentPlatform === 'ios'">
+      <div
+        class="block"
+        [ngClass]="(isHealthConnected)?'connected':'rectangle'"
+        (click)="setup('apple')"
+      >
+        <img src="/assets/wearables/list/apple.svg" alt="Apple health" />
+        <p>Aplicación de salud</p>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>

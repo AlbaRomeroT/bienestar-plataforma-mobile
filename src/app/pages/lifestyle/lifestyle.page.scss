@@ -1,0 +1,44 @@
+.content {
+  --background: var(--color-white-0);
+  color: var(--color-black-0);
+  font-family: var(--global-font-family);
+}
+
+.header-lifestyle {
+  border-bottom: 1px solid var(--color-white-2);
+  border-top: 1px solid var(--color-white-2);
+  background-color: var(--color-white-1);
+  height: 45px;
+  .title {
+    color: var(--color-black-1);
+    margin-left: 10px;
+    font-family: var(--global-font-family);
+  }
+  .back {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+.graph-content {
+  background-color: var(--color-white-0);
+  text-align: center;
+}
+
+.graph {
+  width: 95%;
+}
+
+.info-message {
+  background: url("../../../assets/feeling/leitmotiv.svg") 0 0/100% no-repeat;
+  height: 102px;
+  text-align: center;
+
+  display: flex;
+}
+
+.align-right {
+  text-align: right;
+}

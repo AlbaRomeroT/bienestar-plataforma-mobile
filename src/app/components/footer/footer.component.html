@@ -1,0 +1,16 @@
+<ion-footer>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom" [hidden]="showFooter">
+      <ion-tab-button tab="home" [routerLink]="['/']">
+        <ion-icon></ion-icon>
+        <ion-label>INICIO</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="fake" [disabled]="true"> </ion-tab-button>
+      <ion-tab-button tab="wellness" [routerLink]="['wellness/my-wellness']">
+        <ion-icon></ion-icon>
+        <ion-label>BIENESTAR</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  <app-green-button [hidden]="showFooter"></app-green-button>
+</ion-footer>

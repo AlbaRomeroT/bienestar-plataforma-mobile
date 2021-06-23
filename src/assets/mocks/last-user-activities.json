@@ -1,0 +1,91 @@
+{
+  "errors": [],
+  "body": 
+      [
+          {
+              "acquisition": "automatic",
+              "activity": "running",
+              "ascent": 40,
+              "classification": "consistent",
+              "client": {
+                  "id": "5b63082b225ab6174b5b9563",
+                  "kind": "sysapp",
+                  "links": [
+                      {
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/system/apps/5b63082b225ab6174b5b9563",
+                          "rel": "self"
+                      }
+                  ]
+              },
+              "companions": [],
+              "creator": {
+                  "id": "5f86e062c209166f45623039",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f86e062c209166f45623039",
+                          "rel": "self"
+                      }
+                  ]
+              },
+              "descent": 2,
+              "distance": 5848.6968727281,
+              "duration": 3600,
+              "endTime": "2020-10-22T17:01:59Z",
+              "expirationTime": "2020-10-24T15:43:21Z",
+              "id": "5f92f9fd58d31659e6648ad7",
+              "kind": "move",
+              "links": [
+                  {
+                      "href": "https://api.int.appsb.segurosbolivar.com/2/moves/5f92f9fd58d31659e6648ad7/comments",
+                      "rel": "http://dacadoo.com/rels#comments"
+                  },
+                  {
+                      "href": "https://api.int.appsb.segurosbolivar.com/2/moves/5f92f9fd58d31659e6648ad7/media",
+                      "rel": "http://dacadoo.com/rels#media"
+                  },
+                  {
+                      "href": "https://api.int.appsb.segurosbolivar.com/2/moves/5f92f9fd58d31659e6648ad7",
+                      "rel": "self"
+                  }
+              ],
+              "location": {
+                  "lat": 47.367264,
+                  "lng": 8.545046
+              },
+              "media": [],
+              "modificationTime": "2020-10-23T15:42:53Z",
+              "normenergy": 22330.127815695,
+              "normpower": 6.2028132821376,
+              "samples": [],
+              "sharing": {
+                  "group": false,
+                  "public": false,
+                  "subjects": [],
+                  "user": false
+              },
+              "source": "dacadoo",
+              "speed": 1.6246380202023,
+              "splits": [],
+              "subject": {
+                  "id": "5f86e062c209166f45623039",
+                  "kind": "user",
+                  "links": [
+                      {
+                          "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f86e062c209166f45623039",
+                          "rel": "self"
+                      }
+                  ]
+              },
+              "time": "2020-10-22T16:01:01Z",
+              "type": "workout",
+              "valid": true,
+              "weather": {
+                  "apparentTemperature": 289.69,
+                  "icon": "partly-cloudy-day",
+                  "temperature": 289.69
+              }
+          }
+      ],
+  "hasErrors": false
+}

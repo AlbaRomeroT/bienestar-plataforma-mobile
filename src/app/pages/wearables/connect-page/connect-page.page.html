@@ -1,0 +1,38 @@
+<app-header-only
+  class="ion-no-border"
+  [cssClass]="'wearable-header'"
+></app-header-only>
+<ion-content class="ion-content background">
+  <ion-row class="connect-header">
+    <app-back-button-updated class="back"></app-back-button-updated>
+    <app-widget-header class="title" [title]="_title" cssClassContentTitle="content-connect-wearables"></app-widget-header>
+  </ion-row>
+
+  <ion-grid>
+    <ion-row style="margin-top: 30px">
+      <ion-col size="12" class="ion-text-center">
+        <img src="{{_appIcon}}" class="main-image" alt="app-icon" />
+      </ion-col>
+      <ion-col size="12" class="name">
+        <p>{{_appName}}</p>
+      </ion-col>
+      <ion-col size="12">
+        <p
+          class="content-text"
+          [innerHtml]="_appDescription"
+          style="text-align: justify"
+        ></p>
+      </ion-col>
+      <ion-col class="ion-text-center" size="12">
+        <ion-button
+          [ngClass]="{
+          'bg-color':!(selectedBackgroundTryAgain),
+          'bg-color-no-selected':(selectedBackgroundTryAgain)}"
+          (click)="openConfirmModal()"
+        >
+          CONECTAR
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

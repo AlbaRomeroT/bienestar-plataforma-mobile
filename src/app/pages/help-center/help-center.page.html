@@ -1,0 +1,137 @@
+<app-header></app-header>
+<ion-content>
+  <ion-row class="header">
+    <app-back-button-updated class="back"></app-back-button-updated>
+    <app-widget-header
+      class="title"
+      [title]="'Centro de ayuda'"
+    ></app-widget-header>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <app-title [text]="'Atención al cliente'"></app-title>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6">
+      <ion-card>
+        <ion-card-content (click)="onCallHelpNumber()" id="call-number">
+          <div class="ion-text-center">
+            <ion-row>
+              <ion-col size="12">
+                <img
+                  src="/assets/help-center/icon-phone.svg"
+                  class="image-help"
+                  alt=""
+                />
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="12">
+                <span class="text"
+                  >Ll&aacute;menos a la l&iacute;nea
+                  <span class="text-link">{{callHelpNumber}}</span>.</span
+                >
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card>
+        <ion-card-content
+          (click)="openStoreWhatsapp(whatsappHelpClientNumber)"
+          id="open-whatsappHelpClientNumber"
+        >
+          <div class="ion-text-center">
+            <ion-row>
+              <ion-col size="12">
+                <img
+                  src="/assets/help-center/icon-chat.svg"
+                  class="image-help"
+                  alt=""
+                />
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="12">
+                <span class="text"
+                  >Escr&iacute;banos v&iacute;a
+                  <span class="text-link">Whatsapp</span>.</span
+                >
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <app-title [text]="'Soporte y Ayuda'"></app-title>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6">
+      <ion-card>
+        <ion-card-content (click)="onSendEmail()" id="send-email">
+          <div class="ion-text-center">
+            <ion-row>
+              <ion-col size="12">
+                <img
+                  src="/assets/help-center/icon-email.svg"
+                  class="image-help"
+                  alt=""
+                />
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="12">
+                <span class="text"
+                  >Escr&iacute;banos, v&iacute;a
+                  <span class="text-link">correo electr&oacute;nico</span> y lo
+                  contactaremos.</span
+                >
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6" [hidden]="true">
+      <ion-card>
+        <ion-card-content
+          (click)="openStoreWhatsapp(whatsappHelpNumber)"
+          id="open-whatsappHelpNumber"
+        >
+          <div class="ion-text-center">
+            <ion-row>
+              <ion-col size="12">
+                <img
+                  src="/assets/help-center/icon-chat.svg"
+                  class="image-help"
+                  alt=""
+                />
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="12">
+                <span class="text"
+                  >Escr&iacute;banos, v&iacute;a
+                  <span class="text-link">Whatsapp</span> y le ayudaremos.</span
+                >
+              </ion-col>
+            </ion-row>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <img
+    src="/assets/help-center/leimotiv-bottom-2.svg"
+    alt=""
+    srcset=""
+    class="leitmotive-help-center"
+  />
+</ion-content>

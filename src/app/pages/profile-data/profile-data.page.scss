@@ -1,0 +1,45 @@
+ion-label {
+  font-family: var(--global-font-family);
+}
+.segment-bar {
+  margin-left: 30%;
+  margin-right: 30%;
+  .ion-segment-tab {
+    text-transform: unset;
+    color: transparent;
+    --color-checked: transparent;
+    width: 25px;
+    .follow-tab-first,
+    .follow-tab-secondary,
+    .follow-tab-tertiary {
+      width: 25px;
+      height: 2vw;
+      border-radius: 99px;
+      background-color: var(--color-white-12);
+    }
+  }
+  .segment-button-checked {
+    color: var(--color-green-11);
+    width: 25px;
+    .follow-tab-first,
+    .follow-tab-secondary,
+    .follow-tab-tertiary {
+      width: 25px;
+      height: 2.5vw;
+      border-radius: 99px;
+    }
+    .follow-tab-first {
+      background: linear-gradient(270deg, var(--color-green-12) 0%, var(--color-yellow-2) 1%);
+    }
+    .follow-tab-secondary {
+      background: linear-gradient(320deg, var(--color-green-12) 0%, var(--color-yellow-2) 100%);
+    }
+    .follow-tab-tertiary {
+      background: linear-gradient(270deg, var(--color-green-12) 100%, var(--color-yellow-2) 0%);
+    }
+  }
+}
+
+.segment-button-disabled {
+  opacity: 1;
+}

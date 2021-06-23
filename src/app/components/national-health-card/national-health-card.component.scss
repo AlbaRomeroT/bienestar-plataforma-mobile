@@ -1,0 +1,241 @@
+.health-card {
+  height: 55vw;
+  box-shadow: none;
+  background: transparent;
+  position: relative;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.title-separator {
+  position: absolute;
+  top: 36px;
+  left: 26px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffdc5d;
+}
+
+.title {
+  position: absolute;
+  top: 38px;
+  left: 35px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.name {
+  position: absolute;
+  top: 75px;
+  left: 32px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 21px;
+  color: #1b6e27;
+}
+
+.lastName {
+  position: absolute;
+  top: 95px;
+  left: 32px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.policy-title {
+  position: absolute;
+  bottom: 65px;
+  left: 58%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1b6e27;
+}
+
+.policy {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1b6e27;
+}
+
+.nui-title {
+  position: absolute;
+  bottom: 45px;
+  left: 58%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1b6e27;
+}
+
+.nui {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1b6e27;
+}
+
+.dates {
+  position: absolute;
+  bottom: 22px;
+  right: 35px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1b6e27;
+}
+
+.separator {
+  color: #ffdc5d;
+  margin: 0px 5px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.view-more {
+  position: relative;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+
+  span {
+    color: #016d38;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 14px;
+    cursor: pointer;
+  }
+}
+
+.view-less {
+  position: relative;
+  margin-top: -40px;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 200px;
+  text-align: center;
+  background-color: #ebebeb;
+  display: block;
+  padding: 0px 10px;
+  border-radius: 0 0 12px 12px;
+
+  span {
+    color: #016d38;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 14px;
+    cursor: pointer;
+  }
+}
+
+.additiona-data {
+  margin: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #1b6e27;
+
+  span {
+    font-weight: 600;
+    color: #000000;
+  }
+}
+
+@media (max-width: 320px) {
+  .name {
+    font-size: 80%;
+  }
+
+  .lastName {
+    font-size: 80%;
+    top: 90px;
+  }
+
+  .policy-title {
+    font-size: 80%;
+    bottom: 60px;
+  }
+
+  .policy {
+    font-size: 100%;
+  }
+
+  .nui-title {
+    font-size: 80%;
+  }
+
+  .nui {
+    font-size: 100%;
+  }
+
+  .dates {
+    font-size: 80%;
+    right: 20px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 360px) {
+  .name {
+    font-size: 92%;
+  }
+
+  .lastName {
+    font-size: 92%;
+  }
+
+  .policy-title {
+    font-size: 92%;
+  }
+
+  .policy {
+    font-size: 92%;
+  }
+
+  .nui-title {
+    font-size: 92%;
+  }
+
+  .nui {
+    font-size: 92%;
+  }
+
+  .dates {
+    font-size: 92%;
+  }
+}

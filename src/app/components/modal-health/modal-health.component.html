@@ -1,0 +1,151 @@
+<ion-content id="dacadoo">
+  <p class="title">{{ titulo }}</p>
+  <div *ngFor="let error of errorMessages.birthday">
+    <ng-container
+      *ngIf="
+        birthday.hasError(error.type) &&
+        (birthday.dirty || isSubmitted) &&
+        birthday.value
+      "
+    >
+      <div class="alert danger">
+        <p>{{ error.message }}</p>
+      </div>
+    </ng-container>
+  </div>
+  <div [formGroup]="formGroup" class="form-content">
+    <ion-item lines="none" class="fields">
+      <ion-select
+        interface="action-sheet"
+        [interfaceOptions]="selectOptions"
+        placeholder="Sexo"
+        slot="start"
+        cancelText="Cancelar"
+        formControlName="sexo"
+        id="select"
+      >
+        <ion-select-option *ngFor="let td of gender" value="{{ td.id }}">{{
+          td.name
+        }}</ion-select-option>
+      </ion-select>
+      <ion-icon
+        id="arrow"
+        slot="end"
+        src="/../../assets/svg/icon-arrow.svg"
+      ></ion-icon>
+    </ion-item>
+    <ion-row [hidden]="true">
+      <ion-label
+        position="stacked"
+        class="input-label-birthday"
+      >
+        Fecha de nacimiento
+      </ion-label>
+      <ion-item lines="none">
+        <ion-input
+          class="input-day"
+          type="number"
+          max="31"
+          min="1"
+          name="day"
+          formControlName="day"
+          placeholder="Día"
+          (ionFocus)="checkInputFocus()"
+          (ionBlur)="checkInputBlur()"
+        ></ion-input>
+        <ion-input
+          class="input-month"
+          type="number"
+          max="12"
+          min="1"
+          name="month"
+          formControlName="month"
+          placeholder="Mes"
+          (ionFocus)="checkInputFocus()"
+          (ionBlur)="checkInputBlur()"
+        ></ion-input>
+        <ion-input
+          class="input-year"
+          type="number"
+          max="3000"
+          min="1000"
+          name="year"
+          formControlName="year"
+          placeholder="Año"
+          (ionFocus)="checkInputFocus()"
+          (ionBlur)="checkInputBlur()"
+        ></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <ion-item lines="none" class="fields">
+      <ion-datetime
+        cancelText="CANCELAR"
+        placeholder="Fecha de nacimiento"
+        doneText="ACEPTAR"
+        id="time"
+        formControlName="fecha_nacimiento"
+        display-format="DD MMM YYYY"
+        monthShortNames="Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, 
+      Septiembre, Octubre, Noviembre, Diciembre"
+      >
+      </ion-datetime>
+      <ion-icon
+        id="icons"
+        slot="end"
+        src="/../../assets/health-indicator/calendar.svg"
+      ></ion-icon>
+    </ion-item>
+
+    <ion-item lines="none" class="fields">
+      <ion-select
+        formControlName="estatura"
+        cancelText="CANCELAR"
+        okText="ACEPTAR"
+        placeholder="Estatura"
+        interface="alert"
+        mode="ios"
+      >
+        <ion-select-option *ngFor="let item of heightArray" value="{{ item }}">
+          {{ item }}cm
+        </ion-select-option>
+      </ion-select>
+      <ion-icon
+        id="icons"
+        slot="end"
+        src="/../../assets/health-indicator/estatura.svg"
+      ></ion-icon>
+    </ion-item>
+    <ion-item lines="none" class="fields">
+      <ion-select
+        formControlName="peso"
+        cancelText="CANCELAR"
+        okText="ACEPTAR"
+        placeholder="Peso"
+        interface="alert"
+        mode="ios"
+      >
+        <ion-select-option *ngFor="let item of weightArray" value="{{ item }}">
+          {{ item }}Kg
+        </ion-select-option>
+      </ion-select>
+      <ion-icon
+        id="icons"
+        slot="end"
+        src="/../../assets/health-indicator/peso.svg"
+      ></ion-icon>
+    </ion-item>
+  </div>
+  <ion-content>
+    <ion-grid
+      class="ion-text-center"
+      style="margin-top: 20px; margin-bottom: 40px"
+    >
+      <ion-col>
+        <ion-button shape="round" class="btnGuardar" (click)="saveProfile()">
+          VER MI ÍNDICE DE SALUD</ion-button
+        >
+      </ion-col>
+    </ion-grid>
+  </ion-content>
+</ion-content>

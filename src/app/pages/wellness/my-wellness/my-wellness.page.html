@@ -1,0 +1,105 @@
+<ion-row>
+  <ion-col size="12">
+    <app-health-indicators-grid></app-health-indicators-grid>
+  </ion-col>
+</ion-row>
+
+<ion-row class="no-margin">
+  <ion-col size="6" class="no-margin">
+    <app-title [text]="'Registrar actividad'"></app-title>
+    <ion-col size="12" class="no-margin">
+      <ion-card class="ion-card" (click)="goToActivities()">
+        <ion-card-header>
+          <ion-row>
+            <ion-col class="ion-text-center">
+              <img src="/assets/wellness/group-16.svg" class="image-help" />
+            </ion-col>
+          </ion-row>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="text ion-text-center">Hagamos seguimiento juntos</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-col>
+  <ion-col size="6" class="no-margin">
+    <app-title [text]="'Propósitos'"></app-title>
+    <ion-col size="12" class="no-margin">
+      <ion-card class="ion-card" (click)="goToPurpose()">
+        <ion-card-header>
+          <ion-row>
+            <ion-col class="ion-text-center">
+              <img src="/assets/wellness/group-23.svg" class="image-help" />
+            </ion-col>
+          </ion-row>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="text ion-text-center">Conozca sus resultados</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-col>
+</ion-row>
+<ion-row class="no-margin title-no-margin">
+  <ion-col size="6" class="no-margin">
+    <app-title [text]="'Mi coach'"></app-title>
+    <ion-col size="12" class="no-margin">
+      <ion-card class="ion-card" (click)="goToCoach()">
+        <ion-card-header>
+          <ion-row>
+            <ion-col class="ion-text-center">
+              <img src="/assets/wellness/group-19.svg" class="image-help" />
+            </ion-col>
+          </ion-row>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="text ion-text-center mt-10">Oriente su plan personal</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-col>
+  <ion-col size="6" class="no-margin">
+    <app-title [text]="'Mi comunidad'"></app-title>
+    <ion-col size="12" class="no-margin">
+      <ion-card class="ion-card" (click)="goToCommunity()">
+        <ion-card-header>
+          <ion-row>
+            <ion-col class="ion-text-center">
+              <img
+                src="/assets/wellness/mi-comunidad-icon.svg"
+                class="image-help"
+                alt="mi comunidad"
+              />
+            </ion-col>
+          </ion-row>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="text ion-text-center">
+            Interactúe y comparta sus intereses
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-col>
+  <ion-col size="6" class="no-margin" [hidden]="true">
+    <app-title [text]="'Contenidos'"></app-title>
+    <ion-col size="12" class="no-margin">
+      <ion-card class="ion-card">
+        <ion-card-header>
+          <ion-row>
+            <ion-col class="ion-text-center">
+              <img
+                src="/assets/wellness/content.svg"
+                class="image-help"
+                alt="contenidos"
+              />
+            </ion-col>
+          </ion-row>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="text ion-text-center">Disfrute información de interés</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-col>
+</ion-row>

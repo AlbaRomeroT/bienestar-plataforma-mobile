@@ -1,0 +1,51 @@
+<app-header-only></app-header-only>
+<ion-row class="header-body">
+  <app-back-button-updated class="back"></app-back-button-updated>
+  <app-widget-header class="title" [title]="title" cssClassContentTitle="content-detail-wearables"></app-widget-header>
+</ion-row>
+
+<ion-content class="background">
+  <div
+    *ngIf="spinner"
+    class="ion-align-items-center ion-text-center mt-50-percentage"
+  >
+    <ion-spinner class="ion-spinner" name="bubbles"></ion-spinner>
+  </div>
+  <ion-grid *ngIf="!spinner">
+    <ion-row>
+      <ion-col class="ion-text-center" size="12">
+        <img src="{{_appIcon}}" class="main-image" alt="app-icon" />
+      </ion-col>
+      <ion-col class="ion-text-center" size="12">
+        <p class="name">{{_appName}}</p>
+      </ion-col>
+      <ion-col class="ion-text-justify" size="12">
+        <p
+          class="content-text"
+          [innerHtml]="_appDescription"
+          style="text-align: justify"
+        ></p>
+        <p class="content-text-update">
+          Última actualización: {{_updateAt | date: 'dd MMM yyyy, h:mm a'}}
+        </p>
+      </ion-col>
+      <ion-col size="12">
+        <div class="content-desc">
+          <img
+            src="/assets/wearables/list/disconnect.svg"
+            class="icon-desc"
+            alt="app-icon"
+            style="width: 20px"
+          />
+          <button
+            class="btn-desconectar"
+            (click)="openConfirmModal()"
+            id="disconect"
+          >
+            Desconectar
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

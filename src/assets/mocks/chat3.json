@@ -1,0 +1,90 @@
+{
+    "errors": [],
+    "body": {
+        "data": [
+            {
+                "id": "5f98363ff747dd479f6d1de3",
+                "category": "nutrition",
+                "icon": "/nutrition",
+                "rewards": [],
+                "modificationTime": "2020-10-30T16:10:42Z",
+                "sharing": {
+                    "user": false,
+                    "group": false,
+                    "public": false,
+                    "subjects": []
+                },
+                "order": 1603810878000,
+                "completed": false,
+                "time": "2020-10-27T15:01:18Z",
+                "creator": {
+                    "id": "5f96d87332a85836bc7a9967",
+                    "kind": "user",
+                    "links": [
+                        {
+                            "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967",
+                            "rel": "self"
+                        }
+                    ]
+                },
+                "seen": true,
+                "title": "Seguros a la mano",
+                "inputs": [
+                    {
+                        "key": "basic_qn_2017_q01",
+                        "type": "select",
+                        "text": "input_basic_qn_2017_q01_text",
+                        "options": [
+                            {
+                                "value": "basic_qn_2017_q01_a1",
+                                "hint": "Muy bien. La fruta fresca le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable. ¡Siga así!",
+                                "text": "Caminar"
+                            },
+                            {
+                                "value": "basic_qn_2017_q01_a2",
+                                "hint": "Muy bien. La fruta fresca le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable. ¡Siga así!",
+                                "text": "Correr"
+                            },
+                            {
+                                "value": "basic_qn_2017_q01_a3",
+                                "hint": "Intente comer dos raciones de fruta al día; le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable.",
+                                "text": "Ciclismo"
+                            },
+                            {
+                                "value": "basic_qn_2017_q01_a4",
+                                "hint": "Intente comer dos raciones de fruta al día; le proporciona importantes nutrientes y promueve una buena digestión y un peso saludable. ¿Le gustaría mejorar su consumo de fruta? Haga clic en el siguiente enlace para recibir orientación: [Visite este enlace](dacadoo://functions/goals/nutrition_p_fi_1)",
+                                "text": "Ninguna en particular"
+                            }
+                        ]
+                    }
+                ],
+                "solveCount": 0,
+                "subject": {
+                    "id": "5f96d87332a85836bc7a9967",
+                    "kind": "user",
+                    "links": [
+                        {
+                            "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967",
+                            "rel": "self"
+                        }
+                    ]
+                },
+                "valid": true,
+                "objectives": [],
+                "lead": "Responda a esta pregunta para ayudarme a conocer mejor sus hábitos alimenticios.",
+                "links": [
+                    {
+                        "href": "https://api.int.appsb.segurosbolivar.com/2/messages/5f98363ff747dd479f6d1de3",
+                        "rel": "self"
+                    }
+                ],
+                "completionTime": "2020-10-30T16:06:22Z",
+                "body": "Para oferecerle el objetivo perfecto, necesito conocer qué deporte le gusta practicar \n\n En primer lugar, ¿Le gusta alguna de estas actividades en particular?.\n![Fruta][fruit_goal_various_fresh_fruits]",
+                "subcategory": "message",
+                "kind": "message",
+                "message": "basic_qn_2017_01"
+            }
+        ]
+    },
+    "hasErrors": false
+}

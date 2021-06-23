@@ -1,0 +1,142 @@
+.ion-card-profile-data {
+  border-radius: 8px;
+}
+.subtitle-profile-data {
+  color: var(--color-black-2);
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: unset;
+  font-family: var(--global-font-family);
+}
+.ion-list-content-btn-next {
+  text-align: center;
+  background-color: transparent;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.button-next {
+  background-color: var(--color-yellow-1);
+  border-radius: 99px;
+  box-shadow: 0px 2px var(--color-white-12);
+  --color: var(--color-green-2) !important;
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  width: 133px;
+}
+.item-cellphone,
+.item-date {
+  border-top: 0;
+  border-bottom: 1px solid var(--color-black-alpha-4);
+  border-left: 1px solid var(--color-black-alpha-5);
+  border-right: 1px solid var(--color-black-alpha-5);
+  border-radius: 3px;
+}
+.label-sex {
+  color: var(--color-black-5);
+  font-size: 14px;
+}
+.mt-7 {
+  margin-top: 7vw;
+}
+.sex-segment {
+  ion-segment-button {
+    ion-label {
+      text-transform: capitalize;
+      font-family: var(--global-font-family);
+      font-size: 14px;
+    }
+  }
+}
+ion-datetime {
+  padding-left: 0;
+  font-family: var(--global-font-family);
+  font-size: 14px;
+}
+ion-input {
+  font-family: var(--global-font-family);
+  font-size: 14px;
+}
+ion-select {
+  font-family: var(--global-font-family);
+  max-width: 100%;
+  width: 100%;
+  padding-left: 0px;
+  margin-right: 0px;
+  font-size: 16px;
+}
+.title-profile-data {
+  font-family: var(--global-font-family);
+  font-weight: bold;
+  font-size: 24px;
+}
+.border-title-profile-data {
+  width: 15%;
+  border-bottom: 3px solid var(--color-black-0);
+}
+.p-20 {
+  padding: 20px;
+}
+ion-segment {
+  background-color: var(--color-white-0);
+}
+ion-segment-button::part(indicator) {
+  height: 0px;
+}
+.spin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.required-fields {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.label-ok {
+  color: var(--color-green-1);
+}
+.error-message {
+  font-size: 12px;
+  color: var(--color-red-3);
+}
+ion-item.ion-invalid.submitted {
+  border-bottom: 1px solid var(--color-red-3);
+  font-size: 10px;
+}
+.segment-button-checked {
+  --color-checked: none;
+  ion-label {
+    color: var(--color-black-0);
+  }
+}
+ion-segment-button::before {
+  border: none;
+}
+.sex-segment-btn-masculino {
+  margin-left: -12vw;
+}
+.input-day,
+.input-month,
+.input-year {
+  text-align: center;
+  border-top: 0;
+  border-bottom: 1px solid var(--color-black-alpha-4);
+  border-left: 1px solid var(--color-black-alpha-5);
+  border-right: 1px solid var(--color-black-alpha-5);
+  border-radius: 3px;
+}
+
+.input-day::placeholder,
+.input-month::placeholder,
+.input-year::placeholder {
+  color: var(--color-black-alpha-3);
+}
+
+.input-day,
+.input-month {
+  margin-right: 20px;
+}

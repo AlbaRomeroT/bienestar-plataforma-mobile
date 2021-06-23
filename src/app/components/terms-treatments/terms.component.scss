@@ -1,0 +1,40 @@
+.header {
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  background-color: #fbfbfb;
+  height: 45px;
+  .title {
+    color: #1b1b1b;
+    margin-left: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .back {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+.text-html {
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+ion-spinner {
+  color: #016d38;
+}
+
+.line-copy-1 {
+  border-right: solid;
+  border-right-color: #ffdd00;
+}
+
+.center-arrow {
+  display: block;
+  margin: auto;
+  align-items: center !important;
+  padding-left: 20px;
+}

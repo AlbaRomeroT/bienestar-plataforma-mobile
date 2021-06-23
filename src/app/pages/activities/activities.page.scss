@@ -1,0 +1,75 @@
+:host {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: var(--color-white-1);
+  background-size: 100%;
+}
+
+:host,
+:host ::ng-deep {
+  @media (min-width: 992px), (orientation: landscape) {
+    :host,
+    .body-data-content,
+    .body-medical-values-content,
+    .body-medical-values-questions-content {
+      background: none !important;
+      background-color: var(--color-white-1) !important;
+    }
+  }
+
+  
+  .body-data-content {
+    margin-top: 10px;
+    
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--color-white-1);
+    background-size: 100%;
+   
+  }
+  
+}
+
+.ion-content {
+  --background: #fbfbfb;
+ }
+
+.segment-bar {
+  font-family: var(--global-font-family);
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.ion-segment-tab {
+  text-transform: none;
+  --color-checked: var(--color-green-1);
+  font-family: var(--global-font-family);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+
+.ion-segment-tab::part(indicator) {
+  margin: auto;
+  margin-bottom: 2px;
+  width: 30px;
+}
+
+.header-activities {
+  border-bottom: 1px solid var(--color-white-2);
+  border-top: 1px solid var(--color-white-2);
+  background-color: var(--color-white-1);
+  height: 45px;
+  .title {
+    color: var(--color-black-1);
+    margin-left: 10px;
+    font-family: var(--global-font-family);
+  }
+  .back {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}

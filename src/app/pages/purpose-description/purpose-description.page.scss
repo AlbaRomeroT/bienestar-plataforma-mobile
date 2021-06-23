@@ -1,0 +1,192 @@
+.content {
+  --background: white;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.data-content {
+  background: url("../../../assets/purpose/leitmotiv-bottom.svg") 0 0/100%
+    no-repeat;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #fbfbfb;
+  background-size: 100%;
+}
+
+.header {
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  background-color: #f3f3f3;
+  height: 45px;
+
+  .title {
+    color: #1b1b1b;
+    margin-left: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .back {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+.header .title {
+  margin-left: 10px !important;
+}
+
+.header .back {
+  display: flex !important;
+  align-content: center !important;
+  align-items: center !important;
+  margin-left: 10px !important;
+}
+
+.row-image {
+  height: 128px;
+  width: 100%;
+}
+
+.image-content {
+  height: 123px;
+  border-width: 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 0px !important;
+  background: black;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  opacity: 0.4;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.image-title {
+  width: 100%;
+  color: #fbfbfb;
+  font-family: "Roboto Bold Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+.image-button {
+  position: absolute;
+  top: -4px;
+  right: -2px;
+  text-transform: none;
+  --background: #ffdc5d;
+  --border-radius: 20px 0px 0px 20px;
+  --color: #016d38;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+  height: 30px;
+}
+
+.image-content .over-image {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  opacity: 0.5;
+}
+
+.action-button {
+  text-transform: none;
+  --background: #ffdc5d;
+  --border-radius: 20px;
+  --color: #0f6e27 !important;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.row-title {
+  margin: 21px 12px 0px 12px;
+  color: #1b1b1b;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.row-content {
+  color: #666666;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.border-top-1 {
+  border-top: 1px solid #f0f0f0;
+}
+
+.side-margin-12 {
+  margin: 0px 12px;
+}
+
+.col-title {
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.col-description {
+  color: #666666;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.col-center {
+  text-align: center;
+}
+
+.grid-shadow {
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.15);
+  margin: 18px;
+  border-radius: 8px;
+  padding: 0px 0px 25px;
+}
+
+.spin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+ion-spinner {
+  width: 28px;
+  height: 28px;
+  stroke: #444;
+  fill: #222;
+}
+
+.link {
+  color: #006d31 !important;
+  font-weight: bold;
+  text-decoration: none;
+}

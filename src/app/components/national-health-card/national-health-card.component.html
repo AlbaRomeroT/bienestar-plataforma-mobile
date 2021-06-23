@@ -1,0 +1,70 @@
+<ng-container *ngIf="data.side == 'front'">
+  <ion-card class="health-card">
+    <div
+      class="cover-image"
+      [style]="frontImage | backgroudStyleSanitizer"
+    ></div>
+
+    <span class="title-separator">|</span>
+    <span class="title">{{ data.nombreProducto }}</span>
+
+    <span class="name">{{ data.nombresTomador }}</span>
+    <span class="lastName">{{ data.apellidosTomador }}</span>
+
+    <span class="policy-title"
+      >Póliza:
+      <span class="policy">
+        #{{ data.numeroPoliza ? data.numeroPoliza : data.numeroPolizaPH }}</span
+      >
+    </span>
+
+    <span class="nui-title"
+      >NUI:
+      <span class="nui">{{ data.nui }}</span>
+    </span>
+
+    <div class="dates">
+      {{ data.fechaInicio | date: "MMM" | slice: 0:3 | titlecase }}
+      <span class="bold">{{ data.fechaInicio | date: "dd/yyyy" }}</span>
+      <span class="separator">/</span>
+      {{ data.fechaFin | date: "MMM" | slice: 0:3 | titlecase }}
+      <span class="bold">{{ data.fechaFin | date: "dd/yyyy" }}</span>
+    </div>
+  </ion-card>
+</ng-container>
+
+<ng-container *ngIf="data.side == 'back'">
+  <ion-card class="health-card">
+    <div
+      class="cover-image"
+      [style]="backImage | backgroudStyleSanitizer"
+    ></div>
+  </ion-card>
+
+  <div class="view-more" *ngIf="!expanded">
+    <span (click)="onExpandedClick()">Ver más</span>
+  </div>
+
+  <div class="view-less" *ngIf="expanded">
+    <p class="additiona-data">
+      Si su seguro incluye el anexo de urgencias durante viajes al exterior y
+      requiere atención fuera de Colombia, comuníquese con ASSIST CARD.
+    </p>
+
+    <p class="additiona-data">
+      <span>Estados Unidos, Canadá y Puerto Rico: </span>1-8663-131521
+    </p>
+
+    <p class="additiona-data">
+      <span>En el resto del mundo: </span>Llame por cobrar al 571-236 97 57
+    </p>
+
+    <p class="additiona-data">
+      Por favor dar la siguiente dirección en los formularios que deba
+      diligenciar ante la institución que le presta el servicio ASSIST CARD
+      Colombia carrera 11# 82-01 Oficina 802, Bogotá.
+    </p>
+
+    <span (click)="onExpandedClick()">Ver menos</span>
+  </div>
+</ng-container>

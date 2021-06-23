@@ -1,0 +1,104 @@
+.content {
+  color: var(--color-black-0);
+  font-family: var(--global-font-family);
+}
+
+.spin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+ion-spinner {
+  width: 28px;
+  height: 28px;
+  stroke: var(--color-black-3);
+  fill: var(--color-black-4);
+}
+
+.header {
+  border-bottom: 1px solid var(--color-white-2);
+  border-top: 1px solid var(--color-white-2);
+  background-color: var(--color-white-1);
+  height: 45px;
+  display: flex !important;
+  align-content: center !important;
+  align-items: center !important;
+  .title {
+    color: var(--color-black-2);
+    margin-left: 10px !important;
+    font-family: var(--global-font-family);
+  }
+  .back {
+    display: flex !important;
+    align-content: center !important;
+    align-items: center !important;
+    margin-left: 10px !important;
+  }
+}
+
+.health-score {
+  margin: 5px 18px;
+  width: 100%;
+}
+
+.health-score-row {
+  height: 80px;
+  border-bottom: 1px solid var(--color-white-2);
+  border-top: 1px solid var(--color-white-2);
+  background-color: var(--color-white-1);
+}
+
+.empty-leitmotiv-background {
+  background: url("../../../assets/activities/leitmotiv-bottom.svg") 0 0/100%
+    no-repeat;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: var(--color-white-1);
+  background-size: 100%;
+  padding: 0px;
+}
+
+.empty-grid {
+  padding: 25% 0 0 0;
+  height: calc(100vh - 70px);
+  .description {
+    margin-top: 7px;
+    color: var(--color-gray-3);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
+    font-family: var(--global-font-family);
+  }
+  .title {
+    width: 50%;
+    color: var(--color-black-1);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-align: center;
+    font-family: var(--global-font-family);
+  }
+}
+
+.recent-activities-grid {
+  padding: 0px;
+  margin-bottom: 15px;
+}
+
+.leitmotiv-background {
+  background: url("../../../assets/activities/leitmotiv.svg") 0 0/100% no-repeat;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--color-white-1);
+  background-size: 100%;
+  padding: 0px;
+}
+
+.friend-activity {
+  width: 100%;
+}

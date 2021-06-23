@@ -1,0 +1,177 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmitTemplate()">
+  <ion-row>
+    <ion-col size="12">
+      <ion-card class="ion-card">
+        <ion-card-header style="background: #fbfbfb">
+          <ion-card-subtitle class="ion-card-ion-card-subtitle">
+            Cu&eacute;ntenos sobre su hogar
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-label position="stacked" text-wrap class="input-label">
+              ¿En su hogar hay alguien que presente alguna de las siguientes
+              enfermedades?
+            </ion-label>
+            <ul>
+              <li class="item-of-disease" *ngFor="let li of listOfDiseases">
+                {{ li.name }}
+              </li>
+            </ul>
+            <ion-segment
+              class="disease-segment left"
+              formControlName="familyDiseases"
+            >
+              <ion-segment-button
+                value="true"
+                layout="icon-start"
+                class="diseases-segment-btn-si"
+              >
+                <ion-img
+                  class="icon-segment"
+                  [src]="
+                    familyDiseases.value === 'true'
+                      ? 'assets/health-indicator/select.svg'
+                      : 'assets/health-indicator/unselect.svg'
+                  "
+                >
+                </ion-img>
+                <ion-label class="label-segment">Si</ion-label>
+              </ion-segment-button>
+              <ion-segment-button
+                value="false"
+                layout="icon-start"
+                class="diseases-segment-btn-no"
+              >
+                <ion-img
+                  class="icon-segment"
+                  [src]="
+                    familyDiseases.value === 'false'
+                      ? 'assets/health-indicator/select.svg'
+                      : 'assets/health-indicator/unselect.svg'
+                  "
+                >
+                </ion-img>
+                <ion-label class="label-segment">No</ion-label>
+              </ion-segment-button>
+            </ion-segment>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="12">
+      <ion-card class="ion-card">
+        <ion-card-header style="background: #fbfbfb">
+          <ion-card-subtitle class="ion-card-ion-card-subtitle">
+            Cu&eacute;ntenos sobre su familia
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-label position="stacked" text-wrap class="input-label mb-5">
+              ¿Vive con algunas de las siguientes personas?
+            </ion-label>
+            <ion-item
+              lines="none"
+              class="liveWith"
+              formArrayName="liveWith"
+              *ngFor="let item of liveWithControls.controls; let i = index"
+            >
+              <ion-label class="label-live-with">{{
+                liveWithList[i].label
+              }}</ion-label>
+              <ion-checkbox
+                slot="start"
+                [formControlName]="i"
+                class="live-with-checkbox"
+              ></ion-checkbox>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col size="12">
+      <ion-card class="ion-card">
+        <ion-card-header style="background: #fbfbfb">
+          <ion-card-subtitle class="ion-card-ion-card-subtitle">
+            Contacto en caso de emergencia
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item
+              [ngClass]="{
+                'ion-item-ion-input-no-border': familyInfo?.contactName,
+                'ion-item-ion-input': !familyInfo?.contactName
+              }"
+              lines="none"
+            >
+              <ion-input
+                type="text"
+                name="contactName"
+                formControlName="contactName"
+                placeholder="Nombre"
+                (ionFocus)="checkInputFocus()"
+                (ionBlur)="checkInputBlur()"
+              >
+              </ion-input>
+            </ion-item>
+            <ion-item
+              [ngClass]="{
+                'red-border-class': userForm
+                  .get('contactPhone')
+                  .hasError('validPhoneNumber'),
+                'ion-item-ion-input': !userForm
+                  .get('contactPhone')
+                  .hasError('validPhoneNumber')
+              }"
+              lines="none"
+            >
+              <ion-input
+                type="number"
+                name="contactPhone"
+                formControlName="contactPhone"
+                placeholder="N&uacute;mero de celular"
+                (ionFocus)="checkInputFocus()"
+                (ionBlur)="checkInputBlur()"
+              >
+              </ion-input>
+              <ion-icon
+                src="../assets/profile/icon/icon_telefono.svg"
+                slot="end"
+                class="icon-phone"
+              >
+              </ion-icon>
+            </ion-item>
+            <ion-item *ngIf="userForm.get('contactPhone').errors" lines="none">
+              <span
+                *ngIf="
+                  userForm.get('contactPhone').hasError('validPhoneNumber')
+                "
+                class="input-error"
+              >
+                N&uacute;mero tel&eacute;fonico no permitido.
+              </span>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ng-container>
+    <ion-row>
+      <ion-col
+        size="12"
+        style="
+          text-align: center;
+          margin-bottom: 30px;
+          margin-top: 20px !important;
+        "
+      >
+        <button type="submit" fill="clear" class="btn" class="button-save" [disabled]="modalIsActive">
+          GUARDAR
+        </button>
+      </ion-col>
+    </ion-row>
+  </ng-container>
+</form>

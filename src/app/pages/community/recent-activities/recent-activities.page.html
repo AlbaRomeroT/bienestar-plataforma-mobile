@@ -1,0 +1,49 @@
+<div class="spin">
+  <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+</div>
+
+<ion-grid fixed class="empty-grid" *ngIf="sectiontToShow == sections.empty">
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <img
+        src="/assets/activities/recent-activities-empty.png"
+        class="main-image"
+        alt=""
+      />
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <span class="title"> ¡No hay actividad que mostrar! </span>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <span class="description">
+        ¡Participe en nuestras actividades e interactue con la comunidad para
+        divertirse en grande!
+      </span>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid
+  fixed
+  class="recent-activities-grid"
+  *ngIf="sectiontToShow == sections.activities"
+>
+  <ion-row>
+    <app-registered-activity
+      class="registered-activity"
+      *ngFor="let item of activitiesProfiles"
+      [activitiesTranslate]="activitiesTranslate"
+      [activity]="item.activity"
+      [profile]="item.profile"
+    >
+    </app-registered-activity>
+
+    <ion-infinite-scroll (ionInfinite)="getNextActivities()">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-row>
+</ion-grid>

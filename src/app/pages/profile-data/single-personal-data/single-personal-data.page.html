@@ -1,0 +1,300 @@
+<ion-toolbar>
+  <app-background-svg-home
+    [cssClass]="'leitmotiv-personal-data'"
+  ></app-background-svg-home>
+  <ion-row>
+    <ion-col class="p-20" size="12">
+      <h1 class="title-personal-data">{{title}}</h1>
+      <div class="border-title-personal-data"></div>
+    </ion-col>
+
+    <div class="spin">
+      <ion-spinner name="bubbles" [hidden]="!showSpinner"></ion-spinner>
+    </div>
+
+    <form [formGroup]="personalForm" (ngSubmit)="save()" novalidate>
+      <ion-col size="12">
+        <ion-card class="ion-card-personal-data mt-7">
+          <ion-card-header>
+            <ion-card-subtitle class="subtitle-personal-data"
+              >{{subtitle}}</ion-card-subtitle
+            >
+          </ion-card-header>
+
+          <ion-card-content>
+            <span class="required-fields">
+              * Todos los campos son obligatorios
+            </span>
+            <ion-list>
+              <ion-label
+                position="stacked"
+                class="labels"
+                [ngClass]="{'ok': isPregnant.value}"
+                *ngIf="isFemale"
+              >
+                ¿Está embarazada?
+              </ion-label>
+              <ion-segment
+                class="smoke-segment"
+                formControlName="isPregnant"
+                *ngIf="isFemale"
+              >
+                <ion-segment-button
+                  class="smoke-segment-btn-si"
+                  value="true"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="isPregnant.value == 'true'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>Si</ion-label>
+                </ion-segment-button>
+                <ion-segment-button
+                  class="smoke-segment-btn-no"
+                  value="false"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="isPregnant.value == 'false'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>No</ion-label>
+                </ion-segment-button>
+              </ion-segment>
+              <ion-label
+                position="stacked"
+                class="labels"
+                [ngClass]="{'ok': hasBeenSmoker.value}"
+              >
+                ¿Ha sido fumador o fue fumador durante los últimos 6 meses?
+              </ion-label>
+              <ion-segment
+                class="smoke-segment"
+                formControlName="hasBeenSmoker"
+              >
+                <ion-segment-button
+                  class="smoke-segment-btn-si"
+                  value="true"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="hasBeenSmoker.value == 'true'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>Si</ion-label>
+                </ion-segment-button>
+                <ion-segment-button
+                  class="smoke-segment-btn-no"
+                  value="false"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="hasBeenSmoker.value == 'false'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>No</ion-label>
+                </ion-segment-button>
+              </ion-segment>
+              <ion-label
+                position="stacked"
+                class="label-radio-group-diseases"
+                [ngClass]="{'ok': diseasesChecked}"
+              >
+                ¿Presentó una o más de las siguientes enfermedades?
+              </ion-label>
+              <ion-item
+                lines="none"
+                formArrayName="diseases"
+                class="diseases"
+                *ngFor="let item of diseasesControls.controls; let i = index"
+              >
+                <ion-label>{{ diseasesList[i].label }}</ion-label>
+                <ion-checkbox slot="start" [formControlName]="i"></ion-checkbox>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle class="subtitle-personal-data"
+              >{{subtitleTwo}}</ion-card-subtitle
+            >
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-label
+                class="labels"
+                [ngClass]="{'ok': familyDiseases.value}"
+              >
+                ¿En su hogar alguien presenta una o más de las enfermedades
+                anteriormente nombradas?
+              </ion-label>
+              <ion-segment
+                class="diseases-segment"
+                formControlName="familyDiseases"
+              >
+                <ion-segment-button
+                  class="diseases-segment-btn-si"
+                  value="true"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="familyDiseases.value == 'true'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>Si</ion-label>
+                </ion-segment-button>
+                <ion-segment-button
+                  class="diseases-segment-btn-no"
+                  value="false"
+                  layout="icon-start"
+                >
+                  <ion-img
+                    [src]="familyDiseases.value == 'false'? '../assets/profile/select.svg' : '../assets/profile/unselect.svg'"
+                  >
+                  </ion-img>
+                  <ion-label>No</ion-label>
+                </ion-segment-button>
+              </ion-segment>
+              <ion-label [ngClass]="{'ok': liveWithChecked}">
+                ¿Vive con alguna de las siguientes personas?
+              </ion-label>
+              <ion-item
+                lines="none"
+                formArrayName="liveWith"
+                class="liveWith"
+                *ngFor="let item of liveWithControls.controls; let i = index"
+              >
+                <ion-label>{{ liveWithList[i].label }}</ion-label>
+                <ion-checkbox slot="start" [formControlName]="i"></ion-checkbox>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle class="subtitle-personal-data"
+              >{{subtitleThree}}</ion-card-subtitle
+            >
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-label
+                position="stacked"
+                class="labels ok"
+                *ngIf="contactName.value"
+              >
+                Nombre
+              </ion-label>
+              <ion-item
+                lines="none"
+                class="item-name"
+                [ngClass]="{'submitted': contactName.value}"
+              >
+                <ion-input
+                  placeholder="Nombre"
+                  type="text"
+                  formControlName="contactName"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                ></ion-input>
+              </ion-item>
+
+              <ion-label
+                position="stacked"
+                class="labels ok"
+                *ngIf="contactPhone.value"
+              >
+                Número de celular
+              </ion-label>
+              <ion-item
+                lines="none"
+                class="item-cellphone"
+                [ngClass]="{'submitted': contactPhone.value}"
+              >
+                <ion-input
+                  placeholder="Número de celular"
+                  type="text"
+                  formControlName="contactPhone"
+                  (ionFocus)="checkInputFocus()"
+                  (ionBlur)="checkInputBlur()"
+                ></ion-input>
+              </ion-item>
+              <ion-label *ngFor="let error of errorMessages.phone">
+                <p
+                  class="error-message"
+                  *ngIf="contactPhone.hasError(error.type) && (contactPhone.dirty || contactPhone.value)"
+                >
+                  {{ error.message }}
+                </p>
+              </ion-label>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12">
+        <ng-container>
+          <span *ngIf="!personalForm.valid" class="error-message">
+            * Para continuar debe llenar todos los campos
+          </span>
+          <ion-list class="ion-list-content-btns">
+            <ion-item lines="none">
+              <ion-checkbox
+                color="success"
+                formControlName="termsAndConditions"
+              ></ion-checkbox>
+              <ion-label
+                class="label-terms1"
+                [ngClass]="{'ok': termsAndConditions.value}"
+                >Acepto los Términos y condiciones de Seguros
+                Bolívar.</ion-label
+              >
+            </ion-item>
+            <ion-item lines="none">
+              <ion-checkbox
+                color="success"
+                formControlName="dataTreatment"
+              ></ion-checkbox>
+              <ion-label
+                class="label-terms2"
+                [ngClass]="{'ok': dataTreatment.value}"
+                >Acepto el Tratamiento de datos de Seguros Bolívar.</ion-label
+              >
+            </ion-item>
+            <ion-row>
+              <ion-col size="6" class="my-20">
+                <a class="link-terms" href="#"> Términos y condiciones </a>
+              </ion-col>
+              <ion-col size="6" class="my-20">
+                <a class="link-terms" href="#"> Tratamiento de datos </a>
+              </ion-col>
+              <ion-col size="6">
+                <ion-button
+                  type="submit"
+                  fill="clear"
+                  class="btn"
+                  class="button-before"
+                  (click)="previous()"
+                >
+                  REGRESAR
+                </ion-button>
+              </ion-col>
+              <ion-col size="6">
+                <ion-button
+                  type="submit"
+                  fill="clear"
+                  class="btn"
+                  class="button-save"
+                  [disabled]="!personalForm.valid"
+                >
+                  GUARDAR
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-list>
+        </ng-container>
+      </ion-col>
+    </form>
+  </ion-row>
+</ion-toolbar>

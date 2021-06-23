@@ -1,0 +1,76 @@
+{
+    "errors": [],
+    "body": {
+        "data": [
+            {
+                "completed": false,
+                "valid": true,
+                "icon": "/lifestyle",
+                "creator": {
+                    "id": "5f96d87332a85836bc7a9967",
+                    "kind": "user",
+                    "links": [
+                        {
+                            "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967",
+                            "rel": "self"
+                        }
+                    ]
+                },
+                "modificationTime": "2020-10-27T15:01:18Z",
+                "subject": {
+                    "id": "5f96d87332a85836bc7a9967",
+                    "kind": "user",
+                    "links": [
+                        {
+                            "href": "https://api.int.appsb.segurosbolivar.com/2/users/5f96d87332a85836bc7a9967",
+                            "rel": "self"
+                        }
+                    ]
+                },
+                "subcategory": "message",
+                "category": "lifestyle",
+                "message": "lifestyle_smoking_now",
+                "time": "2020-10-27T15:01:18Z",
+                "order": 1603810878050,
+                "links": [
+                    {
+                        "href": "https://api.int.appsb.segurosbolivar.com/2/messages/5f98363ff747dd479f6d1de5",
+                        "rel": "self"
+                    }
+                ],
+                "sharing": {
+                    "public": false,
+                    "subjects": [],
+                    "group": false,
+                    "user": false
+                },
+                "kind": "message",
+                "inputs": [
+                    {
+                        "key": "lifestyle_smoking_now",
+                        "text": "input_lifestyle_smoking_now_text",
+                        "type": "select",
+                        "options": [
+                            {
+                                "value": "yes",
+                                "text": "Sí"
+                            },
+                            {
+                                "value": "no",
+                                "text": "No"
+                            }
+                        ]
+                    }
+                ],
+                "seen": false,
+                "id": "5f98363ff747dd479f6d1de5",
+                "title": "🚬 Pregunta sobre Índice de Salud",
+                "objectives": [],
+                "lead": "Cuénteme sobre su hábito de fumar.",
+                "body": "¿Fuma actualmente?",
+                "rewards": []
+            }
+        ]
+    },
+    "hasErrors": false
+}

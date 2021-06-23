@@ -1,0 +1,51 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar> </ion-toolbar>
+</ion-header>
+<ion-content class="mt-20">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <img src="/assets/onboarding/qrpass.svg" class="main-image" alt="" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-start">
+        <p class="title">QR Pass</p>
+        <div class="black-path"></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="ion-text-start">
+          Haga seguimiento a sus síntomas diariamente para
+          <strong class="bold-text"
+            >controlar sus sospechas de contagio por COVID-19.</strong
+          >
+        </p>
+        <p class="ion-text-start">
+          Si antes usaba la aplicación QR PASS, su registro de síntomas se
+          mantendrá en
+          <strong class="bold-text">Bolívar Conmigo</strong>.
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <div class="progress-bar">
+    <ion-progress-bar
+      class="onboarding-progress-bar"
+      value="1"
+    ></ion-progress-bar>
+  </div>
+  <ion-toolbar>
+    <ion-button slot="end" class="next-button" fill="none" (click)="next()"
+      >Comenzar ahora
+      <ion-icon
+        slot="end"
+        class="next-button-icon"
+        src="/assets/onboarding/greater-than.svg"
+      ></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "267610265260",
+    "firebase_url": "https://bolivarconmigo.firebaseio.com",
+    "project_id": "bolivarconmigo",
+    "storage_bucket": "bolivarconmigo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267610265260:android:c8a91eabbd8cc2c03d7109",
+        "android_client_info": {
+          "package_name": "com.segurosbolivar.balm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267610265260-qg1pbqerdt8o7jfqd3dm1ce8jhluefl1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVndhsE1eKiPy1ilcljDh_svNV6fpqMu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267610265260-qg1pbqerdt8o7jfqd3dm1ce8jhluefl1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "267610265260-32fbqah7q9774r8330l5m8a8rb5eqktk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.segurosbolivar.balm1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267610265260:android:e05350e3f9d8bdd43d7109",
+        "android_client_info": {
+          "package_name": "com.segurosbolivar.bolivarconmigo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267610265260-qg1pbqerdt8o7jfqd3dm1ce8jhluefl1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVndhsE1eKiPy1ilcljDh_svNV6fpqMu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267610265260-qg1pbqerdt8o7jfqd3dm1ce8jhluefl1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "267610265260-32fbqah7q9774r8330l5m8a8rb5eqktk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.segurosbolivar.balm1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

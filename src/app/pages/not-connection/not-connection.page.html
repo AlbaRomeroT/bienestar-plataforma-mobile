@@ -1,0 +1,53 @@
+<app-header></app-header>
+<div class="spin">
+  <ion-spinner name="bubbles" [hidden]="!busy"></ion-spinner>
+</div>
+<ion-content class="ion-content">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="11" class="ion-align-items-center">
+        <app-title [text]="'Error'"></app-title>
+      </ion-col>
+      <ion-col class="ion-justify-content-center" size="12">
+        <img
+          src="/assets/not-connection/not-network.svg"
+          class="main-image"
+          alt="not-network"
+        />
+      </ion-col>
+      <ion-col class="ion-justify-content-center" size="12">
+        <p class="oh-oh-sus-datos-n ion-text-center title">
+          ¡Oh, oh! Sus datos no se han podido cargar
+        </p>
+      </ion-col>
+      <ion-col class="ion-justify-content-center" size="12">
+        <p class="pruebe-nuevamente-ah ion-text-center">
+          Pruebe nuevamente ahora o en un par de minutos, o revise su
+          conexi&oacute;n a internet.
+        </p>
+      </ion-col>
+      <ion-col class="ion-justify-content-center" size="12">
+        <ion-button
+          [disabled]="busy"
+          [ngClass]="{
+          'bg-color':(selectedBackgroundTryAgain),
+          'bg-color-no-selected':!(selectedBackgroundTryAgain)}"
+          (click)="tryAgain()"
+        >
+          REINTENTAR AHORA
+        </ion-button>
+      </ion-col>
+      <ion-col size="12" class="ion-justify-content-center">
+        <ion-button
+          [disabled]="busy"
+          [ngClass]="{
+          'bg-color':!(selectedBackgroundTryAgain),
+          'bg-color-no-selected':(selectedBackgroundTryAgain)}"
+          (click)="backPreviusPage()"
+        >
+          VOLVER A LA P&Aacute;GINA ANTERIOR
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

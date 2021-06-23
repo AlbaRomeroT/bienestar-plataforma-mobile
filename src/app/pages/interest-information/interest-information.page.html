@@ -1,0 +1,80 @@
+<app-header></app-header>
+<ion-content>
+  <ion-row class="header">
+    <app-back-button-updated class="back"></app-back-button-updated>
+    <app-widget-header class="title" [title]="'Legal'"></app-widget-header>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6">
+      <app-title [text]="'Términos y condiciones'"></app-title>
+      <ion-col size="12">
+        <ion-card
+          [routerLink]="['/terms']"
+          [queryParams]="{ pathReturn: '/interest-information'}"
+        >
+          <ion-card-content>
+            <div class="ion-text-center">
+              <ion-row>
+                <ion-col size="12">
+                  <img
+                    src="/assets/legal/icon-terms.svg"
+                    class="image-help"
+                    alt=""
+                  />
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <span class="text"
+                    >Consulte nuestros
+                    <span class="text-link">T&eacute;rminos y condiciones</span
+                    >.</span
+                  >
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-col>
+    <ion-col size="6">
+      <app-title [text]="'Tratamiento de datos'"></app-title>
+      <ion-col size="12">
+        <ion-card
+          [routerLink]="['/policies']"
+          [queryParams]="{ pathReturn: '/interest-information'}"
+        >
+          <ion-card-content>
+            <div class="ion-text-center">
+              <ion-row>
+                <ion-col size="12">
+                  <img
+                    src="/assets/legal/icon-manage-data.svg"
+                    class="image-help"
+                    alt=""
+                  />
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <span class="text"
+                    >Consulte nuestra
+                    <span class="text-link"
+                      >Pol&iacute;tica de tratamiento de datos</span
+                    >.</span
+                  >
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-col>
+  </ion-row>
+  <img
+    src="/assets/help-center/leimotiv-bottom-2.svg"
+    alt=""
+    srcset=""
+    class="leitmotive-interest-information"
+  />
+</ion-content>

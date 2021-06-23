@@ -1,0 +1,10 @@
+<ion-app>
+  <div *ngIf="showSplash" class="splash" [hidden]="isProduction">
+    <ng-lottie [options]="options" (animationCreated)="animationCreated($event)"></ng-lottie>
+  </div>
+  <ion-menu contentId="main-content" type="overlay" [hidden]="!showMenu">
+    <app-menu></app-menu>
+  </ion-menu>
+  <ion-router-outlet id="main-content"> </ion-router-outlet>
+  <app-footer [showFooter]="!showMenu"></app-footer>
+</ion-app>

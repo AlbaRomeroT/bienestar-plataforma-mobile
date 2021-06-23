@@ -1,0 +1,42 @@
+<ion-grid class="grid" [class]="cssClass">
+  <ion-row (click)="navigateTo()">
+    <ion-col size="3">
+      <ion-avatar class="avatar">
+        <img
+          [src]="challenge.safeMediaUrl"
+          onError="src = '/assets/purpose/purpose-default.png'"
+          alt=""
+        />
+      </ion-avatar>
+    </ion-col>
+    <ion-col size="8">
+      <ion-label class="ion-text-nowrap">
+        <h2 class="title">{{ challenge.name }}</h2>
+        <span class="content" *ngIf="challenge.participantCount == 1">
+          <ion-icon
+            class="icon-yellow-fire"
+            src="/assets/challenge/icon-person-white.svg"
+          >
+          </ion-icon>
+          {{ challenge.participantCount }} persona unida
+        </span>
+        <span class="content" *ngIf="challenge.participantCount != 1">
+          <ion-icon
+            class="icon-yellow-fire"
+            src="/assets/challenge/icon-person-white.svg"
+          >
+          </ion-icon>
+          {{ challenge.participantCount }} personas unidas
+        </span>
+      </ion-label>
+    </ion-col>
+    <ion-col size="1">
+      <ion-button class="action-button" expand="block" fill="clear">
+        <ion-icon
+          class="icon-button icon-chevron-forward"
+          name="chevron-forward"
+        ></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>

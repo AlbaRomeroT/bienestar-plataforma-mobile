@@ -1,0 +1,17 @@
+<ion-row class="ion-align-items-center margin-top-title">
+  <ion-col size="1" (click)="isBackClicked()">
+    <img src="/assets/icon-arrow-back.svg" *ngIf="showBack" alt="Regresar" />
+  </ion-col>
+  <ion-col size="10" class="ion-text-center">
+    <span class="title">
+      {{ title }}
+    </span>
+  </ion-col>
+  <ion-col size="1">
+    <span class="button-close-modal">
+      <ion-button (click)="closeModal()" fill="clear" id="close-button">
+        <ion-icon class="x-button" name="close-outline"></ion-icon>
+      </ion-button>
+    </span>
+  </ion-col>
+</ion-row>

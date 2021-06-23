@@ -1,0 +1,10 @@
+{
+    "aps": {
+        "alert": {
+            "title": "Notification push",
+            "subtitle": "Prueba",
+            "body": "Esto es una Notificacion push"
+        },
+        "badge": 1
+    }
+}

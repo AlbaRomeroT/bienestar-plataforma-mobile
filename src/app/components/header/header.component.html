@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar
+    no-border
+    no-padding
+    class="ion-toolbar ion-no-padding ion-no-border"
+  >
+    <ion-buttons slot="start">
+      <ion-menu-button>
+        <ion-img [src]="photo" class="photo"> </ion-img>
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-img class="image-header" src="/assets/svg/bolivar_conmigo.svg">
+    </ion-img>
+    <ion-buttons slot="end" (click)="goToNotifications()">
+      <ion-button>
+        <ion-icon
+          slot="icon-only"
+          src="/assets/icon/icon-alert.svg"
+          *ngIf="!(notificationService.hasNewNotification | async) as boolean"
+        >
+        </ion-icon>
+        <ion-icon
+          slot="icon-only"
+          src="/assets/icon/icon-alert-with-dot.svg"
+          *ngIf="notificationService.hasNewNotification | async as boolean"
+        >
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
