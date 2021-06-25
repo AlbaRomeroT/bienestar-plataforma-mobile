@@ -1,3 +1,4 @@
+export const SERVICE_URL=process.env.SERVICE_URL;
 export const environment = {
   production: false,
   logintr:
@@ -14,7 +15,7 @@ export const environment = {
   whatsappHelpNumber: "+573124852995",
   callEmergencyNationalNumber: "123",
   //bienestarUrlApi: "https://4hrqwja612.execute-api.us-east-1.amazonaws.com/dev",
-  bienestarUrlApi: "https://gkdcxwo8dj.execute-api.sa-east-1.amazonaws.com/aut",//mock
+  bienestarUrlApi: "https://gkdcxwo8dj.execute-api.sa-east-1.amazonaws.com/aut",// "https://gkdcxwo8dj.execute-api.sa-east-1.amazonaws.com/aut"
   googleAnalytics: "UA-179616620-2",
   base64EncodedKeyFromJava: "QUJDREVGR0hJSktMTU5PUA==",
   qrenv: "dev",

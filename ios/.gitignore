@@ -7,6 +7,8 @@ App/Pods
 App/public
 App/Podfile.lock
 xcuserdata
+node_modules
+www
 
 # Cordova plugins for Capacitor
 capacitor-cordova-ios-plugins
