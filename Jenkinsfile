@@ -17,7 +17,8 @@ pipeline {
                  sh 'rm -rf node_modules'
                  sh 'npm install'
                  sh 'npm run build'
-                 sh 'sudo ionic cap sync android'
+                 sh 'sudo su'
+                 sh 'ionic cap sync android'
                  sh 'cd android/capacitor-cordova-android-plugins/src/main/java/de/appplant/cordova/emailcomposer'
                  script{
                     def text = readFile file: "Provider.java"
