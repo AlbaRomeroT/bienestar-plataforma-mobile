@@ -1,90 +1,32 @@
 pipeline {
-    agent {
-        node {
-            label 'nodejenkinsjdk11'
-        }
-    }
-    options {
-        buildDiscarder logRotator(
-                    daysToKeepStr: '16',
-                    numToKeepStr: '10'
-            )
+    agent any
+    tools {
+        nodejs 'node' 
     }
     stages {
-
-    	stage(' Unit Testing') {
-
-            when { anyOf { branch 'PR-*'; branch 'develop'; branch 'stage'; branch 'master' } }
-
-                steps {
-                    sh """
-                    echo "Running Unit Tests"
-                    """
-                   /* withGradle {
-                        sh ' ./gradlew build'
-                        sh ' ./gradlew test'
-                    }*/
-                }
-            }
-
-    	stage('Code Analysis') {
-            when { anyOf { branch 'PR-*'; branch 'develop'; branch 'stage'; branch 'master' } }
-
+    
+        stage('Preparation') { // for display purposes
             steps {
-                sh """
-                echo "Running Code Analysis "
-                """
-                withSonarQubeEnv('SonarCloud') {
-                    // sh ' ./gradlew sonarqube'
-                }
-           
+                git branch: 'master', url: 'https://github.com/AlbaRomeroT/bienestar-plataforma-mobile.git'
             }
+     
         }
-
-    stage('Provision infrastructure Stage') { 
-           when {
-               branch 'stage' 
-           }
-           steps {    
-               withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: '85a9d0e1-9091-4d3e-a90f-76ee0253b978', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
-                    
-                    echo "--------- Executing Terraform apply plan Stage... ------------"
-
-                }
+        stage('Build') {
+             steps {
+                 sh 'npm --version'
+                 sh 'rm -rf node_modules'
+                 sh 'npm install'
+                 sh 'sudo ionic cap sync android'
+                 sh 'cd android/capacitor-cordova-android-plugins/src/main/java/de/appplant/cordova/emailcomposer'
+                 script{
+                    def text = readFile file: "Provider.java"
+                        text = text.replaceAll("import android.support.v4.content.FileProvider;" , "import androidx.core.content.FileProvider;")
+                        writeFile file: "Provider.java", text: text 
+                 }
+                 sh 'sudo ionic capacitor copy android && cd android && sudo ./gradlew assembleDebug && cd ..'
+                 echo BRANCH_NAME
             }
-        }
-
-        stage('Provision infrastructure Develop') {
-           when {
-               branch 'develop' 
-           }
-           steps {    
-               withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: '85a9d0e1-9091-4d3e-a90f-76ee0253b978', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
-                    
-                    echo "--------- Executing Terraform apply plan Dev... ------------ "
-                    
-                }
-               
-            }
-        }
-
-       stage('Provision infrastructure Master') {
-           when {
-               branch 'master' 
-           }
-           steps {    
-               withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: '85a9d0e1-9091-4d3e-a90f-76ee0253b978', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
-                    
-                    echo "--------- Executing Terraform apply plan ... ------------"
-                }
-               
-            }
-        }
-        
-    }
-    post { 
-        always { 
-            cleanWs()
+            
         }
     }
 }
