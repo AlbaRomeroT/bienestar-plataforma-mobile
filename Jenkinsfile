@@ -16,6 +16,10 @@ pipeline {
                  sh 'npm --version'
                  sh 'rm -rf node_modules'
                  sh 'npm install'
+                 echo '****************************'
+                 echo '****************************'
+                 sh 'pwd'
+                 echo '****************************'
                  sh 'npm run build'
                  /*
                  sh 'sudo ionic cap sync android'
