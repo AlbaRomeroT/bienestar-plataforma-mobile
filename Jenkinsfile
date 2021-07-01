@@ -16,6 +16,7 @@ pipeline {
                  sh 'npm --version'
                  sh 'rm -rf node_modules'
                  sh 'npm install'
+                 sh 'npm run build'
                  sh 'sudo ionic cap sync android'
                  sh 'cd android/capacitor-cordova-android-plugins/src/main/java/de/appplant/cordova/emailcomposer'
                  script{
