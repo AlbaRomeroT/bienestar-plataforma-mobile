@@ -10,8 +10,8 @@ import { GreenButtonTitleComponent } from "../green-button-title/green-button-ti
 
 @Component({
   selector: "app-medical-emergency",
-  templateUrl: "./medical-emergency.Component.html",
-  styleUrls: ["./medical-emergency.Component.scss"],
+  templateUrl: "./medical-emergency.component.html",
+  styleUrls: ["./medical-emergency.component.scss"],
 })
 export class MedicalEmergencyComponent implements OnInit {
   @Input() private medEmergency: boolean;
